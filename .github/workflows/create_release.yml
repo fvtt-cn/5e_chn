@@ -15,9 +15,7 @@ jobs:
         
       - name: Build project
         run: |
-          mkdir 5e_chn
-          cp {cn.json,module.json} 5e_chn/
-          zip 5e_chn.zip 5e_chn/module.json 5e_chn/cn.json
+          zip 5e_chn.zip module.json cn.json
           
       - name: Create release
         id: create_release
