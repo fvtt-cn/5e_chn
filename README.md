@@ -1,4 +1,6 @@
 # Foundry VTT D&D 5e 系统中文化
+![downloads](https://img.shields.io/github/downloads/fvtt-cn/5e_chn/total)
+
 By FVTT-CN
 
 ## 安装方法
