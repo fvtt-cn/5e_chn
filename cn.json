@@ -41,7 +41,7 @@
 "DND5E.AbilityUseChargesLabel": "{value} 发充能",
 "DND5E.AbilityUseConsumableChargeHint": "使用该 {type} 将消耗剩余充能（{value}次）中的一次。",
 "DND5E.AbilityUseConsumableDestroyHint": "使用该 {type} 将消耗最后的充能，并且将摧毁。",
-"DND5E.AbilityUseConsumableLabel": "{max} 发/每次 {per} 发",
+"DND5E.AbilityUseConsumableLabel": "{max} 发/每 {per}",
 "DND5E.AbilityUseConsumableQuantityHint": "使用该 {type} 将消耗剩余数量（{quantity}个）中的一个。",
 "DND5E.AbilityUseConsume": "确认消耗资源次数",
 "DND5E.AbilityUseHint": "请设置你要如何使用：{name} {type}",
