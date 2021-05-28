@@ -762,5 +762,6 @@
 "DND5E.Skip": "跳过",
 "DND5E.Uncrewed": "未搭乘",
 "SETTINGS.5eReset": "重置",
-"SETTINGS.5eUndoChanges": "取消改动"
+"SETTINGS.5eUndoChanges": "取消改动",
+"DND5E.ActorWarningInvalidItem": "{itemType} 物品无法被添加给 {actorType}。"
 }
