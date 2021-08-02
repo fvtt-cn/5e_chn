@@ -792,7 +792,6 @@
     "DND5E.WarnBadACFormula": "提供的 AC 公式无法求值。",
     "DND5E.WarnMultipleShields": "已装备超过一面盾牌，AC 计算结果可能不正确。",
     "SETTINGS.5eMetricN": "使用公制单位",
-    "DND5E.ArmorClassDefault": "已装备护甲",
     "DND5E.ArmorConfigHint": "填写上述输入框以覆盖自动计算的护甲等级。",
     "DND5E.EffectUnavailableInfo": "源物品必须为已装备或已同调来激活这些",
     "DND5E.ItemToolType": "工具类型",
