@@ -799,5 +799,10 @@
     "DND5E.VehicleTypeAir": "空中载具",
     "DND5E.VehicleTypeLand": "陆地载具",
     "DND5E.WarnMultipleArmor": "已装备超过一套护甲，AC 计算结果可能不正确。",
-    "SETTINGS.5eMetricL": "将所有磅的引用替换为千克并且使用公制单位来更新负重的计算。"
+    "SETTINGS.5eMetricL": "将所有磅的引用替换为千克并且使用公制单位来更新负重的计算。",
+    "DND5E.Bonus": "加值",
+    "DND5E.ArmorClassEquipment": "已装备护甲",
+    "DND5E.ArmorClassFlat": "单调",
+    "DND5E.ArmorClassUnarmored": "无甲",
+    "DND5E.ArmorClassNatural": "天生护甲"
 }
