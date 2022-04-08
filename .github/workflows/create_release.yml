@@ -4,6 +4,10 @@ on:
   release:
     types: [ published ]
 
+env:
+  ZIP_FILENAME: "5e_chn"
+  PACKAGE_CONTENT: "module.json cn.json"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,12 +26,12 @@ jobs:
           version: ${{github.event.release.tag_name}}
           url: https://github.com/${{github.repository}}
           manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
-          download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/${{github.repository}}.zip
+          download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/${{env.ZIP_FILENAME}}.zip
           
       # Create a zip file with all files required by the module to add to the release
       - name: Create Artifact
         id: build-zip
-        run: zip ${{github.repository}}.zip module.json cn.json
+        run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
 
       # Create a release for this specific version
       - name: Update Release with Files
@@ -39,6 +43,6 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './module.json, ./${{github.repository}}.zip'
+          artifacts: './module.json, ./${{env.ZIP_FILENAME}}.zip'
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
