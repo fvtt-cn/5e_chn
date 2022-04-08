@@ -2,13 +2,9 @@
   "name": "5e_chn",
   "title": "Translation: 中文 [DnD5E]",
   "description": "为 FVTT 中的 DnD5e 系统添加了中文。",
-  "version": "1.5.6.1",
   "minimumCoreVersion": "9.238",
   "compatibleCoreVersion": "9.999",
   "author": "FVTT-CN",
-  "scripts": [],
-  "styles": [],
-  "packs": [],
   "languages": [
     {
       "lang": "cn",
@@ -22,7 +18,8 @@
       "type": "system"
     }
   ],
-  "url": "https://github.com/fvtt-cn/5e_chn",
-  "manifest": "https://github.com/fvtt-cn/5e_chn/releases/latest/download/module.json",
-  "download": "https://github.com/fvtt-cn/5e_chn/releases/download/1.5.6.1/5e_chn.zip"
+  "version": "Auto replaced",
+  "url": "Auto replaced",
+  "manifest": "Auto replaced",
+  "download": "Auto replaced"
 }
