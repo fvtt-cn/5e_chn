@@ -5,6 +5,7 @@
   "minimumCoreVersion": "9.238",
   "compatibleCoreVersion": "9.999",
   "author": "FVTT-CN",
+  "systems": [ "dnd5e" ],
   "languages": [{
       "lang": "cn",
       "name": "中文",
