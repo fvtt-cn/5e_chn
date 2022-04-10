@@ -5,19 +5,15 @@
   "minimumCoreVersion": "9.238",
   "compatibleCoreVersion": "9.999",
   "author": "FVTT-CN",
-  "languages": [
-    {
+  "languages": [{
       "lang": "cn",
       "name": "中文",
       "path": "cn.json"
-    }
-  ],
-  "dependencies": [
-    {
+  }],
+  "dependencies": [{
       "name": "dnd5e",
       "type": "system"
-    }
-  ],
+  }],
   "version": "Auto replaced",
   "url": "Auto replaced",
   "manifest": "Auto replaced",
