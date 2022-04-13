@@ -7,6 +7,7 @@ on:
 env:
   ZIP_FILENAME: "5e_chn"
   PACKAGE_CONTENT: "module.json cn.json"
+  PACKAGE_ID: 613
 
 jobs:
   build:
@@ -27,6 +28,7 @@ jobs:
           url: https://github.com/${{github.repository}}
           manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
           download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/${{env.ZIP_FILENAME}}.zip
+          changelog: https://github.com/${{github.repository}}/releases/tag/${{github.event.release.tag_name}}
           
       # Create a zip file with all files required by the module to add to the release
       - name: Create Artifact
@@ -46,3 +48,15 @@ jobs:
           artifacts: './module.json, ./${{env.ZIP_FILENAME}}.zip'
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
+
+      # Publish to Foundry VTT module repo
+      - name: Publish to Foundry VTT Repo
+        id: publish_foundry_repo
+        if: ${{ env.PACKAGE_ID }}
+        uses: Varriount/fvtt-autopublish@v1.0.6
+        with:
+          manifest-file: 'module.json'
+          manifest-url: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.json
+          module-id: ${{ env.PACKAGE_ID }}
+          username: ${{ secrets.FVTT_USERNAME }}
+          password: ${{ secrets.FVTT_PASSWORD }}
