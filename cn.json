@@ -835,7 +835,6 @@
     "DND5E.AbilityCheckGlobalBonusHint": "此加值应用于该角色进行的所有属性检定。",
     "DND5E.CurrencyAbbrCP": "cp",
     "DND5E.CurrencyAbbrEP": "ep",
-    "DND5E.FormulaCannotContainDiceWarn": "{name} 公式不能包含掷骰表达式。",
     "DND5E.ItemCritThreshold": "重击阈值",
     "DND5E.ItemToolBase": "基础工具",
     "DND5E.ProficiencyLevel": "熟练等级",
