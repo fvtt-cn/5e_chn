@@ -2,9 +2,16 @@
   "name": "5e_chn",
   "title": "Translation: 中文 [DnD5E]",
   "description": "本模组为 FVTT 的 DnD5e 系统提供了中文翻译。",
-  "minimumCoreVersion": "9.238",
-  "compatibleCoreVersion": "9.999",
-  "author": "FVTT-CN",
+  "authors": [
+    {
+      "name": "FVTT-CN",
+      "email": "fvtt-cn@dickytwister.org"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.282"
+  },
   "systems": [ "dnd5e" ],
   "languages": [{
       "lang": "cn",
