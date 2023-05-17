@@ -10,7 +10,7 @@
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "10"
+    "verified": "10.291"
   },
   "systems": [ "dnd5e" ],
   "languages": [{
