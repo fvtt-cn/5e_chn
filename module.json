@@ -10,7 +10,7 @@
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "10.291"
+    "verified": "11.299"
   },
   "systems": [ "dnd5e" ],
   "languages": [{
@@ -18,10 +18,17 @@
       "name": "中文",
       "path": "cn.json"
   }],
-  "dependencies": [{
-      "name": "dnd5e",
-      "type": "system"
-  }],
+  "relationships": {
+    "systems": [{
+      "id": "dnd5e",
+      "type": "system",
+      "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+      "compatibility": {
+        "minimum": "2.2.0",
+        "verified": "2.2.0"
+      }
+    }]
+  },
   "changelog": "Auto replaced",
   "version": "Auto replaced",
   "url": "Auto replaced",
