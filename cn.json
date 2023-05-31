@@ -885,7 +885,7 @@
     "DND5E.AdvancementConfiguredIncomplete": "未配置",
     "DND5E.AdvancementConfigureTitle": "配置 {item} 升级",
     "DND5E.AdvancementCustomIcon": "自定义图标",
-    "DND5E.AdvancementCustomTitle": "自定义头衔",
+    "DND5E.AdvancementCustomTitle": "自定义标题",
     "DND5E.AdvancementDeleteConfirmationTitle": "确认删除",
     "DND5E.AdvancementHitPointsTitle": "生命值",
     "DND5E.AdvancementHitPointsHint": "跟踪玩家在此职业中每个等级的生命值。",
