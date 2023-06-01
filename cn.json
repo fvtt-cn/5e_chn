@@ -1247,7 +1247,7 @@
     "TYPES.Item.toolPl": "工具",
     "TYPES.Item.weapon": "武器",
     "TYPES.Item.weaponPl": "武器",
-    "DND5E.AbbreviationKg": "kg",
+    "DND5E.AbbreviationKg": "千克",
     "DND5E.AdvancementConfigureDropAreaHint": "将物品拖放至此处。玩家可以在此处添加的物品中进行选择。",
     "DND5E.AdvancementFlowDropAreaHint": "将物品拖放至此处来选择它们。",
     "DND5E.AdvancementItemChoiceTitle": "选择物品",
