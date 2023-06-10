@@ -9,7 +9,6 @@
 - [x] 下载 https://github.com/fvtt-cn/5e_chn/releases/latest/download/5e_chn.zip 并解压至 `modules/5e_chn` 文件夹下
 
 ## 加入我们
-- QQ 频道： https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=3cheK&appChannel=share&businessType=9&from=246610&biz=ka
 - Discord 服务器： https://discord.gg/7UrkEg634m
 
 ### 如何参与到翻译中
