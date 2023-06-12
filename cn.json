@@ -1163,7 +1163,7 @@
     "JOURNALENTRYPAGE.DND5E.Class.HitPointsLevel1": "<strong>首级生命值：</strong> {max} + 你的体质调整值",
     "JOURNALENTRYPAGE.DND5E.Class.HitDice": "<strong>生命骰：</strong> {dice} 每 {class} 等级",
     "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesCaption": "可选职业特性",
-    "JOURNALENTRYPAGE.DND5E.Class.ItemHint": "在此松开一个职业",
+    "JOURNALENTRYPAGE.DND5E.Class.ItemHint": "将职业拖至此处",
     "JOURNALENTRYPAGE.DND5E.Class.NoValidClass": "未选择有效职业，使用编辑按钮来添加一个职业。",
     "JOURNALENTRYPAGE.DND5E.Class.SpellSlots": "法术位",
     "JOURNALENTRYPAGE.DND5E.Class.SpellSlotLevel": "环阶",
