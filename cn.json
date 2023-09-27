@@ -1273,5 +1273,13 @@
     "DND5E.TimeDispTrig": "至取消法术或触发条件",
     "DND5E.ToolPromptTitle": "{tool}检定",
     "DND5E.ToolConfigure": "配置工具熟练",
-    "TYPES.JournalEntryPage.class": "职业描述"
+    "TYPES.JournalEntryPage.class": "职业描述",
+    "DND5E.AbilityScoreMax": "最大属性值",
+    "DND5E.AdvancementAbilityScoreImprovementTitle": "属性值提升",
+    "DND5E.AdvancementAbilityScoreImprovementHint": "允许玩家增加一或更多点的属性值，或是选择获得一个专长。",
+    "DND5E.AdvancementAbilityScoreImprovementFeatHint": "选择一个专长拖放到这里来取代属性值提升。",
+    "DND5E.AdvancementAbilityScoreImprovementFeatWarning": "只有“专长”类型的特性可以选择。",
+    "DND5E.AdvancementAbilityScoreImprovementFixed": "固定增长",
+    "DND5E.AdvancementAbilityScoreImprovementLockedHint": "选择了专长时不可修改属性值。",
+    "DND5E.AdvancementAbilityScoreImprovementPoints": "点数"
 }
