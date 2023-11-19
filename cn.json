@@ -116,7 +116,6 @@
     "DND5E.ChatFlavor": "聊天信息",
     "DND5E.ClassLevels": "职业等级",
     "DND5E.ClassName": "职业",
-    "DND5E.ClassSkillsNumber": "起始技能数",
     "DND5E.ComponentMaterial": "材料",
     "DND5E.ComponentSomatic": "姿势",
     "DND5E.ComponentVerbal": "言语",
@@ -1278,5 +1277,9 @@
     "DND5E.AdvancementAbilityScoreImprovementFeatWarning": "只有“专长”类型的特性可以选择。",
     "DND5E.AdvancementAbilityScoreImprovementFixed": "固定增长",
     "DND5E.AdvancementAbilityScoreImprovementLockedHint": "选择了专长时不可修改属性值。",
-    "DND5E.AdvancementAbilityScoreImprovementPoints": "点数"
+    "DND5E.AdvancementAbilityScoreImprovementPoints": "点数",
+    "TYPES.Item.racePl": "种族",
+    "ITEM.TypeRace": "种族",
+    "ITEM.TypeRacePl": "种族",
+    "TYPES.Item.race": "种族"
 }
