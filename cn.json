@@ -1281,5 +1281,7 @@
     "TYPES.Item.racePl": "种族",
     "ITEM.TypeRace": "种族",
     "ITEM.TypeRacePl": "种族",
-    "TYPES.Item.race": "种族"
+    "TYPES.Item.race": "种族",
+    "DND5E.AdvancementAbilityScoreImprovementCapDisplay.one": "每项最多分配 {points} 点",
+    "DND5E.AdvancementAbilityScoreImprovementCapDisplay.other": "每项最多分配 {points} 点"
 }
