@@ -7,7 +7,7 @@ on:
 env:
   ZIP_FILENAME: "5e_chn"
   PACKAGE_CONTENT: "module.json cn.json"
-  PACKAGE_ID: 613
+  PACKAGE_ID: "5e_chn"
 
 jobs:
   build:
