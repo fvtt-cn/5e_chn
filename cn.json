@@ -23,7 +23,7 @@
     "DND5E.AbilityCha": "魅力",
     "DND5E.AbilityChaAbbr": "魅力",
     "DND5E.AbilityCon": "体质",
-    "DND5E.AbilityConAbbr": "con",
+    "DND5E.AbilityConAbbr": "体质",
     "DND5E.AbilityDex": "敏捷",
     "DND5E.AbilityDexAbbr": "敏捷",
     "DND5E.AbilityInt": "智力",
@@ -1349,5 +1349,6 @@
     "SETTINGS.5eFeatsN": "允许专长",
     "SETTINGS.5eGridAlignedSquareTemplatesL": "在施法或使用物品时创建的方形测量板将被锁定在网格排列上，无法旋转。",
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
-    "SOURCE.BOOK.SRD": "SRD 5.1"
+    "SOURCE.BOOK.SRD": "SRD 5.1",
+    "DND5E.AbilityScorePl": "属性值"
 }
