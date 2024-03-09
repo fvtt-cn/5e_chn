@@ -1350,5 +1350,457 @@
     "SETTINGS.5eGridAlignedSquareTemplatesL": "在施法或使用物品时创建的方形测量板将被锁定在网格排列上，无法旋转。",
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
     "SOURCE.BOOK.SRD": "SRD 5.1",
-    "DND5E.AbilityScorePl": "属性值"
+    "DND5E.AbilityScorePl": "属性值",
+    "DND5E.ActionAbbr": "A",
+    "DND5E.AdditionalControls": "Additional Controls",
+    "DND5E.ArmorMediumProficiency": "Medium",
+    "DND5E.ArmorLightProficiency": "Light",
+    "DND5E.AttrConcentration": {
+        "Limit": "Limit"
+    },
+    "DND5E.ArmorHeavyProficiency": "Heavy",
+    "DND5E.Award": {
+        "Message": "{name} has been awarded {award}.",
+        "Distribution": {
+            "Each": "Each",
+            "Split": "Split"
+        },
+        "UnrecognizedWarning": "Unable to parse {commands}. The /award command should be used with XP & currencies values such as '/award 10gp 50xp'.",
+        "NoDestinations": "No Destinations Available",
+        "Title": "Distribute Award",
+        "NoPrimaryParty": "No primary party set, displaying characters assigned to players instead.",
+        "NotGMError": "The /award command is only available to GMs.",
+        "Action": "Award"
+    },
+    "DND5E.BonusActionAbbr": "BA",
+    "DND5E.Conditions": "Conditions",
+    "DND5E.Confirm": "Confirm",
+    "DND5E.ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
+    "DND5E.ConsumablePoisonIngested": "Ingested",
+    "DND5E.ConsumablePoisonContact": "Contact",
+    "DND5E.ConsumablePoisonInhaled": "Inhaled",
+    "DND5E.ConsumablePoisonInjury": "Injury",
+    "DND5E.CurrencyManager": {
+        "Transfer": {
+            "Action": "Transfer Selected",
+            "Half": "Half",
+            "Label": "Transfer",
+            "All": "All"
+        },
+        "Convert": {
+            "Action": "Convert All Currency",
+            "Hint": "Convert all carried currency to the highest possible denomination to reduce the amount of coinage carried by the character. Be wary, this action cannot be undone.",
+            "Label": "Convert"
+        },
+        "Title": "Manage Currency"
+    },
+    "DND5E.DeathSaveHide": "Hide Death Saves",
+    "DND5E.DamageType": "Damage Type",
+    "DND5E.DeathSaveShow": "Show Death Saves",
+    "DND5E.DeathSaveSuccessLabel": "Death Save Success",
+    "DND5E.DeathSaveRoll": "Roll a Death Saving Throw",
+    "DND5E.DeathSaveFailureLabelN.one": "1st death save failure",
+    "DND5E.DeathSaveFailureLabelN.few": "3rd death save failure",
+    "DND5E.DeathSaveFailureLabelN.two": "2nd death save failure",
+    "DND5E.DeathSaveFailureLabel": "Death Save Failure",
+    "DND5E.EffectsApplyTokens": "Apply to selected tokens",
+    "DND5E.EffectsSearch": "Search effects",
+    "DND5E.ExperiencePointsLabel": "Progress to next level",
+    "DND5E.ExhaustionLevel": "Exhaustion Level {n}",
+    "DND5E.Encumbrance": "Encumbrance",
+    "DND5E.FilterGroupCategory": "Group by Category",
+    "DND5E.FilterGroupOrigin": "Group by Origin",
+    "DND5E.Group": {
+        "TypeParty": "Party",
+        "TypeEncounter": "Encounter",
+        "Member": {
+            "one": "Member",
+            "other": "Members"
+        },
+        "Type": "Group Type",
+        "Primary": {
+            "Set": "Set as Primary Party",
+            "Remove": "Remove as Primary Party"
+        },
+        "Challenge": "Challenge",
+        "Vehicle": {
+            "other": "Vehicles",
+            "one": "Vehicle"
+        },
+        "TypeGeneric": "Group"
+    },
+    "DND5E.HitDiceAutoSpend": {
+        "Hint": "Automatically spend hit dice until they run out or health is full.",
+        "Label": "Auto Spend HD"
+    },
+    "DND5E.HitPointsTempMaxShort": "Temp Max HP",
+    "DND5E.Item": {
+        "Property": {
+            "Focus": "Focus",
+            "Versatile": "Versatile",
+            "Reload": "Reload",
+            "StealthDisadvantage": "Stealth Disadvantage",
+            "Adamantine": "Adamantine",
+            "Magical": "Magical",
+            "Ritual": "Ritual",
+            "Loading": "Loading",
+            "Verbal": "Verbal",
+            "Material": "Material",
+            "Concentration": "Concentration",
+            "Finesse": "Finesse",
+            "Somatic": "Somatic",
+            "Ammunition": "Ammunition",
+            "Heavy": "Heavy",
+            "Silvered": "Silvered",
+            "TwoHanded": "Two-Handed",
+            "Returning": "Returning",
+            "Light": "Light",
+            "Thrown": "Thrown",
+            "Reach": "Reach",
+            "Special": "Special",
+            "WeightlessContents": "Weightless Contents",
+            "Firearm": "Firearm"
+        }
+    },
+    "DND5E.ItemToolProperties": "Tool Properties",
+    "DND5E.ItemView": "View Item",
+    "DND5E.Portrait": "Portrait",
+    "DND5E.RaceAdd": "Add Race",
+    "DND5E.QuantityFormula": "Quantity Formula",
+    "DND5E.QuantityRoll": "Roll Quantities",
+    "DND5E.Rule": {
+        "Tooltip": "Tooltip",
+        "Type": {
+            "Label": "Rule Type",
+            "Condition": "Condition",
+            "Rule": "Rule"
+        }
+    },
+    "DND5E.MovementSpeeds": "Movement Speeds",
+    "DND5E.SheetClassMapLocation": "Default 5e Map Location Sheet",
+    "DND5E.SheetClassRule": "Default 5e Rule Sheet",
+    "DND5E.SheetClassToken": "Default 5e Token Sheet",
+    "DND5E.SheetClassContainer": "Default 5e Container Sheet",
+    "DND5E.SheetClassJournalEntry": "Default 5e Journal Entry Sheet",
+    "DND5E.School": "School",
+    "DND5E.SizeLargeAbbr": "Lg",
+    "DND5E.SizeMediumAbbr": "Md",
+    "DND5E.SizeHugeAbbr": "Hg",
+    "DND5E.SkillPassiveSpecificHint": "Passive {ability} ({skill})",
+    "DND5E.SkillPassiveScore": "Passive {skill} Score",
+    "DND5E.SkillPassives": "Skill Passives",
+    "DND5E.Skin": "Skin",
+    "DND5E.SpellAbilitySet": "Set as Primary Spellcasting Ability",
+    "DND5E.SpellCastTime": "Casting Time",
+    "DND5E.SpellSlotExpended": "Expended Spell Slot",
+    "DND5E.SpellSlotN.other": "{n}th spell slot",
+    "DND5E.Summoning": {
+        "Action": {
+            "Summon": "Summon",
+            "Add": "Add Profile",
+            "Place": "Place Summons",
+            "Configure": "Configure Summons",
+            "Remove": "Remove Profile"
+        },
+        "Prompt": {
+            "Hint": "Disable the summoning prompt when item is used. Players will still be able to summon from the chat card.",
+            "Label": "Summon Prompt"
+        },
+        "ArmorClass": {
+            "Label": "Bonus Armor Class",
+            "Hint": "Bonus to the Armor Class set on the summoned creature added to what is specified in their statblock."
+        },
+        "CreatureChanges": {
+            "Hint": "Changes that will be made to the creature being summoned. Any @ references used in the following formulas will be based on the summoner's stats.",
+            "Label": "Creature Changes"
+        },
+        "Match": {
+            "Attacks": {
+                "Hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner.",
+                "Label": "Match Attacks"
+            },
+            "Proficiency": {
+                "Label": "Match Proficiency",
+                "Hint": "Modify the summoned creature's proficiency to match that of the summoner."
+            },
+            "Saves": {
+                "Label": "Match Saves",
+                "Hint": "Modify to saving throw DCs on the summoned creature's abilities to match that of the summoner."
+            }
+        },
+        "DropHint": "Drop creature here",
+        "Label": "Summoning",
+        "Profile": {
+            "Label": "Summons Profile",
+            "Empty": "Click above to add a profile or drop an creature to summon here.",
+            "LabelPl": "Summons Profiles"
+        },
+        "DisplayName": "Display Name",
+        "ItemChanges": {
+            "Hint": "Changes made to items on the summoned creature.",
+            "Label": "Item Changes"
+        },
+        "Configuration": "Summoning Configuration",
+        "HitPoints": {
+            "Hint": "Additional hit points added to the creature on top of what is specified in their statblock.",
+            "Label": "Bonus Hit Points"
+        }
+    },
+    "DND5E.Unidentified.Value": "???",
+    "DND5E.Unidentified.Title": "Unidentified",
+    "DND5E.Unidentified.Notice": "You must identify this item to learn its details.",
+    "DND5E.UseItem": "Use {item}",
+    "DND5E.Unidentified.DefaultName": "Unidentified {name}",
+    "DND5E.Vulnerabilities": "Vulnerabilities",
+    "DND5E.WhisperedTo": "Whispered to",
+    "DND5E.Wiki": "Wiki",
+    "EDITOR.DND5E.Inline": {
+        "ApplyStatus": "Apply Status to Selected Tokens",
+        "AwardEach": "{award} each",
+        "RollRequest": "Roll Request",
+        "RequestRoll": "Request Roll"
+    },
+    "EFFECT.DND5E": {
+        "StatusEthereal": "Ethereal",
+        "StatusHiding": "Hiding",
+        "StatusSilenced": "Silenced",
+        "StatusHovering": "Hovering",
+        "StatusHeavilyEncumbered": "Heavily Encumbered",
+        "StatusMarked": "Marked",
+        "StatusSleeping": "Sleeping",
+        "StatusDead": "Dead",
+        "StatusBurrowing": "Burrowing",
+        "StatusSurprised": "Surprised",
+        "StatusEncumbered": "Encumbered",
+        "StatusStable": "Stable",
+        "StatusConcentrating": "Concentrating",
+        "StatusBleeding": "Bleeding",
+        "StatusFlying": "Flying",
+        "StatusDodging": "Dodging",
+        "StatusCursed": "Cursed",
+        "StatusTransformed": "Transformed",
+        "StatusExceedingCarryingCapacity": "Exceeding Carrying Capacity"
+    },
+    "SETTINGS.5eChallengeVisibility": {
+        "Hint": "Control what roll DCs are visible to the players and whether successess/failures are highlighted.",
+        "All": "Show all",
+        "Player": "Show only from other players",
+        "Name": "Challenge Visibility",
+        "None": "Hide all"
+    },
+    "SETTINGS.5eEncumbrance": {
+        "None": "None",
+        "Hint": "Enable automatic tracking of encumbrance and the application of status effects for characters carrying too much.",
+        "Variant": "Variant (encumbered & heavily encumbered)",
+        "Normal": "Normal (max carrying capacity)",
+        "Name": "Encumbrance Tracking"
+    },
+    "SETTINGS.DND5E": {
+        "THEME": {
+            "Name": "Theme",
+            "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings. Can be overridden on a sheet-by-sheet basis."
+        }
+    },
+    "SETTINGS.5eTokenRings": {
+        "Hint": "Disabling the token ring animations can improve performance.",
+        "Name": "Disable Dynamic Token Rings"
+    },
+    "SHEETS.DND5E": {
+        "THEME": {
+            "Light": "Light Mode",
+            "Automatic": "Automatic",
+            "Dark": "Dark Mode",
+            "Label": "Theme"
+        }
+    },
+    "DND5E.TMP": "TMP",
+    "DND5E.SavingThrowDC": "DC {dc} {ability} Saving Throw",
+    "DND5E.SpellHeader": {
+        "Time": "Time",
+        "School": "School",
+        "Roll": "Roll",
+        "Formula": "Formula",
+        "Range": "Range",
+        "Target": "Target"
+    },
+    "DND5E.TokenRings": {
+        "RingColor": "Ring Color",
+        "Effects": {
+            "RingPulse": "Ring Pulse",
+            "Label": "Effects",
+            "RingGradient": "Ring Gradient",
+            "BackgroundWave": "Background Wave"
+        },
+        "Subject": {
+            "Label": "Subject Path",
+            "Hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the subject image will attempt to be inferred by adding “-subject” to the end of the normal token image path."
+        },
+        "BackgroundColor": "Background Color",
+        "Title": "Dynamic Ring",
+        "ScaleCorrection": "Scale Correction",
+        "Enabled": "Use Dynamic Ring"
+    },
+    "DND5E.Height": "Height",
+    "DND5E.SheetModePlay": "Play",
+    "DND5E.SpellSlotsN.one": "{n}st Level Slots",
+    "DND5E.DamagePhysicalBypassesShort": "Bypassed by {type} Sources",
+    "DND5E.ConcentratingItemless": "Concentration With No Source",
+    "DND5E.Favorites": "Favorites",
+    "DND5E.DamageModification": {
+        "Label": "Damage Modification",
+        "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
+        "BypassHint": "These weapon properties will bypass damage modification for physical damage."
+    },
+    "DND5E.AdvantageMode": "Advantage Mode",
+    "DND5E.ContainerDeleteMessage": "This container will be permanently deleted and cannot be recovered and the {count} items contained within will be moved out.",
+    "DND5E.SpellTag": "Spell Tag",
+    "DND5E.ContainerRecursiveError": "Containers cannot contain themselves.",
+    "DND5E.Faith": "Faith",
+    "DND5E.SpellSlotsN.few": "{n}rd Level Slots",
+    "DND5E.Age": "Age",
+    "DND5E.Maximum": "Maximum",
+    "DND5E.SpellcastingClass": "{class} Spellcasting",
+    "DND5E.SpellSlotN.few": "{n}rd spell slot",
+    "TYPES.JournalEntryPage.map": "Map Location",
+    "DND5E.SpellSlotsPact": "Pact Slots",
+    "DND5E.ModuleArtPriorityHint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided from multiple sources, the one with the highest priority will be used.",
+    "DND5E.ContainerMaxDepth": "Containers cannot be nested more than {depth} levels deep.",
+    "DND5E.ItemAttackFlat": "Flat Bonus",
+    "DND5E.Feature": {
+        "Class": {
+            "PsionicPower": "Psionic Power",
+            "EldritchInvocation": "Eldritch Invocation",
+            "ChannelDivinity": "Channel Divinity",
+            "DefensiveTactic": "Defensive Tactic",
+            "PactBoon": "Pact Boon",
+            "FightingStyle": "Fighting Style",
+            "Maneuver": "Maneuver",
+            "SuperiorHuntersDefense": "Superior Hunter's Defense",
+            "Label": "Class Feature",
+            "Rune": "Rune",
+            "Multiattack": "Multiattack",
+            "Ki": "Ki Ability",
+            "ArcaneShot": "Arcane Shot",
+            "Metamagic": "Metamagic Option",
+            "HuntersPrey": "Hunter's Prey",
+            "ElementalDiscipline": "Elemental Discipline",
+            "ArtificerInfusion": "Artificer Infusion"
+        },
+        "SupernaturalGift": {
+            "Charm": "Charm",
+            "EpicBoon": "Epic Boon",
+            "Blessing": "Blessing",
+            "Label": "Supernatural Gift"
+        }
+    },
+    "DND5E.DeathSaveSuccessLabelN.few": "3rd death save success",
+    "DND5E.SizeGargantuanAbbr": "Gt",
+    "DND5E.DamageAll": "All Damage",
+    "DND5E.StartingEquipment": {
+        "Operator": {
+            "OR": "One",
+            "AND": "All"
+        },
+        "Action": {
+            "Configure": "Configure Starting Equipment"
+        },
+        "Choice": {
+            "Focus": "Choose Spellcasting Focus",
+            "Tool": "Choose Tool",
+            "Weapon": "Choose Weapon",
+            "Armor": "Choose Armor"
+        },
+        "Wealth": {
+            "Label": "Starting Wealth",
+            "Hint": "Formula in GP that can be used in place of starting equipment."
+        },
+        "SpecificItem": "Specific Item",
+        "IfProficient": "If Proficient",
+        "Title": "Starting Equipment"
+    },
+    "DND5E.ItemConsumableProperties": "Consumable Properties",
+    "DND5E.ConsumableAmmoBlowgunNeedle": "Blowgun Needle",
+    "DND5E.LongRestHintGroup": "Take a long rest? On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
+    "DND5E.ReactionAbbr": "R",
+    "DND5E.FavoriteRemove": "Remove Favorite",
+    "DND5E.SpellSlotsN.two": "{n}nd Level Slots",
+    "DND5E.TimeDayAbbr": "d",
+    "DND5E.FeaturesOther": "Other Features",
+    "DND5E.ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
+    "DND5E.Container": "Container",
+    "DND5E.ConcentratingEnd": "End Concentration",
+    "DND5E.DamMod": "Damage Modification",
+    "DND5E.ItemEquipmentProperties": "Equipment Properties",
+    "DND5E.AreaOfEffect": "Area of Effect",
+    "DND5E.SpellSlotN.one": "{n}st spell slot",
+    "DND5E.SpellSlotN.two": "{n}nd spell slot",
+    "DND5E.ContainerDeleteContents": "Also delete all items within the container.",
+    "DND5E.ConcentrationDuration": "Concentration, up to {duration}",
+    "DND5E.Resistances": "Resistances",
+    "DND5E.SheetClassCharacterLegacy": "Legacy 5e Character Sheet",
+    "DND5E.Issues": "Issues",
+    "DND5E.EffectApplyWarning": "Effects cannot be applied to tokens you are not the owner of.",
+    "DND5E.DistFtAbbr": "ft",
+    "DND5E.Discord": "Discord",
+    "DND5E.Favorite": "Favorite",
+    "DND5E.WeaponCategory": "{category} Weapon",
+    "DND5E.Immunities": "Immunities",
+    "DND5E.Notes": "Notes",
+    "DND5E.SpellComponent": "Spell Component",
+    "DND5E.Suppressed": "Suppressed",
+    "DND5E.DistMAbbr": "m",
+    "DND5E.FavoriteDrop": "Drop Favorite",
+    "DND5E.ConsumableAmmoCrossbowBolt": "Crossbow Bolt",
+    "DND5E.ConsumableAmmoSlingBullet": "Sling Bullet",
+    "DND5E.ItemAttackFlatHint": "If checked, don't add proficiency, ability modifier, or any other bonuses to attack roll except what is included here.",
+    "DND5E.TimeHourAbbr": "h",
+    "DND5E.AdvancementItemGrantContainerWarning": "Container contents will not be added with containers.",
+    "DND5E.AbilityScoreL": "{ability} Score",
+    "DND5E.ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
+    "DND5E.ActionSumm": "Summon",
+    "DND5E.DocumentViewWarn": "You lack permission to view this document.",
+    "DND5E.Gender": "Gender",
+    "DND5E.TimeMinuteAbbr": "m",
+    "DND5E.Recovery": "Recovery",
+    "DND5E.ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
+    "DND5E.ConsumableAmmoArrow": "Arrow",
+    "DND5E.Eyes": "Eyes",
+    "DND5E.DistKmAbbr": "km",
+    "DND5E.Identify": "Identify",
+    "DND5E.Components": "Components",
+    "DND5E.InventorySearch": "Search inventory",
+    "DND5E.FilterClear": "Clear Filters",
+    "DND5E.ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
+    "DND5E.Multiplier": "Multiplier",
+    "DND5E.ModuleArtPriorityIncrease": "Increase Priority",
+    "DND5E.ShortRestHintGroup": "Take a short rest? On a short rest group members can spend Hit Dice and will recover item uses.",
+    "DND5E.Hair": "Hair",
+    "DND5E.FeaturesRace": "Racial Features",
+    "DND5E.FeaturesClass": "{class} Features",
+    "DND5E.DeathSaveSuccessLabelN.one": "1st death save success",
+    "DND5E.DistMiAbbr": "mi",
+    "DND5E.Skill": "Skill",
+    "DND5E.FeatureSearch": "Search features",
+    "DND5E.MagicalBonus": "Magical Bonus",
+    "DND5E.ItemLootProperties": "Loot Properties",
+    "DND5E.SpellSlotsN.other": "{n}th Level Slots",
+    "DND5E.Minimum": "Minimum",
+    "DND5E.SpellsSearch": "Search spells",
+    "DND5E.SizeSmallAbbr": "Sm",
+    "DND5E.BackgroundAdd": "Add Background",
+    "DND5E.SheetModeEdit": "Edit",
+    "DND5E.ItemFeatureProperties": "Feature Properties",
+    "DND5E.ClassAdd": "Add Class",
+    "DND5E.ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
+    "DND5E.ModuleArtPriorityDecrease": "Decrease Priority",
+    "TYPES.JournalEntryPage.rule": "Rule",
+    "DND5E.ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
+    "DND5E.DeathSaveSuccessLabelN.two": "2nd death save success",
+    "DND5E.NameUnidentified": "Unidentified Name",
+    "DND5E.SizeTinyAbbr": "Tn",
+    "DND5E.Materials": "Materials",
+    "DND5E.ItemConsumableSubtype": "{category} Type",
+    "DND5E.SpellSlotsConfig": "Configure Spell Slots",
+    "DND5E.ExperiencePointsValue": "XP Value",
+    "DND5E.FeaturesBackground": "Background Features"
 }
