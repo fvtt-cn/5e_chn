@@ -1506,10 +1506,6 @@
             "Hint": "禁用物品使用时的召唤提示。玩家仍然可以从聊天卡中召唤。",
             "Label": "召唤提示"
         },
-        "ArmorClass": {
-            "Label": "额外 AC",
-            "Hint": "召唤生物的 AC 设定中增加的额外值，会加到其数据中指定的值上。"
-        },
         "CreatureChanges": {
             "Hint": "将对召唤生物进行的变更。以下公式中使用的任何 @ 引用都将基于召唤者的属性。",
             "Label": "生物变更"
@@ -1540,11 +1536,7 @@
             "Hint": "对召唤生物身上的物品进行的变更。",
             "Label": "物品变更"
         },
-        "Configuration": "召唤配置",
-        "HitPoints": {
-            "Hint": "在其属性表中指定的基础上，为生物增加的额外生命值。",
-            "Label": "额外生命值"
-        }
+        "Configuration": "召唤配置"
     },
     "DND5E.Unidentified.Value": "???",
     "DND5E.Unidentified.Title": "未鉴定",
