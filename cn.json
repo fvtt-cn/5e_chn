@@ -1536,7 +1536,36 @@
             "Hint": "对召唤生物身上的物品进行的变更。",
             "Label": "物品变更"
         },
-        "Configuration": "召唤配置"
+        "Configuration": "召唤配置",
+        "Bonuses": {
+            "Attack": {
+                "Label": "额外攻击伤害",
+                "Hint": "该生物攻击额外造成的伤害。"
+            },
+            "ArmorClass": {
+                "Label": "额外 AC",
+                "Hint": "在召唤生物的统计块中指定的内容之上添加额外的 AC 加值。"
+            },
+            "Saves": {
+                "Hint": "该生物需要豁免的能力所造成的额外伤害。",
+                "Label": "额外豁免伤害"
+            },
+            "Healing": {
+                "Label": "额外治疗",
+                "Hint": "治疗能力提供额外的治疗效果。"
+            },
+            "HitPoints": {
+                "Label": "额外 HP",
+                "Hint": "在生物的统计块中指定的内容之上添加额外的生命值。"
+            }
+        },
+        "Warning": {
+            "Wildcard": "你必须拥有“使用文件浏览器”权限才能召唤带有通配符画像的生物。",
+            "CreateActor": "你必须拥有“创建新角色”权限才能直接从合集中召唤。",
+            "NoActor": "找不到 UUID 为 '{uuid}' 的角色用于召唤。",
+            "NoOwnership": "你必须拥有 '{actor}' 才能召唤它。",
+            "NoProfile": "在 '{item}' 上找不到召唤的配置文件 {profileId}。"
+        }
     },
     "DND5E.Unidentified.Value": "???",
     "DND5E.Unidentified.Title": "未鉴定",
@@ -1590,7 +1619,11 @@
     "SETTINGS.DND5E": {
         "THEME": {
             "Name": "主题",
-            "Hint": "默认应用于 UI 和所有卡的主题。自动将由你的浏览器或操作系统设置决定。可以在每张卡的基础上进行覆盖。"
+            "Hint": "默认应用于 UI 和所有卡的主题。选择自动则将由你的浏览器或操作系统设置决定。"
+        },
+        "ALLOWSUMMONING": {
+            "Name": "允许召唤",
+            "Hint": "允许玩家使用召唤能力来召唤角色。玩家还必须拥有“创建指示物”的核心权限才能发挥作用。"
         }
     },
     "SETTINGS.5eTokenRings": {
@@ -1690,11 +1723,13 @@
     "DND5E.DamageAll": "所有伤害",
     "DND5E.StartingEquipment": {
         "Operator": {
-            "OR": "一个",
-            "AND": "全部"
+            "OR": "一个 …",
+            "AND": "全部 …"
         },
         "Action": {
-            "Configure": "配置起始装备"
+            "Configure": "配置起始装备",
+            "AddEntry": "添加条目",
+            "RemoveEntry": "移除条目"
         },
         "Choice": {
             "Focus": "选择施法法器",
@@ -1708,7 +1743,13 @@
         },
         "SpecificItem": "特定物品",
         "IfProficient": "若熟练",
-        "Title": "起始装备"
+        "Title": "起始装备",
+        "DropHint": "将项目拖放到此处以链接",
+        "RequireProficiency": "需要熟练",
+        "Warning": {
+            "Depth": "起始装备仅允许三级深度。",
+            "ItemTypeInvalid": "{type} 物品不能被添加为起始装备。"
+        }
     },
     "DND5E.ItemConsumableProperties": "消耗品属性",
     "DND5E.ConsumableAmmoBlowgunNeedle": "吹箭针",
@@ -1793,5 +1834,50 @@
     "DND5E.ItemConsumableSubtype": "{category} 类型",
     "DND5E.SpellSlotsConfig": "配置法术位",
     "DND5E.ExperiencePointsValue": "经验值",
-    "DND5E.FeaturesBackground": "背景特性"
+    "DND5E.FeaturesBackground": "背景特性",
+    "DND5E.UsesPeriods": {
+        "ChargesAbbreviation": "充能",
+        "Charges": "充能",
+        "Dawn": "黎明",
+        "DawnAbbreviation": "黎明",
+        "Lr": "长休",
+        "Sr": "短休",
+        "LrAbbreviation": "长休",
+        "Dusk": "黄昏",
+        "DuskAbbreviation": "黄昏",
+        "Day": "天",
+        "DayAbbreviation": "天",
+        "SrAbbreviation": "短休"
+    },
+    "DND5E.ConcentrationBreak": "打断专注",
+    "DND5E.Tokens": {
+        "NoneSelected": "没有选中指示物",
+        "NoneTargeted": "没有标选指示物作为目标",
+        "Selected": "已选中",
+        "Targeted": "已标选"
+    },
+    "DND5E.BonusAbilitySaveTitle": "全局豁免掷骰",
+    "DND5E.ConcentrationBonus": "专注加值",
+    "DND5E.ConcentrationLimit": "专注限制",
+    "DND5E.ConcentrationConfigurationHint": "配置适用于该生物的专注调整值和加值。",
+    "DND5E.DamageApplication": {
+        "Change": {
+            "Modification": "{type} 调整",
+            "Immunity": "{type} 免疫",
+            "Resistance": "{type} 抗性",
+            "Vulnerability": "{type} 易伤"
+        },
+        "Downgrading": "降级 {source} 为抗性",
+        "Ignoring": "忽略 {source}"
+    },
+    "DND5E.ConcentrationBreakWarning": "打破对其他生物具有激活效果的专注需要有 GM 在线。",
+    "DND5E.EffectApplyWarningConcentration": "应用其他角色正在专注的效果需要 GM 权限。",
+    "DND5E.EffectApplyWarningOwnership": "效果不能应用于你不拥有的指示物。",
+    "DND5E.ChatContextSelectHit": "选择命中目标",
+    "DND5E.ChatContextSelectMiss": "选择未命中目标",
+    "SETTINGS.5eNoConcentrationN": "禁用专注追踪",
+    "SETTINGS.5eNoConcentrationL": "禁用系统对专注的自动追踪。",
+    "DND5E.Focus": {
+        "Label": "奥术法器"
+    }
 }
