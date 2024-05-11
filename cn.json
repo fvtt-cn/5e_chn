@@ -1493,7 +1493,7 @@
     "DND5E.SpellAbilitySet": "设为主要施法能力",
     "DND5E.SpellCastTime": "施法时间",
     "DND5E.SpellSlotExpended": "消耗的法术位",
-    "DND5E.SpellSlotN.other": "{n} 环法术位",
+    "DND5E.SpellSlotN.other": "第 {n}个法术位",
     "DND5E.Summoning": {
         "Action": {
             "Summon": "召唤",
@@ -1685,7 +1685,7 @@
     "DND5E.Age": "年龄",
     "DND5E.Maximum": "最大",
     "DND5E.SpellcastingClass": "{class} 施法",
-    "DND5E.SpellSlotN.few": "{n} 环法术位",
+    "DND5E.SpellSlotN.few": "第 {n} 个法术位",
     "TYPES.JournalEntryPage.map": "地图位置",
     "DND5E.SpellSlotsPact": "契约法术位",
     "DND5E.ModuleArtPriorityHint": "使用箭头调整立绘来源的优先级。当一个角色的来源有多个时，优先级最高的将被使用。",
@@ -1765,8 +1765,8 @@
     "DND5E.DamMod": "伤害调整",
     "DND5E.ItemEquipmentProperties": "装备属性",
     "DND5E.AreaOfEffect": "AoE 效果",
-    "DND5E.SpellSlotN.one": "{n} 环法术位",
-    "DND5E.SpellSlotN.two": "{n} 环法术位",
+    "DND5E.SpellSlotN.one": "第 {n} 个法术位",
+    "DND5E.SpellSlotN.two": "第 {n} 个法术位",
     "DND5E.ContainerDeleteContents": "同时删除容器内的所有物品。",
     "DND5E.ConcentrationDuration": "专注，持续到 {duration}",
     "DND5E.Resistances": "抗性",
