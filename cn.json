@@ -874,7 +874,7 @@
     "DND5E.AdvancementItemGrantDuplicateWarning": "对应物品已存在于此升级中。",
     "DND5E.AdvancementItemGrantRecursiveWarning": "你不能将物品授予其本身的升级中。",
     "DND5E.AdvancementItemGrantOptional": "可选",
-    "DND5E.AdvancementItemGrantOptionalHint": "如果选择可选，将给予玩家选项以选择其中任意物品，否则将授予所有物品。",
+    "DND5E.AdvancementItemGrantOptionalHint": "如果整个升级过程都标注为可选项目，那么玩家可以选择取消以下任何项目，否则所有非可选项目都将被给予。",
     "DND5E.AdvancementLevelHeader": "等级 {level}",
     "DND5E.AdvancementLevelAnyHeader": "任意等级",
     "DND5E.AdvancementLevelNoneHeader": "无等级",
@@ -1425,7 +1425,8 @@
             "other": "载具",
             "one": "载具"
         },
-        "TypeGeneric": "组"
+        "TypeGeneric": "组",
+        "PlaceMembers": "放置成员"
     },
     "DND5E.HitDiceAutoSpend": {
         "Hint": "自动消耗生命骰，直到用完或者生命值满为止。",
@@ -1498,7 +1499,8 @@
             "Add": "添加配置",
             "Place": "放置召唤物",
             "Configure": "配置召唤物",
-            "Remove": "移除配置"
+            "Remove": "移除配置",
+            "View": "查看召唤"
         },
         "Prompt": {
             "Hint": "禁用物品使用时的召唤提示。玩家仍然可以从聊天卡中召唤。",
@@ -1555,6 +1557,10 @@
             "HitPoints": {
                 "Label": "额外 HP",
                 "Hint": "在生物的统计块中指定的内容之上添加额外的生命值。"
+            },
+            "HitDice": {
+                "Label": "额外生命骰",
+                "Hint": "在生物的 HP 计算公式基础上，为其添加额外的生命骰。只能在召唤 NPC 角色时使用。"
             }
         },
         "Warning": {
@@ -1563,6 +1569,9 @@
             "NoActor": "找不到 UUID 为 '{uuid}' 的角色用于召唤。",
             "NoOwnership": "你必须拥有 '{actor}' 才能召唤它。",
             "NoProfile": "在 '{item}' 上找不到召唤的配置文件 {profileId}。"
+        },
+        "Count": {
+            "Label": "数量"
         }
     },
     "DND5E.Unidentified.Value": "???",
@@ -1888,5 +1897,132 @@
     "DND5E.AdvancementItemChoiceNoOriginalError": "之前选择的选项已无法替换。",
     "DND5E.AdvancementItemChoiceReplacement": "允许替换",
     "DND5E.AdvancementItemChoiceReplacementNone": "无法替换",
-    "DND5E.AdvancementItemChoiceReplacementTitle": "替换"
+    "DND5E.AdvancementItemChoiceReplacementTitle": "替换",
+    "DND5E.ConsumeHint": {
+        "Item": "合集中目标的 UUID",
+        "Attribute": "消耗的属性(例如currency.gp)"
+    },
+    "DND5E.ConsumeResourceAction": "消耗资源",
+    "DND5E.DocumentUseWarn": "您未获得使用本文档中某项物品的权限。",
+    "DND5E.Enchantment": {
+        "Action": {
+            "Apply": "应用附魔",
+            "Configure": "配置附魔",
+            "Create": "创建附魔",
+            "Delete": "删除附魔",
+            "Disable": "禁用附魔",
+            "Edit": "编辑附魔",
+            "Enable": "启用附魔",
+            "Remove": "移除附魔"
+        },
+        "Category": {
+            "Empty": "尚未创建任何附魔，请使用上面的按钮创建一个。",
+            "Inactive": "非激活附魔",
+            "Active": "激活附魔",
+            "General": "附魔"
+        },
+        "Configuration": "附魔配置",
+        "DropArea": "将物品放置在此处可为其附魔…",
+        "FIELDS": {
+            "enchantment": {
+                "label": "附魔配置",
+                "classIdentifier": {
+                    "hint": "用于确定附魔等级限制应使用角色总等级还是特定职业等级的标识符。"
+                },
+                "items": {
+                    "max": {
+                        "label": "物品等级",
+                        "hint": "该类型附魔一次可激活的最大数量公式。"
+                    },
+                    "period": {
+                        "label": "替换期限",
+                        "hint": "该类型附魔可重新绑定到不同物品的频率。"
+                    }
+                },
+                "restrictions": {
+                    "label": "限制条件",
+                    "hint": "对可附魔物品类型的限制。",
+                    "allowMagical": {
+                        "label": "允许魔法",
+                        "hint": "允许魔法物品附魔。"
+                    },
+                    "type": {
+                        "label": "物品类型",
+                        "hint": "可附魔的物品类型。"
+                    }
+                }
+            }
+        },
+        "Label": "附魔",
+        "Level": {
+            "Hint": "使用该附魔所需的等级范围。"
+        },
+        "Items": {
+            "Entry": "<em>{actor}</em>的{item}"
+        },
+        "Riders": {
+            "Effect": {
+                "Label": "附加效果",
+                "Hint": "这些附加效果将在添加该附魔时添加到被附魔物品上，并在移除该附魔时移除。"
+            },
+            "Item": {
+                "Label": "附加物品",
+                "Hint": "当生物的一件物品被附魔时，这些附加物品将被添加到生物身上，如果附魔被移除，这些附加物品也将被移除。"
+            }
+        },
+        "Warning": {
+            "ConcentrationEnded": "由于专注已结束，无法使用此附魔。",
+            "NoMagicalItems": "魔法物品无法附魔。",
+            "NotOnActor": "附魔只能添加到物品上，不能直接添加到角色身上。",
+            "WrongType": "{incorrectType}物品无法被此附魔，只允许{allowedType}物品被附魔。",
+            "Override": "此值被附魔修改，无法编辑。请在效果选项卡中禁用附魔来编辑它。"
+        }
+    },
+    "DND5E.EffectType": {
+        "Inactive": "非激活",
+        "Passive": "被动",
+        "Temporary": "临时",
+        "Unavailable": "不可用"
+    },
+    "DND5E.HealingRoll": "治疗掷骰",
+    "DND5E.HitDiceNPCWarn": "{name} 已没有可用的生命骰！",
+    "DND5E.ItemToolDetails": "工具详情",
+    "DND5E.ItemToolUsage": "工具使用",
+    "DND5E.LevelLimit": {
+        "Label": "等级限制",
+        "Max": "最大等级",
+        "Min": "最低等级"
+    },
+    "DND5E.Prerequisites": {
+        "Header": "特性先决条件",
+        "FIELDS": {
+            "prerequisites": {
+                "level": {
+                    "label": "所需等级",
+                    "hint": "升级时选择此特性所需的角色等级或职业等级。"
+                }
+            }
+        }
+    },
+    "DND5E.Scroll": {
+        "CreateFrom": "从{spell}创建卷轴",
+        "CreateScroll": "创建卷轴",
+        "Details": "卷轴详情",
+        "Explanation": {
+            "Label": "说明",
+            "Hint": "在创建的卷轴中包含使用法术卷轴的规则。",
+            "Complete": "完整",
+            "Reference": "参考"
+        },
+        "RequiresConcentration": "需要专注"
+    },
+    "DND5E.SheetClassSpellList": "5e默认法术列表卡",
+    "DND5E.SpellPrepRitual": "仅仪式",
+    "DND5E.AttunementOptional": "可选同调",
+    "DND5E.Controls": {
+        "Hint": "在UI界面中为鼠标和键盘控制启用各种提示。",
+        "LockHint": "中键单击锁定",
+        "MiddleClick": "中键单击",
+        "Name": "启用控制提示"
+    }
 }
