@@ -1598,7 +1598,11 @@
         "ApplyStatus": "将状态应用于选定的指示物",
         "AwardEach": "{award} 给每人",
         "RollRequest": "请求掷骰",
-        "RequestRoll": "请求掷骰"
+        "RequestRoll": "请求掷骰",
+        "Warning": {
+            "NoActor": "找不到选定或指定的角色来执行该掷骰。",
+            "NoItemOnActor": "{actor}没有名称为{item}的物品。"
+        }
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -1677,7 +1681,7 @@
         },
         "Subject": {
             "Label": "主题路径",
-            "Hint": "显式指定放置在动态指示物环上的图片的路径。如果未提供，将尝试通过在正常指示物图像路径的末尾添加“-subject”来推断主题图像。"
+            "Hint": "明确指定放置在动态token环上的提他图片路径。如果不提供，主题图像将设置为正常的token图像。"
         },
         "BackgroundColor": "背景颜色",
         "Title": "动态环",
@@ -1866,7 +1870,9 @@
         "DuskAbbreviation": "黄昏",
         "Day": "天",
         "DayAbbreviation": "天",
-        "SrAbbreviation": "短休"
+        "SrAbbreviation": "短休",
+        "AtWill": "随意",
+        "Never": "从不"
     },
     "DND5E.ConcentrationBreak": "打断专注",
     "DND5E.Tokens": {
@@ -2036,5 +2042,26 @@
         "LockHint": "中键单击锁定",
         "MiddleClick": "中键单击",
         "Name": "启用控制提示"
-    }
+    },
+    "DND5E.WeightUnit": {
+        "Label": "重量单位",
+        "Kilograms": {
+            "Label": "公斤",
+            "Abbreviation": "kg"
+        },
+        "Megagrams": {
+            "Label": "吨",
+            "Abbreviation": "t"
+        },
+        "Pounds": {
+            "Label": "磅",
+            "Abbreviation": "lb"
+        },
+        "Tons": {
+            "Label": "吨",
+            "Abbreviation": "tn"
+        }
+    },
+    "TYPES.JournalEntryPage.subclass": "子职概要",
+    "TYPES.JournalEntryPage.spells": "法术列表"
 }
