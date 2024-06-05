@@ -1136,7 +1136,7 @@
     "DND5E.HitPointsMin": "HP 下限",
     "DND5E.ScalingMode": "缩放模式",
     "DND5E.TraitWeaponPlural.other": "武器熟练项",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalEquipment": "装备",
+    "JOURNALENTRYPAGE.DND5E.Class.AdditionalEquipment": "额外装备说明",
     "JOURNALENTRYPAGE.DND5E.Class.Item": "已选职业",
     "JOURNALENTRYPAGE.DND5E.Class.HitPointsLevelX": "<strong>升级生命值：</strong> 首级之后，每 {class} 等级 {dice} （或 {average}）+ 你的体质调整值",
     "DND5E.PolymorphCustomTransformation": "自定义变形",
