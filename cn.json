@@ -1172,7 +1172,7 @@
     "DND5E.AdvancementConfigureAllowDropsHint": "是否允许玩家自行将选择拖放至该升级中？",
     "DND5E.ProficiencyConfigurationHint": "配置熟练与加值。",
     "DND5E.ProficiencyConfigureTitle": "配置 {label}",
-    "DND5E.AdvancementItemChoiceTypeHint": "限制可以选择的物品类型。",
+    "DND5E.AdvancementItemChoiceTypeHint": "限制可以选择的项目类型。",
     "TYPES.Actor.vehicle": "载具",
     "TYPES.Actor.vehiclePl": "载具",
     "TYPES.Actor.group": "组",
