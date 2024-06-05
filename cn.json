@@ -1626,7 +1626,7 @@
         "StatusExceedingCarryingCapacity": "超过负重能力"
     },
     "SETTINGS.5eChallengeVisibility": {
-        "Hint": "控制哪些掷骰 DC 对玩家可见，以及是否突出显示成功/失败。",
+        "Hint": "控制玩家可以看到哪些掷骰的 DC ，以及是否高亮显示成功/失败。",
         "All": "显示全部",
         "Player": "只显示其他玩家的",
         "Name": "挑战可见性",
@@ -1647,6 +1647,13 @@
         "ALLOWSUMMONING": {
             "Name": "允许召唤",
             "Hint": "允许玩家使用召唤能力来召唤角色。玩家还必须拥有“创建指示物”的核心权限才能发挥作用。"
+        },
+        "COLLAPSETRAYS": {
+            "Name": "聊天中折叠托盘",
+            "Hint": "自动折叠聊天卡中出现的伤害、命中和效果托盘。",
+            "Always": "全部折叠",
+            "Older": "折叠旧消息",
+            "Never": "全部展开"
         }
     },
     "SETTINGS.5eTokenRings": {
@@ -2097,5 +2104,6 @@
             "ItemHint": "将子职业拖拽到此",
             "NoValidSubclass": "未选择有效子职业，请按编辑按钮添加子职业。"
         }
-    }
+    },
+    "SIDEBAR.SortModePriority": "按优先级排序"
 }
