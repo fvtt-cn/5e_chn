@@ -1877,5 +1877,7 @@
     "SETTINGS.5eNoConcentrationL": "禁用系统对专注的自动追踪。",
     "DND5E.Focus": {
         "Label": "奥术法器"
-    }
+    },
+    "DND5E.AbilityUseConsumeAction": "消耗可用",
+    "DND5E.ActionEnch": "附魔"
 }
