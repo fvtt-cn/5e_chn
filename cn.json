@@ -1879,5 +1879,14 @@
         "Label": "奥术法器"
     },
     "DND5E.AbilityUseConsumeAction": "消耗可用",
-    "DND5E.ActionEnch": "附魔"
+    "DND5E.ActionEnch": "附魔",
+    "DND5E.AdvancementItemChoiceChoices": "选项",
+    "DND5E.AdditionalSettings": "额外设置",
+    "DND5E.AdvancementAbilityScoreImprovementFeatLevelWarning": "必须至少达到{level}级才能使用此专长。",
+    "DND5E.AdvancementItemChoiceChoose": "选择 {count}",
+    "DND5E.AdvancementItemChoiceFeatureLevelWarning": "必须至少达到{level}级才能使用此特性。",
+    "DND5E.AdvancementItemChoiceNoOriginalError": "之前选择的选项已无法替换。",
+    "DND5E.AdvancementItemChoiceReplacement": "允许替换",
+    "DND5E.AdvancementItemChoiceReplacementNone": "无法替换",
+    "DND5E.AdvancementItemChoiceReplacementTitle": "替换"
 }
