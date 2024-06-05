@@ -1157,7 +1157,7 @@
     "DND5E.TargetValue": "目标长度或数量",
     "DND5E.VehicleTypeSpace": "空间载具",
     "DND5E.WarnCantAddMultipleAdvancements": "目前无法同时向单个角色添加多个具有升级的项目。请分别添加。",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalEquipmentHint": "1 级学习该职业所给予的装备列表。",
+    "JOURNALENTRYPAGE.DND5E.Class.AdditionalEquipmentHint": "在起始装备部分下方显示额外的说明文字。",
     "JOURNALENTRYPAGE.DND5E.Class.AdditionalHitPointsHint": "在自动生成的 HP 部分下方显示的附加的描述。",
     "DND5E.PolymorphKeepBackgroundAE": "保留源自你的背景的效果？",
     "DND5E.PolymorphSelf": "仅外形",
@@ -2063,5 +2063,39 @@
         }
     },
     "TYPES.JournalEntryPage.subclass": "子职概要",
-    "TYPES.JournalEntryPage.spells": "法术列表"
+    "TYPES.JournalEntryPage.spells": "法术列表",
+    "JOURNALENTRYPAGE.DND5E": {
+        "Class": {
+            "EquipmentDescription": "除了您的背景所赋予的装备外，您开始时还拥有以下装备："
+        },
+        "SpellList": {
+            "DropHint": "请将法术或法术文件夹拖拽到列表中",
+            "Grouping": {
+                "Label": "分组模式",
+                "Hint": "控制法术列表中的默认分组方式。",
+                "Alphabetical": "首字母",
+                "Level": "环阶",
+                "None": "分组",
+                "School": "学派"
+            },
+            "IdentifierHint": "如果适用，标识符应与相关文档中定义的标识符一致。例如，为法师职业创建法术列表时，标识符应为'wizard'。",
+            "Type": {
+                "Label": "法术列表类型",
+                "Other": "未分类"
+            },
+            "UnlinkedSpells": {
+                "Label": "非链接法术",
+                "Add": "添加非链接法术",
+                "Configuration": "法术配置",
+                "Edit": "编辑非链接法术"
+            }
+        },
+        "Subclass": {
+            "Description": "引言",
+            "DescriptionHint": "职业的描述，将出现在列出的任何特性之前。",
+            "Item": "选定子职业",
+            "ItemHint": "将子职业拖拽到此",
+            "NoValidSubclass": "未选择有效子职业，请按编辑按钮添加子职业。"
+        }
+    }
 }
