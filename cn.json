@@ -2105,5 +2105,53 @@
             "NoValidSubclass": "未选择有效子职业，请按编辑按钮添加子职业。"
         }
     },
-    "SIDEBAR.SortModePriority": "按优先级排序"
+    "SIDEBAR.SortModePriority": "按优先级排序",
+    "DND5E.CompendiumBrowser": {
+        "Selection": {
+            "Warning": {
+                "Max": "必须选择至多 {max} 个 {document}，已选择 {value} 个。",
+                "Document": {
+                    "one": "文档",
+                    "other": "文档"
+                },
+                "Min": "必须选择至少 {min} 个 {document}，已选择 {value} 个。",
+                "Range": "必须选择 {min} 到 {max} 个文档，已选择 {value} 个。",
+                "Single": "必须选择 {max} 个 {document}，已选择 {value} 个。"
+            },
+            "Label": "选择：{summary}",
+            "Select": "选择",
+            "Summary": {
+                "Max": "<span class=\"value\">{value}</span> 至多 {max}",
+                "Min": "<span class=\"value\">{value}</span> 至少 {min}",
+                "Range": "<span class=\"value\">{value}</span> 从 {min} 到 {max}",
+                "Single": "<span class=\"value\">{value}</span> 达到 {max}"
+            }
+        },
+        "Title": "合集包浏览器",
+        "Action": {
+            "Open": "打开合集包浏览器"
+        },
+        "Column": {
+            "Icon": "图标",
+            "Name": "名称",
+            "Results": "结果"
+        },
+        "Filters": {
+            "Label": "过滤器",
+            "HasDarkvision": "有黑暗视觉",
+            "HasSpellcasting": "有施法能力",
+            "SearchResults": "搜索结果"
+        },
+        "Tabs": {
+            "Feat.other": "专长",
+            "Item.other": "物品",
+            "Monster.other": "怪物"
+        },
+        "Types": {
+            "Label": "类型"
+        },
+        "Locked": "已锁定"
+    },
+    "DND5E.BiopgrahyPublicEdit": "编辑已公开的传记",
+    "DND5E.Advanced": "高级"
 }
