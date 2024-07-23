@@ -743,7 +743,7 @@
     "DND5E.ItemRarityArtifact": "神器",
     "DND5E.PropertyTotal": "总计",
     "DND5E.VehicleTypeWater": "水上载具",
-    "DND5E.WarnBadACFormula": "提供的 AC 公式无法求值。",
+    "DND5E.WarnBadACFormula": "提供的 AC 公式 \"{formula}\" 无法求值。",
     "DND5E.WarnMultipleShields": "已装备超过一面盾牌，AC 计算结果可能不正确。",
     "SETTINGS.5eMetricN": "使用公制单位",
     "DND5E.ArmorConfigHint": "填写上述输入框以覆盖自动计算的护甲等级。",
@@ -1532,8 +1532,10 @@
         "Label": "召唤",
         "Profile": {
             "Label": "召唤物配置",
-            "Empty": "点击上方添加配置文件，或将要召唤的生物拖放至此。",
-            "LabelPl": "召唤物配置"
+            "Empty": "点击上方添加配置文件。",
+            "LabelPl": "召唤物配置",
+            "ChallengeRatingLabel": "挑战等级 {cr} 或更低",
+            "EmptyDrop": "点击上方添加配置文件，或者将一个生物放置在此处来召唤它。"
         },
         "DisplayName": "配置名称",
         "ItemChanges": {
@@ -1572,7 +1574,8 @@
             "CreateActor": "你必须拥有“创建新角色”权限才能直接从合集中召唤。",
             "NoActor": "找不到 UUID 为 '{uuid}' 的角色用于召唤。",
             "NoOwnership": "你必须拥有 '{actor}' 才能召唤它。",
-            "NoProfile": "在 '{item}' 上找不到召唤的配置文件 {profileId}。"
+            "NoProfile": "在 '{item}' 上找不到召唤的配置文件 {profileId}。",
+            "CRV11": "基于生物 CR 的召唤方式仅适用于 Foundry V12 或更高版本。"
         },
         "Count": {
             "Label": "数量"
@@ -1588,6 +1591,12 @@
         "Level": {
             "Hint": "使用此配置文件所需的等级范围。",
             "IdentifierHint": "用于确定配置文件等级限制应使用角色等级还是特定职业等级的标识符。"
+        },
+        "Mode": {
+            "Label": "召唤方式",
+            "Direct": "指定特定的生物",
+            "Hint": "配置以何种方式来指定要召唤的生物。",
+            "CR": "按 CR 和类型来指定生物"
         }
     },
     "DND5E.Unidentified.Value": "???",
@@ -2182,5 +2191,14 @@
     "DND5E.CRLabel": "挑战等级 {cr}",
     "DND5E.DetailsEdit": "编辑详情",
     "DND5E.ItemRarityMundane": "非魔法",
-    "DND5E.SpellSourceClass": "施法职业"
+    "DND5E.SpellSourceClass": "施法职业",
+    "DND5E.TargetPl": "目标",
+    "SETTINGS.5eAttackRollVisibility": {
+        "Hint": "控制玩家对聊天信息卡片中攻击结果的可见性。",
+        "All": "显示结果和目标的 AC",
+        "HideAC": "仅显示结果",
+        "None": "全部隐藏",
+        "Name": "攻击结果可见性"
+    },
+    "DND5E.ToggleDescription": "切换描述"
 }
