@@ -1459,6 +1459,10 @@
             "Special": "特殊",
             "WeightlessContents": "无重量内容",
             "Firearm": "火器"
+        },
+        "Category": {
+            "Label": "类别",
+            "Physical": "物理"
         }
     },
     "DND5E.ItemToolProperties": "工具属性",
@@ -2001,7 +2005,8 @@
             "NotOnActor": "附魔只能添加到物品上，不能直接添加到角色身上。",
             "WrongType": "{incorrectType}物品无法被此附魔，只允许{allowedType}物品被附魔。",
             "Override": "此值被附魔修改，无法编辑。请在效果选项卡中禁用附魔来编辑它。"
-        }
+        },
+        "Enchanted": "{current} / {max} 附魔"
     },
     "DND5E.EffectType": {
         "Inactive": "非激活",
@@ -2153,5 +2158,29 @@
         "Locked": "已锁定"
     },
     "DND5E.BiopgrahyPublicEdit": "编辑已公开的传记",
-    "DND5E.Advanced": "高级"
+    "DND5E.Advanced": "高级",
+    "DND5E.ExperiencePointsFormat": "{value} 经验值",
+    "DND5E.FilterGroupAction": "按动作分组",
+    "DND5E.InitiativeAbbr": "先攻",
+    "DND5E.SkillsConfig": "配置技能",
+    "DND5E.HitPointsTempShort": "临时 HP",
+    "DND5E.LegActN.two": "第 2 个传奇动作",
+    "DND5E.LegActN.few": "第 3 个传奇动作",
+    "DND5E.LegActN.other": "第 {n} 个传奇动作",
+    "DND5E.LegResN.one": "第 1 个传奇抗性",
+    "DND5E.LegResN.two": "第 2 个传奇抗性",
+    "DND5E.LegResN.few": "第 3 个传奇抗性",
+    "DND5E.LegResN.other": "第 {n} 个传奇抗性",
+    "DND5E.NPC": "非玩家角色",
+    "DND5E.PassivePerception": "被动察觉",
+    "DND5E.Public": "公开",
+    "DND5E.LegActN.one": "第 1 个传奇动作",
+    "DND5E.SavingThrowRoll": "掷骰 {ability} 豁免",
+    "DND5E.SheetClassNPCLegacy": "旧版 5e NPC卡",
+    "DND5E.ContextMenuActionExpendCharge": "未充能",
+    "DND5E.ContextMenuActionCharge": "充能",
+    "DND5E.CRLabel": "挑战等级 {cr}",
+    "DND5E.DetailsEdit": "编辑详情",
+    "DND5E.ItemRarityMundane": "非魔法",
+    "DND5E.SpellSourceClass": "施法职业"
 }
