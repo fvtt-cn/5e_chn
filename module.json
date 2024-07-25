@@ -10,7 +10,7 @@
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "11"
+    "verified": "12"
   },
   "systems": [ "dnd5e" ],
   "languages": [{
@@ -25,7 +25,7 @@
       "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
       "compatibility": {
         "minimum": "2.2.0",
-        "verified": "3.0.0"
+        "verified": "3.3.0"
       }
     }]
   },
