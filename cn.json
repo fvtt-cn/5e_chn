@@ -929,7 +929,7 @@
     "DND5E.Unknown": "未知",
     "MACRO.5eNoActorSelected": "没有选中或关联的角色可以作为此宏的目标。",
     "MACRO.5eUnownedWarn": "你仅能为拥有的物品创建宏按钮",
-    "MIGRATION.5eBegin": "正在应用 DnD5E 系统版本 {version} 的迁移。请坐和放宽并且不要关闭游戏或服务器。",
+    "MIGRATION.5eBegin": "正在应用 DnD 5E 系统版本 {version} 的迁移。请耐心等待，不要关闭游戏或服务器。",
     "MIGRATION.5eComplete": "DnD5E 到版本 {version} 的系统迁移已完成！",
     "SETTINGS.5eHonorL": "启用可选的荣誉属性。需要重载世界。",
     "SETTINGS.5eNoAdvancementsN": "禁用自动升级",
