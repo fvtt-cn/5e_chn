@@ -1,15 +1,4 @@
 {
-    "ACTOR.TypeCharacter": "PC",
-    "ACTOR.TypeNpc": "NPC",
-    "ACTOR.TypeVehicle": "载具",
-    "ITEM.TypeClass": "职业",
-    "ITEM.TypeConsumable": "消耗品",
-    "ITEM.TypeEquipment": "装备",
-    "ITEM.TypeFeat": "特性",
-    "ITEM.TypeLoot": "战利品",
-    "ITEM.TypeSpell": "法术",
-    "ITEM.TypeTool": "工具",
-    "ITEM.TypeWeapon": "武器",
     "DND5E.title": "龙与地下城第五版",
     "DND5E.AC": "AC",
     "DND5E.AbbreviationCR": "CR",
@@ -141,23 +130,12 @@
     "DND5E.ConsumeAttribute": "属性",
     "DND5E.ConsumeMaterial": "材料",
     "DND5E.ConsumeCharges": "使用物品",
-    "DND5E.ConsumeWarningNoQuantity": "{name} 已经消耗完了指定的 {type} !",
-    "DND5E.ConsumeWarningNoResource": "{name} 指定消耗 {type}，但是没有指定资源！",
-    "DND5E.ConsumeWarningNoSource": "{name} 指定消耗 {type}，但其不存在！",
-    "DND5E.ConsumeWarningZeroAttribute": "{name} 指定的资源池属性已经消耗完了！",
     "DND5E.ConsumeResource": "是否消耗资源？",
     "DND5E.ConsumeRecharge": "是否消耗充能？",
-    "DND5E.ConsumableFood": "食物",
     "DND5E.ConsumableLastChargeWarn": "这是该物品单位的最后充能且消耗该充能也会令物品总数减少 1",
-    "DND5E.ConsumablePoison": "毒药",
-    "DND5E.ConsumablePotion": "药水",
-    "DND5E.ConsumableRod": "权杖",
-    "DND5E.ConsumableScroll": "卷轴",
-    "DND5E.ConsumableTrinket": "饰品",
     "DND5E.ConsumableUnitWarn": "剩余单位",
     "DND5E.ConsumableUseWarnEnd": "的当前单位",
     "DND5E.ConsumableUseWarnStart": "这个消耗品有",
-    "DND5E.ConsumableWand": "魔杖",
     "DND5E.ConsumableWithoutCharges": "可用物品单位",
     "DND5E.Consumed": "使用时消耗",
     "DND5E.CostGP": "费用（GP）",
@@ -230,7 +208,6 @@
     "DND5E.Exhaustion": "力竭",
     "DND5E.Expertise": "专长",
     "DND5E.Flaws": "缺点",
-    "DND5E.ItemNoUses": "{name} 没有可用的使用次数。",
     "DND5E.FeatureActionRecharge": "动作充能",
     "DND5E.FeatureActive": "主动能力",
     "DND5E.FeatureAdd": "创建特性",
@@ -284,7 +261,6 @@
     "DND5E.HealthConditions": "健康状态",
     "DND5E.HitDice": "生命骰",
     "DND5E.HitDiceRoll": "投掷生命骰",
-    "DND5E.HitDiceUsed": "已用生命骰",
     "DND5E.HitDiceWarn": "{name} 没有剩余可用的 {formula} 生命骰!",
     "DND5E.HitPoints": "生命值",
     "DND5E.Ideals": "理想",
@@ -309,7 +285,6 @@
     "DND5E.ItemContainerProperties": "容器属性",
     "DND5E.ItemCreate": "创建物品",
     "DND5E.ItemDelete": "删除物品",
-    "DND5E.ItemDestroyEmpty": "耗尽时删除",
     "DND5E.ItemEdit": "编辑物品",
     "DND5E.ItemEquipmentAction": "装备动作",
     "DND5E.ItemEquipmentDetails": "装备详情",
@@ -396,7 +371,6 @@
     "DND5E.PactMagic": "契约魔法",
     "DND5E.Passive": "被动",
     "DND5E.PersonalityTraits": "个性",
-    "DND5E.PlaceTemplate": "放置测量板",
     "DND5E.Polymorph": "变形",
     "DND5E.PolymorphAcceptSettings": "自定义设置",
     "DND5E.PolymorphKeepBio": "保留传记",
@@ -423,7 +397,6 @@
     "DND5E.Proficiency": "熟练加值",
     "DND5E.Proficient": "熟练",
     "DND5E.Quantity": "数量",
-    "DND5E.Race": "种族",
     "DND5E.Range": "射程",
     "DND5E.Rarity": "稀有度",
     "DND5E.Reaction": "反应",
@@ -501,7 +474,6 @@
     "DND5E.SkillSte": "隐匿",
     "DND5E.SkillSur": "生存",
     "DND5E.SkillPromptTitle": "{skill} 技能检定",
-    "DND5E.Source": "资源",
     "DND5E.Special": "特殊",
     "DND5E.SpecialTraits": "特性",
     "DND5E.Speed": "速度",
@@ -538,7 +510,6 @@
     "DND5E.SpellPrepAtWill": "随意施法",
     "DND5E.SpellPrepInnate": "天生法术",
     "DND5E.SpellPrepPrepared": "需要准备",
-    "DND5E.SpellPreparationMode": "法术准备方式",
     "DND5E.SpellPrepared": "已准备",
     "DND5E.SpellProgArt": "奇械师",
     "DND5E.SpellProgFull": "全职施法者",
@@ -653,8 +624,6 @@
     "SETTINGS.5eDiagPHB": "玩家手册（5/5/5）",
     "SETTINGS.5eInitTBL": "加上敏捷属性值作为小数部分，模拟同先攻值下按敏捷排列，以更细致的区分先攻顺序。",
     "SETTINGS.5eInitTBN": "先攻细分",
-    "SETTINGS.5eNoExpL": "从人物卡中移除经验值条。",
-    "SETTINGS.5eNoExpN": "禁用经验值",
     "SETTINGS.5eRestEpic": "英雄史诗（长：1小时，短：5分钟）",
     "SETTINGS.5eRestGritty": "残酷现实（长：7天，短：8小时）",
     "SETTINGS.5eRestL": "设置该系统下的游戏使用哪种休息变体。",
@@ -846,8 +815,6 @@
     "DND5E.AbilityHon": "荣誉",
     "DND5E.AbilityHonAbbr": "荣誉",
     "DND5E.AbilitySan": "理智",
-    "ITEM.TypeBackground": "背景",
-    "ITEM.TypeSubclass": "子职业",
     "DND5E.AbilitySanAbbr": "理智",
     "DND5E.AdvancementClassRestriction": "职业限制",
     "DND5E.AdvancementClassRestrictionNone": "所有职业",
@@ -935,23 +902,7 @@
     "SETTINGS.5eNoAdvancementsN": "禁用自动升级",
     "SETTINGS.5eSanityL": "启用可选的理智属性。需要重载世界。",
     "SETTINGS.5eSanityN": "理智属性",
-    "ACTOR.TypeNpcPl": "NPC",
-    "ACTOR.TypeGroup": "组",
-    "ITEM.TypeContainer": "容器",
-    "ITEM.TypeContainerPl": "容器",
-    "ITEM.TypeClassPl": "职业",
-    "ITEM.TypeConsumablePl": "消耗品",
-    "ITEM.TypeEquipmentPl": "装备",
-    "ITEM.TypeFeaturePl": "特性",
-    "ITEM.TypeLootPl": "战利品",
-    "ITEM.TypeSubclassPl": "子职业",
-    "ITEM.TypeWeaponPl": "武器",
     "DND5E.Abilities": "属性",
-    "ACTOR.TypeCharacterPl": "PC",
-    "ACTOR.TypeVehiclePl": "载具",
-    "ITEM.TypeBackgroundPl": "背景",
-    "ITEM.TypeSpellPl": "法术",
-    "ITEM.TypeToolPl": "工具",
     "DND5E.AbilityScore": "属性值",
     "DND5E.AbilityBonuses": "属性加值",
     "DND5E.AdvancementControlDelete": "删除升级",
@@ -978,7 +929,6 @@
     "DND5E.ConsumeAmount": "消耗品数量",
     "DND5E.ConsumeTarget": "消耗品目标",
     "DND5E.ConsumeType": "消耗品类别",
-    "DND5E.ConsumableAmmo": "弹药",
     "DND5E.DamagePhysicalBypassHint": "这些武器属性将无视物理伤害的伤害抗性。",
     "DND5E.DamagePhysicalBypass": "无视物理抗性",
     "DND5E.DamagePhysicalBypasses": "攻击的伤害类型 {damageTypes} 并非 {bypassTypes}",
@@ -999,11 +949,7 @@
     "DND5E.ExperiencePointsMax": "下一级所需 XP",
     "DND5E.ExperiencePointsMin": "本级所需最小 XP",
     "DND5E.Feature.Background": "背景特性",
-    "DND5E.Feature.Feat": "专长",
     "DND5E.Feature.Monster": "怪物特性",
-    "DND5E.Feature.Race": "种族特性",
-    "DND5E.IdentifierCopy": "复制标识符",
-    "DND5E.IdentifierCopied": "已复制！",
     "DND5E.GroupInventory": "持有物",
     "DND5E.GroupHP": "总体生命值",
     "DND5E.GroupSummary": "一群 {members}",
@@ -1070,7 +1016,6 @@
     "DND5E.SpellLevels": "法术等级",
     "DND5E.SpellMaterialsConsumed": "消耗材料",
     "DND5E.SpellMaterialsCost": "材料价值",
-    "DND5E.SpellPreparation": "法术准备",
     "DND5E.SpellMaterialsDescription": "材料描述",
     "DND5E.SpellProgAvailable": "可用环位",
     "DND5E.TargetType": "目标类型",
@@ -1107,16 +1052,7 @@
     "DND5E.VehiclePassengerName": "乘客姓名或类型",
     "DND5E.VehiclePassengerQuantity": "乘客数量",
     "DND5E.VehicleType": "载具类型",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalTraits": "额外熟练项描述",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalTraitsHint": "在该职业给予的熟练项列表下方显示额外的说明文字。",
-    "JOURNALENTRYPAGE.DND5E.Class.FeaturesDescription": "作为 {lowercaseName}，你将获得以下职业特性，这些特性在 {name} 表格中进行了总结。",
-    "JOURNALENTRYPAGE.DND5E.Class.Description": "介绍",
-    "JOURNALENTRYPAGE.DND5E.Class.DescriptionHint": "第一个出现的职业的主要描述。",
     "JOURNALENTRYPAGE.DND5E.Class.EquipmentHeader": "装备",
-    "JOURNALENTRYPAGE.DND5E.Class.FeaturesHeader": "职业特性",
-    "JOURNALENTRYPAGE.DND5E.Class.HitPointsHeader": "HP",
-    "JOURNALENTRYPAGE.DND5E.Class.HitPointsLevel1": "<strong>首级生命值：</strong> {max} + 你的体质调整值",
-    "JOURNALENTRYPAGE.DND5E.Class.HitDice": "<strong>生命骰：</strong> {dice} 每 {class} 等级",
     "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesCaption": "可选职业特性",
     "JOURNALENTRYPAGE.DND5E.Class.ItemHint": "将职业拖至此处",
     "JOURNALENTRYPAGE.DND5E.Class.NoValidClass": "未选择有效职业，使用编辑按钮来添加一个职业。",
@@ -1125,20 +1061,12 @@
     "JOURNALENTRYPAGE.DND5E.Class.SpellSlotsPerSpellLevel": "—每一法术等级的法术位—",
     "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesDescription": "以下部分包含选项 {class} 特性。这些功能不会自动添加，你可以根据 DM 的判断选择其中的一项、部分或全部。",
     "JOURNALENTRYPAGE.DND5E.EditDescription": "编辑",
-    "JOURNALENTRYPAGE.DND5E.Class.TraitsHeader": "熟练项",
     "JOURNALENTRYPAGE.DND5E.Class.TableOptionalCaption": "可选 {class} 特性",
     "JOURNALENTRYPAGE.DND5E.Class.TableCaption": "{class}",
-    "JOURNALENTRYPAGE.DND5E.Class.SubclassItems": "子职",
-    "JOURNALENTRYPAGE.DND5E.Class.SubclassDescription": "子职简介",
-    "JOURNALENTRYPAGE.DND5E.Class.SubclassDescriptionHint": "会显示在该职业子职之前的简介。",
     "JOURNALENTRYPAGE.DND5E.Class.SubclassHint": "在此松开子职",
-    "JOURNALENTRYPAGE.DND5E.Class.SubclassHeader": "子职标题",
     "DND5E.HitPointsMin": "HP 下限",
     "DND5E.ScalingMode": "缩放模式",
     "DND5E.TraitWeaponPlural.other": "武器熟练项",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalEquipment": "额外装备说明",
-    "JOURNALENTRYPAGE.DND5E.Class.Item": "已选职业",
-    "JOURNALENTRYPAGE.DND5E.Class.HitPointsLevelX": "<strong>升级生命值：</strong> 首级之后，每 {class} 等级 {dice} （或 {average}）+ 你的体质调整值",
     "DND5E.PolymorphCustomTransformation": "自定义变形",
     "DND5E.PolymorphEffectTransformation": "效果变形",
     "DND5E.PolymorphKeepAE": "保留所有效果（覆盖其他效果保留选项）。",
@@ -1157,11 +1085,8 @@
     "DND5E.TargetValue": "目标长度或数量",
     "DND5E.VehicleTypeSpace": "空间载具",
     "DND5E.WarnCantAddMultipleAdvancements": "目前无法同时向单个角色添加多个具有升级的项目。请分别添加。",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalEquipmentHint": "在起始装备部分下方显示额外的说明文字。",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalHitPointsHint": "在自动生成的 HP 部分下方显示的附加的描述。",
     "DND5E.PolymorphKeepBackgroundAE": "保留源自你的背景的效果？",
     "DND5E.PolymorphSelf": "仅外形",
-    "JOURNALENTRYPAGE.DND5E.Class.AdditionalHitPoints": "额外 HP 描述",
     "DND5E.PolymorphKeepOriginAE": "保留源自此角色（即没有关联到特性、物品、法术）的效果",
     "TYPES.Actor.character": "PC",
     "TYPES.Actor.characterPl": "PC",
@@ -1227,24 +1152,8 @@
     "DND5E.ToolConfigure": "配置工具熟练",
     "TYPES.JournalEntryPage.class": "职业描述",
     "DND5E.AbilityScoreMax": "最大属性值",
-    "DND5E.AdvancementAbilityScoreImprovementTitle": "属性值提升",
-    "DND5E.AdvancementAbilityScoreImprovementHint": "允许玩家增加一或更多点的属性值，或是选择获得一个专长。",
-    "DND5E.AdvancementAbilityScoreImprovementFeatHint": "选择一个专长拖放到这里来取代属性值提升。",
-    "DND5E.AdvancementAbilityScoreImprovementFeatWarning": "只有“专长”类型的特性可以选择。",
-    "DND5E.AdvancementAbilityScoreImprovementFixed": "固定增长",
-    "DND5E.AdvancementAbilityScoreImprovementLockedHint": "选择了专长时不可修改属性值。",
-    "DND5E.AdvancementAbilityScoreImprovementPoints": "点数",
     "TYPES.Item.racePl": "种族",
-    "ITEM.TypeRace": "种族",
-    "ITEM.TypeRacePl": "种族",
     "TYPES.Item.race": "种族",
-    "DND5E.AdvancementAbilityScoreImprovementCapDisplay.one": "每项最多分配 {points} 点",
-    "DND5E.AdvancementAbilityScoreImprovementCapDisplay.other": "每项最多分配 {points} 点",
-    "DND5E.AdvancementAbilityScoreImprovementPointsRemaining.one": "{points} 点剩余",
-    "DND5E.AdvancementAbilityScoreImprovementPointsRemaining.other": "{points} 点剩余",
-    "DND5E.AdvancementAbilityScoreImprovementPointsHint": "可以分配给任何没有固定提升属性的点数.",
-    "DND5E.AdvancementAbilityScoreImprovementCap": "点数",
-    "DND5E.AdvancementAbilityScoreImprovementCapHint": "角色可以为单项属性分配的最大点数。",
     "DND5E.ActorWarningSingleton": "仅能向 {actorType} 添加一个 {itemType}。",
     "DND5E.AbilityUseConsumableDestroyResourceHint": "使用该 {type} 将消耗 {name} 最后的充能，并且将其摧毁。",
     "DND5E.AdvancementSizeTitle": "体型",
@@ -1282,10 +1191,8 @@
     "DND5E.ConsumeScalingTooltip": "勾选后，消耗额外资源将提高所施放法术的环阶。",
     "DND5E.Focus.Druidic": "德鲁伊法器",
     "DND5E.GroupSummaryEmpty": "空组",
-    "DND5E.PlaceTemplateError": "放置测量板失败",
     "DND5E.Dusk": "黄昏",
     "DND5E.FlagsTavernBrawler": "酒馆拳王特长",
-    "DND5E.SourceUUID": "原始来源",
     "DND5E.TargetWilling": "自愿生物",
     "DND5E.ConsumeHitDiceLargestLong": "最大可用生命骰",
     "DND5E.ConsumeHitDiceSmallestLong": "最小可用生命骰",
@@ -1302,7 +1209,6 @@
     "DND5E.Loot.Resource": "资源",
     "DND5E.Loot.Treasure": "财宝",
     "DND5E.FlagsTavernBrawlerHint": "熟练于临时武器。",
-    "DND5E.ItemDestroyEmptyTooltip": "如果该物品有使用次数限制，当没有剩余次数时，将被销毁。",
     "DND5E.ItemLootDetails": "战利品细节",
     "DND5E.ItemLootSubtype": "{category} 类型",
     "DND5E.ItemLootType": "战利品类型",
@@ -1312,14 +1218,6 @@
     "DND5E.LimitedUsesPromptTooltip": "若未勾选，则不会有消耗可用次数时的提示。",
     "DND5E.NoneActionLabel": "无",
     "DND5E.QuantityAbbr": "数量",
-    "DND5E.RaceName": "种族名",
-    "DND5E.SourceBook": "书",
-    "DND5E.SourceConfig": "配置来源",
-    "DND5E.SourceCustom": "自定义标签",
-    "DND5E.SourceDisplay": "{book} {page}",
-    "DND5E.SourceLicense": "许可",
-    "DND5E.SourcePage": "页/章",
-    "DND5E.SourcePageDisplay": "第 {page} 页",
     "DND5E.SpellCastNoSlotsLeft": "你没有可用的法术位来施放 {name}！",
     "DND5E.TargetAny": "任意",
     "DND5E.TargetCreatureOrObject": "生物或物件",
@@ -1374,10 +1272,6 @@
     "DND5E.Conditions": "条件",
     "DND5E.Confirm": "确认",
     "DND5E.ConcentratingLimited": "你无法专注于额外效果。",
-    "DND5E.ConsumablePoisonIngested": "摄入",
-    "DND5E.ConsumablePoisonContact": "接触",
-    "DND5E.ConsumablePoisonInhaled": "吸入",
-    "DND5E.ConsumablePoisonInjury": "伤口",
     "DND5E.CurrencyManager": {
         "Transfer": {
             "Action": "转移所选",
@@ -1468,7 +1362,6 @@
     "DND5E.ItemToolProperties": "工具属性",
     "DND5E.ItemView": "查看物品",
     "DND5E.Portrait": "立绘",
-    "DND5E.RaceAdd": "添加种族",
     "DND5E.QuantityFormula": "数量公式",
     "DND5E.QuantityRoll": "掷骰数量",
     "DND5E.Rule": {
@@ -1498,106 +1391,7 @@
     "DND5E.SpellSlotExpended": "消耗的法术位",
     "DND5E.SpellSlotN.other": "第 {n}个法术位",
     "DND5E.Summoning": {
-        "Action": {
-            "Summon": "召唤",
-            "Add": "添加配置",
-            "Place": "放置召唤物",
-            "Configure": "配置召唤物",
-            "Remove": "移除配置",
-            "View": "查看召唤"
-        },
-        "Prompt": {
-            "Hint": "禁用物品使用时的召唤提示。玩家仍然可以从聊天卡中召唤。",
-            "Label": "召唤提示"
-        },
-        "CreatureChanges": {
-            "Hint": "将对被召唤生物做出的改变。以下公式中使用的任何 @ 引用都将基于召唤者的数据。可使用 @summon 引用被召唤生物的属性（例如，@summon.attributes.hd.max 用于引用生物的生命骰数量）。",
-            "Label": "生物变更"
-        },
-        "Match": {
-            "Attacks": {
-                "Hint": "修改召唤生物的攻击命中值，使其与召唤者相匹配。",
-                "Label": "匹配攻击"
-            },
-            "Proficiency": {
-                "Label": "匹配熟练项",
-                "Hint": "修改召唤生物的熟练项，使其与召唤者相匹配。"
-            },
-            "Saves": {
-                "Label": "匹配豁免",
-                "Hint": "修改召唤生物的属性豁免 DC，使其与召唤者相匹配。"
-            }
-        },
-        "DropHint": "将生物拖放至此",
-        "Label": "召唤",
-        "Profile": {
-            "Label": "召唤物配置",
-            "Empty": "点击上方添加配置文件。",
-            "LabelPl": "召唤物配置",
-            "ChallengeRatingLabel": "挑战等级 {cr} 或更低",
-            "EmptyDrop": "点击上方添加配置文件，或者将一个生物放置在此处来召唤它。"
-        },
-        "DisplayName": "配置名称",
-        "ItemChanges": {
-            "Hint": "对召唤生物身上的物品进行的变更。",
-            "Label": "物品变更"
-        },
-        "Configuration": "召唤配置",
-        "Bonuses": {
-            "Attack": {
-                "Label": "额外攻击伤害",
-                "Hint": "该生物攻击额外造成的伤害。"
-            },
-            "ArmorClass": {
-                "Label": "额外 AC",
-                "Hint": "在召唤生物的统计块中指定的内容之上添加额外的 AC 加值。"
-            },
-            "Saves": {
-                "Hint": "该生物需要豁免的能力所造成的额外伤害。",
-                "Label": "额外豁免伤害"
-            },
-            "Healing": {
-                "Label": "额外治疗",
-                "Hint": "治疗能力提供额外的治疗效果。"
-            },
-            "HitPoints": {
-                "Label": "额外 HP",
-                "Hint": "在生物的统计块中指定的内容之上添加额外的生命值。"
-            },
-            "HitDice": {
-                "Label": "额外生命骰",
-                "Hint": "在生物的 HP 计算公式基础上，为其添加额外的生命骰。只能在召唤 NPC 角色时使用。"
-            }
-        },
-        "Warning": {
-            "Wildcard": "你必须拥有“使用文件浏览器”权限才能召唤带有通配符画像的生物。",
-            "CreateActor": "你必须拥有“创建新角色”权限才能直接从合集中召唤。",
-            "NoActor": "找不到 UUID 为 '{uuid}' 的角色用于召唤。",
-            "NoOwnership": "你必须拥有 '{actor}' 才能召唤它。",
-            "NoProfile": "在 '{item}' 上找不到召唤的配置文件 {profileId}。",
-            "CRV11": "基于生物 CR 的召唤方式仅适用于 Foundry V12 或更高版本。"
-        },
-        "Count": {
-            "Label": "数量"
-        },
-        "CreatureSizes": {
-            "Label": "生物大小",
-            "Hint": "召唤出的生物和token物将变为该大小。如果选择了多个尺寸，那么玩家在召唤时就可以从这些尺寸中进行选择。"
-        },
-        "CreatureTypes": {
-            "Label": "生物类型",
-            "Hint": "召唤出的生物将变为该类型。如果选择了一种以上的类型，那么玩家在召唤时就可以从这些类型中进行选择。"
-        },
-        "Level": {
-            "Hint": "使用此配置文件所需的等级范围。",
-            "IdentifierHint": "用于确定配置文件等级限制应使用角色等级还是特定职业等级的标识符。"
-        },
-        "Mode": {
-            "Label": "召唤方式",
-            "Direct": "指定特定的生物",
-            "Hint": "配置以何种方式来指定要召唤的生物。",
-            "CR": "按 CR 和类型来指定生物"
-        }
+        "Label": "召唤"
     },
     "DND5E.Unidentified.Value": "???",
     "DND5E.Unidentified.Title": "未鉴定",
@@ -1795,7 +1589,6 @@
         }
     },
     "DND5E.ItemConsumableProperties": "消耗品属性",
-    "DND5E.ConsumableAmmoBlowgunNeedle": "吹箭针",
     "DND5E.LongRestHintGroup": "要进行长休吗？在长休期间，队伍成员将恢复生命值、生命骰数的一半、职业资源、限制使用的物品充能、法术环位。",
     "DND5E.ReactionAbbr": "反应",
     "DND5E.FavoriteRemove": "移除收藏",
@@ -1807,7 +1600,6 @@
     "DND5E.ConcentratingEnd": "结束专注",
     "DND5E.DamMod": "伤害调整",
     "DND5E.ItemEquipmentProperties": "装备属性",
-    "DND5E.AreaOfEffect": "AoE 效果",
     "DND5E.SpellSlotN.one": "第 {n} 个法术位",
     "DND5E.SpellSlotN.two": "第 {n} 个法术位",
     "DND5E.ContainerDeleteContents": "同时删除容器内的所有物品。",
@@ -1825,8 +1617,6 @@
     "DND5E.Suppressed": "消除",
     "DND5E.DistMAbbr": "米",
     "DND5E.FavoriteDrop": "取消收藏",
-    "DND5E.ConsumableAmmoCrossbowBolt": "弩箭",
-    "DND5E.ConsumableAmmoSlingBullet": "投石索弹丸",
     "DND5E.ItemAttackFlatHint": "选中后，除了这里包含的意外，不要将熟练加值、属性调整值或任何其他加值加到攻击掷骰上。",
     "DND5E.TimeHourAbbr": "时",
     "DND5E.AdvancementItemGrantContainerWarning": "容器内的物品不会随容器一起添加。",
@@ -1838,7 +1628,6 @@
     "DND5E.TimeMinuteAbbr": "分",
     "DND5E.Recovery": "恢复",
     "DND5E.ConcentratingWarnLimit": "你不能维持对更多效果的专注！",
-    "DND5E.ConsumableAmmoArrow": "箭矢",
     "DND5E.Eyes": "眼睛",
     "DND5E.DistKmAbbr": "公里",
     "DND5E.Identify": "鉴定",
@@ -1850,7 +1639,6 @@
     "DND5E.ModuleArtPriorityIncrease": "提高优先级",
     "DND5E.ShortRestHintGroup": "进行短休？在短休期间，队伍成员可以消耗生命骰并恢复物品使用次数。",
     "DND5E.Hair": "头发",
-    "DND5E.FeaturesRace": "种族特性",
     "DND5E.FeaturesClass": "{class} 特性",
     "DND5E.DeathSaveSuccessLabelN.one": "第一次死亡豁免成功",
     "DND5E.DistMiAbbr": "里",
@@ -1929,7 +1717,6 @@
     "DND5E.ActionEnch": "附魔",
     "DND5E.AdvancementItemChoiceChoices": "选项",
     "DND5E.AdditionalSettings": "额外设置",
-    "DND5E.AdvancementAbilityScoreImprovementFeatLevelWarning": "必须至少达到{level}级才能使用此专长。",
     "DND5E.AdvancementItemChoiceChoose": "选择 {count}",
     "DND5E.AdvancementItemChoiceFeatureLevelWarning": "必须至少达到{level}级才能使用此特性。",
     "DND5E.AdvancementItemChoiceNoOriginalError": "之前选择的选项已无法替换。",
@@ -1940,83 +1727,7 @@
         "Item": "合集中目标的 UUID",
         "Attribute": "消耗的属性(例如currency.gp)"
     },
-    "DND5E.ConsumeResourceAction": "消耗资源",
     "DND5E.DocumentUseWarn": "您未获得使用本文档中某项物品的权限。",
-    "DND5E.Enchantment": {
-        "Action": {
-            "Apply": "应用附魔",
-            "Configure": "配置附魔",
-            "Create": "创建附魔",
-            "Delete": "删除附魔",
-            "Disable": "禁用附魔",
-            "Edit": "编辑附魔",
-            "Enable": "启用附魔",
-            "Remove": "移除附魔"
-        },
-        "Category": {
-            "Empty": "尚未创建任何附魔，请使用上面的按钮创建一个。",
-            "Inactive": "非激活附魔",
-            "Active": "激活附魔",
-            "General": "附魔"
-        },
-        "Configuration": "附魔配置",
-        "DropArea": "将物品放置在此处可为其附魔…",
-        "FIELDS": {
-            "enchantment": {
-                "label": "附魔配置",
-                "classIdentifier": {
-                    "hint": "用于确定附魔等级限制应使用角色总等级还是特定职业等级的标识符。"
-                },
-                "items": {
-                    "max": {
-                        "label": "物品等级",
-                        "hint": "该类型附魔一次可激活的最大数量公式。"
-                    },
-                    "period": {
-                        "label": "替换期限",
-                        "hint": "该类型附魔可重新绑定到不同物品的频率。"
-                    }
-                },
-                "restrictions": {
-                    "label": "限制条件",
-                    "hint": "对可附魔物品类型的限制。",
-                    "allowMagical": {
-                        "label": "允许魔法",
-                        "hint": "允许魔法物品附魔。"
-                    },
-                    "type": {
-                        "label": "物品类型",
-                        "hint": "可附魔的物品类型。"
-                    }
-                }
-            }
-        },
-        "Label": "附魔",
-        "Level": {
-            "Hint": "使用该附魔所需的等级范围。"
-        },
-        "Items": {
-            "Entry": "<em>{actor}</em>的{item}"
-        },
-        "Riders": {
-            "Effect": {
-                "Label": "附加效果",
-                "Hint": "这些附加效果将在添加该附魔时添加到被附魔物品上，并在移除该附魔时移除。"
-            },
-            "Item": {
-                "Label": "附加物品",
-                "Hint": "当生物的一件物品被附魔时，这些附加物品将被添加到生物身上，如果附魔被移除，这些附加物品也将被移除。"
-            }
-        },
-        "Warning": {
-            "ConcentrationEnded": "由于专注已结束，无法使用此附魔。",
-            "NoMagicalItems": "魔法物品无法附魔。",
-            "NotOnActor": "附魔只能添加到物品上，不能直接添加到角色身上。",
-            "WrongType": "{incorrectType}物品无法被此附魔，只允许{allowedType}物品被附魔。",
-            "Override": "此值被附魔修改，无法编辑。请在效果选项卡中禁用附魔来编辑它。"
-        },
-        "Enchanted": "{current} / {max} 附魔"
-    },
     "DND5E.EffectType": {
         "Inactive": "非激活",
         "Passive": "被动",
@@ -2112,9 +1823,6 @@
             }
         },
         "Subclass": {
-            "Description": "引言",
-            "DescriptionHint": "职业的描述，将出现在列出的任何特性之前。",
-            "Item": "选定子职业",
             "ItemHint": "将子职业拖拽到此",
             "NoValidSubclass": "未选择有效子职业，请按编辑按钮添加子职业。"
         }
