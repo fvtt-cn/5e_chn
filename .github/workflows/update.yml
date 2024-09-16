@@ -18,7 +18,7 @@ jobs:
 
       - name: Update Projects Source Json
         shell: pwsh
-        run: iwr https://github.com/foundryvtt/dnd5e/raw/3.3.x/lang/en.json | % { if ($_.StatusCode -eq 200) { $_.Content > ./.github/en.json } }
+        run: iwr https://github.com/foundryvtt/dnd5e/raw/4.0.x/lang/en.json | % { if ($_.StatusCode -eq 200) { $_.Content > ./.github/en.json } }
         
       - name: Add & Commit
         uses: EndBug/add-and-commit@v7.2.1
