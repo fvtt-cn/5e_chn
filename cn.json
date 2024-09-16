@@ -1910,8 +1910,5 @@
     },
     "DND5E.ToggleDescription": "切换描述",
     "TYPES.Item.raceLegacy": "种族",
-    "TYPES.Item.raceLegacyPl": "种族",
-    "DOCUMENT.DND5E": {
-        "Activity": ""
-    }
+    "TYPES.Item.raceLegacyPl": "种族"
 }
