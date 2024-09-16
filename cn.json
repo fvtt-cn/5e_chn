@@ -865,7 +865,7 @@
     "DND5E.AdvancementSaveButton": "保存升级",
     "DND5E.AdvancementScaleValueTypeDice": "骰子",
     "DND5E.AdvancementScaleValueTypeDistance": "距离",
-    "DND5E.AdvancementScaleValueIdentifierHint": "在公式中使用<strong>@scale.{class}.{identifier}</strong>，就可以得到当前等级的此比例值。",
+    "DND5E.AdvancementScaleValueIdentifierHint": "获得当前等级的比例值，可在公式中使用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
     "DND5E.AdvancementScaleValueTypeHintString": "如果不确定比例值的类型，或者类型无关紧要，使用此项。",
     "DND5E.AdvancementScaleValueTypeHintDice": "骰子数值使用此项，例如吟游激励、偷袭或卓越骰。",
     "DND5E.AdvancementScaleValueTypeHintDistance": "距离数值使用此项，如无甲移动，或守护灵光的半径。",
@@ -1908,5 +1908,10 @@
         "None": "全部隐藏",
         "Name": "攻击结果可见性"
     },
-    "DND5E.ToggleDescription": "切换描述"
+    "DND5E.ToggleDescription": "切换描述",
+    "TYPES.Item.raceLegacy": "种族",
+    "TYPES.Item.raceLegacyPl": "种族",
+    "DOCUMENT.DND5E": {
+        "Activity": ""
+    }
 }
