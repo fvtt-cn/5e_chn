@@ -1773,7 +1773,11 @@
         "Hint": "在UI界面中为鼠标和键盘控制启用各种提示。",
         "LockHint": "中键单击锁定",
         "MiddleClick": "中键单击",
-        "Name": "启用控制提示"
+        "Name": "启用控制提示",
+        "LeftClick": "左键单击",
+        "Activity": {
+            "FastForwardHint": "<kbd>Shift</kbd> + <left-click> 跳过此对话框"
+        }
     },
     "DND5E.WeightUnit": {
         "Label": "重量单位",
@@ -1856,7 +1860,8 @@
         "Column": {
             "Icon": "图标",
             "Name": "名称",
-            "Results": "结果"
+            "Results": "结果",
+            "Source": "资源"
         },
         "Filters": {
             "Label": "过滤器",
@@ -1872,7 +1877,13 @@
         "Types": {
             "Label": "类型"
         },
-        "Locked": "已锁定"
+        "Locked": "已锁定",
+        "Sources": {
+            "Name": "合集包浏览器资源",
+            "Label": "配置资源",
+            "FilterPackages": "过滤包",
+            "Hint": "配置哪些合集包的内容可在合集浏览器中使用。"
+        }
     },
     "DND5E.BiopgrahyPublicEdit": "编辑已公开的传记",
     "DND5E.Advanced": "高级",
@@ -2037,7 +2048,8 @@
             "Activation": "激活",
             "Behavior": "行为",
             "Effect": "效应",
-            "Time": "时间"
+            "Time": "时间",
+            "Identity": "标识"
         }
     },
     "DND5E.AdvancementTraitModeMasteryHint": "精通一种你已熟练的武器。",
@@ -2058,6 +2070,281 @@
         "Title": {
             "one": "攻击",
             "other": "攻击"
+        },
+        "FIELDS": {
+            "attack": {
+                "type": {
+                    "value": {
+                        "label": "攻击类型",
+                        "hint": "这是近战攻击还是远程攻击？"
+                    },
+                    "label": "攻击类型",
+                    "classification": {
+                        "label": "攻击类别",
+                        "hint": "这是徒手攻击、武器攻击还是法术攻击？"
+                    }
+                },
+                "flat": {
+                    "hint": "忽略行动者的属性调整值、熟练和任何其他加值，在计算命中时只使用该行动定义的加值。",
+                    "label": "固定命中加值"
+                },
+                "label": "攻击细节",
+                "ability": {
+                    "label": "攻击属性",
+                    "hint": "属性用于进行攻击和确定伤害。可以在公式中使用@mod。"
+                },
+                "bonus": {
+                    "label": "命中加值",
+                    "hint": "攻击检定中的命中加值。"
+                },
+                "critical": {
+                    "threshold": {
+                        "label": "重击阈值",
+                        "hint": "D20中重击所需的最小值。"
+                    }
+                }
+            },
+            "damage": {
+                "label": "攻击伤害",
+                "critical": {
+                    "bonus": {
+                        "label": "额外重击伤害",
+                        "hint": "重击时造成的额外伤害。加到基础伤害或第一次部分伤害上。"
+                    }
+                },
+                "includeBase": {
+                    "label": "包含基础伤害",
+                    "hint": "将物品的基础伤害与任何附加伤害部分一并包含在内。"
+                },
+                "parts": {
+                    "label": "额外伤害",
+                    "hint": "在掷骰时包含特有的额外伤害（包括基础伤害、额外伤害、魔法伤害、特殊能力伤害）。"
+                }
+            }
+        },
+        "Weapon": {
+            "Ranged": "远程武器",
+            "Melee": "近战武器"
+        },
+        "Attack": {
+            "mwak": "近战攻击",
+            "rwak": "远程攻击"
+        },
+        "Classification": {
+            "Spell": "法术",
+            "Unarmed": "徒手",
+            "Weapon": "武器"
+        },
+        "Mode": {
+            "Label": "攻击模式",
+            "OneHanded": "单手",
+            "Thrown": "投掷",
+            "TwoHanded": "双手",
+            "Offhand": "副手",
+            "ThrownOffhand": "副手投掷"
+        },
+        "Type": {
+            "Melee": "近战",
+            "Ranged": "远程"
+        },
+        "Warning": {
+            "NoQuantity": "试图使用数量为零的武器进行攻击。"
         }
-    }
+    },
+    "DND5E.CONSUMABLE": {
+        "Type": {
+            "Ammunition": {
+                "BulletFirearm": "子弹，火器",
+                "Label": "弹药",
+                "Arrow": "箭矢",
+                "Bolt": "弩矢",
+                "BulletSling": "弹丸，投石索",
+                "Needle": "吹矢"
+            },
+            "Wand": {
+                "Label": "魔杖"
+            },
+            "Rod": {
+                "Label": "权杖"
+            },
+            "Food": {
+                "Label": "食物"
+            },
+            "Poison": {
+                "Label": "毒药",
+                "Contact": "接触",
+                "Ingested": "服用",
+                "Inhaled": "吸入",
+                "Injury": "损伤"
+            },
+            "Potion": {
+                "Label": "药水"
+            },
+            "Scroll": {
+                "Label": "卷轴"
+            },
+            "Trinket": {
+                "Label": "饰品"
+            }
+        },
+        "FIELDS": {
+            "damage": {
+                "replace": {
+                    "hint": "用此伤害代替基础武器的伤害，而不是增加它。",
+                    "label": "替换武器伤害"
+                },
+                "label": "弹药伤害"
+            },
+            "uses": {
+                "autoDestroy": {
+                    "hint": "每当该物品的所有有限使用次数耗尽时，将其数量减少1。",
+                    "label": "当耗尽时销毁"
+                }
+            },
+            "magicalBonus": {
+                "label": "魔法加值"
+            },
+            "properties": {
+                "label": "消耗品属性"
+            }
+        },
+        "Category": {
+            "Poison": "毒药"
+        }
+    },
+    "DND5E.CONSUMPTION": {
+        "FIELDS": {
+            "consumption": {
+                "scaling": {
+                    "label": "消耗随等级变化",
+                    "max": {
+                        "hint": "此物品可提升的最高角色等级，包括基础等级。",
+                        "label": "最大等级限制"
+                    },
+                    "abbr": "随等级变化",
+                    "allowed": {
+                        "label": "允许消耗随等级变化",
+                        "hint": "该行动是否能够随着角色等级的提升而获得更高级别的效果或能力？"
+                    }
+                },
+                "targets": {
+                    "FIELDS": {
+                        "value": {
+                            "hint": "输入负值以恢复而非消耗。",
+                            "label": "消耗数量"
+                        },
+                        "type": {
+                            "label": "消耗类型",
+                            "hint": "消耗目标的类型。"
+                        },
+                        "target": {
+                            "label": "消耗目标",
+                            "hint": "特定要被消耗的目标。"
+                        },
+                        "scaling": {
+                            "label": "消耗随等级变化",
+                            "mode": {
+                                "hint": "消耗应该如何随等级提升。",
+                                "label": "随等级消耗模式"
+                            },
+                            "formula": {
+                                "label": "随等级消耗公式",
+                                "hint": "按等级自定义消耗量。"
+                            }
+                        }
+                    },
+                    "label": "消耗目标",
+                    "hint": "当这个行动被激活时可能被消耗的目标。"
+                },
+                "label": "消耗",
+                "spellSlot": {
+                    "label": "消耗法术位",
+                    "hint": "使用此行动是否应消耗该法术的一个法术位？"
+                }
+            }
+        },
+        "Scaling": {
+            "None": "不随等级变化",
+            "SlotLevel": "环位等级",
+            "Amount": "数量",
+            "Automatic": "自动化"
+        },
+        "Type": {
+            "ActivityUses": {
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> 次 {use} 在此行动中。",
+                "Label": "行动使用次数",
+                "PromptDecrease": "消耗行动使用次数？",
+                "PromptIncrease": "恢复行动使用次数？",
+                "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {use} 在此行动中。",
+                "Warning": "在 {item} 的行动 {activity} 中使用"
+            }
+        },
+        "Action": {
+            "ConsumeResource": "消耗资源",
+            "Create": "创建消耗目标",
+            "Delete": "删除消耗目标",
+            "RefundResource": "退还资源"
+        },
+        "Target": {
+            "ThisItem": "该物品"
+        }
+    },
+    "DND5E.CHECK": {
+        "FIELDS": {
+            "check": {
+                "ability": {
+                    "hint": "进行检定时所使用的属性。",
+                    "label": "检定属性"
+                },
+                "dc": {
+                    "formula": {
+                        "hint": "用于定义检定 DC 的自定义公式或固定值。",
+                        "label": "DC 公式"
+                    },
+                    "label": "难度等级",
+                    "calculation": {
+                        "label": "DC 计算方法",
+                        "hint": "用于计算难度等级的方法或属性。"
+                    }
+                },
+                "label": "检定细节",
+                "associated": {
+                    "label": "相关技能或工具",
+                    "hint": "使用这些技能或工具进行当前的属性检定时，加上熟练项和加值。"
+                }
+            }
+        },
+        "Title": "检定",
+        "ThisTool": "此工具"
+    },
+    "DND5E.CLASS": {
+        "FIELDS": {
+            "primaryAbility": {
+                "value": {
+                    "hint": "该职业最常使用的属性。用于确定兼职限制。",
+                    "label": "主要属性"
+                },
+                "all": {
+                    "hint": "要求所有主要属性都达到最低要求才能选择兼职。",
+                    "label": "全部要求"
+                }
+            },
+            "hitDice": {
+                "label": "生命值骰"
+            },
+            "hitDiceUsed": {
+                "label": "已消耗的生命骰"
+            },
+            "levels": {
+                "label": "职业等级"
+            }
+        },
+        "Multiclass": {
+            "Title": "兼职"
+        }
+    },
+    "DND5E.AdvancementScaleValueIdentifierDiceHint": "获得当前等级的比例值，可在公式中使用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 整个公式 (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 整个骰子 (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 骰子数量 (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 骰面数量 (<code>6</code>)",
+    "DND5E.Amount": "数量",
+    "DND5E.Casting": "施法",
+    "DND5E.ContextMenuActionView": "查看"
 }
