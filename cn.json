@@ -1152,8 +1152,8 @@
     "DND5E.ToolConfigure": "配置工具熟练",
     "TYPES.JournalEntryPage.class": "职业描述",
     "DND5E.AbilityScoreMax": "最大属性值",
-    "TYPES.Item.racePl": "种族",
-    "TYPES.Item.race": "种族",
+    "TYPES.Item.racePl": "物种",
+    "TYPES.Item.race": "物种",
     "DND5E.ActorWarningSingleton": "仅能向 {actorType} 添加一个 {itemType}。",
     "DND5E.AbilityUseConsumableDestroyResourceHint": "使用该 {type} 将消耗 {name} 最后的充能，并且将其摧毁。",
     "DND5E.AdvancementSizeTitle": "体型",
@@ -1910,5 +1910,154 @@
     },
     "DND5E.ToggleDescription": "切换描述",
     "TYPES.Item.raceLegacy": "种族",
-    "TYPES.Item.raceLegacyPl": "种族"
+    "TYPES.Item.raceLegacyPl": "种族",
+    "TYPES.ActiveEffect.enchantment": "附魔",
+    "TYPES.ActiveEffect.enchantmentPl": "附魔",
+    "DOCUMENT.DND5E": {
+        "Activity": "行为",
+        "Warning": {
+            "SelectType": "必须选择{name} 的生物类型。"
+        }
+    },
+    "DND5E.ACTIVATION": {
+        "FIELDS": {
+            "activation": {
+                "condition": {
+                    "label": "激活条件",
+                    "hint": "激活此项行为所需的条件。"
+                },
+                "label": "激活",
+                "type": {
+                    "label": "激活消耗",
+                    "hint": "激活类型（如动作、传奇动作、分钟）。"
+                },
+                "value": {
+                    "hint": "与激活相关联的标量值。",
+                    "label": "激活数值"
+                },
+                "override": {
+                    "label": "覆盖激活",
+                    "hint": "使用此行动时，使用行动激活值而不是物品的激活值。"
+                }
+            }
+        },
+        "Category": {
+            "Standard": "标准",
+            "Time": "时间",
+            "Monster": "怪物",
+            "Vehicle": "载具"
+        }
+    },
+    "DND5E.ADVANCEMENT": {
+        "AbilityScoreImprovement": {
+            "CapDisplay": {
+                "one": "每项属性值最多分配 {points} 点",
+                "other": "每项属性值最多分配 {points} 点"
+            },
+            "Title": "属性值提升",
+            "FIELDS": {
+                "fixed": {
+                    "hint": "通过固定数值提升属性值，在此过程中无法手动提升。",
+                    "label": "固定提升"
+                },
+                "cap": {
+                    "label": "属性上限",
+                    "hint": "一名玩家可分配给单个属性的最大值。"
+                },
+                "locked": {
+                    "label": "已锁定",
+                    "hint": "属性值无法提升。"
+                },
+                "points": {
+                    "decrease": "减少点数",
+                    "increase": "增加点数",
+                    "label": "点数",
+                    "hint": "可分配给任何未锁定的属性值的点数。"
+                }
+            },
+            "Hint": "允许玩家提升一项或多项属性值，或者选择一项可选专长。",
+            "Feat": {
+                "Hint": "在此处拖放一项专长，以替代一次属性值提升。"
+            },
+            "LockedHint": "选择专长后，属性值无法修改。",
+            "PointsRemaining": {
+                "one": "剩余 {points} 可分配属性点数",
+                "other": "剩余 {points} 可分配属性点数"
+            },
+            "Warning": {
+                "Level": "必须至少达到 {level} 级才能选择此专长。",
+                "Type": "只有类型为“专长”的特性才能被选择。"
+            }
+        },
+        "SPELLCONFIG": {
+            "FIELDS": {
+                "uses": {
+                    "requireSlot": {
+                        "hint": "在有限使用时需要消耗一个法术位。如果未勾选，那么使用次数将是额外的免费使用，不会消耗环位。",
+                        "label": "需求环位"
+                    }
+                }
+            },
+            "FreeCasting": "免费施法"
+        },
+        "Subclass": {
+            "Hint": "明确该职业从几级获取其子职。",
+            "Title": "子职",
+            "FlowHint": "升级完成之后，在“特性”标签页中选择一个子职。"
+        }
+    },
+    "DND5E.ACTIVITY": {
+        "FIELDS": {
+            "name": {
+                "label": "名称"
+            },
+            "description": {
+                "label": "描述",
+                "chatFlavor": {
+                    "label": "聊天描述",
+                    "hint": "聊天消息中显示的附加文本。"
+                }
+            },
+            "effects": {
+                "label": "应用效果"
+            },
+            "img": {
+                "label": "图标"
+            }
+        },
+        "Action": {
+            "Create": "创建行动",
+            "Delete": "删除行动"
+        },
+        "Title": {
+            "one": "行动",
+            "other": "行动组合"
+        },
+        "SECTIONS": {
+            "Activation": "激活",
+            "Behavior": "行为",
+            "Effect": "效应",
+            "Time": "时间"
+        }
+    },
+    "DND5E.AdvancementTraitModeMasteryHint": "精通一种你已熟练的武器。",
+    "DND5E.AdvancementTraitModeMasteryLabel": "精通",
+    "DND5E.AreaOfEffect": {
+        "Label": "效应区域",
+        "Size": {
+            "Label": "尺寸",
+            "Height": "高度",
+            "Radius": "半径",
+            "Thickness": "厚度",
+            "Length": "长度",
+            "Width": "宽度"
+        }
+    },
+    "DND5E.ArmorClassUnarmoredBard": "无甲防御（吟游诗人）",
+    "DND5E.ATTACK": {
+        "Title": {
+            "one": "攻击",
+            "other": "攻击"
+        }
+    }
 }
