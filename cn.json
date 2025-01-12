@@ -295,7 +295,7 @@
     "DND5E.ItemEquipmentUsage": "装备用法",
     "DND5E.ItemName": "物品名",
     "DND5E.ItemNew": "新 {type}",
-    "DND5E.ItemRechargeCheck": "{name} 充能检定",
+    "DND5E.ItemRechargeCheck": "{name} 充能检定 - {result}",
     "DND5E.ItemRechargeFailure": "失败！",
     "DND5E.ItemRechargeSuccess": "成功！",
     "DND5E.ItemRequiredStr": "力量要求",
@@ -475,7 +475,7 @@
     "DND5E.SkillSur": "生存",
     "DND5E.SkillPromptTitle": "{skill} 技能检定",
     "DND5E.Special": "特殊",
-    "DND5E.SpecialTraits": "特性",
+    "DND5E.SpecialTraits": "特殊特质",
     "DND5E.Speed": "速度",
     "DND5E.SpeedSpecial": "特殊移动",
     "DND5E.SpellAbility": "施法能力",
@@ -889,10 +889,10 @@
     "DND5E.MaxCharacterLevelExceededWarn": "角色不能升级超过等级 {max}。",
     "DND5E.MaxClassLevelExceededWarn": "职业不能升级超过等级 {max}。",
     "DND5E.RitualAbbr": "仪式",
-    "DND5E.SubclassIdentifierHint": "此标识符应该匹配父职业的标识符以确保两者链接正确。",
+    "DND5E.SubclassIdentifierHint": "此识别符应该匹配父职业的标识符以确保两者链接正确。",
     "DND5E.SubclassAssignmentError": "{class} 已经有一个子职业。在添加新的之前，移除既有的「{subclass}」子职业。",
-    "DND5E.SubclassDuplicateError": "此角色已经有一个标识符为 {identifier} 的子职业。",
-    "DND5E.SubclassMismatchWarn": "{name} 子职业没有标识符匹配为「{class}」的职业。",
+    "DND5E.SubclassDuplicateError": "此角色已经有一个识别符为 {identifier} 的子职业。",
+    "DND5E.SubclassMismatchWarn": "{name} 子职业没有识别符匹配为「{class}」的职业。",
     "DND5E.Unknown": "未知",
     "MACRO.5eNoActorSelected": "没有选中或关联的角色可以作为此宏的目标。",
     "MACRO.5eUnownedWarn": "你仅能为拥有的物品创建宏按钮",
@@ -986,7 +986,7 @@
     "DND5E.ItemRecoveryRoll": "{name} 恢复 {count} 发充能",
     "DND5E.ItemLossRoll": "{name} 失去 {count} 发充能",
     "DND5E.ItemRecoveryRollMax": "{name} 恢复所有充能",
-    "DND5E.ItemRecoveryFormulaWarning": "无法恢复 {name} 的充能。 无效的恢复公式 ‘{formula}’。",
+    "DND5E.ItemRecoveryFormulaWarning": "无法恢复 {name} 的充能。 无效的恢复公式 '{formula}' ({uuid})。",
     "DND5E.LimitedUsesAvailable": "剩余使用次数",
     "DND5E.LimitedUsesMax": "使用次数上限",
     "DND5E.LimitedUsesPer": "使用恢复模式",
@@ -1212,7 +1212,7 @@
     "DND5E.ItemLootDetails": "战利品细节",
     "DND5E.ItemLootSubtype": "{category} 类型",
     "DND5E.ItemLootType": "战利品类型",
-    "DND5E.LanguagesExotic": "异域语言",
+    "DND5E.LanguagesExotic": "罕见语言",
     "DND5E.LanguagesStandard": "标准语言",
     "DND5E.LimitedUsesPrompt": "使用提示",
     "DND5E.LimitedUsesPromptTooltip": "若未勾选，则不会有消耗可用次数时的提示。",
@@ -1461,6 +1461,30 @@
             "Always": "全部折叠",
             "Older": "折叠旧消息",
             "Never": "全部展开"
+        },
+        "BLOODIED": {
+            "Name": "浴血状态",
+            "All": "盟友与敌人的显示",
+            "Player": "仅盟友可见",
+            "None": "永不展示",
+            "Hint": "配置是否自动追踪带血状态及其可见性。"
+        },
+        "DEFAULTSKILLS": {
+            "Name": "默认技能",
+            "Hint": "无论是否是熟练项，NPC卡上都会出现的默认技能。"
+        },
+        "LEVELING": {
+            "Name": "升级模式",
+            "Hint": "确定玩家如何获得新等级。",
+            "NoXP": "无需经验值的等级提升",
+            "XP": "经验值",
+            "XPBoons": "经验值与传奇恩惠"
+        },
+        "RULESVERSION": {
+            "Legacy": "旧版规则（2014）",
+            "Modern": "新版规则（2024）",
+            "Name": "规则版本",
+            "Hint": "在2024 规则与 2014 规则之间切换不同规则的处理方式。"
         }
     },
     "SETTINGS.5eTokenRings": {
@@ -1553,7 +1577,15 @@
             "EpicBoon": "史诗恩惠",
             "Blessing": "祝福",
             "Label": "超常恩赐"
-        }
+        },
+        "Feat": {
+            "Label": "专长",
+            "EpicBoon": "传奇恩惠专长",
+            "FightingStyle": "战斗风格专长",
+            "General": "通用专长",
+            "Origin": "起源专长"
+        },
+        "Species": "物种特性"
     },
     "DND5E.DeathSaveSuccessLabelN.few": "第三次死亡豁免成功",
     "DND5E.SizeGargantuanAbbr": "超巨",
@@ -1764,7 +1796,9 @@
             "Complete": "完整",
             "Reference": "参考"
         },
-        "RequiresConcentration": "需要专注"
+        "RequiresConcentration": "需要专注",
+        "SaveDC": "豁免DC",
+        "Values": "法术数值"
     },
     "DND5E.SheetClassSpellList": "5e默认法术列表卡",
     "DND5E.SpellPrepRitual": "仅仪式",
@@ -1814,7 +1848,7 @@
                 "None": "分组",
                 "School": "学派"
             },
-            "IdentifierHint": "如果适用，标识符应与相关文档中定义的标识符一致。例如，为法师职业创建法术列表时，标识符应为'wizard'。",
+            "IdentifierHint": "如果适用，标识符应与相关文档中定义的标识符一致。例如，为法师职业创建法术列表时，识别符应为'wizard'。",
             "Type": {
                 "Label": "法术列表类型",
                 "Other": "未分类"
@@ -1828,7 +1862,22 @@
         },
         "Subclass": {
             "ItemHint": "将子职业拖拽到此",
-            "NoValidSubclass": "未选择有效子职业，请按编辑按钮添加子职业。"
+            "NoValidSubclass": "未选择有效子职业，请按编辑按钮添加子职业。",
+            "FIELDS": {
+                "item": {
+                    "label": "选择子职"
+                },
+                "style": {
+                    "label": "样式",
+                    "hint": "强制页面样式采用现代或传统格式，而非由子职所指定的格式。"
+                },
+                "description": {
+                    "value": {
+                        "label": "引言",
+                        "hint": "子类的描述，该描述将出现在列出的任何特性之前。"
+                    }
+                }
+            }
         }
     },
     "SIDEBAR.SortModePriority": "按优先级排序",
@@ -2510,8 +2559,14 @@
                 },
                 "custom": {
                     "enabled": {
-                        "hint": "是否使用自定义公式而不是默认骰子。"
-                    }
+                        "hint": "是否使用自定义公式而不是默认骰子。",
+                        "label": "启用治疗公式"
+                    },
+                    "formula": {
+                        "label": "治疗公式",
+                        "hint": "自定义治疗公式。"
+                    },
+                    "label": "自定义治疗公式"
                 },
                 "denomination": {
                     "label": "骰子面数",
@@ -2520,9 +2575,19 @@
                 "number": {
                     "label": "骰子数量",
                     "hint": "要投掷的骰子的数量。"
+                },
+                "types": {
+                    "hint": "治疗类型或用户可选择的多种治疗选项。",
+                    "label": "治疗类型"
+                },
+                "label": "治疗",
+                "bonus": {
+                    "label": "治疗加值",
+                    "hint": "加到治疗掷骰的加值。"
                 }
             }
-        }
+        },
+        "Title": "治疗"
     },
     "DND5E.SUMMON": {
         "FIELDS": {
@@ -2530,9 +2595,103 @@
                 "hd": {
                     "hint": "在生物的数据卡中，除了根据生命值公式计算的生命骰外，额外添加的生命骰。仅在召唤NPC角色时使用。",
                     "label": "额外生命骰"
+                },
+                "ac": {
+                    "hint": "召唤生物所设的护甲等级加值，加到其数据卡中所指定的数值上。",
+                    "label": "护甲等级加值"
+                },
+                "saveDamage": {
+                    "hint": "该生物需要进行豁免检定的能力所造成的额外伤害。",
+                    "label": "豁免伤害加值"
+                },
+                "hp": {
+                    "label": "生命值加值",
+                    "hint": "在生物的数据卡中指定的生命值基础上额外增加的生命值。"
+                },
+                "attackDamage": {
+                    "label": "攻击伤害加值",
+                    "hint": "该生物攻击造成的额外伤害。"
+                },
+                "healing": {
+                    "label": "治疗加值",
+                    "hint": "治疗技能提供的额外治疗效果。"
                 }
+            },
+            "profiles": {
+                "FIELDS": {
+                    "cr": {
+                        "hint": "被召唤生物的最大挑战等级。",
+                        "label": "挑战等级",
+                        "abbr": "CR"
+                    },
+                    "level": {
+                        "hint": "使用此档案所需的环阶范围。",
+                        "label": "环阶限制",
+                        "max": {
+                            "label": "最大环阶"
+                        },
+                        "min": {
+                            "label": "最小环阶"
+                        }
+                    },
+                    "count": {
+                        "label": "总数"
+                    },
+                    "name": {
+                        "label": "显示名称",
+                        "hint": "在使用对话框中显示的档案名称。"
+                    },
+                    "types": {
+                        "label": "生物类型",
+                        "hint": "可供选择召唤生物的生物类型列表。"
+                    },
+                    "uuid": {
+                        "label": "链接生物"
+                    }
+                },
+                "label": "召唤档案"
+            },
+            "summon": {
+                "identifier": {
+                    "hint": "用于确定应使用角色等级还是特定职业等级来限制角色等级上限的识别符。",
+                    "label": "职业识别符"
+                },
+                "prompt": {
+                    "hint": "是否应提示玩家放置召唤物？即使禁用提示，玩家仍可通过聊天卡进行召唤。",
+                    "label": "召唤提示"
+                },
+                "label": "召唤详情",
+                "mode": {
+                    "label": "模式",
+                    "hint": "设置如何指定要召唤的生物。",
+                    "CR": "通过挑战等级和类型",
+                    "Direct": "通过直接链接"
+                }
+            },
+            "match": {
+                "saves": {
+                    "label": "匹配豁免",
+                    "hint": "调整召唤生物的豁免DC以匹配施法者的豁免DC。"
+                },
+                "attacks": {
+                    "label": "匹配攻击",
+                    "hint": "调整召唤生物的攻击命中值以匹配施法者的攻击命中值。"
+                },
+                "proficiency": {
+                    "label": "匹配熟练项",
+                    "hint": "调整召唤生物的熟练加值以匹配施法者的熟练加值。"
+                }
+            },
+            "creatureTypes": {
+                "hint": "召唤出的生物将变为该类型。如果选择了不止一种类型，那么玩家在召唤时可以从这些类型中进行选择。",
+                "label": "生物类型"
+            },
+            "creatureSizes": {
+                "hint": "召唤生物和其Token将变为该体型。如果选择了不止一种体型，那么玩家在召唤时可以从这些体型中进行选择。",
+                "label": "生物体型"
             }
-        }
+        },
+        "Title": "召唤"
     },
     "DND5E.DURATION": {
         "FIELDS": {
@@ -2573,8 +2732,46 @@
                 "parts": {
                     "label": "伤害作用",
                     "hint": "在掷骰时包含单独的伤害作用（包括基础伤害、额外伤害、魔法伤害）。"
+                },
+                "label": "豁免伤害",
+                "onSave": {
+                    "hint": "成功豁免时应造成多少伤害？",
+                    "label": "豁免成功伤害",
+                    "Full": "全额伤害",
+                    "Half": "半数伤害",
+                    "None": "无伤害"
+                }
+            },
+            "effects": {
+                "onSave": {
+                    "label": "始终适用",
+                    "hint": "即使目标通过了豁免检定，此效应也会生效。"
+                }
+            },
+            "save": {
+                "label": "豁免详情",
+                "ability": {
+                    "label": "豁免属性",
+                    "hint": "必须掷骰以尝试豁免的属性。"
+                },
+                "dc": {
+                    "label": "难度等级",
+                    "calculation": {
+                        "label": "DC计算方法",
+                        "hint": "用于计算难度等级的方法或属性。"
+                    },
+                    "formula": {
+                        "label": "DC公式",
+                        "hint": "用于定义豁免难度等级的自定义公式或固定值。"
+                    },
+                    "CustomFormula": "自定义公式",
+                    "DefaultFormula": "8 + @mod + @prof"
                 }
             }
+        },
+        "Title": {
+            "one": "豁免",
+            "other": "豁免"
         }
     },
     "DND5E.USAGE": {
@@ -2612,7 +2809,8 @@
                         "effect": {
                             "label": "额外效应",
                             "hint": "当施加此附魔时，这些额外效应将被添加到被附魔物品上，当移除此附魔时，这些效应也将被移除。"
-                        }
+                        },
+                        "label": "赋予"
                     },
                     "level": {
                         "label": "环阶限制",
@@ -2629,8 +2827,8 @@
             "enchant": {
                 "label": "附魔配置",
                 "identifier": {
-                    "label": "职业标识符",
-                    "hint": "用于确定是使用角色等级还是特定职业等级来限制附魔等级的标识符。"
+                    "label": "职业识别符",
+                    "hint": "用于确定是使用角色等级还是特定职业等级来限制附魔等级的识别符。"
                 }
             },
             "restrictions": {
@@ -2716,5 +2914,117 @@
         },
         "Empty": "没有相关效应。请使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个已有的效应。",
         "Label": "可用效应"
-    }
+    },
+    "DND5E.FLAGS": {
+        "EnhancedDualWielding": {
+            "Name": "强化双持",
+            "Hint": "允许使用任何无双手词条的近战武器进行附赠动作的额外攻击。"
+        }
+    },
+    "DND5E.ItemBackgroundDetails": "背景详情",
+    "DND5E.ItemClassDetails": "职业详情",
+    "DND5E.ItemEquipmentDexModAbbr": "最大敏捷调整值",
+    "DND5E.SheetClassContainerLegacy": "旧版 5e 容器卡",
+    "DND5E.SheetClassItemLegacy": "旧版 5e 物品卡",
+    "DND5E.SOURCE": {
+        "FIELDS": {
+            "source": {
+                "custom": {
+                    "label": "自定义标签"
+                },
+                "book": {
+                    "label": "规则书"
+                },
+                "label": "来源",
+                "license": {
+                    "label": "许可"
+                },
+                "page": {
+                    "label": "页面/章节"
+                },
+                "revision": {
+                    "label": "修订"
+                },
+                "rules": {
+                    "label": "规则版本"
+                },
+                "uuid": {
+                    "label": "原始来源"
+                }
+            }
+        },
+        "Action": {
+            "Configure": "配置来源"
+        },
+        "Display": {
+            "Page": "第 {page} 页",
+            "Full": "{book} {page}"
+        }
+    },
+    "DND5E.LanguagesExoticLegacy": "异域语言",
+    "DND5E.LanguagesCommonSign": "通用手语",
+    "DND5E.PolymorphAddTemp": "将目标的生命值作为临时生命值添加",
+    "DND5E.RANGE": {
+        "FIELDS": {
+            "range": {
+                "override": {
+                    "hint": "使用此行动时，使用此射程，而非物品射程。",
+                    "label": "覆盖射程"
+                },
+                "long": {
+                    "hint": "武器的最大射程（如果武器具备此属性的话）。",
+                    "label": "最大射程"
+                },
+                "label": "射程",
+                "reach": {
+                    "label": "触及"
+                },
+                "special": {
+                    "label": "特殊射程",
+                    "hint": "任意特殊射程细节的描述。"
+                },
+                "units": {
+                    "label": "射程单位",
+                    "hint": "用于测量距离的单位。"
+                },
+                "value": {
+                    "hint": "如适用，指定单位中的射程数值。",
+                    "label": "射程数值"
+                }
+            }
+        }
+    },
+    "DND5E.ExperiencePointsBoons": {
+        "one": "{number} 恩惠",
+        "other": "{number} 恩惠"
+    },
+    "DND5E.ItemSiegeProperties": "攻城词条",
+    "DND5E.ItemSpeciesDetails": "攻城词条",
+    "DND5E.ItemSubclassDetails": "子职详情",
+    "DND5E.ItemVehicleProperties": "载具词条",
+    "DND5E.PolymorphKeepHP": "保留生命值和生命骰",
+    "DND5E.PolymorphKeepType": "保留生物类型",
+    "DND5E.RollConfiguration": {
+        "Title": "配置掷骰",
+        "Configuration": "配置",
+        "Rolls": "掷骰"
+    },
+    "DND5E.Shape": "形态",
+    "DND5E.SpecialHint": "以分号分隔的特殊值。",
+    "DND5E.Species": {
+        "Label": "物种",
+        "Add": "添加物种",
+        "Features": "物种特性",
+        "Name": "物种名称"
+    },
+    "DND5E.SpellPreparation": {
+        "Label": "法术准备",
+        "Formula": "准备公式",
+        "Mode": "法术准备模式"
+    },
+    "DND5E.Spent": "消耗",
+    "DND5E.SubclassAdd": "添加子职",
+    "KEYBINDINGS.DND5E.SkipDialogNormal": "跳过对话框",
+    "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "跳过对话框（以劣势进行掷骰）",
+    "KEYBINDINGS.DND5E.SkipDialogAdvantage": "跳过对话框（以优势/重击进行掷骰）"
 }
