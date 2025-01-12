@@ -339,7 +339,7 @@
     "DND5E.LegRes": "传奇抗性",
     "DND5E.LegendaryActionLabel": "传奇动作",
     "DND5E.Level": "等级",
-    "DND5E.LevelScaling": "升环施法",
+    "DND5E.LevelScaling": "等级递增",
     "DND5E.LimitedUses": "可用次数",
     "DND5E.LongRest": "长休（8小时）",
     "DND5E.LongRestEpic": "长休（1小时）",
@@ -417,7 +417,7 @@
     "DND5E.SaveDC": "DC {dc} {ability}",
     "DND5E.SavePromptTitle": "{ability} 豁免",
     "DND5E.SavingThrow": "豁免骰",
-    "DND5E.ScalingFormula": "升环公式",
+    "DND5E.ScalingFormula": "递增公式",
     "DND5E.SchoolAbj": "防护系",
     "DND5E.SchoolCon": "咒法系",
     "DND5E.SchoolDiv": "预言系",
@@ -1065,7 +1065,7 @@
     "JOURNALENTRYPAGE.DND5E.Class.TableCaption": "{class}",
     "JOURNALENTRYPAGE.DND5E.Class.SubclassHint": "在此松开子职",
     "DND5E.HitPointsMin": "HP 下限",
-    "DND5E.ScalingMode": "缩放模式",
+    "DND5E.ScalingMode": "递增模式",
     "DND5E.TraitWeaponPlural.other": "武器熟练项",
     "DND5E.PolymorphCustomTransformation": "自定义变形",
     "DND5E.PolymorphEffectTransformation": "效果变形",
@@ -2118,7 +2118,7 @@
                 },
                 "parts": {
                     "label": "伤害作用",
-                    "hint": "在掷骰时包含特有的伤害作用（包括基础伤害、额外伤害、魔法伤害、特殊能力伤害）。"
+                    "hint": "在掷骰时包含单独的伤害作用（包括基础伤害、额外伤害、魔法伤害）。"
                 }
             }
         },
@@ -2402,7 +2402,7 @@
             "Title": "兼职"
         }
     },
-    "DND5E.AdvancementScaleValueIdentifierDiceHint": "获得当前等级的比例值，可在公式中使用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 整个公式 (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 整个骰子 (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 骰子数量 (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 骰面数量 (<code>6</code>)",
+    "DND5E.AdvancementScaleValueIdentifierDiceHint": "获得当前等级的比例值，可在公式中使用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 整个公式 (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 整个骰面 (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 骰子数量 (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 骰面数量 (<code>6</code>)",
     "DND5E.Amount": "数量",
     "DND5E.Casting": "施法",
     "DND5E.ContextMenuActionView": "查看",
@@ -2440,10 +2440,11 @@
                             "mode": {
                                 "label": "递增模式",
                                 "abbr": "模式",
-                                "hint": "计算递增的缩放的方法。"
+                                "hint": "计算递增增量的方法。。"
                             },
                             "formula": {
-                                "label": "递增公式"
+                                "label": "递增公式",
+                                "hint": "一个任意的递增公式，每个递增步骤中将被乘以该公式并加到原始公式上。"
                             }
                         },
                         "bonus": {
@@ -2468,9 +2469,111 @@
                         "number": {
                             "hint": "要投掷的骰子数量。",
                             "label": "骰子数量"
+                        },
+                        "types": {
+                            "label": "伤害类型",
+                            "hint": "造成伤害的类型，或者用户可以选择的多种类型。"
                         }
                     }
                 }
+            }
+        },
+        "Part": {
+            "Action": {
+                "Create": "创造伤害作用",
+                "Delete": "删除伤害作用"
+            }
+        },
+        "Scaling": {
+            "None": "不递增",
+            "Whole": "每一级",
+            "Half": "每隔一级"
+        }
+    },
+    "DND5E.HEAL": {
+        "FIELDS": {
+            "healing": {
+                "scaling": {
+                    "label": "治疗递增",
+                    "number": {
+                        "hint": "每次递增步骤增加的骰子数量。如果治疗公式中存在多个骰子，则应用于第一个骰子。",
+                        "label": "骰子递增"
+                    },
+                    "mode": {
+                        "label": "递增模式",
+                        "hint": "计算递增增量的方法。"
+                    },
+                    "formula": {
+                        "label": "递增公式",
+                        "hint": "一个任意的递增公式，每个递增步骤中将被乘以该公式并加到原始公式上。"
+                    }
+                },
+                "custom": {
+                    "enabled": {
+                        "hint": "是否使用自定义公式而不是默认骰子。"
+                    }
+                },
+                "denomination": {
+                    "label": "骰子面数",
+                    "hint": "要投掷的骰子的面值。"
+                },
+                "number": {
+                    "label": "骰子数量",
+                    "hint": "要投掷的骰子的数量。"
+                }
+            }
+        }
+    },
+    "DND5E.SUMMON": {
+        "FIELDS": {
+            "bonuses": {
+                "hd": {
+                    "hint": "在生物的数据卡中，除了根据生命值公式计算的生命骰外，额外添加的生命骰。仅在召唤NPC角色时使用。",
+                    "label": "额外生命骰"
+                }
+            }
+        }
+    },
+    "DND5E.DURATION": {
+        "FIELDS": {
+            "duration": {
+                "override": {
+                    "hint": "使用该行动时，使用此持续时间值，而非物品的持续时间值。",
+                    "label": "覆盖持续时间"
+                },
+                "label": "持续时间",
+                "concentration": {
+                    "label": "专注",
+                    "hint": "生物必须维持专注来保持效应激活。"
+                }
+            }
+        }
+    },
+    "DND5E.ScalingValue": "递增数值",
+    "DND5E.Die": "骰面",
+    "DND5E.Denomination": "骰面",
+    "DND5E.Contiguous": "连续",
+    "DND5E.DefaultSpecific": "默认 ({default})",
+    "DND5E.DescriptionEdit": "编辑 {description}",
+    "DND5E.SAVE": {
+        "FIELDS": {
+            "damage": {
+                "parts": {
+                    "label": "伤害作用",
+                    "hint": "在掷骰时包含单独的伤害作用（包括基础伤害、额外伤害、魔法伤害）。"
+                }
+            }
+        }
+    },
+    "DND5E.USAGE": {
+        "SECTION": {
+            "Scaling": "递增"
+        }
+    },
+    "DND5E.WEAPON": {
+        "FIELDS": {
+            "damage": {
+                "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害部分会自动提供。"
             }
         }
     }
