@@ -189,11 +189,11 @@
     "DND5E.DistSelf": "自身",
     "DND5E.DistTouch": "触及",
     "DND5E.Duration": "持续时间",
-    "DND5E.Effects": "效果",
-    "DND5E.EffectCreate": "创建效果",
-    "DND5E.EffectToggle": "切换效果",
-    "DND5E.EffectEdit": "编辑效果",
-    "DND5E.EffectDelete": "删除效果",
+    "DND5E.Effects": "效应",
+    "DND5E.EffectCreate": "创建效应",
+    "DND5E.EffectToggle": "切换效应",
+    "DND5E.EffectEdit": "编辑效应",
+    "DND5E.EffectDelete": "删除效应",
     "DND5E.EquipmentBonus": "魔法加值",
     "DND5E.EquipmentClothing": "衣服",
     "DND5E.EquipmentHeavy": "重型护甲",
@@ -272,7 +272,7 @@
     "DND5E.ItemActivationCondition": "激活条件",
     "DND5E.ItemActivationCost": "激活费用",
     "DND5E.ItemAttackBonus": "攻击加值",
-    "DND5E.ItemConsumableActivation": "消耗品效果",
+    "DND5E.ItemConsumableActivation": "消耗品激活",
     "DND5E.ItemConsumableDetails": "消耗品详情",
     "DND5E.ItemConsumableStatus": "消耗品状态",
     "DND5E.ItemConsumableType": "消耗品类型",
@@ -489,7 +489,7 @@
     "DND5E.SpellCreate": "创建法术",
     "DND5E.SpellDC": "法术DC",
     "DND5E.SpellDetails": "法术详情",
-    "DND5E.SpellEffects": "法术效果",
+    "DND5E.SpellEffects": "法术效应",
     "DND5E.SpellLevel": "法术环级",
     "DND5E.SpellLevel0": "戏法",
     "DND5E.SpellLevel1": "1环",
@@ -686,10 +686,10 @@
     "DND5E.NewDayHint": "回复“每天”充能的有限次使用的能力？",
     "DND5E.LongRestHint": "要长休吗？长休时你将回复生命值，一半的生命骰，职业资源，物品充能与法术位。",
     "DND5E.RacialTraits": "种族特质",
-    "DND5E.EffectTemporary": "临时效果",
-    "DND5E.EffectPassive": "被动效果",
-    "DND5E.EffectInactive": "未激活效果",
-    "DND5E.EffectNew": "新增效果",
+    "DND5E.EffectTemporary": "临时效应",
+    "DND5E.EffectPassive": "被动效应",
+    "DND5E.EffectInactive": "未激活效应",
+    "DND5E.EffectNew": "新增效应",
     "DND5E.Feats": "特性",
     "DND5E.Rest": "休息",
     "DND5E.AbilityUseConfig": "使用配置",
@@ -703,7 +703,7 @@
     "DND5E.ArmorClassFormula": "公式",
     "DND5E.DistKm": "千米",
     "DND5E.DistM": "米",
-    "DND5E.EffectUnavailable": "失效效果",
+    "DND5E.EffectUnavailable": "失效效应",
     "DND5E.ItemRarityCommon": "普通",
     "DND5E.ItemRarityUncommon": "非普通",
     "DND5E.ItemRarityRare": "稀有",
@@ -767,8 +767,8 @@
     "SETTINGS.5eProfDice": "DMG：骰子 (1d4, 1d6, 1d8, 1d10, 1d12)",
     "DND5E.ArmorClassMotionless": "静止状态 AC",
     "DND5E.DamageThreshold": "伤害阈值",
-    "DND5E.EffectEnable": "启用效果",
-    "DND5E.EffectDisable": "禁用效果",
+    "DND5E.EffectEnable": "启用效应",
+    "DND5E.EffectDisable": "禁用效应",
     "DND5E.HitPointsCurrent": "当前 HP",
     "DND5E.HitPointsMax": "HP 上限",
     "DND5E.HitPointsTemp": "临时 HP",
@@ -941,7 +941,7 @@
     "DND5E.DurationType": "持续时间类型",
     "DND5E.DurationUnits": "持续时间单位",
     "DND5E.DurationValue": "持续时长",
-    "DND5E.Effect": "效果",
+    "DND5E.Effect": "效应",
     "DND5E.Environment": "环境",
     "DND5E.ExperiencePoints": "经验值",
     "DND5E.ExperiencePointsAbbr": "XP",
@@ -954,7 +954,7 @@
     "DND5E.GroupHP": "总体生命值",
     "DND5E.GroupSummary": "一群 {members}",
     "JOURNALENTRYPAGE.DND5E.TableTOC": "表格：{caption}",
-    "DND5E.ActiveEffectOverrideWarning": "该值被一个激活效果所修改，无法被编辑。禁用该效果以修改。",
+    "DND5E.ActiveEffectOverrideWarning": "该值被一个激活效应所修改，无法被编辑。禁用该效应以修改。",
     "DND5E.AttunementMax": "最大同调物品",
     "DND5E.Contents": "内容",
     "DND5E.Disclaimer": "免责声明",
@@ -997,7 +997,7 @@
     "DND5E.ModuleArtConfigN": "模组提供的画风",
     "DND5E.ModuleArtConfigPortraits": "立绘",
     "DND5E.ModuleArtConfigTokens": "指示物",
-    "DND5E.PolymorphKeepSpellAE": "保留来自你的法术的效果？",
+    "DND5E.PolymorphKeepSpellAE": "保留来自你的法术的效应？",
     "DND5E.ProficiencyBonus": "熟练加值",
     "DND5E.RangeLong": "远程",
     "DND5E.RangeNormal": "正常距离",
@@ -1068,12 +1068,12 @@
     "DND5E.ScalingMode": "递增模式",
     "DND5E.TraitWeaponPlural.other": "武器熟练项",
     "DND5E.PolymorphCustomTransformation": "自定义变形",
-    "DND5E.PolymorphEffectTransformation": "效果变形",
-    "DND5E.PolymorphKeepAE": "保留所有效果（覆盖其他效果保留选项）。",
-    "DND5E.PolymorphKeepClassAE": "保留源自你的职业或子职的效果？",
-    "DND5E.PolymorphKeepEquipmentAE": "保留源自你的装备的效果？",
-    "DND5E.PolymorphKeepFeatureAE": "保留源自你的特性的效果？",
-    "DND5E.PolymorphKeepOtherOriginAE": "保留源自其他角色的效果？",
+    "DND5E.PolymorphEffectTransformation": "效应转换",
+    "DND5E.PolymorphKeepAE": "保留所有效应（覆盖其他效应保留选项）。",
+    "DND5E.PolymorphKeepClassAE": "保留源自你的职业或子职的效应？",
+    "DND5E.PolymorphKeepEquipmentAE": "保留源自你的装备的效应？",
+    "DND5E.PolymorphKeepFeatureAE": "保留源自你的特性的效应？",
+    "DND5E.PolymorphKeepOtherOriginAE": "保留源自其他角色的效应？",
     "DND5E.PolymorphKeepSelf": "保留自我（只是改变图像和体型，即用于易容术等法术）",
     "DND5E.PolymorphRevertNoOriginalActorWarn": "未找到引用“{reference}”的原角色",
     "DND5E.SheetClassClassSummary": "默认 5e 职业总结表",
@@ -1085,9 +1085,9 @@
     "DND5E.TargetValue": "目标长度或数量",
     "DND5E.VehicleTypeSpace": "空间载具",
     "DND5E.WarnCantAddMultipleAdvancements": "目前无法同时向单个角色添加多个具有升级的项目。请分别添加。",
-    "DND5E.PolymorphKeepBackgroundAE": "保留源自你的背景的效果？",
+    "DND5E.PolymorphKeepBackgroundAE": "保留源自你的背景的效应？",
     "DND5E.PolymorphSelf": "仅外形",
-    "DND5E.PolymorphKeepOriginAE": "保留源自此角色（即没有关联到特性、物品、法术）的效果",
+    "DND5E.PolymorphKeepOriginAE": "保留源自此角色（即没有关联到特性、物品、法术）的效应",
     "TYPES.Actor.character": "PC",
     "TYPES.Actor.characterPl": "PC",
     "TYPES.Actor.npcPl": "NPC",
@@ -1271,7 +1271,7 @@
     "DND5E.BonusActionAbbr": "附赠",
     "DND5E.Conditions": "条件",
     "DND5E.Confirm": "确认",
-    "DND5E.ConcentratingLimited": "你无法专注于额外效果。",
+    "DND5E.ConcentratingLimited": "你无法专注于额外效应。",
     "DND5E.CurrencyManager": {
         "Transfer": {
             "Action": "转移所选",
@@ -1296,7 +1296,7 @@
     "DND5E.DeathSaveFailureLabelN.two": "第二次死亡豁免失败",
     "DND5E.DeathSaveFailureLabel": "死亡豁免失败",
     "DND5E.EffectsApplyTokens": "应用于选定的指示物",
-    "DND5E.EffectsSearch": "搜索效果",
+    "DND5E.EffectsSearch": "搜索效应",
     "DND5E.ExperiencePointsLabel": "进阶到下一级",
     "DND5E.ExhaustionLevel": "力竭等级 {n}",
     "DND5E.Encumbrance": "负重",
@@ -1441,7 +1441,7 @@
     },
     "SETTINGS.5eEncumbrance": {
         "None": "无",
-        "Hint": "启用自动跟踪负重，并对超重的角色应用状态效果。",
+        "Hint": "启用自动跟踪负重，并对超重的角色应用状态效应。",
         "Variant": "变体（负重 & 超重）",
         "Normal": "正常（最大负重）",
         "Name": "负重跟踪"
@@ -1457,7 +1457,7 @@
         },
         "COLLAPSETRAYS": {
             "Name": "聊天中折叠托盘",
-            "Hint": "自动折叠聊天卡中出现的伤害、命中和效果托盘。",
+            "Hint": "自动折叠聊天卡中出现的伤害、命中和效应托盘。",
             "Always": "全部折叠",
             "Older": "折叠旧消息",
             "Never": "全部展开"
@@ -1489,7 +1489,7 @@
         "RingColor": "环颜色",
         "Effects": {
             "RingPulse": "环形脉冲",
-            "Label": "效果",
+            "Label": "效应",
             "RingGradient": "环形渐变",
             "BackgroundWave": "背景波动"
         },
@@ -1595,7 +1595,7 @@
     "DND5E.SpellSlotsN.two": "{n} 环法术位",
     "DND5E.TimeDayAbbr": "天",
     "DND5E.FeaturesOther": "其他特性",
-    "DND5E.ConcentratingMissingItem": "要被替换专注的效果不存在。",
+    "DND5E.ConcentratingMissingItem": "要被替换专注的效应不存在。",
     "DND5E.Container": "容器",
     "DND5E.ConcentratingEnd": "结束专注",
     "DND5E.DamMod": "伤害调整",
@@ -1621,20 +1621,20 @@
     "DND5E.TimeHourAbbr": "时",
     "DND5E.AdvancementItemGrantContainerWarning": "容器内的物品不会随容器一起添加。",
     "DND5E.AbilityScoreL": "{ability} 值",
-    "DND5E.ConcentratingWarnLimitOptional": "你可以结束对你正在维持的某个效果的专注，以使用这个物品。",
+    "DND5E.ConcentratingWarnLimitOptional": "你可以结束对你正在维持的某个效应的专注，以使用这个物品。",
     "DND5E.ActionSumm": "召唤",
     "DND5E.DocumentViewWarn": "你没有权限查看此文档。",
     "DND5E.Gender": "性别",
     "DND5E.TimeMinuteAbbr": "分",
     "DND5E.Recovery": "恢复",
-    "DND5E.ConcentratingWarnLimit": "你不能维持对更多效果的专注！",
+    "DND5E.ConcentratingWarnLimit": "你不能维持对更多效应的专注！",
     "DND5E.Eyes": "眼睛",
     "DND5E.DistKmAbbr": "公里",
     "DND5E.Identify": "鉴定",
     "DND5E.Components": "材料",
     "DND5E.InventorySearch": "搜索所持物",
     "DND5E.FilterClear": "清除筛选",
-    "DND5E.ConcentratingEndChoice": "你正在对来自多个来源的效果维持专注。选择要结束的效果。",
+    "DND5E.ConcentratingEndChoice": "你正在对来自多个来源的效应维持专注。选择要结束的效应。",
     "DND5E.Multiplier": "乘数",
     "DND5E.ModuleArtPriorityIncrease": "提高优先级",
     "DND5E.ShortRestHintGroup": "进行短休？在短休期间，队伍成员可以消耗生命骰并恢复物品使用次数。",
@@ -1654,10 +1654,10 @@
     "DND5E.SheetModeEdit": "编辑",
     "DND5E.ItemFeatureProperties": "特性属性",
     "DND5E.ClassAdd": "添加职业",
-    "DND5E.ConcentratingOn": "你正在维持对 '{name}' {type} 效果的专注。",
+    "DND5E.ConcentratingOn": "你正在维持对 '{name}' {type} 效应的专注。",
     "DND5E.ModuleArtPriorityDecrease": "降低优先级",
     "TYPES.JournalEntryPage.rule": "规则",
-    "DND5E.ConcentratingWarnLimitZero": "你无法维持对任何效果的专注！",
+    "DND5E.ConcentratingWarnLimitZero": "你无法维持对任何效应的专注！",
     "DND5E.DeathSaveSuccessLabelN.two": "第二次死亡豁免成功",
     "DND5E.NameUnidentified": "未鉴定的名字",
     "DND5E.SizeTinyAbbr": "微",
@@ -1703,9 +1703,9 @@
         "Downgrading": "降级 {source} 为抗性",
         "Ignoring": "忽略 {source}"
     },
-    "DND5E.ConcentrationBreakWarning": "打破对其他生物具有激活效果的专注需要有 GM 在线。",
-    "DND5E.EffectApplyWarningConcentration": "应用其他角色正在专注的效果需要 GM 权限。",
-    "DND5E.EffectApplyWarningOwnership": "效果不能应用于你不拥有的指示物。",
+    "DND5E.ConcentrationBreakWarning": "打破对其他生物具有激活效应的专注需要有 GM 在线。",
+    "DND5E.EffectApplyWarningConcentration": "应用其他角色正在专注的效应需要 GM 权限。",
+    "DND5E.EffectApplyWarningOwnership": "效应不能应用于你不拥有的指示物。",
     "DND5E.ChatContextSelectHit": "选择命中目标",
     "DND5E.ChatContextSelectMiss": "选择未命中目标",
     "SETTINGS.5eNoConcentrationN": "禁用专注追踪",
@@ -2030,7 +2030,7 @@
                 }
             },
             "effects": {
-                "label": "应用效果"
+                "label": "应用效应"
             },
             "img": {
                 "label": "图标"
@@ -2538,13 +2538,25 @@
         "FIELDS": {
             "duration": {
                 "override": {
-                    "hint": "使用该行动时，使用此持续时间值，而非物品的持续时间值。",
+                    "hint": "使用该行动时，使用此持续时长，而非物品的持续时长。",
                     "label": "覆盖持续时间"
                 },
                 "label": "持续时间",
                 "concentration": {
                     "label": "专注",
                     "hint": "生物必须维持专注来保持效应激活。"
+                },
+                "special": {
+                    "label": "特殊持续时间",
+                    "hint": "任何特殊持续时间详情的描述。"
+                },
+                "units": {
+                    "label": "持续时间单位",
+                    "hint": "用于测量持续时间的单位。"
+                },
+                "value": {
+                    "label": "持续时长",
+                    "hint": "如果适用，指定单位中的持续时间数值。"
                 }
             }
         }
@@ -2576,5 +2588,133 @@
                 "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害部分会自动提供。"
             }
         }
+    },
+    "DND5E.ENCHANT": {
+        "Enchantment": {
+            "Action": {
+                "Create": "创建附魔",
+                "Delete": "删除附魔"
+            },
+            "Empty": "没有相关附魔。使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个现有的附魔。"
+        },
+        "FIELDS": {
+            "effects": {
+                "FIELDS": {
+                    "riders": {
+                        "activity": {
+                            "hint": "当应用此附魔时，这些额外行动将被添加到被附魔物品中，当移除附魔时则会被移除。",
+                            "label": "额外行动"
+                        },
+                        "item": {
+                            "hint": "当生物的某个物品被附魔时，这些额外的物品将被添加到该生物上，如果附魔被移除，这些额外的物品也将被移除。",
+                            "label": "额外物品"
+                        },
+                        "effect": {
+                            "label": "额外效应",
+                            "hint": "当施加此附魔时，这些额外效应将被添加到被附魔物品上，当移除此附魔时，这些效应也将被移除。"
+                        }
+                    },
+                    "level": {
+                        "label": "环阶限制",
+                        "hint": "使用此附魔所需的环阶范围。",
+                        "max": {
+                            "label": "最大环阶"
+                        },
+                        "min": {
+                            "label": "最小环阶"
+                        }
+                    }
+                }
+            },
+            "enchant": {
+                "label": "附魔配置",
+                "identifier": {
+                    "label": "职业标识符",
+                    "hint": "用于确定是使用角色等级还是特定职业等级来限制附魔等级的标识符。"
+                }
+            },
+            "restrictions": {
+                "label": "限制条件",
+                "hint": "此附魔可施加的物品类型的限制。",
+                "allowMagical": {
+                    "label": "允许魔法",
+                    "hint": "允许对已具魔法属性的物品进行附魔。"
+                },
+                "categories": {
+                    "label": "有效类别",
+                    "hint": "此附魔可施加的特定物品类别。"
+                },
+                "properties": {
+                    "label": "有效词条",
+                    "hint": "此附魔生效所需的特定物品词条。"
+                },
+                "type": {
+                    "label": "物品类型",
+                    "hint": "此附魔可施加的物品类型。",
+                    "Any": "任意附魔类型"
+                }
+            }
+        },
+        "Title": "附魔",
+        "SECTIONS": {
+            "Enchanting": "使...附魔",
+            "Enchantments": "附魔",
+            "Restrictions": "限制条件"
+        },
+        "DropArea": "把物品拖放于此处进行附魔……",
+        "Enchanted": "{current} &sol; {max} 已附魔",
+        "Warning": {
+            "ConcentrationEnded": "无法施加此附魔，因为专注状态已结束。",
+            "MissingProperty": "物品必须具有以下属性之一才能被附魔： {validProperties}。",
+            "NoMagicalItems": "已经具有魔法的物品无法被施加附魔。",
+            "NoSubtype": "只有 {allowedType} 类型的物品才能被施加附魔，但此物品没有此子类型。",
+            "WrongType": "此附魔无法对 {incorrectType} 类型的物品生效，仅允许对 {allowedType} 类型的物品进行附魔。"
+        }
+    },
+    "DND5E.ENCHANTMENT": {
+        "Category": {
+            "Inactive": "未激活附魔",
+            "General": "附魔",
+            "Active": "激活附魔"
+        },
+        "FIELDS": {
+            "enchantment": {
+                "items": {
+                    "period": {
+                        "hint": "附魔可以重新绑定到不同物品的频率。",
+                        "label": "替换周期"
+                    },
+                    "max": {
+                        "label": "物品限制",
+                        "hint": "此类型附魔同时生效的最大数量的公式。"
+                    }
+                },
+                "label": "附魔配置"
+            }
+        },
+        "Action": {
+            "Apply": "施加附魔",
+            "Disable": "禁用附魔",
+            "Edit": "编辑附魔",
+            "Enable": "启用附魔",
+            "Remove": "移除附魔"
+        },
+        "Items": {
+            "Entry": "{item} 在 <em>{actor}</em>上"
+        },
+        "Label": "附魔",
+        "Warning": {
+            "NotOnActor": "附魔只能施加在物品上，而不能直接添加到角色身上。",
+            "Override": "此值已被附魔修改，无法直接编辑。请在效果选项卡中禁用附魔以进行编辑。"
+        }
+    },
+    "DND5E.EFFECT": {
+        "Action": {
+            "Create": "创建效应",
+            "Delete": "删除效应",
+            "Dissociate": "分离效应"
+        },
+        "Empty": "没有相关效应。请使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个已有的效应。",
+        "Label": "可用效应"
     }
 }
