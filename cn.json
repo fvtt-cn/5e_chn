@@ -2114,11 +2114,11 @@
                 },
                 "includeBase": {
                     "label": "包含基础伤害",
-                    "hint": "将物品的基础伤害与任何附加伤害部分一并包含在内。"
+                    "hint": "将物品的基础伤害与任何附加伤害作用一并包含在内。"
                 },
                 "parts": {
-                    "label": "额外伤害",
-                    "hint": "在掷骰时包含特有的额外伤害（包括基础伤害、额外伤害、魔法伤害、特殊能力伤害）。"
+                    "label": "伤害作用",
+                    "hint": "在掷骰时包含特有的伤害作用（包括基础伤害、额外伤害、魔法伤害、特殊能力伤害）。"
                 }
             }
         },
@@ -2277,6 +2277,57 @@
                 "PromptIncrease": "恢复行动使用次数？",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {use} 在此行动中。",
                 "Warning": "在 {item} 的行动 {activity} 中使用"
+            },
+            "Material": {
+                "PromptHintIncrease": "将 {item} 的数量增加 <strong>{cost}</strong> 。",
+                "Label": "材料",
+                "PromptDecrease": "消耗材料？",
+                "PromptIncrease": "恢复材料？",
+                "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> 。"
+            },
+            "Attribute": {
+                "Label": "属性",
+                "PromptDecrease": "消耗属性？",
+                "PromptIncrease": "恢复属性？",
+                "PromptHintDecrease": "将 <code>{attribute}</code> 减少 <strong>{cost}</strong> 。",
+                "PromptHintIncrease": "将 <code>{attribute}</code> 增加 <strong>{cost}</strong> 。",
+                "Warning": "{attribute} 数量"
+            },
+            "HitDice": {
+                "Label": "生命骰",
+                "PromptDecrease": "消耗生命骰？",
+                "PromptIncrease": "恢复生命骰？",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {denomination} {die}。",
+                "PromptHintIncrease": "恢复 <strong>{cost}</strong> {denomination} {die}。",
+                "Warning": "{denomination} 生命骰"
+            },
+            "HitDie": {
+                "one": "生命骰",
+                "other": "生命骰"
+            },
+            "ItemUses": {
+                "Label": "物品使用次数",
+                "PromptDecrease": "消耗物品使用次数？",
+                "PromptIncrease": "恢复物品使用次数？",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> 次 {item} 的 {use} 。",
+                "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {item} 的 {use} 。",
+                "Warning": "在 {name} 上使用"
+            },
+            "SpellSlot": {
+                "one": "{level} 环位",
+                "other": "{level} 环位"
+            },
+            "SpellSlots": {
+                "Label": "法术位",
+                "PromptDecrease": "消耗法术位？",
+                "PromptIncrease": "恢复法术位？",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {slot} 。",
+                "PromptHintIncrease": "恢复 <strong>{cost}</strong> {slot} 。",
+                "Warning": "{level} 环位"
+            },
+            "Use": {
+                "one": "使用",
+                "other": "使用"
             }
         },
         "Action": {
@@ -2287,6 +2338,14 @@
         },
         "Target": {
             "ThisItem": "该物品"
+        },
+        "Warning": {
+            "NotEnough": "可用的 {type} 不足，需要消耗 {cost}，但仅有 {available} 可用。",
+            "MissingAttribute": "无法找到配置为由 {item} 上的 {activity} 行动使用的 {attribute} 属性。",
+            "MissingHitDice": "角色没有一个具有 {denomination} 生命骰的职业。",
+            "MissingItem": "无法找到由行动 {activity} 配置在物品 {item} 上的消耗项。",
+            "MissingSpellSlot": "没有可用的 {level} 法术位。",
+            "None": "没有可用的 {type} 可以消耗，需要 {cost} 。"
         }
     },
     "DND5E.CHECK": {
@@ -2346,5 +2405,31 @@
     "DND5E.AdvancementScaleValueIdentifierDiceHint": "获得当前等级的比例值，可在公式中使用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 整个公式 (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 整个骰子 (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 骰子数量 (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 骰面数量 (<code>6</code>)",
     "DND5E.Amount": "数量",
     "DND5E.Casting": "施法",
-    "DND5E.ContextMenuActionView": "查看"
+    "DND5E.ContextMenuActionView": "查看",
+    "DND5E.Copy": "复制文本",
+    "DND5E.Copied": "已复制 {value}",
+    "DND5E.Cost": "费用",
+    "DND5E.Current": "当前",
+    "DND5E.DAMAGE": {
+        "Title": "伤害",
+        "FIELDS": {
+            "damage": {
+                "label": "伤害",
+                "critical": {
+                    "allow": {
+                        "label": "允许重击",
+                        "hint": "该生物能够造成重击伤害吗？"
+                    },
+                    "bonus": {
+                        "label": "额外重击伤害",
+                        "hint": "重击时对首次造成伤害的部分追加额外伤害。"
+                    }
+                },
+                "parts": {
+                    "label": "伤害作用",
+                    "hint": "将物品的基础伤害与任何附加伤害作用一并包含在内。"
+                }
+            }
+        }
+    }
 }
