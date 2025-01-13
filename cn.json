@@ -530,17 +530,17 @@
     "DND5E.Supply": "供应",
     "DND5E.Target": "目标",
     "DND5E.TargetAlly": "盟友",
-    "DND5E.TargetCone": "锥形",
+    "DND5E.TargetCone": "锥状",
     "DND5E.TargetCreature": "生物",
     "DND5E.TargetCube": "立方",
-    "DND5E.TargetCylinder": "圆柱形",
+    "DND5E.TargetCylinder": "柱状",
     "DND5E.TargetEnemy": "敌人",
-    "DND5E.TargetLine": "线形",
+    "DND5E.TargetLine": "线状",
     "DND5E.TargetObject": "物体",
-    "DND5E.TargetRadius": "半径",
+    "DND5E.TargetRadius": "光环",
     "DND5E.TargetSelf": "自身",
     "DND5E.TargetSpace": "空间",
-    "DND5E.TargetSphere": "球形",
+    "DND5E.TargetSphere": "球状",
     "DND5E.TargetSquare": "方形",
     "DND5E.TargetWall": "墙形",
     "DND5E.TargetWidth": "线宽",
@@ -1020,8 +1020,8 @@
     "DND5E.SpellProgAvailable": "可用环位",
     "DND5E.TargetType": "目标类型",
     "DND5E.TargetTypeIndividual": "单体",
-    "DND5E.TargetTypeArea": "面积",
-    "DND5E.TargetUnits": "受影响单位的面积",
+    "DND5E.TargetTypeArea": "区域",
+    "DND5E.TargetUnits": "效应区域单位",
     "DND5E.TraitArmorPlural.one": "护甲熟练项",
     "DND5E.TraitArmorPlural.other": "护甲熟练项",
     "DND5E.TraitCIPlural.one": "状态免疫",
@@ -3005,7 +3005,7 @@
         "FIELDS": {
             "range": {
                 "override": {
-                    "hint": "使用此行动时，使用此射程，而非物品射程。",
+                    "hint": "使用此行动时，使用此射程数值，而非物品射程数值。",
                     "label": "覆盖射程"
                 },
                 "long": {
@@ -3088,9 +3088,54 @@
                     }
                 },
                 "override": {
-                    "label": "覆盖目标"
+                    "label": "覆盖目标",
+                    "hint": "使用该行动时，使用此目标数值，而非物品的数值。"
+                },
+                "template": {
+                    "height": {
+                        "hint": "如适用，会影响圆柱体的高度。",
+                        "label": "区域高度"
+                    },
+                    "label": "效应区域",
+                    "contiguous": {
+                        "label": "连续区域",
+                        "hint": "所有创建的区域都必须相互连接吗？"
+                    },
+                    "count": {
+                        "label": "区域数量",
+                        "hint": "可选定的不同区域的数量。"
+                    },
+                    "width": {
+                        "label": "区域宽度",
+                        "hint": "如适用，会影响直线的宽度。"
+                    },
+                    "size": {
+                        "hint": "效果区域在其主轴上的尺寸。",
+                        "label": "区域尺寸"
+                    },
+                    "type": {
+                        "label": "区域类型",
+                        "hint": "目标区域效果的类型。"
+                    },
+                    "units": {
+                        "label": "区域单位",
+                        "hint": "用于衡量效应区域尺寸的单位。"
+                    }
+                },
+                "prompt": {
+                    "label": "测量模板提示",
+                    "hint": "是否应提示玩家放置测量模板？即使禁用提示，玩家仍可通过聊天卡放置模板。"
                 }
             }
+        },
+        "Action": {
+            "PlaceTemplate": "放置测量模板"
+        },
+        "Warning": {
+            "PlaceTemplate": "放置测量模板失败。"
         }
-    }
+    },
+    "DND5E.TargetCircle": "圆状",
+    "DND5E.TargetEvery": "每个",
+    "DND5E.TargetRadiusLegacy": "半径"
 }
