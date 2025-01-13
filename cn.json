@@ -50,8 +50,8 @@
     "DND5E.ActionOther": "其他",
     "DND5E.ActionRSAK": "远程法术攻击",
     "DND5E.ActionRWAK": "远程武器攻击",
-    "DND5E.ActionSave": "豁免骰",
-    "DND5E.ActionUtil": "效应",
+    "DND5E.ActionSave": "豁免检定",
+    "DND5E.ActionUtil": "效用",
     "DND5E.ActionWarningNoItem": "角色 {name} 不再拥有请求的物品 {item}",
     "DND5E.ActionWarningNoToken": "你必须拥有一个以上的可控制的指示物以使用这个选项。",
     "DND5E.Add": "添加",
@@ -206,7 +206,7 @@
     "DND5E.EquipmentVehicle": "载具装备",
     "DND5E.Equipped": "已装备",
     "DND5E.Exhaustion": "力竭",
-    "DND5E.Expertise": "专长",
+    "DND5E.Expertise": "专精",
     "DND5E.Flaws": "缺点",
     "DND5E.FeatureActionRecharge": "动作充能",
     "DND5E.FeatureActive": "主动能力",
@@ -830,7 +830,7 @@
     "DND5E.AdvancementCustomTitle": "自定义标题",
     "DND5E.AdvancementDeleteConfirmationTitle": "确认删除",
     "DND5E.AdvancementHitPointsTitle": "生命值",
-    "DND5E.AdvancementHitPointsHint": "跟踪玩家在此职业中每个等级的生命值。",
+    "DND5E.AdvancementHitPointsHint": "跟进玩家在此职业中每个等级的生命值。",
     "DND5E.AdvancementHitPointsAverage": "取期望",
     "DND5E.AdvancementHitPointsInvalidError": "生命值必须为有效的整数。",
     "DND5E.AdvancementHitPointsMaxAtFirstLevel": "1 级最高：<strong>{max}</strong>",
@@ -1177,12 +1177,12 @@
     "DND5E.AdvancementTraitMode": "模式",
     "DND5E.AdvancementTraitModeDefaultLabel": "默认",
     "DND5E.AdvancementTraitModeDefaultHint": "获得特质或熟练项。",
-    "DND5E.AdvancementTraitModeExpertiseLabel": "精通",
-    "DND5E.AdvancementTraitModeExpertiseHint": "在您已经熟练的特质上获得精通。",
-    "DND5E.AdvancementTraitModeForceLabel": "强制精通",
-    "DND5E.AdvancementTraitModeForceHint": "获得某一特质的精通，与之前的熟练项无关。",
+    "DND5E.AdvancementTraitModeExpertiseLabel": "专精",
+    "DND5E.AdvancementTraitModeExpertiseHint": "在你已经熟练的特性上获得专精。",
+    "DND5E.AdvancementTraitModeForceLabel": "强制专精",
+    "DND5E.AdvancementTraitModeForceHint": "获得某一特质的专精，与之前的熟练项无关。",
     "DND5E.AdvancementTraitModeUpgradeLabel": "升级",
-    "DND5E.AdvancementTraitModeUpgradeHint": "熟练一种特质，如果你已经拥有这种特质，则会获得精通。",
+    "DND5E.AdvancementTraitModeUpgradeHint": "你获得一项特性的熟练，如果你已经具备该熟练则改为获得专精。",
     "DND5E.AdvancementTraitType": "特质类型",
     "DND5E.AutomaticValue": "自动化 ({value})",
     "DND5E.ItemAmmoProperties": "弹药属性",
@@ -1408,7 +1408,8 @@
         "RequestRoll": "请求掷骰",
         "Warning": {
             "NoActor": "找不到选定或指定的角色来执行该掷骰。",
-            "NoItemOnActor": "{actor}没有名称为{item}的物品。"
+            "NoItemOnActor": "{actor}没有名称为{item}的物品。",
+            "NoActivityOnItem": "{actor} 上的 {item} 没有名为 {activity} 的行动。"
         }
     },
     "EFFECT.DND5E": {
@@ -1430,7 +1431,16 @@
         "StatusDodging": "闪避",
         "StatusCursed": "被诅咒",
         "StatusTransformed": "变形",
-        "StatusExceedingCarryingCapacity": "超过负重能力"
+        "StatusExceedingCarryingCapacity": "超过负重能力",
+        "StatusBloodied": "浴血",
+        "StatusBurning": "燃烧",
+        "StatusDehydration": "脱水",
+        "StatusFalling": "坠落",
+        "StatusHalfCover": "半掩护",
+        "StatusMalnutrition": "饥饿",
+        "StatusSuffocation": "窒息",
+        "StatusThreeQuartersCover": "四分之三掩护",
+        "StatusTotalCover": "全身掩护"
     },
     "SETTINGS.5eChallengeVisibility": {
         "Hint": "控制玩家可以看到哪些掷骰的 DC ，以及是否高亮显示成功/失败。",
@@ -1441,10 +1451,10 @@
     },
     "SETTINGS.5eEncumbrance": {
         "None": "无",
-        "Hint": "启用自动跟踪负重，并对超重的角色应用状态效应。",
+        "Hint": "启用自动跟进负重，并对超重的角色应用状态效应。",
         "Variant": "变体（负重 & 超重）",
         "Normal": "正常（最大负重）",
-        "Name": "负重跟踪"
+        "Name": "负重跟进"
     },
     "SETTINGS.DND5E": {
         "THEME": {
@@ -1467,7 +1477,7 @@
             "All": "盟友与敌人的显示",
             "Player": "仅盟友可见",
             "None": "永不展示",
-            "Hint": "配置是否自动追踪带血状态及其可见性。"
+            "Hint": "配置是否自动跟进浴血状态及其可见性。"
         },
         "DEFAULTSKILLS": {
             "Name": "默认技能",
@@ -1740,8 +1750,8 @@
     "DND5E.EffectApplyWarningOwnership": "效应不能应用于你不拥有的指示物。",
     "DND5E.ChatContextSelectHit": "选择命中目标",
     "DND5E.ChatContextSelectMiss": "选择未命中目标",
-    "SETTINGS.5eNoConcentrationN": "禁用专注追踪",
-    "SETTINGS.5eNoConcentrationL": "禁用系统对专注的自动追踪。",
+    "SETTINGS.5eNoConcentrationN": "禁用专注跟进",
+    "SETTINGS.5eNoConcentrationL": "禁用系统对专注的自动跟进。",
     "DND5E.Focus": {
         "Label": "奥术法器"
     },
@@ -1836,7 +1846,66 @@
     "TYPES.JournalEntryPage.spells": "法术列表",
     "JOURNALENTRYPAGE.DND5E": {
         "Class": {
-            "EquipmentDescription": "除了您的背景所赋予的装备外，您开始时还拥有以下装备："
+            "EquipmentDescription": "除了您的背景所赋予的装备外，您开始时还拥有以下装备：",
+            "Traits": {
+                "Header": "熟练项",
+                "Caption": "{class} 核心特质"
+            },
+            "FIELDS": {
+                "description": {
+                    "additionalEquipment": {
+                        "label": "额外装备描述",
+                        "hint": "显示在起始装备部分下方的额外描述文本。"
+                    },
+                    "additionalHitPoints": {
+                        "hint": "显示在自动生成生命值部分下方的额外描述文本。",
+                        "label": "额外生命值描述"
+                    },
+                    "value": {
+                        "label": "介绍",
+                        "hint": "该职业的首要描述，将首先出现。"
+                    },
+                    "additionalTraits": {
+                        "label": "额外熟练项描述",
+                        "hint": "显示在该职业授予的熟练项列表下方的额外描述文本。"
+                    },
+                    "subclass": {
+                        "label": "子职介绍",
+                        "hint": "在该职业子职之前显示的介绍。"
+                    }
+                },
+                "style": {
+                    "hint": "强制页面样式使用新版或旧版格式，而非由职业指定的格式。",
+                    "label": "样式"
+                },
+                "item": {
+                    "label": "已选职业"
+                },
+                "subclassHeader": {
+                    "label": "子职标题"
+                },
+                "subclassItems": {
+                    "label": "子职"
+                }
+            },
+            "HitPoints": {
+                "HitDiceLegacy": "<strong>生命骰数：</strong> 每 {class} 等级 {dice}",
+                "LevelX": "<strong>更高等级的生命值：</strong> {dice}（或 {average}) + 1级之后每提升 {class} 等级的体质调整值",
+                "Header": "生命值",
+                "HitDiceModern": "每 {class} 等级获得 {dice}",
+                "Level1": "<strong>1级生命值：</strong> {max} + 你的体质调整值"
+            },
+            "Features": {
+                "DescriptionLegacy": "作为 {lowercaseName}，你将获得以下职业特性，这些特性概述于 {name} 表中。",
+                "DescriptionModern": "作为{name}，当你达到指定的{name}等级时，你将获得以下职业特性。这些特性列在{name} 特性表中。",
+                "Header": "职业特性",
+                "Name": "等级{level}: {name}"
+            },
+            "Style": {
+                "Inferred": "从来源推断",
+                "Legacy": "旧版",
+                "Modern": "新版"
+            }
         },
         "SpellList": {
             "DropHint": "请将法术或法术文件夹拖拽到列表中",
@@ -1869,7 +1938,7 @@
                 },
                 "style": {
                     "label": "样式",
-                    "hint": "强制页面样式采用现代或传统格式，而非由子职所指定的格式。"
+                    "hint": "强制页面样式采用新版或旧版格式，而非由子职所指定的格式。"
                 },
                 "description": {
                     "value": {
@@ -2053,7 +2122,7 @@
             "FIELDS": {
                 "uses": {
                     "requireSlot": {
-                        "hint": "在有限使用时需要消耗一个法术位。如果未勾选，那么使用次数将是额外的免费使用，不会消耗环位。",
+                        "hint": "在受限使用时需要消耗一个法术位。如果未勾选，那么使用次数将是额外的免费使用，不会消耗环位。",
                         "label": "需求环位"
                     }
                 }
@@ -2332,7 +2401,8 @@
                 "Label": "材料",
                 "PromptDecrease": "消耗材料？",
                 "PromptIncrease": "恢复材料？",
-                "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> 。"
+                "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> 。",
+                "Warning": "{name} 的"
             },
             "Attribute": {
                 "Label": "属性",
@@ -2809,7 +2879,8 @@
         "Title": {
             "one": "豁免",
             "other": "豁免"
-        }
+        },
+        "OnSave": "在豁免时"
     },
     "DND5E.USAGE": {
         "SECTION": {
@@ -2829,8 +2900,21 @@
                 }
             },
             "mastery": {
-                "label": "精通"
+                "label": "精通",
+                "hint": "具有武器精通或相关特性的角色解锁的特殊武器属性。"
             }
+        },
+        "Mastery": {
+            "Vex": "侵扰",
+            "Label": "武器精通",
+            "Flavor": "精通",
+            "Cleave": "横扫",
+            "Graze": "擦掠",
+            "Nick": "迅击",
+            "Push": "推离",
+            "Sap": "削弱",
+            "Slow": "缓速",
+            "Topple": "失衡"
         }
     },
     "DND5E.ENCHANT": {
@@ -3228,5 +3312,6 @@
             }
         }
     },
-    "DND5E.Value": "数值"
+    "DND5E.Value": "数值",
+    "DND5E.WeaponOtherProficiency": "其他"
 }
