@@ -1152,8 +1152,8 @@
     "DND5E.ToolConfigure": "配置工具熟练",
     "TYPES.JournalEntryPage.class": "职业描述",
     "DND5E.AbilityScoreMax": "最大属性值",
-    "TYPES.Item.racePl": "物种",
-    "TYPES.Item.race": "物种",
+    "TYPES.Item.racePl": "种族",
+    "TYPES.Item.race": "种族",
     "DND5E.ActorWarningSingleton": "仅能向 {actorType} 添加一个 {itemType}。",
     "DND5E.AbilityUseConsumableDestroyResourceHint": "使用该 {type} 将消耗 {name} 最后的充能，并且将其摧毁。",
     "DND5E.AdvancementSizeTitle": "体型",
@@ -1585,7 +1585,7 @@
             "General": "通用专长",
             "Origin": "起源专长"
         },
-        "Species": "物种特性"
+        "Species": "种族特性"
     },
     "DND5E.DeathSaveSuccessLabelN.few": "第三次死亡豁免成功",
     "DND5E.SizeGargantuanAbbr": "超巨",
@@ -2822,6 +2822,14 @@
         "FIELDS": {
             "damage": {
                 "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害部分会自动提供。"
+            },
+            "ammunition": {
+                "type": {
+                    "label": "弹药类型"
+                }
+            },
+            "mastery": {
+                "label": "精通"
             }
         }
     },
@@ -3038,7 +3046,7 @@
         "other": "{number} 恩惠"
     },
     "DND5E.ItemSiegeProperties": "攻城词条",
-    "DND5E.ItemSpeciesDetails": "攻城词条",
+    "DND5E.ItemSpeciesDetails": "种族详情",
     "DND5E.ItemSubclassDetails": "子职详情",
     "DND5E.ItemVehicleProperties": "载具词条",
     "DND5E.PolymorphKeepHP": "保留生命值和生命骰",
@@ -3051,10 +3059,10 @@
     "DND5E.Shape": "形态",
     "DND5E.SpecialHint": "以分号分隔的特殊值。",
     "DND5E.Species": {
-        "Label": "物种",
-        "Add": "添加物种",
-        "Features": "物种特性",
-        "Name": "物种名称"
+        "Label": "种族",
+        "Add": "添加种族",
+        "Features": "种族特性",
+        "Name": "种族名称"
     },
     "DND5E.SpellPreparation": {
         "Label": "法术准备",
@@ -3178,7 +3186,13 @@
                 "Delete": "删除恢复配置"
             },
             "Recharge": {
-                "Label": "充能"
+                "Label": "充能",
+                "Range": "充能 {range}"
+            },
+            "Type": {
+                "Formula": "自定义公式",
+                "LoseAll": "失去所有使用次数",
+                "RecoverAll": "恢复所有使用次数"
             }
         }
     },
@@ -3186,5 +3200,33 @@
     "DND5E.TraitArmorLegacyPlural.one": "护甲熟练项",
     "DND5E.TraitArmorLegacyPlural.other": "护甲熟练项",
     "DND5E.TraitArmorLegacyProf": "护甲熟练项",
-    "DND5E.Trigger": "触发"
+    "DND5E.Trigger": "触发",
+    "DND5E.Number": "编号",
+    "DND5E.Multiple": "多个",
+    "DND5E.Period": "周期",
+    "DND5E.UTILITY": {
+        "Title": "效用",
+        "FIELDS": {
+            "roll": {
+                "label": "效用掷骰",
+                "formula": {
+                    "label": "掷骰公式",
+                    "hint": "任意一个掷骰公式。"
+                },
+                "name": {
+                    "label": "掷骰标签",
+                    "hint": "掷骰按钮的显示名称。"
+                },
+                "prompt": {
+                    "label": "效用掷骰提示",
+                    "hint": "掷骰时是否应显示掷骰配置对话框？"
+                },
+                "visible": {
+                    "label": "所有人可见",
+                    "hint": "掷骰按钮应该对所有玩家可见吗？"
+                }
+            }
+        }
+    },
+    "DND5E.Value": "数值"
 }
