@@ -559,14 +559,14 @@
     "DND5E.ToolCheck": "工具检定",
     "DND5E.ToolDisguiseKit": "易容工具",
     "DND5E.ToolForgeryKit": "文书伪造工具",
-    "DND5E.ToolGamingSet": "赌博工具",
+    "DND5E.ToolGamingSet": "赌具",
     "DND5E.ToolHerbalismKit": "草药工具",
     "DND5E.ToolMusicalInstrument": "乐器",
     "DND5E.ToolNavigators": "领航工具",
-    "DND5E.ToolPoisonersKit": "制毒工具",
+    "DND5E.ToolPoisonersKit": "毒药工具",
     "DND5E.ToolThieves": "盗贼工具",
     "DND5E.ToolVehicle": "载具",
-    "DND5E.TraitArmorProf": "护甲熟练",
+    "DND5E.TraitArmorProf": "护甲受训",
     "DND5E.TraitSave": "更新",
     "DND5E.TraitSelectorSpecial": "特殊 (用分号隔开)",
     "DND5E.TraitToolProf": "工具熟练",
@@ -1022,8 +1022,8 @@
     "DND5E.TargetTypeIndividual": "单体",
     "DND5E.TargetTypeArea": "区域",
     "DND5E.TargetUnits": "效应区域单位",
-    "DND5E.TraitArmorPlural.one": "护甲熟练项",
-    "DND5E.TraitArmorPlural.other": "护甲熟练项",
+    "DND5E.TraitArmorPlural.one": "护甲受训",
+    "DND5E.TraitArmorPlural.other": "护甲受训",
     "DND5E.TraitCIPlural.one": "状态免疫",
     "DND5E.TraitCIPlural.other": "状态免疫",
     "DND5E.TraitDIPlural.one": "伤害免疫",
@@ -1222,7 +1222,7 @@
     "DND5E.TargetAny": "任意",
     "DND5E.TargetCreatureOrObject": "生物或物件",
     "DND5E.TemplatePrompt": "测量板提示",
-    "DND5E.TemplatePromptTooltip": "若未勾选，将不会有放置测量板的提示。",
+    "DND5E.TemplatePromptTooltip": "若未勾选，放置测量模板的提示将被隐藏。",
     "DND5E.TraitConfigChooseAnyCounted": "任意 {count} 个 {type}",
     "DND5E.TraitConfigChooseAnyUncounted": "任意 {type}",
     "DND5E.TraitConfigChooseList": "{count} 来自 {list}",
@@ -1513,13 +1513,13 @@
         "RingColor": "环颜色",
         "Effects": {
             "RingPulse": "环形脉冲",
-            "Label": "效应",
+            "Label": "效果",
             "RingGradient": "环形渐变",
             "BackgroundWave": "背景波动"
         },
         "Subject": {
             "Label": "主题路径",
-            "Hint": "明确指定放置在动态token环上的提他图片路径。如果不提供，主题图像将设置为正常的token图像。"
+            "Hint": "明确指定放置在动态指示物环上的图像路径。如果不提供，主题图像将设置为正常的指示物图像。"
         },
         "BackgroundColor": "背景颜色",
         "Title": "动态环",
@@ -2687,13 +2687,13 @@
                 "label": "生物类型"
             },
             "creatureSizes": {
-                "hint": "召唤生物和其Token将变为该体型。如果选择了不止一种体型，那么玩家在召唤时可以从这些体型中进行选择。",
+                "hint": "召唤生物和其指示物将变为该体型。如果选择了不止一种体型，那么玩家在召唤时可以从这些体型中进行选择。",
                 "label": "生物体型"
             }
         },
         "Title": "召唤",
         "SECTIONS": {
-            "Changes": "更换",
+            "Changes": "调整",
             "Profiles": "配置",
             "Summoning": "正在召唤"
         },
@@ -2703,7 +2703,7 @@
             "Place": "放置召唤物"
         },
         "CreatureChanges": {
-            "Label": "更换生物",
+            "Label": "生物更换",
             "Hint": "将对被召唤生物进行的更换。以下公式中使用的任何 @ 引用都将基于召唤者的属性。召唤生物的属性可以使用 @summon 进行引用（例如，@summon.attributes.hd.max 用于引用生物的生命骰数量）。"
         },
         "ItemChanges": {
@@ -2813,7 +2813,9 @@
     },
     "DND5E.USAGE": {
         "SECTION": {
-            "Scaling": "递增"
+            "Scaling": "递增",
+            "Consumption": "消耗",
+            "Creation": "造物"
         }
     },
     "DND5E.WEAPON": {
@@ -3137,5 +3139,52 @@
     },
     "DND5E.TargetCircle": "圆状",
     "DND5E.TargetEvery": "每个",
-    "DND5E.TargetRadiusLegacy": "半径"
+    "DND5E.TargetRadiusLegacy": "半径",
+    "DND5E.USES": {
+        "FIELDS": {
+            "uses": {
+                "recovery": {
+                    "FIELDS": {
+                        "formula": {
+                            "hint": "用于确定恢复多少使用次数的公式。",
+                            "label": "恢复公式"
+                        },
+                        "period": {
+                            "hint": "此恢复发生的时间。",
+                            "label": "恢复周期"
+                        },
+                        "type": {
+                            "hint": "如何恢复使用次数。",
+                            "label": "恢复类型"
+                        }
+                    },
+                    "label": "恢复使用次数",
+                    "hint": "此行动使用次数的恢复配置。"
+                },
+                "spent": {
+                    "label": "消耗使用次数",
+                    "hint": "已消耗的使用次数。"
+                },
+                "label": "使用次数",
+                "max": {
+                    "label": "最大使用次数",
+                    "hint": "最大使用次数公式。"
+                }
+            }
+        },
+        "Recovery": {
+            "Action": {
+                "Create": "创建恢复配置",
+                "Delete": "删除恢复配置"
+            },
+            "Recharge": {
+                "Label": "充能"
+            }
+        }
+    },
+    "DND5E.TraitAll": "所有 {category}",
+    "DND5E.TraitArmorLegacyPlural.one": "护甲熟练项",
+    "DND5E.TraitArmorLegacyPlural.other": "护甲熟练项",
+    "DND5E.TraitArmorLegacyProf": "护甲熟练项",
+    "DND5E.Trigger": "触发"
 }
