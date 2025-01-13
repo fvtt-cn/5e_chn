@@ -2691,7 +2691,34 @@
                 "label": "生物体型"
             }
         },
-        "Title": "召唤"
+        "Title": "召唤",
+        "SECTIONS": {
+            "Changes": "更换",
+            "Profiles": "档案",
+            "Summoning": "正在召唤"
+        },
+        "Action": {
+            "Summon": "召唤",
+            "View": "查看召唤",
+            "Place": "放置召唤物"
+        },
+        "CreatureChanges": {
+            "Label": "更换生物",
+            "Hint": "将对被召唤生物进行的更换。以下公式中使用的任何 @ 引用都将基于召唤者的属性。召唤生物的属性可以使用 @summon 进行引用（例如，@summon.attributes.hd.max 用于引用生物的生命骰数量）。"
+        },
+        "ItemChanges": {
+            "Label": "物品更换",
+            "Hint": "对召唤生物所携带物品所做的更换。"
+        },
+        "Profile": {
+            "Label": "召唤物档案",
+            "Action": {
+                "Create": "创建档案",
+                "Delete": "删除档案"
+            },
+            "ChallengeRatingLabel": "挑战等级为 {cr} 或更低",
+            "DropHint": "拖放生物至此"
+        }
     },
     "DND5E.DURATION": {
         "FIELDS": {
