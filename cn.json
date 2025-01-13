@@ -2625,7 +2625,7 @@
                         "abbr": "CR"
                     },
                     "level": {
-                        "hint": "使用此档案所需的环阶范围。",
+                        "hint": "使用此配置所需的环阶范围。",
                         "label": "环阶限制",
                         "max": {
                             "label": "最大环阶"
@@ -2639,21 +2639,21 @@
                     },
                     "name": {
                         "label": "显示名称",
-                        "hint": "在使用对话框中显示的档案名称。"
+                        "hint": "在使用对话框中显示的配置名称。"
                     },
                     "types": {
                         "label": "生物类型",
-                        "hint": "可供选择召唤生物的生物类型列表。"
+                        "hint": "可供选择的召唤生物的生物类型列表。"
                     },
                     "uuid": {
                         "label": "链接生物"
                     }
                 },
-                "label": "召唤档案"
+                "label": "召唤配置"
             },
             "summon": {
                 "identifier": {
-                    "hint": "用于确定应使用角色等级还是特定职业等级来限制角色等级上限的识别符。",
+                    "hint": "用于确定应使用角色等级还是特定职业等级来限制配置等级上限的识别符。",
                     "label": "职业识别符"
                 },
                 "prompt": {
@@ -2694,7 +2694,7 @@
         "Title": "召唤",
         "SECTIONS": {
             "Changes": "更换",
-            "Profiles": "档案",
+            "Profiles": "配置",
             "Summoning": "正在召唤"
         },
         "Action": {
@@ -2711,13 +2711,23 @@
             "Hint": "对召唤生物所携带物品所做的更换。"
         },
         "Profile": {
-            "Label": "召唤物档案",
+            "Label": "召唤物配置",
             "Action": {
-                "Create": "创建档案",
-                "Delete": "删除档案"
+                "Create": "创建配置",
+                "Delete": "删除配置"
             },
             "ChallengeRatingLabel": "挑战等级为 {cr} 或更低",
-            "DropHint": "拖放生物至此"
+            "DropHint": "拖放生物至此",
+            "Empty": "点击上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个配置。",
+            "EmptyDrop": "点击上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个配置，或者拖放一个生物在此处召唤。"
+        },
+        "Warning": {
+            "Wildcard": "您必须拥有“使用文件浏览器”的权限才能召唤带有通配符插图的生物。",
+            "CreateActor": "你必须有“创建新角色”的权限才能直接从合集包中召唤。",
+            "CRV11": "基于生物挑战等级的召唤只适用于FVTT V12或更高版本。",
+            "NoActor": "找不到UUID为“{UUID}”的角色来召唤。",
+            "NoOwnership": "你必须拥有‘{actor}’的所有权才能召唤它。",
+            "NoProfile": "无法在“{item}”上找到召唤配置{profileId}。"
         }
     },
     "DND5E.DURATION": {
@@ -3053,5 +3063,34 @@
     "DND5E.SubclassAdd": "添加子职",
     "KEYBINDINGS.DND5E.SkipDialogNormal": "跳过对话框",
     "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "跳过对话框（以劣势进行掷骰）",
-    "KEYBINDINGS.DND5E.SkipDialogAdvantage": "跳过对话框（以优势/重击进行掷骰）"
+    "KEYBINDINGS.DND5E.SkipDialogAdvantage": "跳过对话框（以优势/重击进行掷骰）",
+    "DND5E.TARGET": {
+        "FIELDS": {
+            "target": {
+                "label": "把…作为目标",
+                "affects": {
+                    "type": {
+                        "hint": "可影响的目标类型（例如生物、物体、空间）。",
+                        "label": "目标类型"
+                    },
+                    "label": "受影响目标",
+                    "choice": {
+                        "label": "选择目标",
+                        "hint": "当选定一个区域时，用户能否选择影响哪些目标？"
+                    },
+                    "count": {
+                        "label": "目标数量",
+                        "hint": "可影响的单个目标数量。"
+                    },
+                    "special": {
+                        "label": "特殊目标",
+                        "hint": "任何特殊目标的详情描述。"
+                    }
+                },
+                "override": {
+                    "label": "覆盖目标"
+                }
+            }
+        }
+    }
 }
