@@ -25,18 +25,9 @@
     "DND5E.AbilityPromptText": "什么类型的 {ability} 检定？",
     "DND5E.AbilityPromptTitle": "{ability} 属性检定",
     "DND5E.AbilityUseCast": "施法",
-    "DND5E.AbilityUseChargedHint": "该 {type} 已充能并准备使用！",
     "DND5E.AbilityUseChargesLabel": "{value} 发充能",
-    "DND5E.AbilityUseConsumableChargeHint": "使用该 {type} 将消耗剩余充能（{value}次）中的一次。",
-    "DND5E.AbilityUseConsumableDestroyHint": "使用该 {type} 将消耗最后的充能，并且将摧毁。",
     "DND5E.AbilityUseConsumableLabel": "{max} 发/每 {per}",
-    "DND5E.AbilityUseConsumableQuantityHint": "使用该 {type} 将消耗剩余数量（{quantity}个）中的一个",
-    "DND5E.AbilityUseConsume": "消耗资源次数？",
-    "DND5E.AbilityUseHint": "请设置你要如何使用：{name} {type}。",
-    "DND5E.AbilityUseNormalHint": "该 {type} 剩余使用次数： {value}/{max}，每次 {per} 后恢复。",
-    "DND5E.AbilityUseUnavailableHint": "该物品使用次数已经消耗完毕！",
     "DND5E.AbilityUseUse": "使用能力",
-    "DND5E.AbilityUseRechargeHint": "该 {type} 已耗尽必须重新充能！",
     "DND5E.Attunement": "同调",
     "DND5E.AttunementNone": "无需同调",
     "DND5E.AttunementRequired": "需要同调",
@@ -195,15 +186,12 @@
     "DND5E.EffectEdit": "编辑效应",
     "DND5E.EffectDelete": "删除效应",
     "DND5E.EquipmentBonus": "魔法加值",
-    "DND5E.EquipmentClothing": "衣服",
     "DND5E.EquipmentHeavy": "重型护甲",
     "DND5E.EquipmentLight": "轻型护甲",
     "DND5E.EquipmentMedium": "中型护甲",
     "DND5E.EquipmentNatural": "天生护甲",
     "DND5E.EquipmentShield": "盾牌",
     "DND5E.EquipmentShieldProficiency": "盾牌",
-    "DND5E.EquipmentTrinket": "小饰品",
-    "DND5E.EquipmentVehicle": "载具装备",
     "DND5E.Equipped": "已装备",
     "DND5E.Exhaustion": "力竭",
     "DND5E.Expertise": "专精",
@@ -277,12 +265,6 @@
     "DND5E.ItemConsumableStatus": "消耗品状态",
     "DND5E.ItemConsumableType": "消耗品类型",
     "DND5E.ItemConsumableUsage": "消耗品用法",
-    "DND5E.ItemContainerCapacity": "容量",
-    "DND5E.ItemContainerCapacityItems": "物品",
-    "DND5E.ItemContainerCapacityType": "容量类型",
-    "DND5E.ItemContainerCapacityWeight": "重量",
-    "DND5E.ItemContainerDetails": "容器详情",
-    "DND5E.ItemContainerProperties": "容器属性",
     "DND5E.ItemCreate": "创建物品",
     "DND5E.ItemDelete": "删除物品",
     "DND5E.ItemEdit": "编辑物品",
@@ -310,46 +292,9 @@
     "DND5E.LairAct": "使用巢穴动作",
     "DND5E.LairActionLabel": "巢穴动作",
     "DND5E.Languages": "语言",
-    "DND5E.LanguagesAarakocra": "阿兰寇拉语",
-    "DND5E.LanguagesAbyssal": "深渊语",
-    "DND5E.LanguagesAquan": "水族语",
-    "DND5E.LanguagesAuran": "气族语",
-    "DND5E.LanguagesCelestial": "天界语",
-    "DND5E.LanguagesCommon": "通用语",
-    "DND5E.LanguagesDeepSpeech": "深潜语",
-    "DND5E.LanguagesDraconic": "龙语",
-    "DND5E.LanguagesDruidic": "德鲁伊语",
-    "DND5E.LanguagesDwarvish": "矮人语",
-    "DND5E.LanguagesElvish": "精灵语",
-    "DND5E.LanguagesGiant": "巨人语",
-    "DND5E.LanguagesGith": "吉斯语",
-    "DND5E.LanguagesGnoll": "豺狼人语",
-    "DND5E.LanguagesGnomish": "侏儒语",
-    "DND5E.LanguagesGoblin": "地精语",
-    "DND5E.LanguagesHalfling": "半身人语",
-    "DND5E.LanguagesIgnan": "火族语",
-    "DND5E.LanguagesInfernal": "地狱语",
-    "DND5E.LanguagesOrc": "兽人语",
-    "DND5E.LanguagesPrimordial": "原初语",
-    "DND5E.LanguagesSylvan": "木族语",
-    "DND5E.LanguagesTerran": "土族语",
-    "DND5E.LanguagesThievesCant": "盗贼黑话",
-    "DND5E.LanguagesUndercommon": "地底通用语",
-    "DND5E.LegAct": "传奇动作",
-    "DND5E.LegRes": "传奇抗性",
-    "DND5E.LegendaryActionLabel": "传奇动作",
     "DND5E.Level": "等级",
     "DND5E.LevelScaling": "等级递增",
     "DND5E.LimitedUses": "可用次数",
-    "DND5E.LongRest": "长休（8小时）",
-    "DND5E.LongRestEpic": "长休（1小时）",
-    "DND5E.LongRestGritty": "长休（7天）",
-    "DND5E.LongRestNormal": "长休（8小时）",
-    "DND5E.LongRestOvernight": "长休（新的一天）",
-    "DND5E.LongRestResult": "{name} 进行了长休，并且恢复了 {health} HP 和 {dice} 个生命骰。",
-    "DND5E.LongRestResultHitDice": "{name} 进行了长休，并且恢复了 {dice} 个生命骰。",
-    "DND5E.LongRestResultHitPoints": "{name} 进行了长休，并且恢复了 {health} HP。",
-    "DND5E.LongRestResultShort": "{name} 进行了长休。",
     "DND5E.Max": "最大值",
     "DND5E.Modifier": "调整值",
     "DND5E.Movement": "移动",
@@ -407,8 +352,6 @@
     "DND5E.ResourcePrimary": "资源 1",
     "DND5E.ResourceSecondary": "资源 2",
     "DND5E.ResourceTertiary": "资源 3",
-    "DND5E.RestL": "长休",
-    "DND5E.RestS": "短休",
     "DND5E.Ritual": "仪式",
     "DND5E.Roll": "掷骰",
     "DND5E.RollExample": "例：+1d4",
@@ -438,16 +381,6 @@
     "DND5E.SheetClassItem": "默认 5e 物品卡",
     "DND5E.SheetClassNPC": "默认 5e NPC卡",
     "DND5E.SheetClassVehicle": "默认 5e 载具卡",
-    "DND5E.ShortRest": "短休",
-    "DND5E.ShortRestEpic": "短休（5分钟）",
-    "DND5E.ShortRestGritty": "短休（8小时）",
-    "DND5E.ShortRestHint": "进行短休可以消耗剩余的生命骰来恢复生命值和恢复短休资源。",
-    "DND5E.ShortRestNoHD": "无剩余生命骰",
-    "DND5E.ShortRestNormal": "短休（1小时）",
-    "DND5E.ShortRestOvernight": "短休（新的一天）",
-    "DND5E.ShortRestResult": "{name} 进行了短休，并且消耗了 {dice} 个生命骰，恢复了 {health} HP。",
-    "DND5E.ShortRestResultShort": "{name} 进行了短休。",
-    "DND5E.ShortRestSelect": "选择短休生命骰",
     "DND5E.Size": "体型",
     "DND5E.SizeGargantuan": "超巨型",
     "DND5E.SizeHuge": "巨型",
@@ -529,20 +462,6 @@
     "DND5E.SubclassName": "子职名",
     "DND5E.Supply": "补给",
     "DND5E.Target": "目标",
-    "DND5E.TargetAlly": "盟友",
-    "DND5E.TargetCone": "锥状",
-    "DND5E.TargetCreature": "生物",
-    "DND5E.TargetCube": "立方",
-    "DND5E.TargetCylinder": "柱状",
-    "DND5E.TargetEnemy": "敌人",
-    "DND5E.TargetLine": "线状",
-    "DND5E.TargetObject": "物体",
-    "DND5E.TargetRadius": "光环",
-    "DND5E.TargetSelf": "自身",
-    "DND5E.TargetSpace": "空间",
-    "DND5E.TargetSphere": "球状",
-    "DND5E.TargetSquare": "方形",
-    "DND5E.TargetWall": "墙形",
     "DND5E.TargetWidth": "线宽",
     "DND5E.Temp": "临时",
     "DND5E.Threshold": "阈值",
@@ -682,16 +601,12 @@
     "SETTINGS.5eReset": "重置",
     "SETTINGS.5eUndoChanges": "取消改动",
     "DND5E.ActorWarningInvalidItem": "{itemType} 物品无法被添加给 {actorType}。",
-    "DND5E.NewDay": "新的一天？",
-    "DND5E.NewDayHint": "回复“每天”充能的有限次使用的能力？",
-    "DND5E.LongRestHint": "要长休吗？长休时你将回复生命值，一半的生命骰，职业资源，物品充能与法术位。",
     "DND5E.RacialTraits": "种族特质",
     "DND5E.EffectTemporary": "临时效应",
     "DND5E.EffectPassive": "被动效应",
     "DND5E.EffectInactive": "未激活效应",
     "DND5E.EffectNew": "新增效应",
     "DND5E.Feats": "特性",
-    "DND5E.Rest": "休息",
     "DND5E.AbilityUseConfig": "使用配置",
     "DND5E.ArmorClassMage": "法师护甲",
     "DND5E.ArmorClassDraconic": "龙族体魄",
@@ -714,7 +629,6 @@
     "DND5E.VehicleTypeWater": "水上载具",
     "DND5E.WarnBadACFormula": "提供的 AC 公式 \"{formula}\" 无法求值。",
     "DND5E.WarnMultipleShields": "已装备超过一面盾牌，AC 计算结果可能不正确。",
-    "SETTINGS.5eMetricN": "使用公制单位",
     "DND5E.ArmorConfigHint": "填写上述输入框以覆盖自动计算的护甲等级。",
     "DND5E.EffectUnavailableInfo": "源物品必须为已装备或已同调来激活这些",
     "DND5E.ItemToolType": "工具类型",
@@ -722,7 +636,6 @@
     "DND5E.VehicleTypeAir": "空中载具",
     "DND5E.VehicleTypeLand": "陆地载具",
     "DND5E.WarnMultipleArmor": "已装备超过一套护甲，AC 计算结果可能不正确。",
-    "SETTINGS.5eMetricL": "将所有磅的引用替换为千克并且使用公制单位来更新负重的计算。",
     "DND5E.Bonus": "加值",
     "DND5E.ArmorClassEquipment": "已装备护甲",
     "DND5E.ArmorClassFlat": "固定值",
@@ -774,10 +687,6 @@
     "DND5E.HitPointsTemp": "临时 HP",
     "DND5E.HitPointsTempMax": "临时 HP 上限",
     "DND5E.LairActionInitiative": "巢穴动作先攻值",
-    "DND5E.LegActMax": "传奇动作上限",
-    "DND5E.LegActRemaining": "剩余传奇动作",
-    "DND5E.LegResMax": "传奇抗性上限",
-    "DND5E.LegResRemaining": "剩余传奇抗性",
     "DND5E.SkillModifierHint": "{skill} 调整值",
     "DND5E.SkillPassiveHint": "被动 {skill}",
     "DND5E.TraitConfig": "配置 {trait}",
@@ -788,10 +697,7 @@
     "DND5E.VehicleMishapThreshold": "遇难阈值",
     "DND5E.AdvancementChoices": "选择",
     "DND5E.AdvancementConfigurationActionEnable": "启用配置",
-    "DND5E.AdvancementHitPointsEmptyError": "生命值必须掷骰取值或者取期望值。",
-    "DND5E.AdvancementItemGrantHint": "在角色到达特定等级时，授予角色物品（例如装备、特性或者法术）。",
     "DND5E.AdvancementDeleteConfirmationMessage": "删除此物品也将删除所有为其设置的升级选项。勾选以下复选框，你的角色将会删除这些变更。",
-    "DND5E.AdvancementItemGrantDropHint": "拖拽物品至此处，将其添加到此升级授予的列表中。",
     "DND5E.AdvancementLevelDownConfirmationMessage": "降低此职业的等级也将撤回为其做出的所有升级选择。勾选以下复选框，你的角色将会删除这些变更。",
     "DND5E.AdvancementScaleValueTitle": "比例值",
     "DND5E.AdvancementScaleValueHint": "一个随着等级的提高而变化的单一数值，在掷骰公式中可以使用（例如武僧的武艺骰）。",
@@ -829,38 +735,11 @@
     "DND5E.AdvancementCustomIcon": "自定义图标",
     "DND5E.AdvancementCustomTitle": "自定义标题",
     "DND5E.AdvancementDeleteConfirmationTitle": "确认删除",
-    "DND5E.AdvancementHitPointsTitle": "生命值",
-    "DND5E.AdvancementHitPointsHint": "跟进玩家在此职业中每个等级的生命值。",
-    "DND5E.AdvancementHitPointsAverage": "取期望",
-    "DND5E.AdvancementHitPointsInvalidError": "生命值必须为有效的整数。",
-    "DND5E.AdvancementHitPointsMaxAtFirstLevel": "1 级最高：<strong>{max}</strong>",
-    "DND5E.AdvancementHitPointsRollMessage": "掷 {class} 的生命值",
-    "DND5E.AdvancementHitPointsRollButton": "掷 {die}",
-    "DND5E.AdvancementItemGrantTitle": "授予物品",
     "DND5E.AdvancementDeleteConfirmationLabel": "移除升级变更",
-    "DND5E.AdvancementItemGrantDuplicateWarning": "对应物品已存在于此升级中。",
-    "DND5E.AdvancementItemGrantRecursiveWarning": "你不能将物品授予其本身的升级中。",
-    "DND5E.AdvancementItemGrantOptional": "可选",
-    "DND5E.AdvancementItemGrantOptionalHint": "如果整个升级过程都标注为可选项目，那么玩家可以选择取消以下任何项目，否则所有非可选项目都将被给予。",
     "DND5E.AdvancementLevelHeader": "等级 {level}",
     "DND5E.AdvancementLevelAnyHeader": "任意等级",
     "DND5E.AdvancementLevelNoneHeader": "无等级",
     "DND5E.AdvancementLevelDownConfirmationTitle": "确认降低等级",
-    "DND5E.AdvancementManagerCloseTitle": "停止升级",
-    "DND5E.AdvancementManagerCloseMessage": "<p>如果升级流程被取消，完成的所有选择将会被放弃，不会对角色造成任何更改。</p>",
-    "DND5E.AdvancementManagerCloseButtonContinue": "继续",
-    "DND5E.AdvancementManagerCloseButtonStop": "停止升级",
-    "DND5E.AdvancementManagerComplete": "完成",
-    "DND5E.AdvancementManagerLevelIncreasedTitle": "升级角色",
-    "DND5E.AdvancementManagerLevelNewClassTitle": "添加职业",
-    "DND5E.AdvancementManagerModifyChoicesTitle": "修改选择",
-    "DND5E.AdvancementManagerNextStep": "下一步",
-    "DND5E.AdvancementManagerPreviousStep": "上一步",
-    "DND5E.AdvancementManagerRestart": "重新开始",
-    "DND5E.AdvancementManagerRestartConfirm": "你确定要撤回至今的所有选择吗？",
-    "DND5E.AdvancementManagerRestartConfirmTitle": "重新开始升级选择",
-    "DND5E.AdvancementManagerSteps": "步骤 {current}/{total}",
-    "DND5E.AdvancementManagerTitle": "升级",
     "DND5E.AdvancementModifyChoices": "更改选择",
     "DND5E.AdvancementSaveButton": "保存升级",
     "DND5E.AdvancementScaleValueTypeDice": "骰子",
@@ -979,7 +858,6 @@
     "DND5E.InitiativeConfigHint": "配置应用到该角色的先攻调整值和加值。",
     "DND5E.ItemActivation": "激活",
     "DND5E.ItemActivationType": "激活类型",
-    "DND5E.ItemContainerCapacityMax": "容量上限",
     "DND5E.ItemFeatureDetails": "特性详情",
     "DND5E.ItemFeatureSubtype": "{category} 类型",
     "DND5E.ItemFeatureType": "特性类型",
@@ -991,7 +869,6 @@
     "DND5E.LimitedUsesMax": "使用次数上限",
     "DND5E.LimitedUsesPer": "使用次数恢复模式",
     "DND5E.Long": "最大",
-    "DND5E.LongRestRecovery": "长休后恢复",
     "DND5E.ModuleArtConfigH": "配置使用哪个模组提供的美术风格。",
     "DND5E.ModuleArtConfigL": "配置美术风格",
     "DND5E.ModuleArtConfigN": "模组提供的美术风格",
@@ -1078,7 +955,6 @@
     "DND5E.PolymorphRevertNoOriginalActorWarn": "未找到引用“{reference}”的原角色",
     "DND5E.SheetClassClassSummary": "默认 5e 职业总结表",
     "DND5E.SheetClassGroup": "默认 5e 组表",
-    "DND5E.ShortRestRecovery": "短休后恢复",
     "DND5E.SpeedConditions": "速度状态",
     "DND5E.SpellMaterialsSupply": "物资供应",
     "DND5E.SpellProgLeveled": "环法",
@@ -1155,7 +1031,6 @@
     "TYPES.Item.racePl": "种族",
     "TYPES.Item.race": "种族",
     "DND5E.ActorWarningSingleton": "仅能向 {actorType} 添加一个 {itemType}。",
-    "DND5E.AbilityUseConsumableDestroyResourceHint": "使用该 {type} 将消耗 {name} 最后的充能，并且将其摧毁。",
     "DND5E.AdvancementSizeTitle": "体型",
     "DND5E.AdvancementSizeflowHintMultiple": "选择你的体型为 {sizes}。",
     "DND5E.AdvancementSizeFlowHintSingle": "你的体型是 {size}。",
@@ -1186,14 +1061,12 @@
     "DND5E.AdvancementTraitType": "特质类型",
     "DND5E.AutomaticValue": "自动化 ({value})",
     "DND5E.ItemAmmoProperties": "弹药属性",
-    "DND5E.ItemContainerStatus": "容器状态",
     "DND5E.ItemToolStatus": "工具状态",
     "DND5E.ConsumeScalingTooltip": "勾选后，消耗额外资源将提高所施放法术的环阶。",
     "DND5E.Focus.Druidic": "德鲁伊法器",
     "DND5E.GroupSummaryEmpty": "空组",
     "DND5E.Dusk": "黄昏",
     "DND5E.FlagsTavernBrawler": "酒馆拳王特长",
-    "DND5E.TargetWilling": "自愿生物",
     "DND5E.ConsumeHitDiceLargestLong": "最大可用生命骰",
     "DND5E.ConsumeHitDiceSmallestLong": "最小可用生命骰",
     "DND5E.ConsumeScaling": "资源递增",
@@ -1212,15 +1085,11 @@
     "DND5E.ItemLootDetails": "战利品细节",
     "DND5E.ItemLootSubtype": "{category} 类型",
     "DND5E.ItemLootType": "战利品类型",
-    "DND5E.LanguagesExotic": "罕见语言",
-    "DND5E.LanguagesStandard": "标准语言",
     "DND5E.LimitedUsesPrompt": "使用提示",
     "DND5E.LimitedUsesPromptTooltip": "若未勾选，则不会有消耗可用次数时的提示。",
     "DND5E.NoneActionLabel": "无",
     "DND5E.QuantityAbbr": "数量",
     "DND5E.SpellCastNoSlotsLeft": "你没有可用的法术位来施放 {name}！",
-    "DND5E.TargetAny": "任意",
-    "DND5E.TargetCreatureOrObject": "生物或物件",
     "DND5E.TemplatePrompt": "测量板提示",
     "DND5E.TemplatePromptTooltip": "若未勾选，放置测量模板的提示将被隐藏。",
     "DND5E.TraitConfigChooseAnyCounted": "任意 {count} 个 {type}",
@@ -1321,10 +1190,6 @@
         },
         "TypeGeneric": "组",
         "PlaceMembers": "放置成员"
-    },
-    "DND5E.HitDiceAutoSpend": {
-        "Hint": "自动消耗生命骰，直到用完或者生命值满为止。",
-        "Label": "自动消耗生命骰"
     },
     "DND5E.HitPointsTempMaxShort": "临时最大生命值",
     "DND5E.Item": {
@@ -1441,13 +1306,6 @@
         "StatusSuffocation": "窒息",
         "StatusThreeQuartersCover": "四分之三掩护",
         "StatusTotalCover": "全身掩护"
-    },
-    "SETTINGS.5eChallengeVisibility": {
-        "Hint": "控制玩家可以看到哪些掷骰的 DC ，以及是否高亮显示成功/失败。",
-        "All": "显示全部",
-        "Player": "只显示其他玩家的",
-        "Name": "挑战可见性",
-        "None": "隐藏全部"
     },
     "SETTINGS.5eEncumbrance": {
         "None": "无",
@@ -1631,7 +1489,6 @@
         }
     },
     "DND5E.ItemConsumableProperties": "消耗品属性",
-    "DND5E.LongRestHintGroup": "要进行长休吗？在长休期间，队伍成员将恢复生命值、生命骰数的一半、职业资源、限制使用的物品充能、法术环位。",
     "DND5E.ReactionAbbr": "反应",
     "DND5E.FavoriteRemove": "移除收藏",
     "DND5E.SpellSlotsN.two": "{n} 环法术位",
@@ -1661,7 +1518,6 @@
     "DND5E.FavoriteDrop": "取消收藏",
     "DND5E.ItemAttackFlatHint": "选中后，除了这里包含的意外，不要将熟练加值、属性调整值或任何其他加值加到攻击掷骰上。",
     "DND5E.TimeHourAbbr": "时",
-    "DND5E.AdvancementItemGrantContainerWarning": "容器内的物品不会随容器一起添加。",
     "DND5E.AbilityScoreL": "{ability} 值",
     "DND5E.ConcentratingWarnLimitOptional": "你可以结束对你正在维持的某个效应的专注，以使用这个物品。",
     "DND5E.ActionSumm": "召唤",
@@ -1679,7 +1535,6 @@
     "DND5E.ConcentratingEndChoice": "你正在对来自多个来源的效应维持专注。选择要结束的效应。",
     "DND5E.Multiplier": "乘数",
     "DND5E.ModuleArtPriorityIncrease": "提高优先级",
-    "DND5E.ShortRestHintGroup": "进行短休？在短休期间，队伍成员可以消耗生命骰并恢复物品使用次数。",
     "DND5E.Hair": "头发",
     "DND5E.FeaturesClass": "{class} 特性",
     "DND5E.DeathSaveSuccessLabelN.one": "第一次死亡豁免成功",
@@ -1755,7 +1610,6 @@
     "DND5E.Focus": {
         "Label": "施法法器"
     },
-    "DND5E.AbilityUseConsumeAction": "消耗可用",
     "DND5E.ActionEnch": "附魔",
     "DND5E.AdvancementItemChoiceChoices": "选项",
     "DND5E.AdditionalSettings": "额外设置",
@@ -1821,25 +1675,6 @@
         "LeftClick": "左键单击",
         "Activity": {
             "FastForwardHint": "<kbd>Shift</kbd> + <left-click> 跳过此对话框"
-        }
-    },
-    "DND5E.WeightUnit": {
-        "Label": "重量单位",
-        "Kilograms": {
-            "Label": "公斤",
-            "Abbreviation": "kg"
-        },
-        "Megagrams": {
-            "Label": "吨",
-            "Abbreviation": "t"
-        },
-        "Pounds": {
-            "Label": "磅",
-            "Abbreviation": "lb"
-        },
-        "Tons": {
-            "Label": "吨",
-            "Abbreviation": "tn"
         }
     },
     "TYPES.JournalEntryPage.subclass": "子职概要",
@@ -2010,17 +1845,8 @@
     "DND5E.InitiativeAbbr": "先攻",
     "DND5E.SkillsConfig": "配置技能",
     "DND5E.HitPointsTempShort": "临时 HP",
-    "DND5E.LegActN.two": "第 2 个传奇动作",
-    "DND5E.LegActN.few": "第 3 个传奇动作",
-    "DND5E.LegActN.other": "第 {n} 个传奇动作",
-    "DND5E.LegResN.one": "第 1 个传奇抗性",
-    "DND5E.LegResN.two": "第 2 个传奇抗性",
-    "DND5E.LegResN.few": "第 3 个传奇抗性",
-    "DND5E.LegResN.other": "第 {n} 个传奇抗性",
-    "DND5E.NPC": "非玩家角色",
     "DND5E.PassivePerception": "被动察觉",
     "DND5E.Public": "公开",
-    "DND5E.LegActN.one": "第 1 个传奇动作",
     "DND5E.SavingThrowRoll": "掷骰 {ability} 豁免",
     "DND5E.SheetClassNPCLegacy": "旧版 5e NPC卡",
     "DND5E.ContextMenuActionExpendCharge": "未充能",
@@ -2030,13 +1856,6 @@
     "DND5E.ItemRarityMundane": "非魔法",
     "DND5E.SpellSourceClass": "施法职业",
     "DND5E.TargetPl": "目标",
-    "SETTINGS.5eAttackRollVisibility": {
-        "Hint": "控制玩家对聊天信息卡片中攻击结果的可见性。",
-        "All": "显示结果和目标的 AC",
-        "HideAC": "仅显示结果",
-        "None": "全部隐藏",
-        "Name": "攻击结果可见性"
-    },
     "DND5E.ToggleDescription": "切换描述",
     "TYPES.Item.raceLegacy": "种族",
     "TYPES.Item.raceLegacyPl": "种族",
@@ -2119,20 +1938,11 @@
             }
         },
         "SPELLCONFIG": {
-            "FIELDS": {
-                "uses": {
-                    "requireSlot": {
-                        "hint": "在受限使用时需要消耗一个法术位。如果未勾选，那么使用次数将是额外的免费使用，不会消耗环位。",
-                        "label": "需求环位"
-                    }
-                }
-            },
             "FreeCasting": "免费施法"
         },
         "Subclass": {
             "Hint": "明确该职业从几级获取其子职。",
-            "Title": "子职",
-            "FlowHint": "升级完成之后，在“特性”标签页中选择一个子职。"
+            "Title": "子职"
         }
     },
     "DND5E.ACTIVITY": {
@@ -2506,12 +2316,6 @@
                     "hint": "要求所有主要属性都达到最低要求才能选择兼职。",
                     "label": "全部要求"
                 }
-            },
-            "hitDice": {
-                "label": "生命值骰"
-            },
-            "hitDiceUsed": {
-                "label": "已消耗的生命骰"
             },
             "levels": {
                 "label": "职业等级"
@@ -3092,8 +2896,6 @@
             "Full": "{book} {page}"
         }
     },
-    "DND5E.LanguagesExoticLegacy": "异域语言",
-    "DND5E.LanguagesCommonSign": "通用手语",
     "DND5E.PolymorphAddTemp": "将目标的生命值作为临时生命值添加",
     "DND5E.RANGE": {
         "FIELDS": {
@@ -3229,9 +3031,6 @@
             "PlaceTemplate": "放置测量模板失败。"
         }
     },
-    "DND5E.TargetCircle": "圆形",
-    "DND5E.TargetEvery": "每个",
-    "DND5E.TargetRadiusLegacy": "半径",
     "DND5E.USES": {
         "FIELDS": {
             "uses": {
@@ -3312,6 +3111,5 @@
             }
         }
     },
-    "DND5E.Value": "数值",
-    "DND5E.WeaponOtherProficiency": "其他"
+    "DND5E.Value": "数值"
 }
