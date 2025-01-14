@@ -2336,13 +2336,13 @@
                 "scaling": {
                     "label": "消耗递增",
                     "max": {
-                        "hint": "此物品可提升的最高等级数，包括基础等级。",
+                        "hint": "此物品可提升的最高递增等级数，包括基础等级。",
                         "label": "最大递增"
                     },
                     "abbr": "递增",
                     "allowed": {
                         "label": "允许递增",
-                        "hint": "该行动是否能够以更高的法术环阶激活？"
+                        "hint": "该行动是否能够以更高的等级激活？"
                     }
                 },
                 "targets": {
@@ -3140,7 +3140,7 @@
         "Configuration": "配置",
         "Rolls": "掷骰"
     },
-    "DND5E.Shape": "形态",
+    "DND5E.Shape": "形状",
     "DND5E.SpecialHint": "以分号分隔的特殊值。",
     "DND5E.Species": {
         "Label": "种族",
@@ -3161,7 +3161,7 @@
     "DND5E.TARGET": {
         "FIELDS": {
             "target": {
-                "label": "把…作为目标",
+                "label": "目标",
                 "affects": {
                     "type": {
                         "hint": "可影响的目标类型（例如生物、物体、空间）。",
@@ -3285,7 +3285,7 @@
     "DND5E.TraitArmorLegacyPlural.other": "护甲熟练项",
     "DND5E.TraitArmorLegacyProf": "护甲熟练项",
     "DND5E.Trigger": "触发",
-    "DND5E.Number": "编号",
+    "DND5E.Number": "数量",
     "DND5E.Multiple": "多个",
     "DND5E.Period": "周期",
     "DND5E.UTILITY": {
