@@ -16,9 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Update Projects Source Json
+      - name: Get Default Branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          defaultBranch="$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/foundryvtt/dnd5e --jq '.default_branch')"
+          echo 'DEFAULT_BRANCH='$defaultBranch >> %GITHUB_ENV
+
+      - name: Update Language Source
         shell: pwsh
-        run: iwr https://github.com/foundryvtt/dnd5e/raw/4.0.x/lang/en.json | % { if ($_.StatusCode -eq 200) { $_.Content > ./.github/en.json } }
+        run: iwr "https://github.com/foundryvtt/dnd5e/raw/$env:DEFAULT_BRANCH/lang/en.json" | % { if ($_.StatusCode -eq 200) { $_.Content > ./.github/en.json } }
         
       - name: Add & Commit
         uses: EndBug/add-and-commit@v7.2.1
