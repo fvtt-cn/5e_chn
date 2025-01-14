@@ -210,7 +210,7 @@
     "DND5E.FilterNoSpells": "该筛选条件下没有找到法术。",
     "DND5E.NoSpellLevels": "该人物没有施法等级，但是你可以手动添加法术。",
     "DND5E.FlagsAlert": "警觉（专长）",
-    "DND5E.FlagsAlertHint": "先攻+5。",
+    "DND5E.FlagsAlertHint": "将熟练加值加入先攻掷骰。",
     "DND5E.FlagsElvenAccuracy": "精灵之准",
     "DND5E.FlagsElvenAccuracyHint": "在敏捷、智力、感知或魅力检定具有优势时额外投一个D20。",
     "DND5E.FlagsHalflingLucky": "半身人幸运",
@@ -245,7 +245,7 @@
     "DND5E.HPFormula": "HP 公式",
     "DND5E.HalfProficient": "1/2熟练加值",
     "DND5E.Healing": "治疗",
-    "DND5E.HealingTemp": "治疗 (临时)",
+    "DND5E.HealingTemp": "临时生命值",
     "DND5E.HealthConditions": "健康状态",
     "DND5E.HitDice": "生命骰",
     "DND5E.HitDiceRoll": "投掷生命骰",
@@ -685,7 +685,7 @@
     "DND5E.HitPointsCurrent": "当前 HP",
     "DND5E.HitPointsMax": "HP 上限",
     "DND5E.HitPointsTemp": "临时 HP",
-    "DND5E.HitPointsTempMax": "临时 HP 上限",
+    "DND5E.HitPointsTempMax": "临时最大生命值",
     "DND5E.LairActionInitiative": "巢穴动作先攻值",
     "DND5E.SkillModifierHint": "{skill} 调整值",
     "DND5E.SkillPassiveHint": "被动 {skill}",
@@ -849,7 +849,7 @@
     "DND5E.HitPointsBonusLevel": "每级加值",
     "DND5E.HitPointsBonusOverall": "总体加值",
     "DND5E.HitPointsConfig": "配置 HP",
-    "DND5E.HitPointsOverride": "HP 覆盖上限",
+    "DND5E.HitPointsOverride": "覆盖上限",
     "DND5E.HPFormulaRollMessage": "骰 HP 公式",
     "DND5E.HPFormulaError": "无法识别所提供的 HP 公式。",
     "DND5E.InitiativeBonus": "先攻加值",
@@ -1153,7 +1153,10 @@
             "Hint": "将所有携带的货币兑换为最高可能的面额，以减少角色携带的硬币数量。请注意，此操作无法撤销。",
             "Label": "兑换"
         },
-        "Title": "管理货币"
+        "Title": "管理货币",
+        "Error": {
+            "InsufficientFunds": "从 {name} 扣除 {amount}{denomination} 失败。资金不足。"
+        }
     },
     "DND5E.DeathSaveHide": "隐藏死亡豁免",
     "DND5E.DamageType": "伤害类型",
@@ -1217,7 +1220,8 @@
             "Reach": "触及",
             "Special": "特殊",
             "WeightlessContents": "无重量内容",
-            "Firearm": "火器"
+            "Firearm": "火器",
+            "Trait": "被动特质"
         },
         "Category": {
             "Label": "类别",
@@ -1453,7 +1457,8 @@
             "General": "通用专长",
             "Origin": "起源专长"
         },
-        "Species": "种族特性"
+        "Species": "种族特性",
+        "SpeciesLegacy": "种族特性"
     },
     "DND5E.DeathSaveSuccessLabelN.few": "第三次死亡豁免成功",
     "DND5E.SizeGargantuanAbbr": "超巨",
@@ -1646,6 +1651,11 @@
                 "level": {
                     "label": "所需等级",
                     "hint": "升级时选择此特性所需的角色等级或职业等级。"
+                },
+                "label": "先决条件",
+                "repeatable": {
+                    "hint": "此特性可被多次选择。",
+                    "label": "复选"
                 }
             }
         }
@@ -2323,7 +2333,7 @@
         },
         "Type": {
             "ActivityUses": {
-                "PromptHintDecrease": "消耗 <strong>{cost}</strong> 次 {use} 在此行动中。",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 进行此行动（{available} {availableUse} 可用）。",
                 "Label": "行动使用次数",
                 "PromptDecrease": "消耗行动使用次数？",
                 "PromptIncrease": "恢复行动使用次数？",
@@ -2335,22 +2345,22 @@
                 "Label": "材料",
                 "PromptDecrease": "消耗材料？",
                 "PromptIncrease": "恢复材料？",
-                "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> 。",
+                "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> （剩余{quantity} ）。",
                 "Warning": "{name} 的"
             },
             "Attribute": {
                 "Label": "属性",
                 "PromptDecrease": "消耗属性？",
                 "PromptIncrease": "恢复属性？",
-                "PromptHintDecrease": "将 <code>{attribute}</code> 减少 <strong>{cost}</strong> 。",
-                "PromptHintIncrease": "将 <code>{attribute}</code> 增加 <strong>{cost}</strong> 。",
+                "PromptHintDecrease": "将 <code>{attribute}</code> 减少 <strong>{cost}</strong>（当前为 {current}）。",
+                "PromptHintIncrease": "将 <code>{attribute}</code> 增加 <strong>{cost}</strong> （当前为 {current}）。",
                 "Warning": "{attribute} 数量"
             },
             "HitDice": {
                 "Label": "生命骰",
                 "PromptDecrease": "消耗生命骰？",
                 "PromptIncrease": "恢复生命骰？",
-                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {denomination} {die}。",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> （还剩{denomination} {die} ({available} ）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> {denomination} {die}。",
                 "Warning": "{denomination} 生命骰"
             },
@@ -2362,7 +2372,7 @@
                 "Label": "物品使用次数",
                 "PromptDecrease": "消耗物品使用次数？",
                 "PromptIncrease": "恢复物品使用次数？",
-                "PromptHintDecrease": "消耗 <strong>{cost}</strong> 次 {item} 的 {use} 。",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 的 {item} （{available} {availableUse} 可用）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {item} 的 {use} 。",
                 "Warning": "在 {name} 上使用"
             },
@@ -2374,7 +2384,7 @@
                 "Label": "法术位",
                 "PromptDecrease": "消耗法术位？",
                 "PromptIncrease": "恢复法术位？",
-                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {slot} 。",
+                "PromptHintDecrease": "消耗 <strong>{cost}</strong> {slot} （剩余 {available} ）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> {slot} 。",
                 "Warning": "{level} 环位"
             },
@@ -2383,7 +2393,8 @@
                 "other": "使用"
             },
             "Action": {
-                "Prompt": "消耗 {type}？"
+                "Prompt": "消耗 {type}？",
+                "PromptHint": "消耗 {cost} （{available} 可用）。"
             }
         },
         "Action": {
@@ -2401,7 +2412,8 @@
             "MissingHitDice": "角色没有一个具有 {denomination} 生命骰的职业。",
             "MissingItem": "无法找到由行动 {activity} 配置在物品 {item} 上的消耗项。",
             "MissingSpellSlot": "没有可用的 {level} 法术位。",
-            "None": "没有可用的 {type} 可以消耗，需要 {cost} 。"
+            "None": "没有可用的 {type} 可以消耗，需要 {cost} 。",
+            "WillDestroy": "将耗尽 {物品} 使用次数，并将其摧毁。"
         }
     },
     "DND5E.CHECK": {
@@ -3062,6 +3074,10 @@
                     "label": "射程数值"
                 }
             }
+        },
+        "Formatted": {
+            "Range": "射程 {range}",
+            "Reach": "触及 {reach}"
         }
     },
     "DND5E.ExperiencePointsBoons": {
@@ -3318,7 +3334,7 @@
         "Label": "据点",
         "Summary": {
             "Gold": "{value} （{claimed}）",
-            "NoOrders": "本回合未向特殊设施下达任何指令。",
+            "NoOrders": "本回合未向特色设施下达任何指令。",
             "Order": "{link} 完成了 <strong>{order}</strong> 指令。"
         }
     },
@@ -3412,5 +3428,422 @@
             "NoCombatant": "战斗单位已不存在！",
             "Recovery": "恢复"
         }
-    }
+    },
+    "DND5E.FACILITY": {
+        "FIELDS": {
+            "progress": {
+                "value": {
+                    "label": "当前"
+                },
+                "max": {
+                    "label": "总计"
+                },
+                "order": {
+                    "label": "实施"
+                }
+            },
+            "trade": {
+                "stock": {
+                    "stocked": {
+                        "hint": "适用于不储存可变价值货物的设施，而是被视为要么有库存要么空置的设施。",
+                        "label": "库存"
+                    },
+                    "max": {
+                        "label": "最大"
+                    },
+                    "value": {
+                        "label": "库存数"
+                    }
+                },
+                "creatures": {
+                    "max": {
+                        "label": "生物容量"
+                    }
+                },
+                "profit": {
+                    "label": "利润因子"
+                }
+            },
+            "disabled": {
+                "hint": "损坏的设施无法下达指令，并会在下一回合开始时修复。",
+                "label": "损坏"
+            },
+            "building": {
+                "built": {
+                    "label": "建成",
+                    "hint": "基本设施必须建成才能使用。"
+                }
+            },
+            "defenders": {
+                "max": {
+                    "label": "卫兵"
+                }
+            },
+            "enlargeable": {
+                "hint": "某些特色设施可付费扩大其规模。",
+                "label": "可以扩大"
+            },
+            "free": {
+                "hint": "免费设施不计入你的特色设施上限。",
+                "label": "免费设施"
+            },
+            "hirelings": {
+                "max": {
+                    "label": "雇员"
+                }
+            },
+            "level": {
+                "label": "等级要求"
+            },
+            "order": {
+                "label": "指令"
+            },
+            "size": {
+                "label": "大小"
+            },
+            "type": {
+                "subtype": {
+                    "label": "类型"
+                },
+                "value": {
+                    "label": "类别"
+                }
+            }
+        },
+        "Action": {
+            "DeleteOccupant": "删除住户",
+            "DeleteDefender": "删除卫兵",
+            "RemoveCraft": "移除制造"
+        },
+        "Types": {
+            "Special": {
+                "Label": {
+                    "other": "特色设施",
+                    "one": "特色设施"
+                },
+                "ArcaneStudy": "奥术研究室",
+                "Armory": "军械库",
+                "Barrack": "兵营",
+                "Garden": "种植园",
+                "Library": "图书馆",
+                "Sanctuary": "圣坛",
+                "Smithy": "铁匠铺",
+                "Storehouse": "仓库",
+                "Workshop": "工坊",
+                "GamingHall": "游戏厅",
+                "Greenhouse": "温室",
+                "Laboratory": "实验室",
+                "Sacristy": "圣器室",
+                "Scriptorium": "抄写室",
+                "Stable": "马厩",
+                "TeleportationCircle": "传送法阵",
+                "Theater": "剧院",
+                "TrainingArea": "训练场",
+                "TrophyRoom": "陈列室",
+                "Archive": "档案室",
+                "MeditationChamber": "冥想间",
+                "Menagerie": "兽栏",
+                "Observatory": "天文台",
+                "Pub": "酒馆",
+                "Reliquary": "圣物库",
+                "Demiplane": "半位面",
+                "Guildhall": "公会大厅",
+                "Sanctum": "圣所",
+                "WarRoom": "作战指挥室"
+            },
+            "Basic": {
+                "Courtyard": "庭院",
+                "Label": {
+                    "one": "基础设施",
+                    "other": "基础设施"
+                },
+                "Bedroom": "卧室",
+                "DiningRoom": "餐厅",
+                "Parlor": "客厅",
+                "Kitchen": "厨房",
+                "Storage": "储藏室"
+            }
+        },
+        "Use": {
+            "Description": "向其 {link} {facilityType} 下达了 <strong>{order}</strong> 命令。"
+        },
+        "Craft": {
+            "BaseItem": {
+                "Hint": "如果勾选，基础物品将以全价购买，而不是手工制作。",
+                "Label": "购买基础物品"
+            },
+            "Hint": "该设施目前正在制作或收获的物品（如果有的话）。"
+        },
+        "Trade": {
+            "Creatures": {
+                "Buy": "将你想要购买的动物放入上方的插槽中，并在下面适当更新成本。"
+            },
+            "Buy": {
+                "Supplement": "购买"
+            },
+            "Price": {
+                "Label": "基础价格",
+                "Hint": "选择要出售的库存，并在上面输入基础价格。"
+            },
+            "Sell": {
+                "Supplement": "出售",
+                "Label": "出售库存"
+            },
+            "Stock": {
+                "Buy": "购买",
+                "Sell": "出售中"
+            },
+            "Stocked": {
+                "Label": "库存充足",
+                "Hint": "请在下方输入为该设施备齐库存所需的费用。"
+            }
+        },
+        "AvailableFacility": {
+            "basic": {
+                "build": "建造设施",
+                "free": "免费设施"
+            },
+            "special": {
+                "free": "添加设施"
+            }
+        },
+        "Build": {
+            "Unbuilt": "未建成"
+        },
+        "Costs": {
+            "Automatic": "自动扣除",
+            "Days": "{days} 天",
+            "Label": "花费",
+            "Manual": "付清后标记",
+            "Paid": "付清",
+            "Unpaid": "未付清"
+        },
+        "Description": "描述",
+        "Goods": "货物",
+        "NoDefenders": "据点未设防。",
+        "Occupants": "住户",
+        "Order": {
+            "Execute": "执行指令",
+            "Issue": "下达指令：{order}"
+        },
+        "Orders": {
+            "Label": "指令",
+            "build": {
+                "inf": "建造",
+                "present": "建造中"
+            },
+            "change": {
+                "inf": "改变",
+                "present": "改变中"
+            },
+            "craft": {
+                "inf": "制造",
+                "present": "制造中"
+            },
+            "empower": {
+                "inf": "增强",
+                "present": "增强中"
+            },
+            "enlarge": {
+                "inf": "扩大",
+                "present": "扩大中"
+            },
+            "harvest": {
+                "inf": "收获",
+                "present": "收获中"
+            },
+            "maintain": {
+                "inf": "维护",
+                "present": "维护中"
+            },
+            "recruit": {
+                "inf": "招募",
+                "present": "招募中"
+            },
+            "repair": {
+                "inf": "修复",
+                "present": "修复中"
+            },
+            "research": {
+                "inf": "调查",
+                "present": "调查中"
+            },
+            "trade": {
+                "inf": "贸易",
+                "present": "贸易中"
+            }
+        },
+        "Sizes": {
+            "roomy": "宽敞",
+            "vast": "庞大",
+            "cramped": "狭小"
+        },
+        "Squares": "{squares} 方格"
+    },
+    "DND5E.FORWARD": {
+        "Warning": {
+            "NoActivity": "在使用Forward活动之前，必须配置链接行动。"
+        },
+        "FIELDS": {
+            "activity": {
+                "label": "触发行动"
+            }
+        }
+    },
+    "DND5E.ItemFacilityDetails": "设施详情",
+    "DND5E.ItemSpeciesDetailsLegacy": "种族详情",
+    "DND5E.Language": {
+        "Language": {
+            "Druidic": "德鲁伊语",
+            "Orc": "兽人语",
+            "Aarakocra": "阿拉寇拉语",
+            "Abyssal": "深渊语",
+            "Aquan": "水族语",
+            "Auran": "气族语",
+            "Celestial": "天界语",
+            "Common": "通用语",
+            "CommonSign": "通用手语",
+            "DeepSpeech": "深潜语",
+            "Draconic": "龙语",
+            "Dwarvish": "矮人语",
+            "Elvish": "精灵语",
+            "Giant": "巨人语",
+            "Gith": "吉斯语",
+            "Gnoll": "豺狼人语",
+            "Gnomish": "侏儒语",
+            "Goblin": "地精语",
+            "Halfling": "半身人语",
+            "Ignan": "火族语",
+            "Infernal": "炼狱语",
+            "Primordial": "原初语",
+            "Sylvan": "木族语",
+            "Terran": "土族语",
+            "ThievesCant": "盗贼黑话",
+            "Undercommon": "地底通用语"
+        },
+        "All": "所有语言",
+        "Label": "语言",
+        "Category": {
+            "Exotic": "特种语言",
+            "Rare": "稀有语言",
+            "Standard": "标准语言"
+        },
+        "Communication": {
+            "Telepathy": "心灵感应"
+        }
+    },
+    "DND5E.LegendaryAction": {
+        "Ordinal": {
+            "two": "第 {n} 个传奇动作",
+            "one": "第 {n} 个传奇动作",
+            "few": "第 {n} 个传奇动作",
+            "other": "第 {n} 个传奇动作"
+        },
+        "Label": "传奇动作",
+        "Max": "最大传奇动作",
+        "Remaining": "剩余传奇动作"
+    },
+    "DND5E.LegendaryResistance": {
+        "Ordinal": {
+            "few": "第 {n} 个传奇抗性",
+            "one": "第 {n} 个传奇抗性",
+            "two": "第 {n} 个传奇抗性",
+            "other": "第 {n} 个传奇抗性"
+        },
+        "Action": {
+            "Resist": "传奇抗性"
+        },
+        "Label": "传奇抗性",
+        "Max": "最大传奇抗性",
+        "Remaining": "剩余传奇抗性",
+        "Resisted": "使用传奇抗性"
+    },
+    "DND5E.NPC": {
+        "SECTIONS": {
+            "Reactions": "反应",
+            "Actions": "动作",
+            "BonusActions": "附赠动作",
+            "LegendaryActions": "传奇动作",
+            "Traits": "特质"
+        },
+        "Label": "NPC"
+    },
+    "DND5E.CreatureTag": "{size} {type}，{alignment}",
+    "DND5E.EQUIPMENT": {
+        "Type": {
+            "Clothing": {
+                "Label": "服装"
+            },
+            "Ring": {
+                "Label": "戒指"
+            },
+            "Rod": {
+                "Label": "权杖"
+            },
+            "Trinket": {
+                "Label": "饰品"
+            },
+            "Vehicle": {
+                "Label": "载具装备"
+            },
+            "Wand": {
+                "Label": "魔杖"
+            },
+            "Wondrous": {
+                "Label": "奇物"
+            }
+        }
+    },
+    "DND5E.FEATURE": {
+        "FIELDS": {
+            "properties": {
+                "label": "特征词条"
+            },
+            "requirements": {
+                "label": "要求"
+            },
+            "type": {
+                "label": "特征类型"
+            }
+        }
+    },
+    "DND5E.FlagsAlertHintLegacy": "先攻+5。",
+    "DND5E.GlobalBonus": "全局加值",
+    "DND5E.HITPOINTS": {
+        "Counted": {
+            "one": "{number} 生命值",
+            "other": "{number} 生命值"
+        }
+    },
+    "DND5E.HitPointsOverrideHint": "覆盖自动计算的生命值，忽略来自职业、加值和属性调整的生命值。",
+    "DND5E.HitPointsTempMaxHint": "暂时改变最大生命值。",
+    "DND5E.HITDICE": {
+        "Action": {
+            "Decrease": "减少",
+            "Increase": "增加"
+        },
+        "Available": "{number} 可用",
+        "Config": "调整生命骰数",
+        "Counted": {
+            "one": "{number} 生命骰",
+            "other": "{数量} 生命骰"
+        }
+    },
+    "DND5E.Items": "物品",
+    "DND5E.NUMBER": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+    },
+    "DND5E.ProficiencyBonusAbbr": "熟练加值",
+    "DND5E.ProficiencyOther": "其他熟练加值",
+    "DND5E.RacialTraitsLegacy": "种族特质",
+    "DND5E.RechargeShort": "在短休或长休后充能",
+    "DND5E.RechargeLong": "长休后充能"
 }
