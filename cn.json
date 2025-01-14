@@ -612,7 +612,7 @@
     "SETTINGS.5eAllowPolymorphingL": "允许玩家变形其拥有的角色。",
     "SETTINGS.5eAllowPolymorphingN": "允许变形",
     "SETTINGS.5eAutoCollapseCardL": "自动折叠发送到聊天窗口的物品卡片",
-    "SETTINGS.5eAutoCollapseCardN": "折叠聊天物品",
+    "SETTINGS.5eAutoCollapseCardN": "在聊天中折叠物品卡片",
     "SETTINGS.5eAutoSpellTemplateL": "如果法术有测量板，当施放法术时自动创建测量板（需要受信玩家或更高权限的用户组）",
     "SETTINGS.5eAutoSpellTemplateN": "总是放置法术测量板",
     "SETTINGS.5eCurWtL": "携带的货币会产生负重。详细参照PHB143页。",
@@ -992,9 +992,9 @@
     "DND5E.LimitedUsesPer": "使用次数恢复模式",
     "DND5E.Long": "最大",
     "DND5E.LongRestRecovery": "长休后恢复",
-    "DND5E.ModuleArtConfigH": "配置使用哪个模组提供的画风。",
-    "DND5E.ModuleArtConfigL": "配置画风",
-    "DND5E.ModuleArtConfigN": "模组提供的画风",
+    "DND5E.ModuleArtConfigH": "配置使用哪个模组提供的美术风格。",
+    "DND5E.ModuleArtConfigL": "配置美术风格",
+    "DND5E.ModuleArtConfigN": "模组提供的美术风格",
     "DND5E.ModuleArtConfigPortraits": "立绘",
     "DND5E.ModuleArtConfigTokens": "指示物",
     "DND5E.PolymorphKeepSpellAE": "保留来自你的法术的效应？",
@@ -1999,7 +1999,7 @@
         "Sources": {
             "Name": "合集包浏览器资源",
             "Label": "配置资源",
-            "FilterPackages": "过滤包",
+            "FilterPackages": "过滤",
             "Hint": "配置哪些合集包的内容可在合集浏览器中使用。"
         }
     },
@@ -2227,7 +2227,7 @@
                 "critical": {
                     "bonus": {
                         "label": "额外重击伤害",
-                        "hint": "重击时造成的额外伤害。加到基础伤害或第一次部分伤害上。"
+                        "hint": "重击时造成的额外伤害。加到基础伤害或第一次伤害作用上。"
                     }
                 },
                 "includeBase": {
@@ -2541,7 +2541,7 @@
                     },
                     "bonus": {
                         "label": "额外重击伤害",
-                        "hint": "重击时对首次造成伤害的部分追加额外伤害。"
+                        "hint": "重击时对首次伤害作用追加额外伤害。"
                     }
                 },
                 "parts": {
@@ -2551,15 +2551,15 @@
                         "scaling": {
                             "number": {
                                 "hint": "每次递增步骤增加的骰子数量。如果伤害公式中存在多个骰子，则应用于第一个骰子。",
-                                "label": "骰子递增",
-                                "abbr": "骰子"
+                                "label": "骰数递增",
+                                "abbr": "骰数"
                             },
                             "label": "伤害递增",
                             "abbr": "递增",
                             "mode": {
                                 "label": "递增模式",
                                 "abbr": "模式",
-                                "hint": "计算递增增量的方法。。"
+                                "hint": "计算递增增量的方法。"
                             },
                             "formula": {
                                 "label": "递增公式",
@@ -2616,7 +2616,7 @@
                     "label": "治疗递增",
                     "number": {
                         "hint": "每次递增步骤增加的骰子数量。如果治疗公式中存在多个骰子，则应用于第一个骰子。",
-                        "label": "骰子递增"
+                        "label": "骰数递增"
                     },
                     "mode": {
                         "label": "递增模式",
@@ -2727,7 +2727,7 @@
                     "label": "职业识别符"
                 },
                 "prompt": {
-                    "hint": "是否应提示玩家放置召唤物？即使禁用提示，玩家仍可通过聊天卡进行召唤。",
+                    "hint": "是否应提示玩家放置召唤物？即使禁用提示，玩家仍可通过聊天卡片进行召唤。",
                     "label": "召唤提示"
                 },
                 "label": "召唤详情",
@@ -2892,7 +2892,7 @@
     "DND5E.WEAPON": {
         "FIELDS": {
             "damage": {
-                "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害部分会自动提供。"
+                "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害作用会自动提供。"
             },
             "ammunition": {
                 "type": {
@@ -2986,7 +2986,7 @@
         },
         "Title": "附魔",
         "SECTIONS": {
-            "Enchanting": "使...附魔",
+            "Enchanting": "使…附魔",
             "Enchantments": "附魔",
             "Restrictions": "限制条件"
         },
@@ -3218,7 +3218,7 @@
                 },
                 "prompt": {
                     "label": "测量模板提示",
-                    "hint": "是否应提示玩家放置测量模板？即使禁用提示，玩家仍可通过聊天卡放置模板。"
+                    "hint": "是否应提示玩家放置测量模板？即使禁用提示，玩家仍可通过聊天卡片放置模板。"
                 }
             }
         },
