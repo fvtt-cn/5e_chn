@@ -1279,7 +1279,8 @@
             "NoActor": "找不到选定或指定的角色来执行该掷骰。",
             "NoItemOnActor": "{actor}没有名称为{item}的物品。",
             "NoActivityOnItem": "{actor} 上的 {item} 没有名为 {activity} 的行动。"
-        }
+        },
+        "AttackExtended": "<em>{type}</em>: {parts}"
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -2703,6 +2704,10 @@
                 "proficiency": {
                     "label": "匹配熟练项",
                     "hint": "调整召唤生物的熟练加值以匹配施法者的熟练加值。"
+                },
+                "ability": {
+                    "label": "匹配属性",
+                    "hint": "用于匹配攻击和豁免 DC 的特定属性。"
                 }
             },
             "creatureTypes": {
@@ -2718,7 +2723,7 @@
         "SECTIONS": {
             "Changes": "调整",
             "Profiles": "配置",
-            "Summoning": "正在召唤"
+            "Summoning": "召唤"
         },
         "Action": {
             "Summon": "召唤",
@@ -2726,12 +2731,12 @@
             "Place": "放置召唤物"
         },
         "CreatureChanges": {
-            "Label": "生物更换",
-            "Hint": "将对被召唤生物进行的更换。以下公式中使用的任何 @ 引用都将基于召唤者的属性。召唤生物的属性可以使用 @summon 进行引用（例如，@summon.attributes.hd.max 用于引用生物的生命骰数量）。"
+            "Label": "生物替换",
+            "Hint": "将对被召唤生物进行的替换。以下公式中使用的任何 @ 引用都将基于召唤者的属性。召唤生物的属性可以使用 @summon 进行引用（例如，@summon.attributes.hd.max 用于引用生物的生命骰数量）。"
         },
         "ItemChanges": {
-            "Label": "物品更换",
-            "Hint": "对召唤生物所携带物品所做的更换。"
+            "Label": "物品替换",
+            "Hint": "对召唤生物所携带物品所做的替换。"
         },
         "Profile": {
             "Label": "召唤物配置",
@@ -2812,7 +2817,7 @@
                 "label": "豁免详情",
                 "ability": {
                     "label": "豁免属性",
-                    "hint": "必须掷骰以尝试豁免的属性。"
+                    "hint": "可用于掷骰以尝试豁免的属性。"
                 },
                 "dc": {
                     "label": "难度等级",
@@ -3101,7 +3106,9 @@
         "Label": "种族",
         "Add": "添加种族",
         "Features": "种族特性",
-        "Name": "种族名称"
+        "Name": "种族名称",
+        "AddLegacy": "添加种族",
+        "FeaturesLegacy": "种族特性"
     },
     "DND5E.SpellPreparation": {
         "Label": "法术准备",
@@ -3182,7 +3189,162 @@
         },
         "Warning": {
             "PlaceTemplate": "放置测量模板失败。"
-        }
+        },
+        "Type": {
+            "Any": {
+                "Label": "任意"
+            },
+            "WillingCreature": {
+                "Counted": {
+                    "other": "{number} 自愿生物",
+                    "any": "任意自愿生物",
+                    "every": "所有自愿生物",
+                    "one": "{number} 自愿生物"
+                },
+                "Label": "自愿生物"
+            },
+            "Cone": {
+                "Counted": {
+                    "one": "{number} 锥状",
+                    "other": "{number} 锥状"
+                },
+                "Label": "锥状"
+            },
+            "Sphere": {
+                "Counted": {
+                    "other": "{number} 球状",
+                    "one": "{number} 球状"
+                },
+                "Label": "球状"
+            },
+            "CreatureOrObject": {
+                "Counted": {
+                    "other": "{number} 生物或物件",
+                    "any": "任意生物或物件",
+                    "every": "所有生物或物件",
+                    "one": "{number} 生物或物件"
+                },
+                "Label": "生物或物件"
+            },
+            "Enemy": {
+                "Label": "敌人",
+                "Counted": {
+                    "other": "{number} 敌人",
+                    "any": "任意敌人",
+                    "every": "所有敌人",
+                    "one": "{number} 敌人"
+                }
+            },
+            "Wall": {
+                "Counted": {
+                    "one": "{number} 墙形",
+                    "other": "{number} 墙形"
+                },
+                "Label": "墙形"
+            },
+            "Ally": {
+                "Label": "盟友",
+                "Counted": {
+                    "any": "任意盟友",
+                    "every": "所有盟友",
+                    "one": "{number} 盟友",
+                    "other": "{number} 盟友"
+                }
+            },
+            "Circle": {
+                "Label": "圆形",
+                "Counted": {
+                    "one": "{number} 圆形",
+                    "other": "{number} 圆形"
+                }
+            },
+            "Creature": {
+                "Label": "生物",
+                "Counted": {
+                    "any": "任意生物",
+                    "every": "所有生物",
+                    "one": "{number} 生物",
+                    "other": "{number} 生物"
+                }
+            },
+            "Cube": {
+                "Label": "立方",
+                "Counted": {
+                    "one": "{number} 立方",
+                    "other": "{number} 立方"
+                }
+            },
+            "Cylinder": {
+                "Label": "柱状",
+                "Counted": {
+                    "one": "{number} 柱状",
+                    "other": "{number} 柱状"
+                }
+            },
+            "Emanation": {
+                "Label": "光环",
+                "Counted": {
+                    "one": "{number} 光环",
+                    "other": "{number} 光环"
+                }
+            },
+            "Line": {
+                "Label": "线状",
+                "Counted": {
+                    "one": "{number} 线状",
+                    "other": "{number} 线状"
+                }
+            },
+            "Object": {
+                "Label": "物件",
+                "Counted": {
+                    "any": "任意物件",
+                    "every": "所有物件",
+                    "one": "{number} 物件",
+                    "other": "{number} 物件"
+                }
+            },
+            "Radius": {
+                "Label": "半径",
+                "Counted": {
+                    "one": "{number} 半径",
+                    "other": "{number} 半径"
+                }
+            },
+            "Self": {
+                "Label": "自身"
+            },
+            "Space": {
+                "Label": "空间",
+                "Counted": {
+                    "any": "任意空间",
+                    "every": "所有空间",
+                    "one": "{number} 空间",
+                    "other": "{number} 空间"
+                }
+            },
+            "Square": {
+                "Label": "方形",
+                "Counted": {
+                    "one": "{number} 方形",
+                    "other": "{number} 方形"
+                }
+            },
+            "Target": {
+                "Label": "目标",
+                "Counted": {
+                    "any": "任意目标",
+                    "every": "所有目标",
+                    "one": "{number} 目标",
+                    "other": "{number} 目标"
+                }
+            }
+        },
+        "Count": {
+            "Any": "任意",
+            "Every": "所有"
+        },
+        "Formatted": "{count} {type}"
     },
     "DND5E.USES": {
         "FIELDS": {
@@ -3241,10 +3403,10 @@
     "DND5E.Multiple": "多个",
     "DND5E.Period": "周期",
     "DND5E.UTILITY": {
-        "Title": "效用",
+        "Title": "使用",
         "FIELDS": {
             "roll": {
-                "label": "效用掷骰",
+                "label": "掷骰",
                 "formula": {
                     "label": "掷骰公式",
                     "hint": "任意一个掷骰公式。"
@@ -3254,7 +3416,7 @@
                     "hint": "掷骰按钮的显示名称。"
                 },
                 "prompt": {
-                    "label": "效用掷骰提示",
+                    "label": "掷骰提示",
                     "hint": "掷骰时是否应显示掷骰配置对话框？"
                 },
                 "visible": {
@@ -3845,5 +4007,225 @@
     "DND5E.ProficiencyOther": "其他熟练加值",
     "DND5E.RacialTraitsLegacy": "种族特质",
     "DND5E.RechargeShort": "在短休或长休后充能",
-    "DND5E.RechargeLong": "长休后充能"
+    "DND5E.RechargeLong": "长休后充能",
+    "DND5E.REST": {
+        "Short": {
+            "Hint": {
+                "Group": "在短休期间，团队成员可以消耗生命骰，并恢复物品的使用次数。",
+                "Normal": "在短休期间，你可以消耗生命骰，并恢复物品的使用次数。"
+            },
+            "Abbreviation": "短休",
+            "Label": "短休",
+            "LabelShort": "短休",
+            "Recovery": "短休后恢复",
+            "Result": {
+                "Full": "{name} 进行了一次短休，消耗 {dice} 恢复 {health} 。",
+                "Short": "{name} 进行了一次短休 。"
+            }
+        },
+        "Long": {
+            "Hint": {
+                "Group": "在一次长休中，团队成员们会恢复生命值、生命骰、职业资源、有限使用物品的充能次数以及法术位。",
+                "Normal": "在一次长休中，你会恢复生命值、生命骰、职业资源、有限使用物品的充能次数以及法术位。",
+                "NormalLegacy": "在一次长休中，你会恢复生命值、最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。",
+                "GroupLegacy": "在一次长休中，团队成员们会恢复生命值、最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。"
+            },
+            "Abbreviation": "长休",
+            "Label": "长休",
+            "LabelShort": "长休",
+            "Recovery": "长休后恢复",
+            "Result": {
+                "Full": "{name} 进行了一次长休，恢复了 {health} 点生命值和 {dice} 个生命骰。",
+                "HitDice": "{name} 进行了一次长休恢复了 {dice} 个生命骰。",
+                "Short": "{name} 进行了一次长休。",
+                "HitPoints": "{name} 进行了一次长休，并且恢复了 {health} 点生命值。"
+            }
+        },
+        "Configuration": "配置休息",
+        "HitDice": {
+            "AutoSpend": {
+                "Hint": "自动使用治疗骰，直至治疗骰用尽或生命值已满。",
+                "Label": "自动消耗生命骰"
+            },
+            "None": "在本次休息期间已无生命骰可掷。",
+            "Select": "选择要投掷的骰子"
+        },
+        "Label": "休息",
+        "NewDay": {
+            "Hint": "恢复有限使用的能力，这些能力会在黄昏、黎明或新的一天时恢复。",
+            "Label": "新的一天"
+        }
+    },
+    "DND5E.SKILL": {
+        "SECTIONS": {
+            "Bonuses": {
+                "Hint": "这些加值适用于使用 {label} 进行的被动检定和技能检定。",
+                "Label": "{label} 加值"
+            },
+            "Details": "{label} 详情",
+            "Global": {
+                "Label": "全局加值",
+                "Hint": "这些加值适用于使用任何技能进行的检定。"
+            }
+        }
+    },
+    "DND5E.UNITS": {
+        "DISTANCE": {
+            "Label": "距离单位",
+            "Foot": {
+                "Label": "英尺",
+                "Abbreviation": "尺"
+            },
+            "Kilometer": {
+                "Abbreviation": "km",
+                "Label": "千米"
+            },
+            "Meter": {
+                "Label": "米",
+                "Abbreviation": "m"
+            },
+            "Mile": {
+                "Label": "英里",
+                "Abbreviation": "里"
+            }
+        },
+        "VOLUME": {
+            "CubicFoot": {
+                "Counted": {
+                    "short": {
+                        "one": "{number} cu ft",
+                        "other": "{number} cu ft"
+                    },
+                    "narrow": {
+                        "one": "{number} 英尺",
+                        "other": "{number} 英尺"
+                    },
+                    "long": {
+                        "one": "{number} 立方英尺",
+                        "other": "{number} 立方英尺"
+                    }
+                },
+                "Label": "立方英尺",
+                "Abbreviation": "英尺"
+            },
+            "Label": "体积单位",
+            "Liter": {
+                "Label": "公升",
+                "Abbreviation": "升"
+            }
+        },
+        "TIME": {
+            "Round": {
+                "Counted": {
+                    "narrow": "{number} 轮",
+                    "one": "{number} 轮",
+                    "other": "{number} 轮"
+                },
+                "Label": "轮"
+            },
+            "Day": {
+                "Label": "天"
+            },
+            "Hour": {
+                "Label": "小时"
+            },
+            "Minute": {
+                "Label": "分钟"
+            },
+            "Month": {
+                "Label": "月"
+            },
+            "Second": {
+                "Label": "第二"
+            },
+            "Turn": {
+                "Label": "回合",
+                "Abbreviation": "回合",
+                "Counted": {
+                    "narrow": "{number} 回合",
+                    "one": "{number} 回合",
+                    "other": "{number} 回合"
+                }
+            },
+            "Week": {
+                "Label": "星期"
+            },
+            "Year": {
+                "Label": "年"
+            }
+        },
+        "WEIGHT": {
+            "Kilogram": {
+                "Label": "千克",
+                "Abbreviation": "kg"
+            },
+            "Megagram": {
+                "Counted": {
+                    "narrow": {
+                        "one": "{number}t",
+                        "other": "{number}t"
+                    },
+                    "short": {
+                        "one": "{number}t",
+                        "other": "{number}t"
+                    },
+                    "long": {
+                        "one": "{number} 公吨",
+                        "other": "{number} 公吨"
+                    }
+                },
+                "Abbreviation": "t",
+                "Label": "公吨"
+            },
+            "Label": "重量单位",
+            "Pound": {
+                "Label": "磅",
+                "Abbreviation": "lb"
+            },
+            "Ton": {
+                "Label": "吨",
+                "Abbreviation": "tn",
+                "Counted": {
+                    "narrow": {
+                        "one": "{number}tn",
+                        "other": "{number}tn"
+                    },
+                    "short": {
+                        "other": "{number} tn",
+                        "one": "{number} tn"
+                    },
+                    "long": {
+                        "one": "{number} 吨",
+                        "other": "{number} 吨"
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.ROLL": {
+        "Range": {
+            "Label": "掷骰范围",
+            "Maximum": "最大结果",
+            "Minimum": "最小结果"
+        },
+        "Status": "状态"
+    },
+    "DND5E.SavingThrowShort": "豁免",
+    "DND5E.SpellSlotTemporary": "临时法术位",
+    "DND5E.TOOL": {
+        "SECTIONS": {
+            "Details": "{label} 详情",
+            "Bonuses": {
+                "Label": "{label} 加值",
+                "Hint": "这些加值适用于使用{label}进行的检定。"
+            },
+            "Global": {
+                "Label": "全局加值",
+                "Hint": "这些加值适用于使用任意工具进行的检定。"
+            }
+        }
+    },
+    "DND5E.TraitDMPlural.one": "伤害调整",
+    "DND5E.TraitDMPlural.other": "伤害调整",
+    "DND5E.Unit": "单位"
 }
