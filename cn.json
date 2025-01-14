@@ -1893,7 +1893,29 @@
             "Standard": "标准",
             "Time": "时间",
             "Monster": "怪物",
-            "Vehicle": "载具"
+            "Vehicle": "载具",
+            "Combat": "战斗"
+        },
+        "Warning": {
+            "NoActions": "没有可用的{type}，而激活至少需要{required}。",
+            "NotEnoughActions": "没有足够的{type}来激活，需要{required}，但只有{available}可用。"
+        },
+        "Type": {
+            "Encounter": {
+                "Label": "遭遇开始"
+            },
+            "Legendary": {
+                "Counted": {
+                    "one": "{number} 传奇动作",
+                    "other": "{number} 传奇动作"
+                }
+            },
+            "TurnEnd": {
+                "Label": "结束回合"
+            },
+            "TurnStart": {
+                "Label": "开始回合"
+            }
         }
     },
     "DND5E.ADVANCEMENT": {
@@ -1943,6 +1965,28 @@
         "Subclass": {
             "Hint": "明确该职业从几级获取其子职。",
             "Title": "子职"
+        },
+        "HitPoints": {
+            "Warning": {
+                "Empty": "必须通过掷骰来确定生命值，或者取其期望值。",
+                "Invalid": "生命值必须是有效的整数。"
+            },
+            "Hint": "跟进该角色在每个等级中的生命值。",
+            "Action": {
+                "Roll": "投掷 {die}"
+            },
+            "Average": "平均",
+            "MaxAtFirstLevel": "1 级时的最大值： <strong>{max}</strong>",
+            "Roll": "掷骰 {class} 生命值",
+            "Starting": "1 级时的生命值",
+            "TakeAverage": "取期望值",
+            "Title": "生命值"
+        },
+        "Config": {
+            "Details": "提升详情"
+        },
+        "ItemGrant": {
+            "Details": "授予详情"
         }
     },
     "DND5E.ACTIVITY": {
@@ -1978,6 +2022,9 @@
             "Effect": "效应",
             "Time": "时间",
             "Identity": "标识"
+        },
+        "Warning": {
+            "UsageNotAllowed": "目前还无法使用此行动。"
         }
     },
     "DND5E.AdvancementTraitModeMasteryHint": "精通一种你已熟练的武器。",
@@ -3111,5 +3158,29 @@
             }
         }
     },
-    "DND5E.Value": "数值"
+    "DND5E.Value": "数值",
+    "DND5E.ABILITY": {
+        "SECTIONS": {
+            "Global": {
+                "Hint": "这些加值适用于使用任意属性进行的检定和豁免。",
+                "Label": "全局加值"
+            },
+            "Bonuses": {
+                "Label": "{ability} 加值",
+                "Hint": "这些加值适用于使用 {ability} 进行的检定和豁免。"
+            },
+            "Score": "{ability} 值"
+        },
+        "Configure": {
+            "Title": "配置 {ability}"
+        }
+    },
+    "TYPES.ChatMessage": {
+        "turn": "战斗回合信息"
+    },
+    "TYPES.Item.facility": "设施",
+    "TYPES.Item.facilityPl": "设施",
+    "DND5E.AbilityScoreShort": "值",
+    "DND5E.AbilityScoreMaxShort": "最大",
+    "DND5E.AbilityModifierShort": "调整值"
 }
