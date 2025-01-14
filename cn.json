@@ -1865,7 +1865,8 @@
         "Activity": "行为",
         "Warning": {
             "SelectType": "必须选择{name} 的生物类型。"
-        }
+        },
+        "Advancement": "升级"
     },
     "DND5E.ACTIVATION": {
         "FIELDS": {
@@ -1960,11 +1961,37 @@
             }
         },
         "SPELLCONFIG": {
-            "FreeCasting": "免费施法"
+            "FreeCasting": "免费施法",
+            "FIELDS": {
+                "spell": {
+                    "label": "法术详情",
+                    "ability": {
+                        "label": "属性"
+                    },
+                    "preparation": {
+                        "label": "准备模式"
+                    },
+                    "uses": {
+                        "max": {
+                            "label": "使用次数"
+                        },
+                        "per": {
+                            "label": "周期"
+                        },
+                        "requireSlot": {
+                            "label": "所需法术位",
+                            "hint": "使用有限次数时需要消耗一个法术位。若未勾选，则这些使用次数将是额外的免费使用次数，不会消耗法术位。"
+                        }
+                    }
+                }
+            }
         },
         "Subclass": {
             "Hint": "明确该职业从几级获取其子职。",
-            "Title": "子职"
+            "Title": "子职",
+            "Warning": {
+                "InvalidType": "只能选择子职。"
+            }
         },
         "HitPoints": {
             "Warning": {
@@ -1973,9 +2000,9 @@
             },
             "Hint": "跟进该角色在每个等级中的生命值。",
             "Action": {
-                "Roll": "投掷 {die}"
+                "Roll": "掷 {die}"
             },
-            "Average": "平均",
+            "Average": "取期望",
             "MaxAtFirstLevel": "1 级时的最大值： <strong>{max}</strong>",
             "Roll": "掷骰 {class} 生命值",
             "Starting": "1 级时的生命值",
@@ -1983,10 +2010,54 @@
             "Title": "生命值"
         },
         "Config": {
-            "Details": "提升详情"
+            "Details": "升级详情"
         },
         "ItemGrant": {
-            "Details": "授予详情"
+            "Details": "授予详情",
+            "DropHint": "将物品拖放到此处，即可将其添加到此次升级的授予列表中。",
+            "FIELDS": {
+                "items": {
+                    "label": "物品"
+                },
+                "optional": {
+                    "label": "选项",
+                    "hint": "如果所有升级选项被标记为可选，玩家可以选择不获取以下任何一项，否则所有非可选项目都会被授予。"
+                }
+            },
+            "Hint": "当角色达到特定等级时，授予其物品（例如装备、特性或法术）等。",
+            "Title": "授予物品",
+            "Warning": {
+                "Container": "容器内的物品不会与容器一起添加。",
+                "Duplicate": "该物品已存在于此升级中。",
+                "Recursive": "你不能在某项升级中授予该项本身。"
+            }
+        },
+        "Manager": {
+            "Action": {
+                "Complete": "完成",
+                "NextStep": "下一步",
+                "PreviousStep": "上一步",
+                "Restart": "重新开始"
+            },
+            "ClosePrompt": {
+                "Action": {
+                    "Continue": "继续",
+                    "Stop": "停止升级"
+                },
+                "Message": "<p>如果升级流程被取消，到目前为止所做的选择将会被放弃，并不会对角色做出任何更改。</p>",
+                "Title": "停止升级"
+            },
+            "RestartPrompt": {
+                "Message": "你确定要撤销到目前为止所做的所有选择吗？",
+                "Title": "重新开始升级选择"
+            },
+            "Steps": "第 {current} 步，共 {total} 步",
+            "Title": {
+                "Default": "升级",
+                "LevelIncreased": "提升角色等级",
+                "LevelNewClass": "添加职业",
+                "ModifyChoices": "修改选择"
+            }
         }
     },
     "DND5E.ACTIVITY": {
@@ -2116,7 +2187,8 @@
             "Thrown": "投掷",
             "TwoHanded": "双手",
             "Offhand": "副手",
-            "ThrownOffhand": "副手投掷"
+            "ThrownOffhand": "副手投掷",
+            "Ranged": "射程"
         },
         "Type": {
             "Melee": "近战",
@@ -2124,6 +2196,10 @@
         },
         "Warning": {
             "NoQuantity": "试图使用数量为零的武器进行攻击。"
+        },
+        "Formatted": {
+            "2014": "{type} {classification} 攻击",
+            "2024": "{type} 攻击检定"
         }
     },
     "DND5E.CONSUMABLE": {
@@ -2134,7 +2210,8 @@
                 "Arrow": "箭矢",
                 "Bolt": "弩矢",
                 "BulletSling": "弹丸，投石索",
-                "Needle": "吹矢"
+                "Needle": "吹矢",
+                "EnergyCell": "能量电池"
             },
             "Wand": {
                 "Label": "魔杖"
@@ -2304,6 +2381,9 @@
             "Use": {
                 "one": "使用",
                 "other": "使用"
+            },
+            "Action": {
+                "Prompt": "消耗 {type}？"
             }
         },
         "Action": {
@@ -2366,6 +2446,16 @@
             },
             "levels": {
                 "label": "职业等级"
+            },
+            "hd": {
+                "additional": {
+                    "hint": "超出该职业正常数量的可用生命骰公式。",
+                    "label": "额外生命骰"
+                },
+                "label": "生命值骰",
+                "spent": {
+                    "label": "消耗生命骰"
+                }
             }
         },
         "Multiclass": {
@@ -2885,7 +2975,7 @@
         "Label": "附魔",
         "Warning": {
             "NotOnActor": "附魔只能施加在物品上，而不能直接添加到角色身上。",
-            "Override": "此值已被附魔修改，无法直接编辑。请在效果选项卡中禁用附魔以进行编辑。"
+            "Override": "此值已被附魔修改，无法直接编辑。请在效果标签页中禁用附魔以进行编辑。"
         }
     },
     "DND5E.EFFECT": {
@@ -3182,5 +3272,145 @@
     "TYPES.Item.facilityPl": "设施",
     "DND5E.AbilityScoreShort": "值",
     "DND5E.AbilityScoreMaxShort": "最大",
-    "DND5E.AbilityModifierShort": "调整值"
+    "DND5E.AbilityModifierShort": "调整值",
+    "DND5E.Bastion": {
+        "Attack": {
+            "Result": {
+                "Deaths": {
+                    "other": "<strong>{deaths}</strong> 名卫兵在对据点的攻击中阵亡！",
+                    "one": "<strong>{deaths}</strong> 名卫兵在对据点的攻击中阵亡！"
+                },
+                "Damaged": "{link} 在此次攻击中受损。",
+                "NoDeaths": "成功击退了对据点的攻击，且无一伤亡！",
+                "Undefended": "未设防的据点遭到攻击！"
+            },
+            "Automatic": "自动解决",
+            "Formula": "攻击公式",
+            "NoActorWarning": "未选择角色作为攻击目标。请选中一个指示物，或者打开其角色卡。",
+            "Resolve": "化解攻击",
+            "Title": "据点攻击"
+        },
+        "Configuration": {
+            "Hint": "城主指南 2024 中所展示的据点系统的多种配置选项。",
+            "Name": "据点",
+            "Label": "配置据点"
+        },
+        "Enabled": {
+            "Hint": "启用后，玩家角色在达到 5 级时，其角色卡上就会出现一个新的据点标签页，届时他们就能建造设施并向其下达指令。",
+            "Label": "启用据点功能"
+        },
+        "Action": {
+            "BastionTurn": "推进据点回合"
+        },
+        "Button": {
+            "Label": "显示据点推进按钮",
+            "Hint": "在游戏主界面上显示一个用于推进据点回合的按钮。"
+        },
+        "Confirm": "推进一个据点回合？",
+        "Duration": {
+            "Label": "据点回合持续时间（天）"
+        },
+        "Gold": {
+            "Claim": "领取收入",
+            "Claimed": "已领取",
+            "Unclaimed": "未领取"
+        },
+        "Label": "据点",
+        "Summary": {
+            "Gold": "{value} （{claimed}）",
+            "NoOrders": "本回合未向特殊设施下达任何指令。",
+            "Order": "{link} 完成了 <strong>{order}</strong> 指令。"
+        }
+    },
+    "DND5E.CAST": {
+        "FIELDS": {
+            "spell": {
+                "level": {
+                    "hint": "施放该法术所需的最低环阶，若与法术环阶不同。",
+                    "label": "施法环阶"
+                },
+                "challenge": {
+                    "attack": {
+                        "hint": "使用固定的命中加值代替法术的正常攻击加值。",
+                        "label": "攻击加值"
+                    },
+                    "save": {
+                        "label": "豁免DC",
+                        "hint": "使用固定 DC 值来代替该法术的正常豁免 DC 值。"
+                    },
+                    "override": {
+                        "label": "覆盖数值",
+                        "hint": "施法时覆盖法术的正常攻击加值和 DC。"
+                    }
+                },
+                "label": "施法详情",
+                "ability": {
+                    "label": "施法属性",
+                    "hint": "覆盖该生物默认施法属性。"
+                },
+                "properties": {
+                    "label": "无视词条",
+                    "hint": "施法时要忽略的法术成分和标签。"
+                },
+                "spellbook": {
+                    "label": "在法术书中显示",
+                    "hint": "在角色卡的“法术”标签页中显示法术。"
+                },
+                "uuid": {
+                    "label": "要施展的法术"
+                }
+            }
+        },
+        "Title": "施法",
+        "SECTIONS": {
+            "Spell": "法术",
+            "Spellbook": "额外法术"
+        },
+        "Action": {
+            "RemoveSpell": "移除法术"
+        },
+        "Enchantment": {
+            "Name": "法术改动"
+        }
+    },
+    "DND5E.CONTAINER": {
+        "FIELDS": {
+            "properties": {
+                "label": "容器词条"
+            },
+            "capacity": {
+                "label": "容量",
+                "count": {
+                    "label": "物品数量"
+                },
+                "volume": {
+                    "label": "容积容量",
+                    "units": {
+                        "label": "容积单位"
+                    },
+                    "value": {
+                        "label": "最大容积"
+                    }
+                },
+                "weight": {
+                    "label": "负重容量",
+                    "units": {
+                        "label": "负重单位"
+                    },
+                    "value": {
+                        "label": "最大负重"
+                    }
+                }
+            }
+        },
+        "Details": "容器详情"
+    },
+    "DND5E.ArmorValue": "护甲值",
+    "DND5E.CHATMESSAGE": {
+        "TURN": {
+            "Activities": "行动",
+            "NoCombatant": "战斗单位已不存在！",
+            "Recovery": "恢复"
+        }
+    }
 }
