@@ -1365,7 +1365,7 @@
         "INITIATIVESCORE": {
             "Name": "先攻值",
             "All": "所有人使用先攻值",
-            "Hint": "使用生物的先攻值（10 +加值）确认先攻，而不是掷骰先攻。",
+            "Hint": "使用生物的先攻值（10 + 加值）确认先攻，而不是掷骰先攻。",
             "None": "始终为先攻掷骰",
             "NPCs": "GM的NPC使用先攻值"
         },
@@ -3454,7 +3454,7 @@
     "DND5E.Multiple": "多个",
     "DND5E.Period": "周期",
     "DND5E.UTILITY": {
-        "Title": "使用",
+        "Title": "效用",
         "FIELDS": {
             "roll": {
                 "label": "掷骰",
