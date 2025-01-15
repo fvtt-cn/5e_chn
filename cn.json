@@ -4242,10 +4242,10 @@
     },
     "DND5E.Habitat": {
         "Configuration": {
-            "Label": "产地",
+            "Label": "栖息地",
             "Legend": "类别",
             "Subtype": "{type} 子类型",
-            "Title": "配置产地",
+            "Title": "配置栖息地",
             "Custom": "自定义"
         },
         "Subtype": "{type} （{subtype}）",
@@ -4255,7 +4255,17 @@
     },
     "DND5E.Treasure": {
         "Categories": {
-            "Any": "任意"
+            "Any": "任意",
+            "Armaments": "武备",
+            "None": "无",
+            "Arcana": "奥秘",
+            "Implements": "器具",
+            "Individual": "独特",
+            "Relics": "圣物"
+        },
+        "Configuration": {
+            "Title": "配置宝藏",
+            "Label": "宝藏"
         }
     },
     "DND5E.Loyalty": "忠诚度"
