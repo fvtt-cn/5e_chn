@@ -1277,7 +1277,13 @@
             "NoItemOnActor": "{actor}没有名称为{item}的物品。",
             "NoActivityOnItem": "{actor} 上的 {item} 没有名为 {activity} 的行动。"
         },
-        "AttackExtended": "<em>{type}</em>: {parts}"
+        "AttackExtended": "<em>{type}</em>: {parts}",
+        "DamageExtended": "<em>命中：</em> {damage} 伤害",
+        "DamageDouble": "{first} 加上 {second}",
+        "PassiveShort": "被动 {check}",
+        "PassiveLong": "被动 {check} 值",
+        "AttackLong": "{formula} 命中",
+        "AttackShort": "{formula}"
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -1355,6 +1361,11 @@
             "Modern": "新版规则（2024）",
             "Name": "规则版本",
             "Hint": "在2024 规则与 2014 规则之间切换不同规则的处理方式。"
+        },
+        "INITIATIVESCORE": {
+            "Name": "先攻值",
+            "All": "所有人使用先攻值",
+            "Hint": "使用生物的先攻值（10 +加值）确认先攻，而不是掷骰先攻。"
         }
     },
     "SETTINGS.5eTokenRings": {
