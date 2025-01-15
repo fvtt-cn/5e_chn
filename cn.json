@@ -217,7 +217,7 @@
     "DND5E.FlagsHalflingLuckyHint": "当攻击检定、属性检定以及豁免检定掷出1时，你可以再重掷一次，但必须使用重掷的结果。",
     "DND5E.FlagsInitiativeAdv": "先攻优势",
     "DND5E.FlagsInitiativeAdvHint": "由特性或魔法物品提供。",
-    "DND5E.FlagsInstructions": "设置角色特性与特质以调整 D&D5e 系统行为。",
+    "DND5E.FlagsInstructions": "设置角色特性与特质以调整 D&D 5版 系统的角色行为。",
     "DND5E.FlagsJOAT": "万事通",
     "DND5E.FlagsJOATHint": "进行未熟练的技能检定时，加入1/2的熟练加值到检定中。",
     "DND5E.FlagsObservant": "观察者（专长）",
@@ -3841,13 +3841,14 @@
     },
     "DND5E.FORWARD": {
         "Warning": {
-            "NoActivity": "在使用Forward活动之前，必须配置链接行动。"
+            "NoActivity": "在使用转进行动之前，必须配置链接行动。"
         },
         "FIELDS": {
             "activity": {
                 "label": "触发行动"
             }
-        }
+        },
+        "Title": "转进"
     },
     "DND5E.ItemFacilityDetails": "设施详情",
     "DND5E.ItemSpeciesDetailsLegacy": "种族详情",
@@ -3925,7 +3926,11 @@
             "LegendaryActions": "传奇动作",
             "Traits": "特质"
         },
-        "Label": "NPC"
+        "Label": "NPC",
+        "Important": {
+            "Label": "重要 NPC",
+            "Hint": "关键的NPC会跟进死亡豁免、生命骰以及忠诚度（若启用）。不论此项设定如何，任何拥有职业等级的NPC都被视为重要角色。"
+        }
     },
     "DND5E.CreatureTag": "{size} {type}，{alignment}",
     "DND5E.EQUIPMENT": {
@@ -4224,5 +4229,34 @@
     },
     "DND5E.TraitDMPlural.one": "伤害调整",
     "DND5E.TraitDMPlural.other": "伤害调整",
-    "DND5E.Unit": "单位"
+    "DND5E.Unit": "单位",
+    "DND5E.LAIR": {
+        "Action": {
+            "Uses": "使用巢穴动作",
+            "Label": "巢穴动作",
+            "Initiative": "巢穴动作先攻计数"
+        },
+        "HasLair": "有巢穴",
+        "Inside": "巢穴内部",
+        "Label": "巢穴"
+    },
+    "DND5E.Habitat": {
+        "Configuration": {
+            "Label": "产地",
+            "Legend": "类别",
+            "Subtype": "{type} 子类型",
+            "Title": "配置产地",
+            "Custom": "自定义"
+        },
+        "Subtype": "{type} （{subtype}）",
+        "Categories": {
+            "Any": "任意"
+        }
+    },
+    "DND5E.Treasure": {
+        "Categories": {
+            "Any": "任意"
+        }
+    },
+    "DND5E.Loyalty": "忠诚度"
 }
