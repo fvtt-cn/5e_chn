@@ -12,7 +12,6 @@
     "minimum": "10",
     "verified": "12"
   },
-  "systems": [ "dnd5e" ],
   "languages": [{
       "lang": "cn",
       "name": "中文",
