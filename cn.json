@@ -1026,7 +1026,7 @@
     "DND5E.AdvancementTraitChoicesHint": "玩家可以选择以下特质。",
     "DND5E.AdvancementTraitChoicesRemaining": "选择{count}更多{type｝",
     "DND5E.AdvancementTraitCount": "数量",
-    "DND5E.AdvancementTraitGrantsHint": "只要角色尚未具备以下特质，就会被赋予该特质。",
+    "DND5E.AdvancementTraitGrantsHint": "只要角色尚未具备以下特质，就会被授予该特质。",
     "DND5E.AdvancementTraitGrants": "已被赋予",
     "DND5E.AdvancementTraitMode": "模式",
     "DND5E.AdvancementTraitModeDefaultLabel": "默认",
@@ -1045,7 +1045,7 @@
     "DND5E.Focus.Druidic": "德鲁伊法器",
     "DND5E.GroupSummaryEmpty": "空组",
     "DND5E.Dusk": "黄昏",
-    "DND5E.FlagsTavernBrawler": "酒馆拳王特长",
+    "DND5E.FlagsTavernBrawler": "酒馆斗殴者专长",
     "DND5E.ConsumeHitDiceLargestLong": "最大可用生命骰",
     "DND5E.ConsumeHitDiceSmallestLong": "最小可用生命骰",
     "DND5E.ConsumeScaling": "资源递增",
@@ -1363,7 +1363,7 @@
             },
             "CHALLENGE": {
                 "All": "显示所有",
-                "Hint": "控制玩家可见的掷骰 DC 值，以及是否强调显示成功或失败的情况。",
+                "Hint": "控制玩家是否可见 DC 掷骰结果 ，以及是否突出显示成功或失败的情况。",
                 "None": "隐藏所有",
                 "Player": "仅显示其他玩家",
                 "Name": "DC 可见性"
@@ -1716,7 +1716,7 @@
     "TYPES.JournalEntryPage.spells": "法术列表",
     "JOURNALENTRYPAGE.DND5E": {
         "Class": {
-            "EquipmentDescription": "除了您的背景所赋予的装备外，您开始时还拥有以下装备：",
+            "EquipmentDescription": "除了您的背景所授予的装备外，您开始时还拥有以下装备：",
             "Traits": {
                 "Header": "熟练项",
                 "Caption": "{class} 核心特质"
@@ -2720,8 +2720,8 @@
                 "mode": {
                     "label": "模式",
                     "hint": "设置如何指定要召唤的生物。",
-                    "CR": "通过挑战等级和类型",
-                    "Direct": "通过直接链接"
+                    "CR": "挑战等级和类型",
+                    "Direct": "直接链接"
                 }
             },
             "match": {
