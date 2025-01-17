@@ -2092,6 +2092,39 @@
                 "allowDrops": {
                     "hint": "允许玩家能将自己的选择拖放至此次升级中。",
                     "label": "允许拖放"
+                },
+                "choices": {
+                    "hint": "请说明每个等级允许的选择数量。",
+                    "label": "选择",
+                    "FIELDS": {
+                        "count": {
+                            "label": "数量"
+                        },
+                        "replacement": {
+                            "label": "允许替换"
+                        }
+                    }
+                },
+                "pool": {
+                    "label": "物品选项"
+                },
+                "restriction": {
+                    "level": {
+                        "Available": "任意可用等级",
+                        "hint": "仅允许从该等级的法术中进行选择。",
+                        "label": "法术环阶"
+                    },
+                    "subtype": {
+                        "label": "子类"
+                    },
+                    "type": {
+                        "label": "类型"
+                    }
+                },
+                "type": {
+                    "Any": "任一物品",
+                    "hint": "限制可选择的物品类型。",
+                    "label": "物品类型"
                 }
             }
         }
