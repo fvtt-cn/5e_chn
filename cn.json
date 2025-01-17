@@ -2098,7 +2098,9 @@
             }
         },
         "ItemChoice": {
-            "Choose": "选择 {count}"
+            "Choose": "选择 {count}",
+            "Chosen": "已选：{current} / {max}",
+            "Details": "选择详情"
         }
     },
     "DND5E.ACTIVITY": {
