@@ -6,7 +6,7 @@
     "DND5E.AbbreviationDC": "DC",
     "DND5E.AbbreviationLR": "长休",
     "DND5E.AbbreviationLbs": "磅",
-    "DND5E.AbbreviationLevel": "等级",
+    "DND5E.AbbreviationLevel": "等级。",
     "DND5E.AbbreviationSR": "短休",
     "DND5E.Ability": "属性",
     "DND5E.AbilityCha": "魅力",
@@ -1971,7 +1971,9 @@
                 },
                 "locked": {
                     "label": "已锁定",
-                    "hint": "属性值无法提升。"
+                    "hint": "属性值无法提升。",
+                    "locked": "属性值无法提升。",
+                    "unlocked": "属性值可以提升。"
                 },
                 "points": {
                     "decrease": "减少点数",
@@ -1992,7 +1994,8 @@
             "Warning": {
                 "Level": "必须至少达到 {level} 级才能选择此专长。",
                 "Type": "只有类型为“专长”的特性才能被选择。"
-            }
+            },
+            "Details": "提升详情"
         },
         "SPELLCONFIG": {
             "FreeCasting": "免费施法",
@@ -2044,7 +2047,8 @@
             "Title": "生命值"
         },
         "Config": {
-            "Details": "升级详情"
+            "Details": "升级详情",
+            "AnyLevel": "任意"
         },
         "ItemGrant": {
             "Details": "授予详情",
@@ -2092,6 +2096,9 @@
                 "LevelNewClass": "添加职业",
                 "ModifyChoices": "修改选择"
             }
+        },
+        "ItemChoice": {
+            "Choose": "选择 {count}"
         }
     },
     "DND5E.ACTIVITY": {
