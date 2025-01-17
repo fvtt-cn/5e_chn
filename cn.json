@@ -2122,6 +2122,17 @@
                     "hint": "限制可选择的物品类型。",
                     "label": "物品类型"
                 }
+            },
+            "Replacement": {
+                "Title": "替换",
+                "None": "无替换"
+            },
+            "Hint": "向玩家展示一系列物品（比如装备、特性或法术）供其挑选，玩家可在角色达到某个等级时为其角色选择这些物品。",
+            "Title": "选择物品",
+            "Warning": {
+                "FeatureLevel": "必须至少达到 {level} 级才能使用此专长。",
+                "InvalidType": "对于此选项，只能选择 {type} 类型的物品。",
+                "NoOriginal": "之前选择的选项不再可供替换。"
             }
         }
     },
@@ -4325,5 +4336,20 @@
         }
     },
     "DND5E.Loyalty": "忠诚度",
-    "DND5E.Gear": "齿轮"
+    "DND5E.Gear": "齿轮",
+    "DND5E.ExperiencePoints": {
+        "Abbreviation": "XP",
+        "Boons": {
+            "one": "{number} 恩惠",
+            "other": "{number} 恩惠"
+        },
+        "Format": "{value} XP",
+        "Label": "经验值",
+        "Progress": "下一等级",
+        "StatBlock": {
+            "Standard": "XP {value}"
+        },
+        "Value": "XP 值",
+        "Current": "当前 XP"
+    }
 }
