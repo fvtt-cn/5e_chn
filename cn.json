@@ -2100,7 +2100,14 @@
         "ItemChoice": {
             "Choose": "选择 {count}",
             "Chosen": "已选：{current} / {max}",
-            "Details": "选择详情"
+            "Details": "选择详情",
+            "DropHint": "将物品拖放到此处，即可将其添加到此次升级的选择列表中。",
+            "FIELDS": {
+                "allowDrops": {
+                    "hint": "允许玩家能将自己的选择拖放至此次升级中。",
+                    "label": "允许拖放"
+                }
+            }
         }
     },
     "DND5E.ACTIVITY": {
