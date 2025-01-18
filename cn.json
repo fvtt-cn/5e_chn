@@ -1942,7 +1942,8 @@
             },
             "Hint": "允许玩家提升一项或多项属性值，或者选择一项可选专长。",
             "Feat": {
-                "Hint": "在此处拖放一项专长，以替代一次属性值提升。"
+                "Hint": "在此处拖放一项专长，以替代一次属性值提升。",
+                "ASIName": "属性值提升专长"
             },
             "LockedHint": "选择专长后，属性值无法修改。",
             "PointsRemaining": {
@@ -1953,7 +1954,10 @@
                 "Level": "必须至少达到 {level} 级才能选择此专长。",
                 "Type": "只有类型为“专长”的特性才能被选择。"
             },
-            "Details": "提升详情"
+            "Details": "提升详情",
+            "Journal": {
+                "DescriptionLegacy": "<p>当你达到{firstLevelOrdinal}级，以及再次达到{otherLevelsOrdinal}级时，你可以选择将一项属性值增加 2，或者选择将两项属性值各增加 1。和往常一样，使用此专长时，你不能将属性值提升至{maxAbilityScore}以上。</p><p>使用可选的专长规则时，你可以放弃此专长，转而选择一项专长。</p>"
+            }
         },
         "SPELLCONFIG": {
             "FreeCasting": "免费施法",
@@ -2898,6 +2902,11 @@
             "mastery": {
                 "label": "精通",
                 "hint": "具有武器精通或相关特性的角色解锁的特殊武器属性。"
+            },
+            "armor": {
+                "value": {
+                    "label": "护甲等级"
+                }
             }
         },
         "Mastery": {
