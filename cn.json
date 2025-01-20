@@ -3618,8 +3618,7 @@
     "DND5E.CHATMESSAGE": {
         "TURN": {
             "Activities": "行动",
-            "NoCombatant": "战斗单位已不存在！",
-            "Recovery": "恢复"
+            "NoCombatant": "战斗单位已不存在！"
         }
     },
     "DND5E.FACILITY": {
