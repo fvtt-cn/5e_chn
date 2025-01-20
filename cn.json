@@ -1560,19 +1560,7 @@
     "DND5E.FeaturesBackground": "背景特性",
     "DND5E.UsesPeriods": {
         "ChargesAbbreviation": "充能",
-        "Charges": "充能",
-        "Dawn": "黎明",
-        "DawnAbbreviation": "黎明",
-        "Lr": "长休",
-        "Sr": "短休",
-        "LrAbbreviation": "长休",
-        "Dusk": "黄昏",
-        "DuskAbbreviation": "黄昏",
-        "Day": "天",
-        "DayAbbreviation": "天",
-        "SrAbbreviation": "短休",
-        "AtWill": "随意",
-        "Never": "从不"
+        "Charges": "充能"
     },
     "DND5E.ConcentrationBreak": "打断专注",
     "DND5E.Tokens": {
