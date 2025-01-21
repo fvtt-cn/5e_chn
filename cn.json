@@ -498,10 +498,10 @@
     "DND5E.VehicleActionThresholds": "动作阈值",
     "DND5E.VehicleCargo": "载货",
     "DND5E.VehicleCargoCapacity": "载货量",
-    "DND5E.VehicleCargoCrew": "载货&乘员",
-    "DND5E.VehicleCreatureCapacity": "乘员数量",
-    "DND5E.VehicleCrew": "乘员",
-    "DND5E.VehicleCrewAction": "乘员动作",
+    "DND5E.VehicleCargoCrew": "载货&船员",
+    "DND5E.VehicleCreatureCapacity": "船员数量",
+    "DND5E.VehicleCrew": "船员",
+    "DND5E.VehicleCrewAction": "船员动作",
     "DND5E.VehicleCrewed": "已载人",
     "DND5E.VehicleEquipment": "载具装备",
     "DND5E.VehicleMishap": "遇难",
@@ -686,10 +686,10 @@
     "DND5E.SkillModifierHint": "{skill} 调整值",
     "DND5E.SkillPassiveHint": "被动 {skill}",
     "DND5E.TraitConfig": "配置 {trait}",
-    "DND5E.VehicleActionsHint": "完整乘员动作",
-    "DND5E.VehicleActionThresholdsFull": "完整乘员",
-    "DND5E.VehicleActionThresholdsMid": "部分乘员",
-    "DND5E.VehicleActionThresholdsMin": "最低乘员要求",
+    "DND5E.VehicleActionsHint": "完整船员动作",
+    "DND5E.VehicleActionThresholdsFull": "完整船员",
+    "DND5E.VehicleActionThresholdsMid": "部分船员",
+    "DND5E.VehicleActionThresholdsMin": "最低船员要求",
     "DND5E.VehicleMishapThreshold": "遇难阈值",
     "DND5E.AdvancementChoices": "选择",
     "DND5E.AdvancementConfigurationActionEnable": "启用配置",
@@ -902,7 +902,7 @@
     "DND5E.UsesPeriod": "恢复时间",
     "DND5E.VehicleActions": "动作",
     "DND5E.VehicleActionMax": "动作上限",
-    "DND5E.VehicleCrewPassengers": "乘员和乘客",
+    "DND5E.VehicleCrewPassengers": "船员和乘客",
     "DND5E.VehiclePassengerName": "乘客姓名或类型",
     "DND5E.VehiclePassengerQuantity": "乘客数量",
     "DND5E.VehicleType": "载具类型",
@@ -4196,7 +4196,7 @@
             },
             "cover": {
                 "label": "掩护",
-                "hint": "因该载具的特性，为乘员提供掩护。"
+                "hint": "因该载具的特性，为船员提供掩护。"
             }
         }
     },
@@ -4466,7 +4466,7 @@
             "Label": "巢穴动作",
             "Initiative": "巢穴动作先攻计数"
         },
-        "HasLair": "有巢穴",
+        "HasLair": "拥有巢穴",
         "Inside": "巢穴内部",
         "Label": "巢穴"
     },
@@ -4511,7 +4511,7 @@
         "Progress": "下一等级",
         "StatBlock": {
             "Standard": "XP {value}",
-            "Lair": "XP {value}，巢穴中为 {lair}"
+            "Lair": "XP {value}，在巢穴内为 {lair}"
         },
         "Value": "XP 值",
         "Current": "当前 XP"
