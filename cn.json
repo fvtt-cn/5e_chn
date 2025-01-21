@@ -1047,7 +1047,7 @@
     "EDITOR.DND5E.Inline.SaveShort": "{save}",
     "EDITOR.DND5E.Inline.SaveLong": "{save} 豁免骰",
     "EDITOR.DND5E.Inline.SpecificCheck": "{ability} ({type})",
-    "SETTINGS.5eFeatsL": "允许玩家选择一项专长，而不是只能在职业升级时提高属性值。",
+    "SETTINGS.5eFeatsL": "使用旧版规则时，允许玩家选择一项专长，而不是只能在职业升级时提高属性值。",
     "SETTINGS.5eFeatsN": "允许专长",
     "SETTINGS.5eGridAlignedSquareTemplatesL": "在施法或使用物品时创建的方形测量板将被锁定在网格排列上，无法旋转。",
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
@@ -1449,7 +1449,10 @@
             "Origin": "起源专长"
         },
         "Species": "种族特性",
-        "SpeciesLegacy": "种族特性"
+        "SpeciesLegacy": "种族特性",
+        "Vehicle": {
+            "Label": "载具特性"
+        }
     },
     "DND5E.DeathSaveSuccessLabelN.few": "第三次死亡豁免成功",
     "DND5E.SizeGargantuanAbbr": "超巨",
@@ -2137,8 +2140,110 @@
                     },
                     "Hint": "用它来表示生物挑战等级如荒野形态",
                     "Label": "挑战等级"
+                },
+                "Dice": {
+                    "FIELDS": {
+                        "number": {
+                            "label": "数量"
+                        },
+                        "faces": {
+                            "label": "面数"
+                        }
+                    },
+                    "Hint": "将此用于诸如吟游诗人激励、偷袭或优势骰子之类的骰子数值。",
+                    "Label": "骰数",
+                    "Identifier": "当前等级的此比例值将在以下公式中使用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 整个公式（<code>4d6</code>）<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 整个骰子（<code>d6</code>）<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 骰数（<code>4</code>）<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 面数（<code>6</code>）"
+                },
+                "Distance": {
+                    "Label": "距离",
+                    "Hint": "对于表示距离的数值（例如未穿甲时的移动速度或守护灵光的半径）使用此选项。"
+                },
+                "Number": {
+                    "Hint": "将此用于纯粹的数值，例如狂暴伤害加成或每日使用次数。",
+                    "Label": "数值"
+                },
+                "String": {
+                    "FIELDS": {
+                        "value": {
+                            "label": "值"
+                        }
+                    },
+                    "Hint": "如果您不确定比例值的类型，或者类型无关紧要，请使用此选项。",
+                    "Identifier": "当前等级的比例值将在使用以下公式时可用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+                    "Label": "所有"
                 }
             }
+        },
+        "Size": {
+            "DefaultHint": {
+                "Multiple": "请从以下 {sizes} 中选择您的体型。",
+                "Single": "你的体型是 {size}。"
+            },
+            "FIELDS": {
+                "sizes": {
+                    "label": "体型"
+                }
+            },
+            "Hint": "设置角色的体型。",
+            "Title": "体型"
+        },
+        "Trait": {
+            "Hint": "授予角色某些特质，或者给他们一个选择特质的选项（如熟练项、技能、语言）。",
+            "Mode": {
+                "Default": {
+                    "Hint": "获得一项特质或熟练项。",
+                    "Label": "默认"
+                },
+                "Expertise": {
+                    "Label": "专精",
+                    "Hint": "在你已熟练的一项特质上获得专精。"
+                },
+                "Force": {
+                    "Hint": "无论你之前的熟练程度如何，都能在某项特质上获得专精。",
+                    "Label": "强制专精"
+                },
+                "Mastery": {
+                    "Label": "精通",
+                    "Hint": "精通一种你已熟练的武器。"
+                },
+                "Upgrade": {
+                    "Hint": "除非你已经熟练于一项特质，否则授予精通。",
+                    "Label": "升级"
+                }
+            },
+            "TraitType": "特质类型",
+            "Title": "特质",
+            "FIELDS": {
+                "choices": {
+                    "hint": "以下特质将作为选项呈现给玩家。",
+                    "label": "选择",
+                    "FIELDS": {
+                        "count": {
+                            "label": "计数"
+                        },
+                        "pool": {
+                            "label": "特质"
+                        }
+                    }
+                },
+                "grants": {
+                    "hint": "只要角色尚未拥有以下特质，这些特质就会被授予该角色。",
+                    "label": "确保"
+                },
+                "allowReplacements": {
+                    "hint": "如果角色身上已设定有某个特质，允许玩家从其他任意特质中选择一个来替换。",
+                    "label": "允许替换"
+                },
+                "mode": {
+                    "label": "模式"
+                }
+            },
+            "Action": {
+                "AddChoice": "添加选项",
+                "RemoveChoice": "移除选项"
+            },
+            "ChoicesRemaining": "再选择 {count} 个 {type}",
+            "Details": "特质详情"
         }
     },
     "DND5E.ACTIVITY": {
@@ -3065,6 +3170,12 @@
         "Warning": {
             "NotOnActor": "附魔只能施加在物品上，而不能直接添加到角色身上。",
             "Override": "此值已被附魔修改，无法直接编辑。请在效果标签页中禁用附魔以进行编辑。"
+        },
+        "Period": {
+            "AtWill": "任意",
+            "LongRest": "长休",
+            "Never": "从不",
+            "ShortRest": "短休"
         }
     },
     "DND5E.EFFECT": {
@@ -3459,7 +3570,44 @@
                 "Formula": "自定义公式",
                 "LoseAll": "失去所有使用次数",
                 "RecoverAll": "恢复所有使用次数"
-            }
+            },
+            "Period": {
+                "Day": {
+                    "Label": "日"
+                },
+                "Dusk": {
+                    "Label": "黄昏"
+                },
+                "Dawn": {
+                    "Label": "黎明"
+                },
+                "LongRest": {
+                    "Abbreviation": "LR",
+                    "Label": "长休"
+                },
+                "ShortRest": {
+                    "Label": "短休",
+                    "Abbreviation": "SR"
+                },
+                "Turn": {
+                    "Label": "每回合"
+                },
+                "Initiative": {
+                    "Label": "先攻"
+                },
+                "TurnEnd": {
+                    "Abbreviation": "回合开始",
+                    "Label": "回合结束时"
+                },
+                "TurnStart": {
+                    "Label": "开始回合时",
+                    "Abbreviation": "回合结束"
+                }
+            },
+            "Combat": "战斗",
+            "Never": "从不",
+            "Special": "特殊",
+            "Time": "时间"
         }
     },
     "DND5E.TraitAll": "所有 {category}",
@@ -3657,6 +3805,9 @@
         "TURN": {
             "Activities": "行动",
             "NoCombatant": "战斗单位已不存在！"
+        },
+        "Deltas": {
+            "Recovery": "恢复"
         }
     },
     "DND5E.FACILITY": {
@@ -4042,6 +4193,10 @@
             },
             "type": {
                 "label": "特征类型"
+            },
+            "cover": {
+                "label": "掩护",
+                "hint": "因该载具的特性，为乘员提供掩护。"
             }
         }
     },
@@ -4355,9 +4510,54 @@
         "Label": "经验值",
         "Progress": "下一等级",
         "StatBlock": {
-            "Standard": "XP {value}"
+            "Standard": "XP {value}",
+            "Lair": "XP {value}，巢穴中为 {lair}"
         },
         "Value": "XP 值",
         "Current": "当前 XP"
+    },
+    "DND5E.VEHICLE": {
+        "MOUNTABLE": {
+            "FIELDS": {
+                "speed": {
+                    "conditions": {
+                        "label": "速度状态"
+                    },
+                    "value": {
+                        "label": "速度"
+                    }
+                },
+                "hp": {
+                    "label": "生命值",
+                    "conditions": {
+                        "label": "健康状态"
+                    },
+                    "dt": {
+                        "label": "伤害阈值"
+                    },
+                    "value": {
+                        "label": "当前 HP"
+                    },
+                    "max": {
+                        "label": "最大 HP"
+                    }
+                },
+                "cover": {
+                    "label": "掩护",
+                    "hint": "为操作该装备的船员提供掩护。"
+                },
+                "crewed": {
+                    "label": "有船员"
+                }
+            }
+        }
+    },
+    "DND5E.DeathSaveBonus": "死亡豁免加值",
+    "DND5E.DeathSaveConfigure": "配置死亡豁免",
+    "DND5E.ORDINAL": {
+        "few": "第 {number} 位",
+        "other": "第 {number} 位",
+        "one": "第 {number} 位",
+        "two": "第 {number} 位"
     }
 }
