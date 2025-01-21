@@ -1718,7 +1718,7 @@
                 "Name": "等级{level}: {name}"
             },
             "Style": {
-                "Inferred": "从来源推断",
+                "Inferred": "参考来源",
                 "Legacy": "旧版",
                 "Modern": "新版"
             }
@@ -1944,7 +1944,9 @@
             },
             "Details": "提升详情",
             "Journal": {
-                "DescriptionLegacy": "<p>当你达到{firstLevelOrdinal}级，以及再次达到{otherLevelsOrdinal}级时，你可以选择将一项属性值增加 2，或者选择将两项属性值各增加 1。和往常一样，使用此专长时，你不能将属性值提升至{maxAbilityScore}以上。</p><p>使用可选的专长规则时，你可以放弃此专长，转而选择一项专长。</p>"
+                "DescriptionLegacy": "<p>当你达到{firstLevelOrdinal}级，以及再次达到{otherLevelsOrdinal}级时，你可以选择将一项属性值增加 2，或者选择将两项属性值各增加 1。和往常一样，使用此专长时，你不能将属性值提升至{maxAbilityScore}以上。</p><p>使用可选的专长规则时，你可以放弃此专长，转而选择一项专长。</p>",
+                "DescriptionModern": "<p>你获得属性提升专长或其他你选择的符合条件的专长。你在 {class} 的 {otherLevels} 级中再次获得此专长。</p>",
+                "Name": "属性值提升"
             }
         },
         "SPELLCONFIG": {
@@ -2100,7 +2102,42 @@
             "Warning": {
                 "FeatureLevel": "必须至少达到 {level} 级才能使用此专长。",
                 "InvalidType": "对于此选项，只能选择 {type} 类型的物品。",
-                "NoOriginal": "之前选择的选项不再可供替换。"
+                "NoOriginal": "之前选择的选项不再可供替换。",
+                "SpellLevelAvailable": "只有 {level} 或更低的法术可在此次升级中被选择。",
+                "PreviouslyChosen": "该物品已在先前的升级中被选中。",
+                "SpellLevelSpecific": "只有 {level} 的法术可在此次升级中被选择。"
+            }
+        },
+        "ScaleValue": {
+            "Hint": "随着职业等级的提升而改变的单个值，可以在掷骰公式中使用（例如武僧的武艺骰）。",
+            "Details": "比例值详情",
+            "FIELDS": {
+                "distance": {
+                    "units": {
+                        "label": "距离单位"
+                    }
+                },
+                "identifier": {
+                    "label": "识别符"
+                },
+                "scale": {
+                    "label": "比例"
+                },
+                "type": {
+                    "label": "比例类型"
+                }
+            },
+            "Title": "比例值",
+            "Type": {
+                "CR": {
+                    "FIELDS": {
+                        "value": {
+                            "label": "CR"
+                        }
+                    },
+                    "Hint": "用它来表示生物挑战等级如荒野形态",
+                    "Label": "挑战等级"
+                }
             }
         }
     },
@@ -3475,7 +3512,8 @@
         }
     },
     "TYPES.ChatMessage": {
-        "turn": "战斗回合信息"
+        "turn": "战斗回合信息",
+        "rest": "其他消息"
     },
     "TYPES.Item.facility": "设施",
     "TYPES.Item.facilityPl": "设施",
