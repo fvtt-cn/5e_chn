@@ -2168,6 +2168,9 @@
                     "Identifier": "当前等级的比例值将在使用以下公式时可用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
                     "Label": "所有"
                 }
+            },
+            "Action": {
+                "CopyFormula": "复制公式"
             }
         },
         "Size": {
@@ -2240,6 +2243,13 @@
             },
             "ChoicesRemaining": "再选择 {count} 个 {type}",
             "Details": "特质详情"
+        },
+        "Action": {
+            "Create": "创建升级",
+            "View": "查看升级",
+            "Delete": "删除升级",
+            "Duplicate": "重复升级",
+            "Edit": "编辑升级"
         }
     },
     "DND5E.ACTIVITY": {
@@ -4476,7 +4486,19 @@
         },
         "Subtype": "{type} （{subtype}）",
         "Categories": {
-            "Any": "任意"
+            "Any": "任意",
+            "Desert": "荒漠",
+            "Arctic": "极地",
+            "Coastal": "海岸",
+            "Grassland": "草原",
+            "Forest": "森林",
+            "Hill": "山丘",
+            "Mountain": "山脉",
+            "Planar": "位面",
+            "Swamp": "沼泽",
+            "Underdark": "幽暗地域",
+            "Underwater": "水下",
+            "Urban": "城市"
         }
     },
     "DND5E.Treasure": {
