@@ -4577,5 +4577,19 @@
         "other": "第 {number} 位",
         "one": "第 {number} 位",
         "two": "第 {number} 位"
-    }
+    },
+    "DND5E.COMBAT": {
+        "Group": {
+            "ActiveCount": "当前：{current}参战者： {combatants}",
+            "Title": "{name} 组"
+        }
+    },
+    "DND5E.COMBATANT": {
+        "Counted": {
+            "one": "{number} 名参战者",
+            "other": "{number} 名参战者"
+        }
+    },
+    "KEYBINDINGS.DND5E.DragCopy": "拖动文档时强制复制",
+    "KEYBINDINGS.DND5E.DragMove": "拖动文档时强制移动"
 }
