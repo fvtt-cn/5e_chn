@@ -3809,7 +3809,6 @@
     "DND5E.ArmorValue": "护甲值",
     "DND5E.CHATMESSAGE": {
         "TURN": {
-            "Activities": "行动",
             "NoCombatant": "战斗单位已不存在！"
         },
         "Deltas": {
