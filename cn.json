@@ -67,24 +67,9 @@
     "DND5E.Background": "背景",
     "DND5E.Biography": "传记",
     "DND5E.Bonds": "羁绊",
-    "DND5E.BonusAbilityCheck": "全局属性检定加值",
-    "DND5E.BonusAbilitySave": "全局属性豁免加值",
-    "DND5E.BonusAbilitySkill": "全局技能检定加值",
     "DND5E.BonusAction": "附赠动作",
-    "DND5E.BonusMSAttack": "近战法术攻击加值",
-    "DND5E.BonusMSDamage": "近战法术伤害加值",
-    "DND5E.BonusMWAttack": "近战武器攻击加值",
-    "DND5E.BonusMWDamage": "近战武器伤害加值",
-    "DND5E.BonusRSAttack": "远程法术攻击加值",
-    "DND5E.BonusRSDamage": "远程法术伤害加值",
-    "DND5E.BonusRWAttack": "远程武器攻击加值",
-    "DND5E.BonusRWDamage": "远程武器伤害加值",
     "DND5E.BonusSaveForm": "更新加值",
-    "DND5E.BonusSpellDC": "全局法术DC加值",
     "DND5E.BonusTitle": "设置角色加值",
-    "DND5E.Bonuses": "全局加值",
-    "DND5E.BonusesHint": "将全局加值加入到对应掷骰中。例如：1d4+2",
-    "DND5E.BonusesInstructions": "设置角色的加值，加入到对应掷骰中",
     "DND5E.ChallengeRating": "挑战等级",
     "DND5E.Charged": "已充能",
     "DND5E.Charges": "充能",
@@ -812,10 +797,8 @@
     "DND5E.Contents": "内容",
     "DND5E.Disclaimer": "免责声明",
     "DND5E.BiographyPublic": "公开传记",
-    "DND5E.BonusAbility": "全局属性加值",
     "DND5E.BonusAttack": "攻击加值",
     "DND5E.BonusDamage": "伤害加值",
-    "DND5E.BonusSpell": "全局法术加值",
     "DND5E.GroupControls": "控制",
     "DND5E.FormulaMalformedError": "准备 {name} 中的 {property} 公式时出现问题。",
     "DND5E.FormulaMissingReferenceWarn": "{name} 中的 {property} 公式引用了缺失的数据：{references}",
@@ -1568,7 +1551,6 @@
         "Selected": "已选中",
         "Targeted": "已标选"
     },
-    "DND5E.BonusAbilitySaveTitle": "全局豁免掷骰",
     "DND5E.ConcentrationBonus": "专注加值",
     "DND5E.ConcentrationLimit": "专注限制",
     "DND5E.ConcentrationConfigurationHint": "配置适用于该生物的专注调整值和加值。",
@@ -4156,11 +4138,7 @@
             "LegendaryActions": "传奇动作",
             "Traits": "特质"
         },
-        "Label": "NPC",
-        "Important": {
-            "Label": "重要 NPC",
-            "Hint": "关键的NPC会跟进死亡豁免、生命骰以及忠诚度（若启用）。不论此项设定如何，任何拥有职业等级的NPC都被视为重要角色。"
-        }
+        "Label": "NPC"
     },
     "DND5E.CreatureTag": "{size} {type}，{alignment}",
     "DND5E.EQUIPMENT": {
