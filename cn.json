@@ -523,8 +523,6 @@
     "SETTINGS.5eDiagL": "设置游戏使用哪一种对角线移动规则。",
     "SETTINGS.5eDiagN": "对角线规则",
     "SETTINGS.5eDiagPHB": "玩家手册：等距（5/5/5）",
-    "SETTINGS.5eInitTBL": "加上敏捷属性值作为小数部分，模拟同先攻值下按敏捷排列，以更细致的区分先攻顺序。",
-    "SETTINGS.5eInitTBN": "先攻细分",
     "SETTINGS.5eRestEpic": "英雄史诗（长：1小时，短：5分钟）",
     "SETTINGS.5eRestGritty": "残酷现实（长：7天，短：8小时）",
     "SETTINGS.5eRestL": "设置该系统下的游戏使用哪种休息变体。",
@@ -645,10 +643,6 @@
     "SETTINGS.5eProfBonus": "PHB：加值 (+2, +3, +4, +5, +6)",
     "SETTINGS.5eProfL": "配置熟练调整值使用固定加值或掷骰。生效需要重载世界。",
     "SETTINGS.5eProfN": "熟练变体",
-    "SETTINGS.5eCriticalMaxDiceN": "重击伤害取极值",
-    "SETTINGS.5eCriticalModifiersN": "重击伤害倍数调整值",
-    "SETTINGS.5eCriticalMaxDiceL": "将基础伤害骰的所有骰子取最大值，令重击伤害更致命。",
-    "SETTINGS.5eCriticalModifiersL": "将基础伤害骰的除掷出的骰子以外的所有非骰调整值乘上一定倍数，令重击伤害更致命。",
     "DND5E.AbilityCheckBonus": "检定加值",
     "DND5E.AbilityCheckGlobalBonusHint": "此加值应用于该角色进行的所有属性检定。",
     "DND5E.CurrencyAbbrCP": "cp",
@@ -1279,13 +1273,6 @@
             "Modern": "新版规则（2024）",
             "Name": "规则版本",
             "Hint": "在2024 规则与 2014 规则之间切换不同规则的处理方式。"
-        },
-        "INITIATIVESCORE": {
-            "Name": "先攻值",
-            "All": "所有人使用先攻值",
-            "Hint": "使用生物的先攻值（10 + 加值）确认先攻，而不是掷骰先攻。",
-            "None": "始终为先攻掷骰",
-            "NPCs": "GM的NPC使用先攻值"
         },
         "VISIBILITY": {
             "Hint": "各种配置选项会影响玩家对某些信息的可见度，这些信息可能是DM希望保密的。",
