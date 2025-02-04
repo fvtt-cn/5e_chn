@@ -516,18 +516,6 @@
     "SETTINGS.5eAutoCollapseCardN": "在聊天中折叠物品卡片",
     "SETTINGS.5eAutoSpellTemplateL": "如果法术有测量板，当施放法术时自动创建测量板（需要受信玩家或更高权限的用户组）",
     "SETTINGS.5eAutoSpellTemplateN": "总是放置法术测量板",
-    "SETTINGS.5eCurWtL": "携带的货币会产生负重。详细参照PHB143页。",
-    "SETTINGS.5eCurWtN": "启用货币负重",
-    "SETTINGS.5eDiagDMG": "城主手册：交替（5/10/5）",
-    "SETTINGS.5eDiagEuclidean": "欧氏距离（7.07尺对角）",
-    "SETTINGS.5eDiagL": "设置游戏使用哪一种对角线移动规则。",
-    "SETTINGS.5eDiagN": "对角线规则",
-    "SETTINGS.5eDiagPHB": "玩家手册：等距（5/5/5）",
-    "SETTINGS.5eRestEpic": "英雄史诗（长：1小时，短：5分钟）",
-    "SETTINGS.5eRestGritty": "残酷现实（长：7天，短：8小时）",
-    "SETTINGS.5eRestL": "设置该系统下的游戏使用哪种休息变体。",
-    "SETTINGS.5eRestN": "休息变体",
-    "SETTINGS.5eRestPHB": "玩家手册（长：8小时，短：1小时）",
     "DND5E.AddEmbeddedItemPromptHint": "你想要把这些物品添加到人物卡里吗？",
     "DND5E.Apply": "应用",
     "DND5E.ClassMakeOriginal": "初始职业",
@@ -578,8 +566,6 @@
     "DND5E.HitDiceRemaining": "当前生命骰",
     "DND5E.Skip": "跳过",
     "DND5E.Uncrewed": "未搭乘",
-    "SETTINGS.5eReset": "重置",
-    "SETTINGS.5eUndoChanges": "取消改动",
     "DND5E.ActorWarningInvalidItem": "{itemType} 物品无法被添加给 {actorType}。",
     "DND5E.RacialTraits": "种族特质",
     "DND5E.EffectTemporary": "临时效应",
@@ -640,9 +626,6 @@
     "DND5E.SkillBonusCheck": "检定加值",
     "DND5E.SkillBonusPassive": "被动加值",
     "DND5E.SkillConfigurationHint": "配置技能熟练项和加值。",
-    "SETTINGS.5eProfBonus": "PHB：加值 (+2, +3, +4, +5, +6)",
-    "SETTINGS.5eProfL": "配置熟练调整值使用固定加值或掷骰。生效需要重载世界。",
-    "SETTINGS.5eProfN": "熟练变体",
     "DND5E.AbilityCheckBonus": "检定加值",
     "DND5E.AbilityCheckGlobalBonusHint": "此加值应用于该角色进行的所有属性检定。",
     "DND5E.CurrencyAbbrCP": "cp",
@@ -653,7 +636,6 @@
     "DND5E.SaveGlobalBonusHint": "此加值应用于该角色进行的所有豁免骰。",
     "DND5E.SkillConfigureTitle": "配置 {skill}",
     "DND5E.SkillGlobalBonusCheckHint": "此加值应用于该角色进行的所有技能检定。",
-    "SETTINGS.5eProfDice": "DMG：骰子 (1d4, 1d6, 1d8, 1d10, 1d12)",
     "DND5E.ArmorClassMotionless": "静止状态 AC",
     "DND5E.DamageThreshold": "伤害阈值",
     "DND5E.EffectEnable": "启用效应",
@@ -688,7 +670,6 @@
     "MACRO.5eMissingTargetWarn": "你控制的角色「{actor}」没有名为「{name}」的 {type}。",
     "MACRO.5eMultipleTargetsWarn": "你控制的角色「{actor}」有超过一个名为「{name}」的 {type}。将选择第一个匹配项。",
     "MIGRATION.5eVersionTooOldWarning": "你的 D&D 5E 系统数据来自于过于陈旧的 Foundry 版本，无法可靠地迁移到最新版本。迁移流程将会尝试进行，但可能会发生错误。",
-    "SETTINGS.5eHonorN": "荣誉属性值",
     "SETTINGS.5eNoAdvancementsL": "不提示升级或角色创建选项。",
     "DND5E.AbilityHon": "荣誉",
     "DND5E.AbilityHonAbbr": "荣誉",
@@ -740,10 +721,7 @@
     "MACRO.5eUnownedWarn": "你仅能为拥有的物品创建宏按钮",
     "MIGRATION.5eBegin": "正在应用 D&D 5E 系统版本 {version} 的迁移。请耐心等待，不要关闭游戏或服务器。",
     "MIGRATION.5eComplete": "D&D 5E 到版本 {version} 的系统迁移已完成！",
-    "SETTINGS.5eHonorL": "启用可选的荣誉属性。需要重载世界。",
     "SETTINGS.5eNoAdvancementsN": "禁用自动升级",
-    "SETTINGS.5eSanityL": "启用可选的理智属性。需要重载世界。",
-    "SETTINGS.5eSanityN": "理智属性值",
     "DND5E.Abilities": "属性",
     "DND5E.AbilityScore": "属性值",
     "DND5E.AbilityBonuses": "属性加值",
@@ -1020,8 +998,6 @@
     "EDITOR.DND5E.Inline.SaveShort": "{save}",
     "EDITOR.DND5E.Inline.SaveLong": "{save} 豁免骰",
     "EDITOR.DND5E.Inline.SpecificCheck": "{ability} ({type})",
-    "SETTINGS.5eFeatsL": "使用旧版规则时，允许玩家选择一项专长，而不是只能在职业升级时提高属性值。",
-    "SETTINGS.5eFeatsN": "允许专长",
     "SETTINGS.5eGridAlignedSquareTemplatesL": "在施法或使用物品时创建的方形测量板将被锁定在网格排列上，无法旋转。",
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
     "SOURCE.BOOK.SRD": "SRD 5.1",
@@ -1227,13 +1203,6 @@
         "StatusThreeQuartersCover": "四分之三掩护",
         "StatusTotalCover": "全身掩护"
     },
-    "SETTINGS.5eEncumbrance": {
-        "None": "无",
-        "Hint": "启用自动跟进负重，并对超重的角色应用状态效应。",
-        "Variant": "变体（负重 & 超重）",
-        "Normal": "正常（最大负重）",
-        "Name": "负重跟进"
-    },
     "SETTINGS.DND5E": {
         "THEME": {
             "Name": "主题",
@@ -1260,13 +1229,6 @@
         "DEFAULTSKILLS": {
             "Name": "默认技能",
             "Hint": "无论是否是熟练项，NPC卡上都会出现的默认技能。"
-        },
-        "LEVELING": {
-            "Name": "升级模式",
-            "Hint": "确定玩家如何获得新等级。",
-            "NoXP": "无需经验值的等级提升",
-            "XP": "经验值",
-            "XPBoons": "经验值与传奇恩惠"
         },
         "RULESVERSION": {
             "Legacy": "旧版规则（2014）",
@@ -1297,10 +1259,6 @@
                 "Hint": "将所有“磅”的表述替换为“千克”，并更新负重计算以使用公制重量单位。"
             }
         }
-    },
-    "SETTINGS.5eTokenRings": {
-        "Hint": "禁用指示物环动画可以提高性能。",
-        "Name": "禁用动态指示物环"
     },
     "SHEETS.DND5E": {
         "THEME": {
