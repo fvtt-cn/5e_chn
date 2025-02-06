@@ -1783,7 +1783,8 @@
             "Time": "时间",
             "Monster": "怪物",
             "Vehicle": "载具",
-            "Combat": "战斗"
+            "Combat": "战斗",
+            "Rest": "休息"
         },
         "Warning": {
             "NoActions": "没有可用的{type}，而激活至少需要{required}。",
@@ -1804,6 +1805,12 @@
             },
             "TurnStart": {
                 "Label": "开始回合"
+            },
+            "LongRest": {
+                "Label": "长休结束"
+            },
+            "ShortRest": {
+                "Label": "短休结束"
             }
         }
     },
@@ -3722,7 +3729,8 @@
         },
         "Deltas": {
             "Recovery": "恢复"
-        }
+        },
+        "Activities": "行动组合"
     },
     "DND5E.FACILITY": {
         "FIELDS": {
@@ -4495,5 +4503,81 @@
         }
     },
     "KEYBINDINGS.DND5E.DragCopy": "拖动文档时强制复制",
-    "KEYBINDINGS.DND5E.DragMove": "拖动文档时强制移动"
+    "KEYBINDINGS.DND5E.DragMove": "拖动文档时强制移动",
+    "DND5E.BONUSES": {
+        "FIELDS": {
+            "bonuses": {
+                "abilities": {
+                    "save": {
+                        "label": "全局豁免检定加值"
+                    },
+                    "label": "全局属性加值",
+                    "check": {
+                        "label": "全局属性检定加值"
+                    },
+                    "skill": {
+                        "label": "全局技能检定加值"
+                    }
+                },
+                "label": "全局加值",
+                "hint": "全局加值以公式的形式存在，并被添加到特定的掷骰结果中。",
+                "msak": {
+                    "label": "近战法术加值",
+                    "attack": {
+                        "label": "近战法术攻击加值"
+                    },
+                    "damage": {
+                        "label": "近战法术伤害加值"
+                    }
+                },
+                "mwak": {
+                    "label": "近战武器加值",
+                    "attack": {
+                        "label": "近战武器攻击加值"
+                    },
+                    "damage": {
+                        "label": "近战武器伤害加值"
+                    }
+                },
+                "rsak": {
+                    "label": "远程法术加值",
+                    "attack": {
+                        "label": "远程法术攻击加值"
+                    },
+                    "damage": {
+                        "label": "远程法术伤害加值"
+                    }
+                },
+                "rwak": {
+                    "damage": {
+                        "label": "远程武器伤害加值"
+                    },
+                    "label": "远程武器加值",
+                    "attack": {
+                        "label": "远程武器攻击加值"
+                    }
+                },
+                "spell": {
+                    "label": "全局法术加值",
+                    "dc": {
+                        "label": "全局法术DC加值"
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.ACTIVEEFFECT": {
+        "FIELDS": {
+            "statuses": {
+                "label": "状态条件",
+                "hint": "在受该主动效应影响时，目标将被视为具有这些额外的状态条件。"
+            }
+        }
+    },
+    "DND5E.CONDITIONS": {
+        "RiderConditions": {
+            "label": "单独状态条件",
+            "hint": "当该主动效应被应用时，这些额外的状态条件将被分别施加。"
+        }
+    }
 }
