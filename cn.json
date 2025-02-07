@@ -2654,7 +2654,8 @@
         "Scaling": {
             "None": "不递增",
             "Whole": "每一级",
-            "Half": "每隔一级"
+            "Half": "每隔一级",
+            "WholeCantrip": "戏法递增"
         }
     },
     "DND5E.HEAL": {
@@ -4048,7 +4049,10 @@
         },
         "Label": "传奇动作",
         "Max": "最大传奇动作",
-        "Remaining": "剩余传奇动作"
+        "Remaining": "剩余传奇动作",
+        "Description": "传奇动作使用次数：{uses}。",
+        "DescriptionLegacy": "{name}可以使用{usesNamed}次传奇动作，从以下选项中选择。每次只能使用一项传奇动作，并且只能在其他生物回合结束时使用。{name}在自己的回合开始时恢复已使用的传奇动作。",
+        "LairUses": "{normal} （{lair} 处于巢穴中）"
     },
     "DND5E.LegendaryResistance": {
         "Ordinal": {
@@ -4579,5 +4583,6 @@
             "label": "单独状态条件",
             "hint": "当该主动效应被应用时，这些额外的状态条件将被分别施加。"
         }
-    }
+    },
+    "DND5E.DisplayCard": "聊天中显示"
 }
