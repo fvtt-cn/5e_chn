@@ -1264,9 +1264,32 @@
             "Name": "战斗",
             "InitiativeScore": {
                 "Name": "先攻值",
-                "Hint": "使用生物的先攻值（10 + 加值）而非进行先攻掷骰。"
+                "Hint": "使用生物的先攻值（10 + 加值）而非进行先攻掷骰。",
+                "All": "所有人使用先攻值",
+                "NPCs": "DM的NPC使用先攻值",
+                "None": "总是掷骰先攻"
+            },
+            "Hint": "影响战斗的多项设置选项。",
+            "DexTiebreaker": {
+                "Name": "敏捷决先",
+                "Hint": "在先攻掷骰结果相平时，以敏捷属性值作为决先依据。"
             }
-        }
+        },
+        "CRITICAL": {
+            "Name": "重击伤害",
+            "MultiplyModifiers": {
+                "Hint": "使重击更加致命，非骰值调整值与掷骰结果一同倍增。",
+                "Name": "多倍调整值"
+            },
+            "MaxDice": {
+                "Name": "骰值最大化",
+                "Hint": "使重击更加致命，基础伤害骰子的数值最大化。"
+            }
+        },
+        "NPCS": {
+            "Name": "非玩家角色"
+        },
+        "General": "通用"
     },
     "SHEETS.DND5E": {
         "THEME": {
@@ -3235,7 +3258,7 @@
     "DND5E.Spent": "消耗",
     "DND5E.SubclassAdd": "添加子职",
     "KEYBINDINGS.DND5E.SkipDialogNormal": "跳过对话框",
-    "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "跳过对话框（以劣势进行掷骰）",
+    "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "跳过对话框（劣势掷骰/无重击）",
     "KEYBINDINGS.DND5E.SkipDialogAdvantage": "跳过对话框（以优势/重击进行掷骰）",
     "DND5E.TARGET": {
         "FIELDS": {
