@@ -388,7 +388,7 @@
     "DND5E.SkillSlt": "巧手",
     "DND5E.SkillSte": "隐匿",
     "DND5E.SkillSur": "生存",
-    "DND5E.SkillPromptTitle": "{skill} 技能检定",
+    "DND5E.SkillPromptTitle": "{ability} ({skill}) 检定",
     "DND5E.Special": "特殊",
     "DND5E.SpecialTraits": "特殊特质",
     "DND5E.Speed": "速度",
@@ -1870,6 +1870,9 @@
                 "DescriptionLegacy": "<p>当你达到{firstLevelOrdinal}级，以及再次达到{otherLevelsOrdinal}级时，你可以选择将一项属性值增加 2，或者选择将两项属性值各增加 1。和往常一样，使用此专长时，你不能将属性值提升至{maxAbilityScore}以上。</p><p>使用可选的专长规则时，你可以放弃此专长，转而选择一项专长。</p>",
                 "DescriptionModern": "<p>你获得属性提升专长或其他你选择的符合条件的专长。你在 {class} 的 {otherLevels} 级中再次获得此专长。</p>",
                 "Name": "属性值提升"
+            },
+            "Action": {
+                "Select": "选择专长"
             }
         },
         "SPELLCONFIG": {
@@ -1903,6 +1906,9 @@
             "Title": "子职",
             "Warning": {
                 "InvalidType": "只能选择子职。"
+            },
+            "Action": {
+                "Select": "选择子职"
             }
         },
         "HitPoints": {
@@ -2663,7 +2669,8 @@
             "None": "不递增",
             "Whole": "每一级",
             "Half": "每隔一级",
-            "WholeCantrip": "戏法递增"
+            "WholeCantrip": "戏法递增",
+            "HalfCantrip": "半戏法递增"
         }
     },
     "DND5E.HEAL": {
@@ -4085,7 +4092,15 @@
             "LegendaryActions": "传奇动作",
             "Traits": "特质"
         },
-        "Label": "NPC"
+        "Label": "NPC",
+        "FIELDS": {
+            "traits": {
+                "important": {
+                    "hint": "重要NPC将自动跟进死亡豁免、生命骰与忠诚度（若启用该设置）。",
+                    "label": "重要NPC"
+                }
+            }
+        }
     },
     "DND5E.CreatureTag": "{size} {type}，{alignment}",
     "DND5E.EQUIPMENT": {
