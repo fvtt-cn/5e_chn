@@ -1322,6 +1322,22 @@
                 "None": "无",
                 "Variant": "变体（重载与超载）",
                 "Normal": "标准（最大载重）"
+            },
+            "HonorScore": {
+                "Hint": "启用可选荣誉属性值。",
+                "Name": "荣誉属性值"
+            },
+            "LevelingMode": {
+                "Hint": "设定玩家等级提升机制。",
+                "Name": "升级模式",
+                "XPBoons": "经验值与传奇恩惠",
+                "NoXP": "无需经验值的等级提升",
+                "XP": "经验值"
+            },
+            "ProficiencyModifier": {
+                "Bonus": "PHB：加值 (+2, +3, +4, +5, +6)",
+                "Dice": "DMG：骰子 (1d4, 1d6, 1d8, 1d10, 1d12)",
+                "Hint": "配置熟练加值模式（固定值/骰子）。"
             }
         }
     },
