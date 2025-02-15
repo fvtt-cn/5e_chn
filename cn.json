@@ -1287,9 +1287,43 @@
             }
         },
         "NPCS": {
-            "Name": "非玩家角色"
+            "Name": "非玩家角色",
+            "AutoRollNPCHP": {
+                "Name": "生命值",
+                "Hint": "配置是否在新建指示物时自动掷骰生成NPC最大生命值。",
+                "No": "不掷骰",
+                "Silent": "无聊天卡片掷骰",
+                "Yes": "掷骰并生成聊天卡片"
+            },
+            "AutoRecharge": {
+                "Yes": "充能并显示聊天卡片",
+                "Silent": "充能不显示聊天卡片",
+                "Hint": "NPC的回合开始时，自动掷骰为其能力充能。",
+                "Name": "充能能力",
+                "No": "禁用自动充能"
+            }
         },
-        "General": "通用"
+        "General": "通用",
+        "VARIANT": {
+            "Hint": "启用并配置系统内置的规则变体。",
+            "Label": "配置规则变体",
+            "Name": "规则变体",
+            "AllowFeats": {
+                "Hint": "启用旧版规则下职业升级时的专长替代属性值提升选项。",
+                "Name": "允许使用专长"
+            },
+            "CurrencyWeight": {
+                "Hint": "货币会计入角色负重。",
+                "Name": "跟进货币重量"
+            },
+            "Encumbrance": {
+                "Hint": "启用自动负重跟进及超载状态效应。",
+                "Name": "负重跟进",
+                "None": "无",
+                "Variant": "变体（重载与超载）",
+                "Normal": "标准（最大载重）"
+            }
+        }
     },
     "SHEETS.DND5E": {
         "THEME": {
