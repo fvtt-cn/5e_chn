@@ -552,7 +552,7 @@
     "DND5E.CreatureTypeTitle": "设置生物类型",
     "DND5E.CreatureSwarm": "集群",
     "DND5E.CreatureSwarmSize": "集群大小",
-    "DND5E.CreatureSwarmPhrase": "一群{size}{type}",
+    "DND5E.CreatureSwarmPhrase": "{size}{type} 集群",
     "DND5E.CreatureTypeConfig": "设置生物类型",
     "DND5E.CreatureTypeSelectorCustom": "自定义类型",
     "DND5E.CreatureTypeSelectorSubtype": "子类",
