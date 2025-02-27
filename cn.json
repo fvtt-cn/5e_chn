@@ -160,7 +160,7 @@
     "DND5E.Dimensions": "维度",
     "DND5E.Disadvantage": "劣势",
     "DND5E.DistAny": "任意",
-    "DND5E.DistFt": "英尺",
+    "DND5E.DistFt": "尺",
     "DND5E.DistMi": "英里",
     "DND5E.DistSelf": "自身",
     "DND5E.DistTouch": "触及",
@@ -1863,7 +1863,7 @@
     "DOCUMENT.DND5E": {
         "Activity": "行为",
         "Warning": {
-            "SelectType": "必须选择{name} 的生物类型。"
+            "SelectType": "必须选择 {name} 的生物类型。"
         },
         "Advancement": "升级"
     },
@@ -1881,7 +1881,7 @@
                 },
                 "value": {
                     "hint": "与激活相关联的标量值。",
-                    "label": "激活数值"
+                    "label": "激活值"
                 },
                 "override": {
                     "label": "覆盖激活",
@@ -3623,12 +3623,12 @@
                     "Label": "黎明"
                 },
                 "LongRest": {
-                    "Abbreviation": "LR",
+                    "Abbreviation": "长休",
                     "Label": "长休"
                 },
                 "ShortRest": {
                     "Label": "短休",
-                    "Abbreviation": "SR"
+                    "Abbreviation": "短休"
                 },
                 "Turn": {
                     "Label": "每回合"
@@ -3702,7 +3702,7 @@
     },
     "TYPES.ChatMessage": {
         "turn": "战斗回合信息",
-        "rest": "其他消息"
+        "rest": "休息信息"
     },
     "TYPES.Item.facility": "设施",
     "TYPES.Item.facilityPl": "设施",
@@ -4352,7 +4352,7 @@
         "DISTANCE": {
             "Label": "距离单位",
             "Foot": {
-                "Label": "英尺",
+                "Label": "尺",
                 "Abbreviation": "尺"
             },
             "Kilometer": {
@@ -4376,16 +4376,16 @@
                         "other": "{number} cu ft"
                     },
                     "narrow": {
-                        "one": "{number} 英尺",
-                        "other": "{number} 英尺"
+                        "one": "{number} 立方尺",
+                        "other": "{number} 立方尺"
                     },
                     "long": {
-                        "one": "{number} 立方英尺",
-                        "other": "{number} 立方英尺"
+                        "one": "{number} 立方尺",
+                        "other": "{number} 立方尺"
                     }
                 },
-                "Label": "立方英尺",
-                "Abbreviation": "英尺"
+                "Label": "立方尺",
+                "Abbreviation": "立方尺"
             },
             "Label": "体积单位",
             "Liter": {
