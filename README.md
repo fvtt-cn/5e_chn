@@ -1,7 +1,7 @@
 # Foundry VTT D&D 5e 系统中文化
 ![downloads](https://img.shields.io/github/downloads/fvtt-cn/5e_chn/total)
 
-本模组为 FVTT 的 [DnD5e 系统](https://gitlab.com/foundrynet/dnd5e/)提供了中文翻译。
+本模组为 FVTT 的 [DnD5e 系统](https://github.com/foundryvtt/dnd5e)提供了中文翻译。
 
 ## 安装
 - [x] 模组管理器中，粘贴清单文件地址： [https://raw.githubusercontent.com/fvtt-cn/5e_chn/main/module.json](https://raw.githubusercontent.com/fvtt-cn/5e_chn/main/module.json)
