@@ -612,7 +612,7 @@
     "DND5E.AbilitySaveConfigure": "{ability} 豁免骰",
     "DND5E.AbilityCheckConfigure": "{ability} 属性检定",
     "DND5E.AbilityConfigureTitle": "配置 {ability} 豁免骰和检定",
-    "DND5E.AbilityConfigurationHint": "配置属性豁免熟练项，豁免加值和检定加值。",
+    "DND5E.AbilityConfigurationHint": "配置属性豁免熟练，豁免加值和检定加值。",
     "DND5E.Armor": "护甲",
     "DND5E.CurrencyAbbrGP": "gp",
     "DND5E.CurrencyAbbrPP": "pp",
@@ -625,7 +625,7 @@
     "DND5E.SkillConfigure": "配置技能",
     "DND5E.SkillBonusCheck": "检定加值",
     "DND5E.SkillBonusPassive": "被动加值",
-    "DND5E.SkillConfigurationHint": "配置技能熟练项和加值。",
+    "DND5E.SkillConfigurationHint": "配置技能熟练和加值。",
     "DND5E.AbilityCheckBonus": "检定加值",
     "DND5E.AbilityCheckGlobalBonusHint": "此加值应用于该角色进行的所有属性检定。",
     "DND5E.CurrencyAbbrCP": "cp",
@@ -2220,10 +2220,10 @@
             "Title": "体型"
         },
         "Trait": {
-            "Hint": "授予角色某些特质，或者给他们一个选择特质的选项（如熟练项、技能、语言）。",
+            "Hint": "授予角色某些特质，或者给他们一个选择特质的选项（如熟练、技能、语言）。",
             "Mode": {
                 "Default": {
-                    "Hint": "获得一项特质或熟练项。",
+                    "Hint": "获得一项特质或熟练。",
                     "Label": "默认"
                 },
                 "Expertise": {
@@ -2650,7 +2650,7 @@
                 "label": "检定细节",
                 "associated": {
                     "label": "相关技能或工具",
-                    "hint": "使用这些技能或工具进行当前的属性检定时，加上熟练项和加值。"
+                    "hint": "使用这些技能或工具进行当前的属性检定时，加上熟练和加值。"
                 }
             }
         },
@@ -2915,7 +2915,7 @@
                     "hint": "调整召唤生物的攻击命中值以匹配施法者的攻击命中值。"
                 },
                 "proficiency": {
-                    "label": "匹配熟练项",
+                    "label": "匹配熟练",
                     "hint": "调整召唤生物的熟练加值以匹配施法者的熟练加值。"
                 },
                 "ability": {
