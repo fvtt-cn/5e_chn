@@ -839,13 +839,13 @@
     "DND5E.TraitDVPlural.other": "易伤",
     "DND5E.TraitLanguagesPlural.one": "语言",
     "DND5E.TraitLanguagesPlural.other": "语言",
-    "DND5E.TraitSavesPlural.one": "豁免熟练项",
-    "DND5E.TraitSavesPlural.other": "豁免熟练项",
-    "DND5E.TraitSkillsPlural.one": "技能熟练项",
-    "DND5E.TraitSkillsPlural.other": "技能熟练项",
-    "DND5E.TraitToolPlural.one": "工具熟练项",
-    "DND5E.TraitToolPlural.other": "工具熟练项",
-    "DND5E.TraitWeaponPlural.one": "武器熟练项",
+    "DND5E.TraitSavesPlural.one": "豁免熟练",
+    "DND5E.TraitSavesPlural.other": "豁免熟练",
+    "DND5E.TraitSkillsPlural.one": "技能熟练",
+    "DND5E.TraitSkillsPlural.other": "技能熟练",
+    "DND5E.TraitToolPlural.one": "工具熟练",
+    "DND5E.TraitToolPlural.other": "工具熟练",
+    "DND5E.TraitWeaponPlural.one": "武器熟练",
     "DND5E.TraitsChosen": "已选择特质",
     "DND5E.Traits": "特质",
     "DND5E.UsesAvailable": "可用次数",
@@ -871,7 +871,7 @@
     "JOURNALENTRYPAGE.DND5E.Class.SubclassHint": "拖放子职至此处",
     "DND5E.HitPointsMin": "HP 下限",
     "DND5E.ScalingMode": "递增模式",
-    "DND5E.TraitWeaponPlural.other": "武器熟练项",
+    "DND5E.TraitWeaponPlural.other": "武器熟练",
     "DND5E.PolymorphCustomTransformation": "自定义变形",
     "DND5E.PolymorphEffectTransformation": "效应转换",
     "DND5E.PolymorphKeepAE": "保留所有效应（覆盖其他效应保留选项）。",
@@ -1197,7 +1197,7 @@
         "StatusBurning": "燃烧",
         "StatusDehydration": "脱水",
         "StatusFalling": "坠落",
-        "StatusHalfCover": "半掩护",
+        "StatusHalfCover": "半身掩护",
         "StatusMalnutrition": "饥饿",
         "StatusSuffocation": "窒息",
         "StatusThreeQuartersCover": "四分之三掩护",
@@ -1228,7 +1228,7 @@
         },
         "DEFAULTSKILLS": {
             "Name": "默认技能",
-            "Hint": "无论是否是熟练项，NPC卡上都会出现的默认技能。"
+            "Hint": "无论是否熟练，NPC卡上都会出现的默认技能。"
         },
         "RULESVERSION": {
             "Legacy": "旧版规则（2014）",
@@ -1683,7 +1683,7 @@
         "Class": {
             "EquipmentDescription": "除了您的背景所授予的装备外，您开始时还拥有以下装备：",
             "Traits": {
-                "Header": "熟练项",
+                "Header": "熟练",
                 "Caption": "{class} 核心特质"
             },
             "FIELDS": {
@@ -1701,8 +1701,8 @@
                         "hint": "该职业的首要描述，将首先出现。"
                     },
                     "additionalTraits": {
-                        "label": "额外熟练项描述",
-                        "hint": "显示在该职业授予的熟练项列表下方的额外描述文本。"
+                        "label": "额外熟练描述",
+                        "hint": "显示在该职业授予的熟练列表下方的额外描述文本。"
                     },
                     "subclass": {
                         "label": "子职介绍",
@@ -3652,9 +3652,9 @@
         }
     },
     "DND5E.TraitAll": "所有 {category}",
-    "DND5E.TraitArmorLegacyPlural.one": "护甲熟练项",
-    "DND5E.TraitArmorLegacyPlural.other": "护甲熟练项",
-    "DND5E.TraitArmorLegacyProf": "护甲熟练项",
+    "DND5E.TraitArmorLegacyPlural.one": "护甲熟练",
+    "DND5E.TraitArmorLegacyPlural.other": "护甲熟练",
+    "DND5E.TraitArmorLegacyProf": "护甲熟练",
     "DND5E.Trigger": "触发",
     "DND5E.Number": "数量",
     "DND5E.Multiple": "多个",
