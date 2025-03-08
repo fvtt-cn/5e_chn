@@ -1651,8 +1651,8 @@
         }
     },
     "DND5E.Scroll": {
-        "CreateFrom": "从{spell}创建卷轴",
-        "CreateScroll": "创建卷轴",
+        "CreateFrom": "从{spell}抄写卷轴",
+        "CreateScroll": "抄写卷轴",
         "Details": "卷轴详情",
         "Explanation": {
             "Label": "说明",
