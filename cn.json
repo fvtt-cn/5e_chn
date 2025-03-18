@@ -77,7 +77,7 @@
     "DND5E.ChatContextDoubleDamage": "应用双倍伤害",
     "DND5E.ChatContextHalfDamage": "应用半伤",
     "DND5E.ChatContextHealing": "应用治疗",
-    "DND5E.ChatFlavor": "聊天信息",
+    "DND5E.ChatFlavor": "聊天信息叙述",
     "DND5E.ClassLevels": "职业等级",
     "DND5E.ClassName": "职业",
     "DND5E.ComponentMaterial": "材料",
@@ -105,15 +105,15 @@
     "DND5E.ConsumeAmmunition": "弹药",
     "DND5E.ConsumeAttribute": "属性",
     "DND5E.ConsumeMaterial": "材料",
-    "DND5E.ConsumeCharges": "使用物品",
-    "DND5E.ConsumeResource": "是否消耗资源？",
-    "DND5E.ConsumeRecharge": "是否消耗充能？",
+    "DND5E.ConsumeCharges": "物品使用次数",
+    "DND5E.ConsumeResource": "是否耗用资源？",
+    "DND5E.ConsumeRecharge": "是否耗用充能？",
     "DND5E.ConsumableLastChargeWarn": "这是该物品单位的最后充能且消耗该充能也会令物品总数减少 1",
     "DND5E.ConsumableUnitWarn": "剩余单位",
     "DND5E.ConsumableUseWarnEnd": "的当前单位",
     "DND5E.ConsumableUseWarnStart": "这个消耗品有",
     "DND5E.ConsumableWithoutCharges": "可用物品单位",
-    "DND5E.Consumed": "使用时消耗",
+    "DND5E.Consumed": "已耗用",
     "DND5E.CostGP": "费用（GP）",
     "DND5E.Cover": "掩护",
     "DND5E.CoverHalf": "半身掩护",
@@ -396,7 +396,7 @@
     "DND5E.SpellAbility": "施法属性",
     "DND5E.SpellAdd": "添加法术",
     "DND5E.SpellCantrip": "戏法",
-    "DND5E.SpellCastConsume": "是否使用法术位？",
+    "DND5E.SpellCastConsume": "是否耗用法术位？",
     "DND5E.SpellCastNoSlots": "你没有可用的法术位来施放法术",
     "DND5E.SpellCastUpcast": "以此环阶施放",
     "DND5E.SpellCastingHeader": "施法",
@@ -819,7 +819,7 @@
     "DND5E.Skills": "技能",
     "DND5E.SkillBonuses": "技能价值",
     "DND5E.SpellLevels": "法术环阶",
-    "DND5E.SpellMaterialsConsumed": "消耗材料",
+    "DND5E.SpellMaterialsConsumed": "耗用材料",
     "DND5E.SpellMaterialsCost": "材料价值",
     "DND5E.SpellMaterialsDescription": "材料描述",
     "DND5E.SpellProgAvailable": "可用环位",
@@ -950,7 +950,7 @@
     "DND5E.AutomaticValue": "自动化 ({value})",
     "DND5E.ItemAmmoProperties": "弹药属性",
     "DND5E.ItemToolStatus": "工具状态",
-    "DND5E.ConsumeScalingTooltip": "勾选后，消耗额外资源将提高所施放法术的环阶。",
+    "DND5E.ConsumeScalingTooltip": "勾选后，耗用额外的资源将提高所施放法术的环阶。",
     "DND5E.Focus.Druidic": "德鲁伊法器",
     "DND5E.GroupSummaryEmpty": "空组",
     "DND5E.Dusk": "黄昏",
@@ -1998,7 +1998,7 @@
                         },
                         "requireSlot": {
                             "label": "所需法术位",
-                            "hint": "使用有限次数时需要消耗一个法术位。若未勾选，则这些使用次数将是额外的免费使用次数，不会消耗法术位。"
+                            "hint": "使用有限次数时需要耗用一个法术位。若未勾选，则这些使用次数将是额外的免费使用次数，不会消耗法术位。"
                         }
                     }
                 }
@@ -2293,8 +2293,8 @@
             "description": {
                 "label": "描述",
                 "chatFlavor": {
-                    "label": "聊天描述",
-                    "hint": "聊天消息中显示的附加文本。"
+                    "label": "聊天叙述",
+                    "hint": "聊天消息中显示的情境文本。"
                 }
             },
             "effects": {
@@ -2533,8 +2533,8 @@
                 },
                 "label": "消耗",
                 "spellSlot": {
-                    "label": "消耗法术位",
-                    "hint": "使用此行动是否应消耗该法术的一个法术位？"
+                    "label": "耗用法术位",
+                    "hint": "使用此行动是否应耗用该法术的一个法术位？"
                 }
             }
         },
@@ -2548,7 +2548,7 @@
             "ActivityUses": {
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 进行此行动（{available} {availableUse} 可用）。",
                 "Label": "行动使用次数",
-                "PromptDecrease": "消耗行动使用次数？",
+                "PromptDecrease": "耗用行动使用次数？",
                 "PromptIncrease": "恢复行动使用次数？",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {use} 在此行动中。",
                 "Warning": "在 {item} 的行动 {activity} 中使用"
@@ -2556,7 +2556,7 @@
             "Material": {
                 "PromptHintIncrease": "将 {item} 的数量增加 <strong>{cost}</strong> 。",
                 "Label": "材料",
-                "PromptDecrease": "消耗材料？",
+                "PromptDecrease": "耗用材料？",
                 "PromptIncrease": "恢复材料？",
                 "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> （剩余{quantity} ）。",
                 "Warning": "{name} 的"
@@ -2571,7 +2571,7 @@
             },
             "HitDice": {
                 "Label": "生命骰",
-                "PromptDecrease": "消耗生命骰？",
+                "PromptDecrease": "耗用生命骰？",
                 "PromptIncrease": "恢复生命骰？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> （还剩{denomination} {die} ({available} ）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> {denomination} {die}。",
@@ -2583,7 +2583,7 @@
             },
             "ItemUses": {
                 "Label": "物品使用次数",
-                "PromptDecrease": "消耗物品使用次数？",
+                "PromptDecrease": "耗用物品使用次数？",
                 "PromptIncrease": "恢复物品使用次数？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 的 {item} （{available} {availableUse} 可用）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {item} 的 {use} 。",
@@ -2595,7 +2595,7 @@
             },
             "SpellSlots": {
                 "Label": "法术位",
-                "PromptDecrease": "消耗法术位？",
+                "PromptDecrease": "耗用法术位？",
                 "PromptIncrease": "恢复法术位？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {slot} （剩余 {available} ）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> {slot} 。",
@@ -2606,12 +2606,12 @@
                 "other": "使用"
             },
             "Action": {
-                "Prompt": "消耗 {type}？",
+                "Prompt": "耗用 {type}？",
                 "PromptHint": "消耗 {cost} （{available} 可用）。"
             }
         },
         "Action": {
-            "ConsumeResource": "消耗资源",
+            "ConsumeResource": "耗用资源",
             "Create": "创建消耗目标",
             "Delete": "删除消耗目标",
             "RefundResource": "退还资源"
@@ -2623,7 +2623,7 @@
             "NotEnough": "可用的 {type} 不足，需要消耗 {cost}，但仅有 {available} 可用。",
             "MissingAttribute": "无法找到配置为由 {item} 上的 {activity} 行动使用的 {attribute} 属性。",
             "MissingHitDice": "角色没有一个具有 {denomination} 生命骰的职业。",
-            "MissingItem": "无法找到由行动 {activity} 配置在物品 {item} 上的消耗项。",
+            "MissingItem": "无法找到由行动 {activity} 配置在物品 {item} 上的耗用项。",
             "MissingSpellSlot": "没有可用的 {level} 法术位。",
             "None": "没有可用的 {type} 可以消耗，需要 {cost} 。",
             "WillDestroy": "将耗尽 {物品} 使用次数，并将其摧毁。"
