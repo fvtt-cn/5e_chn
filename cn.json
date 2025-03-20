@@ -341,7 +341,7 @@
     "DND5E.RollSituationalBonus": "环境加值？",
     "DND5E.SaveDC": "DC {dc} {ability}",
     "DND5E.SavePromptTitle": "{ability} 豁免",
-    "DND5E.SavingThrow": "豁免骰",
+    "DND5E.SavingThrow": "豁免检定",
     "DND5E.ScalingFormula": "递增公式",
     "DND5E.SchoolAbj": "防护系",
     "DND5E.SchoolCon": "咒法系",
@@ -607,11 +607,11 @@
     "DND5E.ArmorClassFlat": "固定值",
     "DND5E.ArmorClassUnarmored": "无甲",
     "DND5E.ArmorClassNatural": "天生护甲",
-    "DND5E.AbilityConfigure": "配置属性检定和豁免骰",
+    "DND5E.AbilityConfigure": "配置 {ability}",
     "DND5E.AbilityCheckConfigurationHint": "配置检定加值。",
-    "DND5E.AbilitySaveConfigure": "{ability} 豁免骰",
+    "DND5E.AbilitySaveConfigure": "{ability} 豁免检定",
     "DND5E.AbilityCheckConfigure": "{ability} 属性检定",
-    "DND5E.AbilityConfigureTitle": "配置 {ability} 豁免骰和检定",
+    "DND5E.AbilityConfigureTitle": "配置 {ability} 豁免检定",
     "DND5E.AbilityConfigurationHint": "配置属性豁免熟练，豁免加值和检定加值。",
     "DND5E.Armor": "护甲",
     "DND5E.CurrencyAbbrGP": "gp",
@@ -633,7 +633,7 @@
     "DND5E.ItemCritThreshold": "重击阈值",
     "DND5E.ItemToolBase": "基础工具",
     "DND5E.ProficiencyLevel": "熟练等级",
-    "DND5E.SaveGlobalBonusHint": "此加值应用于该角色进行的所有豁免骰。",
+    "DND5E.SaveGlobalBonusHint": "此加值应用于该角色进行的所有豁免检定。",
     "DND5E.SkillConfigureTitle": "配置 {skill}",
     "DND5E.SkillGlobalBonusCheckHint": "此加值应用于该角色进行的所有技能检定。",
     "DND5E.ArmorClassMotionless": "静止状态 AC",
@@ -996,7 +996,7 @@
     "EDITOR.DND5E.Inline.DCPassiveLong": "被动 {check} 结果 {dc} 或更高",
     "EDITOR.DND5E.Inline.NoActorWarning": "找不到选定或指定的角色来执行此掷骰。",
     "EDITOR.DND5E.Inline.SaveShort": "{save}",
-    "EDITOR.DND5E.Inline.SaveLong": "{save} 豁免骰",
+    "EDITOR.DND5E.Inline.SaveLong": "{save} 豁免检定",
     "EDITOR.DND5E.Inline.SpecificCheck": "{ability} ({type})",
     "SETTINGS.5eGridAlignedSquareTemplatesL": "在施法或使用物品时创建的方形测量板将被锁定在网格排列上，无法旋转。",
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
@@ -1048,7 +1048,7 @@
     "DND5E.DamageType": "伤害类型",
     "DND5E.DeathSaveShow": "显示死亡豁免",
     "DND5E.DeathSaveSuccessLabel": "死亡豁免成功",
-    "DND5E.DeathSaveRoll": "掷一个死亡豁免骰",
+    "DND5E.DeathSaveRoll": "掷一个死亡豁免检定",
     "DND5E.DeathSaveFailureLabelN.one": "第一次死亡豁免失败",
     "DND5E.DeathSaveFailureLabelN.few": "第三次死亡豁免失败",
     "DND5E.DeathSaveFailureLabelN.two": "第二次死亡豁免失败",
@@ -3987,7 +3987,7 @@
             }
         },
         "Use": {
-            "Description": "向其 {link} {facilityType} 下达了 <strong>{order}</strong> 命令。"
+            "Description": "向{link} {facilityType} 下达了 <strong>{order}</strong> 命令。"
         },
         "Craft": {
             "BaseItem": {
