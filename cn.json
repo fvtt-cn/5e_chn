@@ -2246,6 +2246,14 @@
             "Delete": "删除升级",
             "Duplicate": "重复升级",
             "Edit": "编辑升级"
+        },
+        "Migration": {
+            "Action": {
+                "Confirm": "应用迁移"
+            },
+            "Hint": "选择以下哪项升级将添加到 {name} 中。",
+            "Selection": "升级选项",
+            "Title": "迁移升级"
         }
     },
     "DND5E.ACTIVITY": {
@@ -3716,6 +3724,11 @@
             "Gold": "{value} （{claimed}）",
             "NoOrders": "本回合未向特色设施下达任何指令。",
             "Order": "{link} 完成了 <strong>{order}</strong> 指令。"
+        },
+        "Trade": {
+            "Invalid": "取消待处理交易将使你的交易请求失败。",
+            "Pending": "待处理交易",
+            "Cancel": "取消待处理交易"
         }
     },
     "DND5E.CAST": {
@@ -4582,7 +4595,7 @@
     },
     "DND5E.COMBAT": {
         "Group": {
-            "ActiveCount": "当前：{current}参战者： {combatants}",
+            "ActiveCount": "当前：{current} 参战者： {combatants}",
             "Title": "{name} 组"
         }
     },
@@ -4660,15 +4673,138 @@
         "FIELDS": {
             "statuses": {
                 "label": "状态条件",
-                "hint": "在受该主动效应影响时，目标将被视为具有这些额外的状态条件。"
+                "hint": "在受该激活效应影响时，目标将被视为具有这些额外的状态条件。"
             }
         }
     },
     "DND5E.CONDITIONS": {
         "RiderConditions": {
             "label": "单独状态条件",
-            "hint": "当该主动效应被应用时，这些额外的状态条件将被分别施加。"
+            "hint": "当该激活效应被应用时，这些额外的状态条件将被分别施加。"
         }
     },
-    "DND5E.DisplayCard": "聊天中显示"
+    "DND5E.DisplayCard": "聊天中显示",
+    "DND5E.TRANSFORM": {
+        "Action": {
+            "Restore": "恢复变形",
+            "Transform": "变形"
+        },
+        "Preset": {
+            "Appearance": {
+                "Label": "仅外观"
+            },
+            "Default": "默认",
+            "Label": "预设",
+            "Polymorph": {
+                "Label": "变形术"
+            },
+            "WildShape": {
+                "Label": "荒野变形"
+            }
+        },
+        "Setting": {
+            "Effects": {
+                "All": {
+                    "Label": "所有效应",
+                    "Hint": "保留所有效应，忽略任何其他效应设置。"
+                },
+                "Background": {
+                    "Label": "背景效应"
+                },
+                "Class": {
+                    "Label": "职业效应"
+                },
+                "Origin": {
+                    "Label": "该角色",
+                    "Hint": "保留直接施加于此该角色的任何效应。"
+                },
+                "Title": "主动效应",
+                "OtherOrigin": {
+                    "Hint": "保留由其他角色施加的任何影响。",
+                    "Label": "其他角色"
+                },
+                "Equipment": {
+                    "Label": "装备效应"
+                },
+                "Feature": {
+                    "Label": "特性效应"
+                },
+                "Spell": {
+                    "Label": "法术效应"
+                }
+            },
+            "Keep": {
+                "Biography": {
+                    "Label": "传记"
+                },
+                "CreatureType": {
+                    "Label": "生物类型"
+                },
+                "Equipment": {
+                    "Label": "装备"
+                },
+                "Features": {
+                    "Label": "特性"
+                },
+                "Health": {
+                    "Label": "生命值与生命骰"
+                },
+                "Mental": {
+                    "Label": "精神属性",
+                    "Hint": "保留智力、感知和魅力属性值。"
+                },
+                "Physical": {
+                    "Hint": "保留力量、敏捷和体质属性值。",
+                    "Label": "生理属性"
+                },
+                "Proficiency": {
+                    "Label": "熟练加值"
+                },
+                "Saves": {
+                    "Label": "豁免熟练"
+                },
+                "Self": {
+                    "Label": "自身",
+                    "Hint": "仅更改立绘和指示物图像，其他设置将被忽略。"
+                },
+                "Skills": {
+                    "Label": "技能熟练"
+                },
+                "Spells": {
+                    "Label": "法术"
+                },
+                "Title": "保持",
+                "Vision": {
+                    "Label": "视觉"
+                },
+                "Hint": "这些细节将从原始角色保留下来。"
+            },
+            "Merge": {
+                "Saves": {
+                    "Label": "豁免熟练"
+                },
+                "Skills": {
+                    "Label": "技能熟练"
+                },
+                "Title": "合并",
+                "Hint": "合并熟练，保留其中加值较高项。"
+            },
+            "Other": {
+                "AddTemp": {
+                    "Hint": "将目标当前的生命值作为临时生命值添加",
+                    "Label": "添加临时生命值"
+                },
+                "Title": "其他选项"
+            }
+        },
+        "TemporaryClass": "临时职业",
+        "Warning": {
+            "NoPermission": "玩家尚未获得变形权限。",
+            "OriginalActor": "未找到ID为 ‘{reference}’ 的原始角色。",
+            "NoOwnership": "你无权对该角色执行变形操作。"
+        },
+        "Dialog": {
+            "Title": "配置变形"
+        }
+    }
 }
