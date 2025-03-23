@@ -182,7 +182,7 @@
     "DND5E.Expertise": "专精",
     "DND5E.Flaws": "缺点",
     "DND5E.FeatureActionRecharge": "动作充能",
-    "DND5E.FeatureActive": "主动能力",
+    "DND5E.FeatureActive": "激活属性",
     "DND5E.FeatureAdd": "创建特性",
     "DND5E.FeatureAttack": "特性攻击",
     "DND5E.FeaturePassive": "被动属性",
@@ -1583,7 +1583,7 @@
     },
     "DND5E.DocumentUseWarn": "您未获得使用本文档中某项物品的权限。",
     "DND5E.EffectType": {
-        "Inactive": "非激活",
+        "Inactive": "未激活",
         "Passive": "被动",
         "Temporary": "临时",
         "Unavailable": "不可用"
@@ -4718,7 +4718,7 @@
                     "Label": "该角色",
                     "Hint": "保留直接施加于此该角色的任何效应。"
                 },
-                "Title": "主动效应",
+                "Title": "激活效应",
                 "OtherOrigin": {
                     "Hint": "保留由其他角色施加的任何影响。",
                     "Label": "其他角色"
