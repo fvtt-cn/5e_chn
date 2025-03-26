@@ -4922,10 +4922,28 @@
                     "hint": "使用自定义变形设置，而非所选预设提供的默认设置。"
                 },
                 "identifier": {
-                    "label": "职业识别符"
+                    "label": "职业识别符",
+                    "hint": "用于确定应使用角色等级还是特定职业等级来限制配置等级上限的识别符。"
                 },
-                "label": "变形详情"
+                "label": "变形详情",
+                "mode": {
+                    "label": "模式",
+                    "hint": "设置来源生物的选取方式。",
+                    "Appearance": "仅外观",
+                    "Default": "合集包浏览器",
+                    "Direct": "直接链接"
+                },
+                "preset": {
+                    "label": "预设"
+                }
             }
+        },
+        "Profile": {
+            "Action": {
+                "Create": "创建配置",
+                "Delete": "删除配置"
+            },
+            "ChallengeRatingLabel": "挑战等级为 {cr} 或更低"
         }
     }
 }
