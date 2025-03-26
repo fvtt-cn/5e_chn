@@ -4837,13 +4837,37 @@
                 "Skills": {
                     "Label": "技能熟练"
                 }
+            },
+            "FIELDS": {
+                "effects": {
+                    "label": "激活效应"
+                },
+                "keep": {
+                    "hint": "这些细节将从源角色保留下来。",
+                    "label": "保留"
+                },
+                "merge": {
+                    "hint": "将熟练合并，保留其中加值较高的那一个。",
+                    "label": "合并"
+                },
+                "other": {
+                    "label": "其他选项"
+                },
+                "tempFormula": {
+                    "hint": "变形时将增加的临时生命值计算公式。",
+                    "label": "临时生命值公式"
+                },
+                "transformTokens": {
+                    "label": "变形指示物"
+                }
             }
         },
         "TemporaryClass": "临时职业",
         "Warning": {
             "NoPermission": "玩家尚未获得变形权限。",
             "OriginalActor": "未找到ID为 ‘{reference}’ 的原始角色。",
-            "NoOwnership": "你无权对该角色执行变形操作。"
+            "NoOwnership": "你无权对该角色执行变形操作。",
+            "SourceActor": "未找到可变形的角色。"
         },
         "Dialog": {
             "Title": "配置变形"
@@ -4943,7 +4967,15 @@
                 "Create": "创建配置",
                 "Delete": "删除配置"
             },
-            "ChallengeRatingLabel": "挑战等级为 {cr} 或更低"
-        }
+            "ChallengeRatingLabel": "挑战等级为 {cr} 或更低",
+            "Empty": "点击上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个配置。",
+            "Label": "变形配置"
+        },
+        "SECTIONS": {
+            "Profiles": "配置",
+            "Settings": "设置",
+            "Transformation": "变形"
+        },
+        "Title": "变形"
     }
 }
