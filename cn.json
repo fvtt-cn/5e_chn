@@ -3659,12 +3659,12 @@
                     "Label": "先攻"
                 },
                 "TurnEnd": {
-                    "Abbreviation": "回合开始",
+                    "Abbreviation": "回合结束",
                     "Label": "回合结束时"
                 },
                 "TurnStart": {
                     "Label": "开始回合时",
-                    "Abbreviation": "回合结束"
+                    "Abbreviation": "回合开始"
                 }
             },
             "Combat": "战斗",
