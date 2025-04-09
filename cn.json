@@ -736,7 +736,7 @@
     "DND5E.Environment": "环境",
     "DND5E.Feature.Background": "背景特性",
     "DND5E.Feature.Monster": "怪物特性",
-    "DND5E.GroupInventory": "持有物",
+    "DND5E.GroupInventory": "所持物",
     "DND5E.GroupHP": "总体生命值",
     "DND5E.GroupSummary": "一组 {members}",
     "JOURNALENTRYPAGE.DND5E.TableTOC": "表格：{caption}",
