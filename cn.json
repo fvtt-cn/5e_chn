@@ -163,7 +163,7 @@
     "DND5E.DistFt": "尺",
     "DND5E.DistMi": "英里",
     "DND5E.DistSelf": "自身",
-    "DND5E.DistTouch": "触及",
+    "DND5E.DistTouch": "触碰",
     "DND5E.Duration": "持续时间",
     "DND5E.Effects": "效应",
     "DND5E.EffectCreate": "创建效应",
@@ -1130,7 +1130,7 @@
         },
         "AttackExtended": "<em>{type}</em>: {parts}",
         "DamageExtended": "<em>命中：</em> {damage} 伤害",
-        "DamageDouble": "{first} 加上 {second}",
+        "DamageDouble": "{first} 外加 {second}",
         "PassiveShort": "被动 {check}",
         "PassiveLong": "被动 {check} 值",
         "AttackLong": "{formula} 命中",
@@ -2392,8 +2392,8 @@
             "NoQuantity": "试图使用数量为零的武器进行攻击。"
         },
         "Formatted": {
-            "2014": "{type} {classification} 攻击",
-            "2024": "{type} 攻击检定"
+            "2014": "{type}{classification}攻击",
+            "2024": "{type}攻击检定"
         }
     },
     "DND5E.CONSUMABLE": {
