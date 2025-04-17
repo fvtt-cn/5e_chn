@@ -1409,7 +1409,7 @@
             "Rune": "符文",
             "Multiattack": "多重攻击",
             "Ki": "气",
-            "ArcaneShot": "秘法射击",
+            "ArcaneShot": "奥术射击",
             "Metamagic": "超魔法选项",
             "HuntersPrey": "猎杀技艺",
             "ElementalDiscipline": "四象法门",
@@ -1419,7 +1419,7 @@
             "Charm": "护咒",
             "EpicBoon": "传奇恩惠",
             "Blessing": "祝福",
-            "Label": "超自然恩惠"
+            "Label": "超自然赠礼"
         },
         "Feat": {
             "Label": "专长",
@@ -1515,7 +1515,7 @@
     "DND5E.Multiplier": "乘数",
     "DND5E.ModuleArtPriorityIncrease": "提高优先级",
     "DND5E.Hair": "发色",
-    "DND5E.FeaturesClass": "{class} 特性",
+    "DND5E.FeaturesClass": "{class}特性",
     "DND5E.DeathSaveSuccessLabelN.one": "第一次死亡豁免成功",
     "DND5E.DistMiAbbr": "里",
     "DND5E.Skill": "技能",
