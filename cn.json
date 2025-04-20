@@ -2,25 +2,25 @@
     "DND5E.title": "龙与地下城第五版",
     "DND5E.AC": "AC",
     "DND5E.AbbreviationCR": "CR",
-    "DND5E.AbbreviationConc": "专注。",
+    "DND5E.AbbreviationConc": "Conc.",
     "DND5E.AbbreviationDC": "DC",
-    "DND5E.AbbreviationLR": "长休",
+    "DND5E.AbbreviationLR": "LR",
     "DND5E.AbbreviationLbs": "磅",
     "DND5E.AbbreviationLevel": "等级",
-    "DND5E.AbbreviationSR": "短休",
+    "DND5E.AbbreviationSR": "SR",
     "DND5E.Ability": "属性",
     "DND5E.AbilityCha": "魅力",
-    "DND5E.AbilityChaAbbr": "魅力",
+    "DND5E.AbilityChaAbbr": "cha",
     "DND5E.AbilityCon": "体质",
-    "DND5E.AbilityConAbbr": "体质",
+    "DND5E.AbilityConAbbr": "con",
     "DND5E.AbilityDex": "敏捷",
-    "DND5E.AbilityDexAbbr": "敏捷",
+    "DND5E.AbilityDexAbbr": "dex",
     "DND5E.AbilityInt": "智力",
-    "DND5E.AbilityIntAbbr": "智力",
+    "DND5E.AbilityIntAbbr": "int",
     "DND5E.AbilityStr": "力量",
-    "DND5E.AbilityStrAbbr": "力量",
+    "DND5E.AbilityStrAbbr": "str",
     "DND5E.AbilityWis": "感知",
-    "DND5E.AbilityWisAbbr": "感知",
+    "DND5E.AbilityWisAbbr": "wis",
     "DND5E.AbilityModifier": "属性调整值",
     "DND5E.AbilityPromptText": "什么类型的 {ability} 检定？",
     "DND5E.AbilityPromptTitle": "{ability} 属性检定",
@@ -651,9 +651,9 @@
     "MIGRATION.5eVersionTooOldWarning": "你的 D&D 5E 系统数据来自于过于陈旧的 Foundry 版本，无法可靠地迁移到最新版本。迁移流程将会尝试进行，但可能会发生错误。",
     "SETTINGS.5eNoAdvancementsL": "不提示升级或角色创建选项。",
     "DND5E.AbilityHon": "荣誉",
-    "DND5E.AbilityHonAbbr": "荣誉",
+    "DND5E.AbilityHonAbbr": "hon",
     "DND5E.AbilitySan": "理智",
-    "DND5E.AbilitySanAbbr": "理智",
+    "DND5E.AbilitySanAbbr": "san",
     "DND5E.AdvancementClassRestriction": "职业限制",
     "DND5E.AdvancementClassRestrictionNone": "所有职业",
     "DND5E.AdvancementClassRestrictionPrimary": "仅限原始职业",
@@ -889,7 +889,7 @@
     "TYPES.Item.toolPl": "工具",
     "TYPES.Item.weapon": "武器",
     "TYPES.Item.weaponPl": "武器",
-    "DND5E.AbbreviationKg": "千克",
+    "DND5E.AbbreviationKg": "kg",
     "DND5E.AdvancementConfigureDropAreaHint": "将物品拖放至此处。玩家可以在升级时选择此处物品。",
     "DND5E.AdvancementFlowDropAreaHint": "将物品拖放至此处并选中。",
     "DND5E.AdvancementHint": "提示语",
@@ -965,7 +965,7 @@
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
     "SOURCE.BOOK.SRD": "SRD 5.1",
     "DND5E.AbilityScorePl": "属性值",
-    "DND5E.ActionAbbr": "动作",
+    "DND5E.ActionAbbr": "A",
     "DND5E.AdditionalControls": "额外控件",
     "DND5E.ArmorMediumProficiency": "中型",
     "DND5E.ArmorLightProficiency": "轻型",
@@ -986,7 +986,7 @@
         "NotGMError": "/award 命令只对 GM 可用。",
         "Action": "奖励"
     },
-    "DND5E.BonusActionAbbr": "附赠动作",
+    "DND5E.BonusActionAbbr": "BA",
     "DND5E.Conditions": "状态",
     "DND5E.Confirm": "确认",
     "DND5E.ConcentratingLimited": "你无法专注于额外效应。",
@@ -1468,7 +1468,7 @@
         }
     },
     "DND5E.ItemConsumableProperties": "消耗品属性",
-    "DND5E.ReactionAbbr": "反应",
+    "DND5E.ReactionAbbr": "R",
     "DND5E.FavoriteRemove": "移除收藏",
     "DND5E.SpellSlotsN.two": "{n} 环法术位",
     "DND5E.TimeDayAbbr": "天",
@@ -3645,12 +3645,12 @@
                     "Label": "黎明"
                 },
                 "LongRest": {
-                    "Abbreviation": "长休",
+                    "Abbreviation": "LR",
                     "Label": "长休"
                 },
                 "ShortRest": {
                     "Label": "短休",
-                    "Abbreviation": "短休"
+                    "Abbreviation": "SR"
                 },
                 "Turn": {
                     "Label": "每回合"
@@ -4320,7 +4320,7 @@
                 "Group": "在短休期间，团队成员可以消耗生命骰，并恢复物品的使用次数。",
                 "Normal": "在短休期间，你可以消耗生命骰，并恢复物品的使用次数。"
             },
-            "Abbreviation": "短休",
+            "Abbreviation": "SR",
             "Label": "短休",
             "LabelShort": "短休",
             "Recovery": "短休后恢复",
@@ -4336,7 +4336,7 @@
                 "NormalLegacy": "在一次长休中，你会恢复生命值、最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。",
                 "GroupLegacy": "在一次长休中，团队成员们会恢复生命值、最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。"
             },
-            "Abbreviation": "长休",
+            "Abbreviation": "LR",
             "Label": "长休",
             "LabelShort": "长休",
             "Recovery": "长休后恢复",
@@ -4417,7 +4417,7 @@
             "Label": "体积单位",
             "Liter": {
                 "Label": "公升",
-                "Abbreviation": "升"
+                "Abbreviation": "L"
             }
         },
         "TIME": {
