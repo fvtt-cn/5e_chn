@@ -1332,6 +1332,16 @@
                 "Hint": "启用可选的理智属性值功能。",
                 "Name": "理智属性值"
             }
+        },
+        "PERMISSIONS": {
+            "AllowSummoning": {
+                "Hint": "允许玩家使用召唤能力来召唤角色。玩家还必须拥有“创建指示物”核心权限，此功能才能生效。",
+                "Name": "允许召唤"
+            },
+            "AllowTransformation": {
+                "Hint": "允许玩家使用自己的角色进行变形。玩家还必须拥有“创建指示物”核心权限，此功能才能生效。",
+                "Name": "允许变形"
+            }
         }
     },
     "SHEETS.DND5E": {
@@ -4977,5 +4987,8 @@
             "Transformation": "变形"
         },
         "Title": "变形"
-    }
+    },
+    "SOURCE.BOOK.FreeRules": "免费规则",
+    "SOURCE.BOOK.SRD51": "系统参考文档 5.1",
+    "SOURCE.BOOK.SRD52": "系统参考文档 5.2"
 }
