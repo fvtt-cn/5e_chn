@@ -1090,7 +1090,7 @@
         }
     },
     "DND5E.MovementSpeeds": "移动速度",
-    "DND5E.SheetClassMapLocation": "默认 5e 地图位置卡",
+    "DND5E.SheetClassMapLocation": "默认 5e 地图地点卡",
     "DND5E.SheetClassRule": "默认 5e 规则卡",
     "DND5E.SheetClassToken": "默认 5e 指示物卡",
     "DND5E.SheetClassContainer": "默认 5e 容器卡",
@@ -1400,7 +1400,7 @@
     "DND5E.Maximum": "最大",
     "DND5E.SpellcastingClass": "{class} 施法",
     "DND5E.SpellSlotN.few": "第 {n} 个法术位",
-    "TYPES.JournalEntryPage.map": "地图位置",
+    "TYPES.JournalEntryPage.map": "地图地点",
     "DND5E.SpellSlotsPact": "契约法术位",
     "DND5E.ModuleArtPriorityHint": "使用箭头调整立绘来源的优先级。当一个角色的来源有多个时，优先级最高的将被使用。",
     "DND5E.ContainerMaxDepth": "容器不能嵌套超过 {depth} 层。",
@@ -4990,5 +4990,12 @@
     },
     "SOURCE.BOOK.FreeRules": "免费规则",
     "SOURCE.BOOK.SRD51": "系统参考文档 5.1",
-    "SOURCE.BOOK.SRD52": "系统参考文档 5.2"
+    "SOURCE.BOOK.SRD52": "系统参考文档 5.2",
+    "DND5E.JOURNALENTRY": {
+        "Navigation": {
+            "Next": "下一步",
+            "Previous": "上一步",
+            "Up": "升起"
+        }
+    }
 }
