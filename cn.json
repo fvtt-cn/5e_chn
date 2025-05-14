@@ -1834,7 +1834,7 @@
     "TYPES.ActiveEffect.enchantment": "附魔",
     "TYPES.ActiveEffect.enchantmentPl": "附魔",
     "DOCUMENT.DND5E": {
-        "Activity": "行为",
+        "Activity": "行动",
         "Warning": {
             "SelectType": "必须选择 {name} 的生物类型。"
         },
