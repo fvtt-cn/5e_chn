@@ -1882,7 +1882,8 @@
                 "Counted": {
                     "one": "{number} 传奇动作",
                     "other": "{number} 传奇动作"
-                }
+                },
+                "Header": ""
             },
             "TurnEnd": {
                 "Label": "结束回合"
@@ -1895,6 +1896,14 @@
             },
             "ShortRest": {
                 "Label": "短休结束"
+            },
+            "Action": {
+                "Header": "动作",
+                "Label": "动作"
+            },
+            "BonusAction": {
+                "Header": "附赠动作",
+                "Label": "附赠动作"
             }
         }
     },
