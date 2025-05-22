@@ -1904,6 +1904,14 @@
             "BonusAction": {
                 "Header": "附赠动作",
                 "Label": "附赠动作"
+            },
+            "Crew": {
+                "Header": "乘员动作",
+                "Label": "乘员动作"
+            },
+            "Mythic": {
+                "Header": "神话动作",
+                "Label": "神话动作"
             }
         }
     },
@@ -2905,6 +2913,20 @@
                 },
                 "count": {
                     "label": "数量"
+                },
+                "element": {
+                    "count": {
+                        "label": "数量"
+                    },
+                    "cr": {
+                        "label": "挑战等级",
+                        "abbr": "CR",
+                        "hint": "被召唤生物的最大挑战等级。"
+                    },
+                    "level": {
+                        "label": "环阶限制",
+                        "hint": "使用此配置所需的环阶范围。"
+                    }
                 }
             },
             "summon": {
@@ -3201,6 +3223,23 @@
                     "label": "物品类型",
                     "hint": "此附魔可施加的物品类型。",
                     "Any": "任意附魔类型"
+                }
+            },
+            "effects.element": {
+                "riders": {
+                    "label": "附着",
+                    "activity": {
+                        "label": "额外动作",
+                        "hint": "当施加此附魔时，这些额外行动将被添加到被附魔物品中，当移除附魔时则会被移除。"
+                    },
+                    "effect": {
+                        "label": "额外效应",
+                        "hint": "当施加此附魔时，这些额外效应将被添加到被附魔物品上，当移除此附魔时，这些效应也将被移除。"
+                    },
+                    "item": {
+                        "label": "额外物品",
+                        "hint": "当生物的某个物品被附魔时，这些额外的物品将被添加到该生物上，如果附魔被移除，这些额外的物品也将被移除。"
+                    }
                 }
             }
         },
@@ -4313,7 +4352,7 @@
         "Config": "调整生命骰数",
         "Counted": {
             "one": "{number} 生命骰",
-            "other": "{数量} 生命骰"
+            "other": "{number} 生命骰"
         }
     },
     "DND5E.Items": "物品",
@@ -5006,5 +5045,47 @@
             "Previous": "上一步",
             "Up": "升起"
         }
-    }
+    },
+    "DND5E.ITEM": {
+        "Category": {
+            "Physical": "物理",
+            "Label": "分类"
+        },
+        "Property": {
+            "Adamantine": "精金",
+            "Ammunition": "弹药",
+            "Concentration": "专注",
+            "Heavy": "重型",
+            "Light": "轻型",
+            "Firearm": "枪械",
+            "Focus": "法器",
+            "Magical": "魔法",
+            "Reach": "触及",
+            "Reload": "弹容",
+            "Returning": "回力",
+            "Ritual": "仪式",
+            "Silvered": "镀银",
+            "Somatic": "姿势",
+            "Special": "特殊",
+            "StealthDisadvantage": "隐匿劣势",
+            "Thrown": "投掷",
+            "Trait": "被动特质",
+            "TwoHanded": "双手",
+            "Versatile": "多用",
+            "Verbal": "言语",
+            "WeightlessContents": "无重量内容",
+            "Finesse": "灵巧",
+            "Loading": "装填",
+            "Material": "材料"
+        },
+        "SECTIONS": {
+            "Activities": "行动组合",
+            "Advancement": "升级",
+            "Contents": "内容",
+            "Description": "描述",
+            "Details": "详情",
+            "Effects": "效应"
+        }
+    },
+    "DND5E.Remaining": "剩余"
 }
