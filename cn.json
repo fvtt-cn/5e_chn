@@ -1883,7 +1883,8 @@
                     "one": "{number} 传奇动作",
                     "other": "{number} 传奇动作"
                 },
-                "Header": ""
+                "Header": "传奇动作",
+                "Label": "传奇动作"
             },
             "TurnEnd": {
                 "Label": "结束回合"
@@ -1912,6 +1913,26 @@
             "Mythic": {
                 "Header": "神话动作",
                 "Label": "神话动作"
+            },
+            "Hour": {
+                "Header": "小时",
+                "Label": "小时"
+            },
+            "Day": {
+                "Header": "天",
+                "Label": "天"
+            },
+            "Minute": {
+                "Header": "分钟",
+                "Label": "分钟"
+            },
+            "Lair": {
+                "Header": "巢穴动作",
+                "Label": "巢穴动作"
+            },
+            "Reaction": {
+                "Header": "反应",
+                "Label": "反应"
             }
         }
     },
@@ -3239,6 +3260,16 @@
                     "item": {
                         "label": "额外物品",
                         "hint": "当生物的某个物品被附魔时，这些额外的物品将被添加到该生物上，如果附魔被移除，这些额外的物品也将被移除。"
+                    }
+                },
+                "level": {
+                    "label": "等级限制",
+                    "max": {
+                        "label": "最大等级"
+                    },
+                    "hint": "使用此附魔所需的等级范围。",
+                    "min": {
+                        "label": "最小等级"
                     }
                 }
             }
