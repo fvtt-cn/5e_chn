@@ -1603,7 +1603,7 @@
     "DND5E.ItemToolDetails": "工具详情",
     "DND5E.ItemToolUsage": "工具使用",
     "DND5E.LevelLimit": {
-        "Label": "等级限制",
+        "Label": "环阶限制",
         "Max": "最大环阶",
         "Min": "最低环阶"
     },
@@ -1845,7 +1845,7 @@
             "activation": {
                 "condition": {
                     "label": "激活条件",
-                    "hint": "激活此项行为所需的条件。"
+                    "hint": "激活此项行动所需的条件。"
                 },
                 "label": "激活",
                 "type": {
@@ -2447,7 +2447,7 @@
     "DND5E.CONSUMABLE": {
         "Type": {
             "Ammunition": {
-                "BulletFirearm": "子弹，火器",
+                "BulletFirearm": "子弹，枪械",
                 "Label": "弹药",
                 "Arrow": "箭矢",
                 "Bolt": "弩矢",
@@ -3267,7 +3267,7 @@
                 "riders": {
                     "label": "附着",
                     "activity": {
-                        "label": "额外动作",
+                        "label": "额外行动",
                         "hint": "当施加此附魔时，这些额外行动将被添加到被附魔物品中，当移除附魔时则会被移除。"
                     },
                     "effect": {
@@ -3280,7 +3280,7 @@
                     }
                 },
                 "level": {
-                    "label": "等级限制",
+                    "label": "环阶限制",
                     "max": {
                         "label": "最大环阶"
                     },
