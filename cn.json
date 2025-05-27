@@ -2700,6 +2700,9 @@
                 "spent": {
                     "label": "消耗生命骰"
                 }
+            },
+            "properties": {
+                "label": "职业属性"
             }
         },
         "Multiclass": {
@@ -4301,7 +4304,7 @@
         "Label": "传奇动作",
         "Max": "最大传奇动作",
         "Remaining": "剩余传奇动作",
-        "Description": "传奇动作使用次数：{uses}。",
+        "Description": "传奇动作使用次数：{uses}。在其他生物回合结束后，{name} 可以立即消耗一次使用次数，以执行以下任一行动。{name} 在其每个回合开始时恢复所有已消耗的使用次数。",
         "DescriptionLegacy": "{name}可以使用{usesNamed}次传奇动作，从以下选项中选择。每次只能使用一项传奇动作，并且只能在其他生物回合结束时使用。{name}在自己的回合开始时恢复已使用的传奇动作。",
         "LairUses": "{normal} （{lair} 处于巢穴中）"
     },
@@ -5164,7 +5167,8 @@
             "WeightlessContents": "无重量内容",
             "Finesse": "灵巧",
             "Loading": "装填",
-            "Material": "材料"
+            "Material": "材料",
+            "Sidekick": "伙伴"
         },
         "SECTIONS": {
             "Activities": "行动组合",
