@@ -317,28 +317,37 @@
     },
     "FIELDS": {
       "cap": {
-        "label": "Point Cap",
-        "hint": "Maximum number of points a player can assign to a single score."
+        "hint": "Maximum number of points a player can assign to a single score.",
+        "label": "Point Cap"
+      },
+      "fixed": {
+        "hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process.",
+        "label": "Fixed Improvement"
       },
       "locked": {
-        "label": "Locked",
         "hint": "Ability cannot be improved.",
+        "label": "Locked",
         "locked": "Ability cannot be improved.",
         "unlocked": "Ability may be improved."
       },
-      "fixed": {
-        "label": "Fixed Improvement",
-        "hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process."
+      "max": {
+        "hint": "Increase the maximum score from what is allowed on the actor.",
+        "label": "Maximum"
       },
       "points": {
-        "label": "Points",
-        "hint": "Number of points that can be assigned to any unlocked ability score.",
         "decrease": "Decrease Points",
-        "increase": "Increase Points"
+        "hint": "Number of points that can be assigned to any unlocked ability score.",
+        "increase": "Increase Points",
+        "label": "Points"
+      },
+      "recommendation": {
+        "hint": "Epic Boon feat recommended by this class.",
+        "label": "Recommendation"
       }
     },
     "Hint": "Allow the player to increase one or more ability scores or take an optional feat.",
     "Journal": {
+      "DescriptionEpic": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. {recommendation} is recommended.</p>",
       "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
       "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
       "Name": "Ability Score Improvement"
@@ -349,8 +358,8 @@
       "other": "{points} Points Remaining"
     },
     "Title": "Ability Score Improvement",
+    "TitleEpic": "Epic Boon",
     "Warning": {
-      "Level": "Must be at least level {level} to take this feat.",
       "Type": "Only features with the \"feat\" type can be selected."
     }
   },
@@ -436,10 +445,8 @@
     },
     "Title": "Choose Items",
     "Warning": {
-      "FeatureLevel": "Must be at least level {level} to take this feature.",
       "InvalidType": "Only {type} items can be selected for this choice.",
       "NoOriginal": "Previously selected choice no longer available for replacement.",
-      "PreviouslyChosen": "This item has already been chosen at a previous level.",
       "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
       "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
       "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
@@ -3018,16 +3025,26 @@
   "Header": "Feature Prerequisites",
   "FIELDS": {
     "prerequisites": {
+      "items": {
+        "hint": "Identifiers for items that the character must have before selecting this item.",
+        "label": "Required Items"
+      },
       "label": "Prerequisites",
       "level": {
-        "label": "Required Level",
-        "hint": "Character or class level required to select this feature when levelling up."
+        "hint": "Character or class level required to select this feature when levelling up.",
+        "label": "Required Level"
       },
       "repeatable": {
         "hint": "This feature can be chosen more than once.",
         "label": "Repeatable"
       }
     }
+  },
+  "Warning": {
+    "InvalidLevel": "must be at least level {level}",
+    "Message": "{actor} {requirements} in order to take this {type}.",
+    "MissingItem": "must have previously taken {items}",
+    "NotRepeatable": "must not have taken this before"
   }
 },
 "DND5E.Price": "Price",
@@ -4889,6 +4906,7 @@
   "AwardEach": "{award} each",
   "CheckShort": "{check}",
   "CheckLong": "{check} check",
+  "CheckUsing": "{check} using {tool}",
   "DamageExtended": "<em>Hit:</em> {damage} damage",
   "DamageDouble": "{first} plus {second}",
   "DamageShort": "{formula} {type}",
