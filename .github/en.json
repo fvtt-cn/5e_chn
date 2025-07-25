@@ -374,6 +374,12 @@
     "AnyLevel": "Any",
     "Details": "Advancement Details"
   },
+  "Defaults": {
+    "BackgroundFeat": "Background Feat",
+    "BackgroundFeature": "Background Feature",
+    "BackgroundProficiencies": "Background Proficiencies",
+    "ChooseLanguages": "Choose Languages"
+  },
   "HitPoints": {
     "Action": {
       "Roll": "Roll {die}"
@@ -391,6 +397,10 @@
     }
   },
   "ItemChoice": {
+    "Action": {
+      "SelectGeneric": "Select Item",
+      "SelectSpecific": "Select {type}"
+    },
     "Choose": "choose {count}",
     "Chosen": "Chosen: {current} of {max}",
     "Details": "Choice Details",
@@ -446,6 +456,7 @@
     "Title": "Choose Items",
     "Warning": {
       "InvalidType": "Only {type} items can be selected for this choice.",
+      "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
       "NoOriginal": "Previously selected choice no longer available for replacement.",
       "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
       "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
@@ -4297,6 +4308,9 @@
         "types": {
           "hint": "List of creature types from which the source creature can be selected.",
           "label": "Creature Types"
+        },
+        "uuid": {
+          "label": "Linked Actor"
         }
       },
       "label": "Transform Profiles"
@@ -4314,9 +4328,8 @@
       "mode": {
         "label": "Mode",
         "hint": "Sets how the transformation source creatures are selected.",
-        "Appearance": "Appearance Only",
-        "Default": "Compendium Browser",
-        "Direct": "Direct Link"
+        "CR": "By Challenge Rating",
+        "Direct": "By Direct Link"
       },
       "preset": {
         "label": "Preset"
@@ -4342,6 +4355,7 @@
       "Delete": "Delete Profile"
     },
     "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
+    "DropHint": "Drop creature here",
     "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
     "Label": "Transform Profile"
   },
