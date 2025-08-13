@@ -1963,6 +1963,13 @@
                     "increase": "增加点数",
                     "label": "点数",
                     "hint": "可分配给任何未锁定的属性值的点数。"
+                },
+                "max": {
+                    "label": "最大值",
+                    "hint": "将属性值提升至该角色允许的最大值。"
+                },
+                "recommendation": {
+                    "label": "推荐"
                 }
             },
             "Hint": "允许玩家提升一项或多项属性值，或者选择一项可选专长。",
@@ -1983,11 +1990,13 @@
             "Journal": {
                 "DescriptionLegacy": "<p>当你达到{firstLevelOrdinal}级，以及再次达到{otherLevelsOrdinal}级时，你可以选择将一项属性值增加 2，或者选择将两项属性值各增加 1。和往常一样，使用此专长时，你不能将属性值提升至{maxAbilityScore}以上。</p><p>使用可选的专长规则时，你可以放弃此专长，转而选择一项专长。</p>",
                 "DescriptionModern": "<p>你获得属性提升专长或其他你选择的符合条件的专长。你在 {class} 的 {otherLevels} 级中再次获得此专长。</p>",
-                "Name": "属性值提升"
+                "Name": "属性值提升",
+                "DescriptionEpic": "<p>你获得一项传奇恩惠专长或其他一项你选择的适用的专长。推荐选择{recommendation}。</p>"
             },
             "Action": {
                 "Select": "选择专长"
-            }
+            },
+            "TitleEpic": "传奇恩惠"
         },
         "SPELLCONFIG": {
             "FreeCasting": "免费施法",
@@ -2302,6 +2311,12 @@
             "Hint": "选择以下哪项升级将添加到 {name} 中。",
             "Selection": "升级选项",
             "Title": "迁移升级"
+        },
+        "Defaults": {
+            "BackgroundFeature": "背景特性",
+            "BackgroundFeat": "背景专长",
+            "BackgroundProficiencies": "背景熟练项",
+            "ChooseLanguages": "选择语言"
         }
     },
     "DND5E.ACTIVITY": {
@@ -3828,12 +3843,15 @@
             "Score": "{ability} 值"
         },
         "Configure": {
-            "Title": "配置 {ability}"
+            "Title": "配置 {ability}",
+            "SaveLabel": "{ability} 豁免",
+            "CheckLabel": "{ability} 检定"
         }
     },
     "TYPES.ChatMessage": {
         "turn": "战斗回合信息",
-        "rest": "休息信息"
+        "rest": "休息信息",
+        "request": "请求信息"
     },
     "TYPES.Item.facility": "设施",
     "TYPES.Item.facilityPl": "设施",
@@ -5179,5 +5197,8 @@
             "Effects": "效应"
         }
     },
-    "DND5E.Remaining": "剩余"
+    "DND5E.Remaining": "剩余",
+    "TYPES.RegionBehavior": {
+        "dnd5e.difficultTerrain": "困难地形"
+    }
 }
