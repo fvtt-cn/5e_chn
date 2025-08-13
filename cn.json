@@ -386,21 +386,21 @@
     "DND5E.SpellEffects": "法术效应",
     "DND5E.SpellLevel": "法术环阶",
     "DND5E.SpellLevel0": "戏法",
-    "DND5E.SpellLevel1": "1环",
-    "DND5E.SpellLevel2": "2环",
-    "DND5E.SpellLevel3": "3环",
-    "DND5E.SpellLevel4": "4环",
-    "DND5E.SpellLevel5": "5环",
-    "DND5E.SpellLevel6": "6环",
-    "DND5E.SpellLevel7": "7环",
-    "DND5E.SpellLevel8": "8环",
-    "DND5E.SpellLevel9": "9环",
+    "DND5E.SpellLevel1": "1 环",
+    "DND5E.SpellLevel2": "2 环",
+    "DND5E.SpellLevel3": "3 环",
+    "DND5E.SpellLevel4": "4 环",
+    "DND5E.SpellLevel5": "5 环",
+    "DND5E.SpellLevel6": "6 环",
+    "DND5E.SpellLevel7": "7 环",
+    "DND5E.SpellLevel8": "8 环",
+    "DND5E.SpellLevel9": "9 环",
     "DND5E.SpellLevelPact": "契约法术位",
     "DND5E.SpellLevelSlot": "{level} ({n} 法术位)",
     "DND5E.SpellMaterials": "施法材料",
     "DND5E.SpellName": "法术名",
     "DND5E.SpellNone": "无",
-    "DND5E.SpellPrepAlways": "始终可用",
+    "DND5E.SpellPrepAlways": "始终准备",
     "DND5E.SpellPrepAtWill": "随意施法",
     "DND5E.SpellPrepInnate": "天生法术",
     "DND5E.SpellPrepPrepared": "需要准备",
@@ -738,7 +738,7 @@
     "DND5E.Feature.Monster": "怪物特性",
     "DND5E.GroupInventory": "所持物",
     "DND5E.GroupHP": "总体生命值",
-    "DND5E.GroupSummary": "一组 {members}",
+    "DND5E.GroupSummary": "一小队 {members}",
     "JOURNALENTRYPAGE.DND5E.TableTOC": "表格：{caption}",
     "DND5E.ActiveEffectOverrideWarning": "该值被一个激活效应所修改，无法被编辑。禁用该效应以修改。",
     "DND5E.AttunementMax": "最大同调物品",
@@ -903,7 +903,7 @@
     "DND5E.TimeDispTrig": "至取消法术或触发条件",
     "DND5E.ToolPromptTitle": "{tool}检定",
     "DND5E.ToolConfigure": "配置工具熟练",
-    "TYPES.JournalEntryPage.class": "职业描述",
+    "TYPES.JournalEntryPage.class": "职业概要",
     "DND5E.AbilityScoreMax": "最大属性值",
     "TYPES.Item.racePl": "种族",
     "TYPES.Item.race": "种族",
@@ -915,7 +915,7 @@
     "DND5E.ItemToolStatus": "工具状态",
     "DND5E.ConsumeScalingTooltip": "勾选后，耗用额外的资源将提高所施放法术的环阶。",
     "DND5E.Focus.Druidic": "德鲁伊法器",
-    "DND5E.GroupSummaryEmpty": "空组",
+    "DND5E.GroupSummaryEmpty": "空小队",
     "DND5E.Dusk": "黄昏",
     "DND5E.FlagsTavernBrawler": "酒馆斗殴者专长",
     "DND5E.ConsumeHitDiceLargestLong": "最大可用生命骰",
@@ -1029,7 +1029,7 @@
             "one": "成员",
             "other": "成员"
         },
-        "Type": "组类型",
+        "Type": "小队类型",
         "Primary": {
             "Set": "设为主要队伍",
             "Remove": "移除主要队伍"
@@ -1039,8 +1039,24 @@
             "other": "载具",
             "one": "载具"
         },
-        "TypeGeneric": "组",
-        "PlaceMembers": "放置成员"
+        "TypeGeneric": "小队",
+        "PlaceMembers": "放置角色",
+        "Action": {
+            "Remove": "移除角色",
+            "View": "查看角色"
+        },
+        "Config": {
+            "Art": {
+                "Label": "角色艺术",
+                "portraits": "立绘",
+                "tokens": "Tokens"
+            },
+            "Legend": "小队卡选项"
+        },
+        "Distribute": {
+            "noxp": "分配资金",
+            "xp": "分配经验值和资金"
+        }
     },
     "DND5E.HitPointsTempMaxShort": "临时最大生命值",
     "DND5E.Item": {
@@ -1134,7 +1150,8 @@
         "PassiveShort": "被动 {check}",
         "PassiveLong": "被动 {check} 值",
         "AttackLong": "{formula} 命中",
-        "AttackShort": "{formula}"
+        "AttackShort": "{formula}",
+        "CheckUsing": "使用{tool}进行{check}"
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -1180,7 +1197,8 @@
             "Hint": "自动折叠聊天卡中出现的伤害、命中和效应托盘。",
             "Always": "全部折叠",
             "Older": "折叠旧消息",
-            "Never": "全部展开"
+            "Never": "使用后折叠",
+            "Manual": "从不折叠"
         },
         "BLOODIED": {
             "Name": "浴血状态",
@@ -1341,6 +1359,16 @@
             "AllowTransformation": {
                 "Hint": "允许玩家使用自己的角色进行变形。玩家还必须拥有“创建指示物”核心权限，此功能才能生效。",
                 "Name": "允许变形"
+            },
+            "AllowRests": {
+                "Name": "允许个人休息",
+                "Hint": "允许玩家直接从角色卡中进行休息。若禁用此功能，玩家仅能在GM向队伍发起请求时休息。"
+            }
+        },
+        "AUTOMATION": {
+            "Movement": {
+                "Name": "禁用移动自动化",
+                "Hint": "不应用困难地形移动惩罚，且不依据规则版本限制生物彼此穿越的移动行为。"
             }
         }
     },
@@ -1619,8 +1647,18 @@
                 "repeatable": {
                     "hint": "此特性可被多次选择。",
                     "label": "复选"
+                },
+                "items": {
+                    "hint": "选择此项前角色必须拥有的物品标识符。",
+                    "label": "需求物品"
                 }
             }
+        },
+        "Warning": {
+            "InvalidLevel": "必须至少达到 {level} 级",
+            "Message": "{actor}需满足{requirements}方可进行该{type}操作。",
+            "MissingItem": "必须已完成{items}",
+            "NotRepeatable": "必须未完成此项"
         }
     },
     "DND5E.Scroll": {
@@ -1793,7 +1831,8 @@
             "Label": "过滤器",
             "HasDarkvision": "有黑暗视觉",
             "HasSpellcasting": "有施法能力",
-            "SearchResults": "搜索结果"
+            "SearchResults": "搜索结果",
+            "Grouped": "{type}（{group}）"
         },
         "Tabs": {
             "Feat.other": "专长",
@@ -1969,7 +2008,8 @@
                     "hint": "将属性值提升至该角色允许的最大值。"
                 },
                 "recommendation": {
-                    "label": "推荐"
+                    "label": "推荐",
+                    "hint": "此职业推荐的传奇恩惠专长。"
                 }
             },
             "Hint": "允许玩家提升一项或多项属性值，或者选择一项可选专长。",
@@ -2020,6 +2060,12 @@
                             "label": "所需法术位",
                             "hint": "使用有限次数时需要耗用一个法术位。若未勾选，则这些使用次数将是额外的免费使用次数，不会消耗法术位。"
                         }
+                    },
+                    "method": {
+                        "label": "施法方法"
+                    },
+                    "prepared": {
+                        "label": "准备"
                     }
                 }
             }
@@ -2137,6 +2183,10 @@
                     },
                     "type": {
                         "label": "类型"
+                    },
+                    "list": {
+                        "hint": "仅允许使用这些列表中的法术。",
+                        "label": "法术列表"
                     }
                 },
                 "type": {
@@ -2157,7 +2207,13 @@
                 "NoOriginal": "之前选择的选项不再可供替换。",
                 "SpellLevelAvailable": "只有 {level} 或更低的法术可在此次升级中被选择。",
                 "PreviouslyChosen": "该物品已在先前的升级中被选中。",
-                "SpellLevelSpecific": "只有 {level} 的法术可在此次升级中被选择。"
+                "SpellLevelSpecific": "只有 {level} 的法术可在此次升级中被选择。",
+                "MaxSelected": "无法选择更多物品，请先取消勾选已选物品后再进行选择。",
+                "SpellList": "只有在 {lists} 法术列表中出现的法术才能被选作此次升级的法术。"
+            },
+            "Action": {
+                "SelectGeneric": "选择物品",
+                "SelectSpecific": "选择 {type}"
             }
         },
         "ScaleValue": {
@@ -3196,7 +3252,8 @@
                 "Create": "创建附魔",
                 "Delete": "删除附魔"
             },
-            "Empty": "没有相关附魔。使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个现有的附魔。"
+            "Empty": "没有相关附魔。使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个现有的附魔。",
+            "Active": "{name}（激活）"
         },
         "FIELDS": {
             "effects": {
@@ -3258,6 +3315,10 @@
                 "identifier": {
                     "label": "职业识别符",
                     "hint": "用于确定是使用角色等级还是特定职业等级来限制附魔等级的识别符。"
+                },
+                "self": {
+                    "label": "自动附魔自身",
+                    "hint": "当使用该行动时，自动将选定附魔效应施加于包含该行动的物品上；当该行动再次使用时，则移除该附魔效应。"
                 }
             },
             "restrictions": {
@@ -3479,7 +3540,8 @@
     "DND5E.SpellPreparation": {
         "Label": "法术准备",
         "Formula": "准备公式",
-        "Mode": "法术准备模式"
+        "Mode": "法术准备模式",
+        "Method": "施法方法"
     },
     "DND5E.Spent": "消耗",
     "DND5E.SubclassAdd": "添加子职",
@@ -3820,11 +3882,11 @@
                 },
                 "prompt": {
                     "label": "掷骰提示",
-                    "hint": "掷骰时是否应显示掷骰配置对话框？"
+                    "hint": "掷骰时显示掷骰配置对话框。"
                 },
                 "visible": {
                     "label": "所有人可见",
-                    "hint": "掷骰按钮应该对所有玩家可见吗？"
+                    "hint": "在聊天中对所有玩家显示掷骰按钮。"
                 }
             }
         }
@@ -4003,7 +4065,14 @@
         "Deltas": {
             "Recovery": "恢复"
         },
-        "Activities": "行动组合"
+        "Activities": "行动组合",
+        "REQUEST": {
+            "Action": {
+                "Handle": "处理请求"
+            },
+            "Complete": "请求已处理",
+            "PartyMembers": "队伍成员"
+        }
     },
     "DND5E.FACILITY": {
         "FIELDS": {
@@ -4324,7 +4393,9 @@
         "Remaining": "剩余传奇动作",
         "Description": "传奇动作使用次数：{uses}。在其他生物回合结束后，{name} 可以立即消耗一次使用次数，以执行以下任一行动。{name} 在其每个回合开始时恢复所有已消耗的使用次数。",
         "DescriptionLegacy": "{name}可以使用{usesNamed}次传奇动作，从以下选项中选择。每次只能使用一项传奇动作，并且只能在其他生物回合结束时使用。{name}在自己的回合开始时恢复已使用的传奇动作。",
-        "LairUses": "{normal} （{lair} 处于巢穴中）"
+        "LairUses": "{normal} （{lair} 处于巢穴中）",
+        "LabelPl": "传奇动作",
+        "Spent": "已使用传奇动作"
     },
     "DND5E.LegendaryResistance": {
         "Ordinal": {
@@ -4339,7 +4410,9 @@
         "Label": "传奇抗性",
         "Max": "最大传奇抗性",
         "Remaining": "剩余传奇抗性",
-        "Resisted": "使用传奇抗性"
+        "Resisted": "使用传奇抗性",
+        "LabelPl": "传奇抗性",
+        "Spent": "已使用传奇抗性"
     },
     "DND5E.NPC": {
         "SECTIONS": {
@@ -4408,6 +4481,9 @@
         "Counted": {
             "one": "{number} 生命值",
             "other": "{number} 生命值"
+        },
+        "DT": {
+            "Abbr": "DT"
         }
     },
     "DND5E.HitPointsOverrideHint": "覆盖自动计算的生命值，忽略来自职业、加值和属性调整的生命值。",
@@ -4422,7 +4498,8 @@
         "Counted": {
             "one": "{number} 生命骰",
             "other": "{number} 生命骰"
-        }
+        },
+        "Abbreviation": "HD"
     },
     "DND5E.Items": "物品",
     "DND5E.NUMBER": {
@@ -4494,6 +4571,16 @@
         "RecoverTempMaxHP": {
             "Hint": "移除对角色最大生命值的任何调整值。",
             "Label": "恢复最大生命值"
+        },
+        "Request": {
+            "AutoRest": {
+                "Hint": "对于选定的队伍角色自动执行休息操作，而不是向玩家发送休息请求。",
+                "Label": "自动休息"
+            },
+            "Label": "休息需求"
+        },
+        "Warning": {
+            "OnlyByRequest": "仅在GM要求时进行休息。"
         }
     },
     "DND5E.SKILL": {
@@ -4735,7 +4822,8 @@
             "Lair": "XP {value}，在巢穴内为 {lair}"
         },
         "Value": "XP 值",
-        "Current": "当前 XP"
+        "Current": "当前 XP",
+        "Pool": "经验池"
     },
     "DND5E.VEHICLE": {
         "MOUNTABLE": {
@@ -4863,7 +4951,8 @@
                 "label": "状态条件",
                 "hint": "在受该激活效应影响时，目标将被视为具有这些额外的状态条件。"
             }
-        }
+        },
+        "AttributeKeyTooltip": "常见按键列表请参阅<a href=\"{url}\">百科</a>。"
     },
     "DND5E.CONDITIONS": {
         "RiderConditions": {
@@ -4962,6 +5051,15 @@
                 },
                 "Vision": {
                     "Label": "视觉"
+                },
+                "Resistances": {
+                    "Label": "伤害抗性"
+                },
+                "GearProficiency": {
+                    "Label": "装备熟练"
+                },
+                "Languages": {
+                    "Label": "语言"
                 }
             },
             "Merge": {
@@ -4993,6 +5091,14 @@
                 },
                 "transformTokens": {
                     "label": "变形指示物"
+                },
+                "spellLists": {
+                    "hint": "若角色拥有对应物品，则这些法术列表中的法术将会被保留。",
+                    "label": "保留的法术列表"
+                },
+                "minimumAC": {
+                    "label": "最低护甲等级",
+                    "hint": "若目标角色的护甲等级未达更高数值，则此公式将用于定义变形后生物的护甲等级。"
                 }
             }
         },
@@ -5104,6 +5210,9 @@
                     "types": {
                         "label": "生物类型",
                         "hint": "来源生物可选的生物类型列表。"
+                    },
+                    "uuid": {
+                        "label": "链接角色"
                     }
                 }
             },
@@ -5122,7 +5231,8 @@
                     "hint": "设置来源生物的选取方式。",
                     "Appearance": "仅外观",
                     "Default": "合集包浏览器",
-                    "Direct": "直接链接"
+                    "Direct": "直接链接",
+                    "CR": "以挑战等级"
                 },
                 "preset": {
                     "label": "预设"
@@ -5136,7 +5246,8 @@
             },
             "ChallengeRatingLabel": "挑战等级为 {cr} 或更低",
             "Empty": "点击上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个配置。",
-            "Label": "变形配置"
+            "Label": "变形配置",
+            "DropHint": "拖放生物至此处"
         },
         "SECTIONS": {
             "Profiles": "配置",
@@ -5199,6 +5310,225 @@
     },
     "DND5E.Remaining": "剩余",
     "TYPES.RegionBehavior": {
-        "dnd5e.difficultTerrain": "困难地形"
+        "dnd5e.difficultTerrain": "困难地形",
+        "dnd5e.rotateArea": "旋转区域"
+    },
+    "DND5E.ACTOR": {
+        "Warning": {
+            "InvalidItem": "{itemType} 类型的物品无法添加到 {actorType} 中。",
+            "CreateActor": "你必须拥有“创建新角色”权限，才能直接从合集包中召唤角色。",
+            "NoActor": "无法找到 UUID 为 '{uuid}' 的角色进行召唤。",
+            "Singleton": "只能向一个 {actorType} 添加一个 {itemType}。"
+        }
+    },
+    "DND5E.REGIONBEHAVIORS": {
+        "DIFFICULTTERRAIN": {
+            "Type": {
+                "Ice": "光滑冰面",
+                "Magical": "魔法",
+                "Nonmagical": "非魔法",
+                "Plants": "植物或灌木",
+                "Rocks": "碎石或岩石",
+                "Slope": "陡坡",
+                "Snow": "深层积雪",
+                "Liquid": "浅层液体",
+                "All": "所有类型"
+            },
+            "FIELDS": {
+                "ignoredDispositions": {
+                    "hint": "具有此类特性的指示物将不受此困难地形的影响。",
+                    "label": "无视特性"
+                },
+                "magical": {
+                    "hint": "该困难地形是由魔法效应造成。",
+                    "label": "魔法"
+                },
+                "types": {
+                    "hint": "描述该困难地形来源的最佳类型（若存在）。",
+                    "label": "类型"
+                }
+            }
+        },
+        "ROTATEAREA": {
+            "FIELDS": {
+                "time": {
+                    "mode": {
+                        "hint": "旋转速度的确定方式有两种：一种基于旋转时间且与移动距离无关（固定转速），另一种则取决于旋转距离（可变转速）。",
+                        "label": "速度模式"
+                    },
+                    "value": {
+                        "hint": "旋转至下一位置（固定模式下）或旋转90度（可变模式下）所需的毫秒级时间。",
+                        "label": "旋转时间"
+                    }
+                },
+                "regions": {
+                    "ids": {
+                        "label": "区域"
+                    }
+                },
+                "directionMode": {
+                    "label": "旋转方向",
+                    "hint": "移动至下一位置时旋转方向的确定方法。"
+                },
+                "lights": {
+                    "ids": {
+                        "label": "光源"
+                    }
+                },
+                "positions": {
+                    "label": "位置",
+                    "element": {
+                        "angle": {
+                            "label": "角度"
+                        }
+                    }
+                },
+                "sounds": {
+                    "ids": {
+                        "label": "环境音"
+                    }
+                },
+                "walls": {
+                    "link": {
+                        "hint": "旋转与指定墙体段相连的所有墙体。",
+                        "label": "链接墙体"
+                    },
+                    "ids": {
+                        "label": "墙体"
+                    }
+                },
+                "tiles": {
+                    "ids": {
+                        "label": "图块"
+                    }
+                }
+            },
+            "DirectionMode": {
+                "Clockwise": "顺时针",
+                "Shortest": "最短",
+                "Longest": "最长",
+                "CounterClockwise": "逆时针"
+            },
+            "SpeedMode": {
+                "Fixed": "固定（总旋转时间）",
+                "Variable": "可变（旋转90度所需时间）"
+            },
+            "Action": {
+                "AddPosition": "添加位置",
+                "DeletePosition": "删除位置",
+                "RotateToPosition": "旋转至位置"
+            },
+            "Warning": {
+                "RecursiveRegion": "无法旋转包含该行为的相同区域。"
+            }
+        }
+    },
+    "DND5E.SPELLCASTING": {
+        "METHODS": {
+            "AtWill": {
+                "label": "随意"
+            },
+            "Innate": {
+                "label": "天生施法"
+            },
+            "Ritual": {
+                "label": "仅仪式"
+            },
+            "Spell": {
+                "label": "施法",
+                "Full": {
+                    "label": "全职施法者"
+                },
+                "Half": {
+                    "label": "半职施法者"
+                },
+                "Third": {
+                    "label": "1/3施法者"
+                },
+                "Artificer": {
+                    "label": "奇械师"
+                }
+            },
+            "Pact": {
+                "abbr": "契约",
+                "Full": {
+                    "label": "契约魔法"
+                },
+                "label": "契约魔法"
+            }
+        },
+        "STATES": {
+            "Unprepared": "未准备",
+            "Prepared": "已准备",
+            "AlwaysPrepared": "始终准备"
+        },
+        "SLOTS": {
+            "spell0": "戏法",
+            "spell2": "2 环",
+            "spell3": "3 环",
+            "spell1": "1 环",
+            "spell9": "9 环",
+            "spell4": "4 环",
+            "spell5": "5 环",
+            "spell6": "6 环",
+            "spell7": "7 环",
+            "spell8": "8 环"
+        }
+    },
+    "DND5E.Method": "方法",
+    "DND5E.SpellLevelSpell": "{level} （{n} 位）",
+    "DND5E.Preparation": "转杯",
+    "DND5E.SheetClass": {
+        "JournalEntryLegacy": "旧版 5e 日志条目卡",
+        "ClassSummary": "默认 5e 职业概要卡",
+        "Container": "默认 5e 容器卡",
+        "DifficultTerrain": "默认 5e 困难地形卡",
+        "Group": "默认 5e 小队卡",
+        "SpellList": "默认 5e 法术列表卡",
+        "Item": "默认 5e 物品卡",
+        "JournalEntry": "默认 5e 日志条目卡",
+        "MapLocation": "默认 5e 地图地点卡",
+        "NPC": "默认 5e 非玩家角色卡",
+        "RotateArea": "默认 5e 旋转区域卡",
+        "Character": "默认 5e 角色卡",
+        "Vehicle": "默认 5e 载具卡",
+        "Encounter": "默认 5e 遭遇卡",
+        "Rule": "默认 5e 规则卡",
+        "Token": "默认 5e 指示物卡"
+    },
+    "DND5E.MovementIgnoredDifficultTerrain": "无视困难地形",
+    "DND5E.Challenge": "挑战",
+    "DND5E.FlagsHalflingNimbleness": "半身人灵巧",
+    "DND5E.FlagsHalflingNimblenessHint": "穿越体型比你大的生物时不会受阻。",
+    "DND5E.FlagsToolExpertise": "工具专精",
+    "DND5E.FlagsToolExpertiseHint": "使用熟练的工具时所进行的任何属性检定均能够使用你的双倍的熟练加值。",
+    "TYPES.Actor.encounter": "遭遇",
+    "TYPES.Actor.encounterPl": "遭遇",
+    "DND5E.ENCOUNTER": {
+        "Difficulty": {
+            "high": "高难度",
+            "low": "低难度",
+            "moderate": "中等难度"
+        },
+        "Action": {
+            "Award": "奖励经验值与资金"
+        },
+        "DropCreature": "拖放生物",
+        "Tab": {
+            "Description": "描述",
+            "Loot": "战利品",
+            "Members": "角色"
+        }
+    },
+    "DND5E.LevelAvg": "平均等级",
+    "DND5E.Summary": "概要",
+    "DND5E.SkillRoll": "{ability} （{skill}）检定掷骰",
+    "DND5E.Travel": {
+        "Label": "旅行步调",
+        "Pace": {
+            "Fast": "快速",
+            "Normal": "中速",
+            "Slow": "慢速"
+        }
     }
 }
