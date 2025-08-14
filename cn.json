@@ -300,7 +300,7 @@
     "DND5E.PersonalityTraits": "个性",
     "DND5E.Prepared": "已准备",
     "DND5E.Price": "价格",
-    "DND5E.Proficiency": "熟练加值",
+    "DND5E.Proficiency": "熟练",
     "DND5E.Proficient": "熟练",
     "DND5E.Quantity": "数量",
     "DND5E.Range": "射程",
@@ -4514,7 +4514,7 @@
         "9": "9"
     },
     "DND5E.ProficiencyBonusAbbr": "PB",
-    "DND5E.ProficiencyOther": "其他熟练加值",
+    "DND5E.ProficiencyOther": "其他熟练",
     "DND5E.RacialTraitsLegacy": "种族特质",
     "DND5E.RechargeShort": "在短休或长休后充能",
     "DND5E.RechargeLong": "长休后充能",
