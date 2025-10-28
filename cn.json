@@ -537,14 +537,14 @@
     "DND5E.CreatureTypeSelectorSubtype": "子类",
     "DND5E.CreatureUndead": "亡灵",
     "DND5E.CreatureUndeadPl": "亡灵",
-    "DND5E.Crewed": "搭乘",
+    "DND5E.Crewed": "有船员",
     "DND5E.PowerfulCritical": "强力重击",
     "DND5E.HitDiceConfig": "调整生命骰",
     "DND5E.HitDiceConfigHint": "调整每等级生命骰。",
     "DND5E.HitDiceMax": "最大生命骰",
     "DND5E.HitDiceRemaining": "当前生命骰",
     "DND5E.Skip": "跳过",
-    "DND5E.Uncrewed": "未搭乘",
+    "DND5E.Uncrewed": "无船员",
     "DND5E.ActorWarningInvalidItem": "{itemType} 物品无法被添加给 {actorType}。",
     "DND5E.RacialTraits": "种族特质",
     "DND5E.EffectTemporary": "临时效应",
@@ -1037,13 +1037,27 @@
         "Challenge": "挑战",
         "Vehicle": {
             "other": "载具",
-            "one": "载具"
+            "one": "载具",
+            "Count": {
+                "one": "载具",
+                "other": "载具"
+            },
+            "Primary": {
+                "label": "主要载具"
+            }
         },
         "TypeGeneric": "小队",
         "PlaceMembers": "放置角色",
         "Action": {
             "Remove": "移除角色",
-            "View": "查看角色"
+            "View": "查看角色",
+            "ChangePace": "改变步调",
+            "Inventory": {
+                "Group": "展示小队库存",
+                "Vehicle": "展示载具库存"
+            },
+            "SetPrimaryVehicle": "设置主要载具",
+            "UnsetPrimaryVehicle": "取消主要载具设置"
         },
         "Config": {
             "Art": {
@@ -1056,6 +1070,9 @@
         "Distribute": {
             "noxp": "分配资金",
             "xp": "分配经验值和资金"
+        },
+        "Warning": {
+            "PhysicalItemOnly": "仅支持实体物品。"
         }
     },
     "DND5E.HitPointsTempMaxShort": "临时最大生命值",
@@ -1151,7 +1168,8 @@
         "PassiveLong": "被动 {check} 值",
         "AttackLong": "{formula} 命中",
         "AttackShort": "{formula}",
-        "CheckUsing": "使用{tool}进行{check}"
+        "CheckUsing": "使用{tool}进行{check}",
+        "ItemActivity": "{item} ({activity})"
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -1353,11 +1371,11 @@
         },
         "PERMISSIONS": {
             "AllowSummoning": {
-                "Hint": "允许玩家使用召唤能力来召唤角色。玩家还必须拥有“创建指示物”核心权限，此功能才能生效。",
+                "Hint": "允许玩家使用召唤能力来召唤角色。玩家必须拥有“创建指示物”的核心权限。",
                 "Name": "允许召唤"
             },
             "AllowTransformation": {
-                "Hint": "允许玩家使用自己的角色进行变形。玩家还必须拥有“创建指示物”核心权限，此功能才能生效。",
+                "Hint": "允许玩家使用自己的角色进行变形。玩家必须同时拥有“创建角色”及“创建指示物”的核心权限。",
                 "Name": "允许变形"
             },
             "AllowRests": {
@@ -1598,7 +1616,8 @@
             "Modification": "{type} 调整",
             "Immunity": "{type} 免疫",
             "Resistance": "{type} 抗性",
-            "Vulnerability": "{type} 易伤"
+            "Vulnerability": "{type} 易伤",
+            "Threshold": "伤害阈值"
         },
         "Downgrading": "降级 {source} 为抗性",
         "Ignoring": "忽略 {source}"
@@ -1946,8 +1965,12 @@
                 "Label": "附赠动作"
             },
             "Crew": {
-                "Header": "乘员动作",
-                "Label": "乘员动作"
+                "Header": "船员动作",
+                "Label": "船员动作",
+                "Counted": {
+                    "one": "{number} 船员动作",
+                    "other": "{number} 船员动作"
+                }
             },
             "Mythic": {
                 "Header": "神话动作",
@@ -2031,7 +2054,8 @@
                 "DescriptionLegacy": "<p>当你达到{firstLevelOrdinal}级，以及再次达到{otherLevelsOrdinal}级时，你可以选择将一项属性值增加 2，或者选择将两项属性值各增加 1。和往常一样，使用此专长时，你不能将属性值提升至{maxAbilityScore}以上。</p><p>使用可选的专长规则时，你可以放弃此专长，转而选择一项专长。</p>",
                 "DescriptionModern": "<p>你获得属性提升专长或其他你选择的符合条件的专长。你在 {class} 的 {otherLevels} 级中再次获得此专长。</p>",
                 "Name": "属性值提升",
-                "DescriptionEpic": "<p>你获得一项传奇恩惠专长或其他一项你选择的适用的专长。推荐选择{recommendation}。</p>"
+                "DescriptionEpic": "<p>你获得一项传奇恩惠专长或其他一项你选择的适用的专长。</p>",
+                "DescriptionEpicRecommendation": "<p>你获得一项传奇恩惠专长或其他一项你选择的适用的专长。推荐选择{recommendation}。</p>"
             },
             "Action": {
                 "Select": "选择专长"
@@ -2550,6 +2574,9 @@
             },
             "Trinket": {
                 "Label": "饰品"
+            },
+            "Wondrous": {
+                "Label": "奇物"
             }
         },
         "FIELDS": {
@@ -2707,7 +2734,8 @@
             "RefundResource": "退还资源"
         },
         "Target": {
-            "ThisItem": "该物品"
+            "ThisItem": "该物品",
+            "UnknownItem": "一个未知物品"
         },
         "Warning": {
             "NotEnough": "可用的 {type} 不足，需要消耗 {cost}，但仅有 {available} 可用。",
@@ -4429,6 +4457,18 @@
                     "hint": "重要NPC将自动跟进死亡豁免、生命骰与忠诚度（若启用该设置）。",
                     "label": "重要NPC"
                 }
+            },
+            "attributes": {
+                "price": {
+                    "label": "费用",
+                    "denomination": {
+                        "label": "骰面"
+                    },
+                    "hint": "每日租金或牲畜购买价格。",
+                    "value": {
+                        "label": "数量"
+                    }
+                }
             }
         }
     },
@@ -4483,7 +4523,11 @@
             "other": "{number} 生命值"
         },
         "DT": {
-            "Abbr": "DT"
+            "Abbr": "DT",
+            "abbr": "DT"
+        },
+        "Other": {
+            "label": "其他选项"
         }
     },
     "DND5E.HitPointsOverrideHint": "覆盖自动计算的生命值，忽略来自职业、加值和属性调整的生命值。",
@@ -4727,6 +4771,19 @@
                     }
                 }
             }
+        },
+        "TRAVEL": {
+            "Kilometer": {
+                "AbbreviationDay": "km/d",
+                "Label": "千米",
+                "AbbreviationHour": "km/h"
+            },
+            "Label": "旅行单位",
+            "Mile": {
+                "AbbreviationDay": "mi/d",
+                "AbbreviationHour": "mph",
+                "Label": "英里"
+            }
         }
     },
     "DND5E.ROLL": {
@@ -4857,7 +4914,107 @@
                 },
                 "crewed": {
                     "label": "有船员"
+                },
+                "crew": {
+                    "label": "船员"
                 }
+            }
+        },
+        "Action": {
+            "Create": {
+                "Feature": "创建特性",
+                "Weapon": "创建武器",
+                "Equipment": "创建装备"
+            },
+            "Crew": {
+                "Decrease": "减少",
+                "Increase": "增加"
+            },
+            "Drop": {
+                "Animal": "放弃牲畜",
+                "Crew": "放弃船员",
+                "Passengers": "放弃乘客"
+            },
+            "Uncrew": "无人驾驶"
+        },
+        "Option": {
+            "Abilities": "展示属性",
+            "Initiative": "展示先攻",
+            "Quality": "展示质量"
+        },
+        "Type": {
+            "Air": {
+                "label": "航空载具"
+            },
+            "label": "载具类型",
+            "Land": {
+                "label": "陆行载具"
+            },
+            "Space": {
+                "label": "航天载具"
+            },
+            "Water": {
+                "label": "水路载具"
+            }
+        },
+        "Tabs": {
+            "Cargo": "货物",
+            "CrewPassengers": "船员与乘员"
+        },
+        "Crew": {
+            "Assigned": "已指派",
+            "Passengers": "乘客",
+            "Unassigned": "未指派",
+            "Label": "船员"
+        },
+        "Actions": {
+            "Ordinal": {
+                "one": "第 {n} 个动作",
+                "two": "第 {n} 个动作",
+                "few": "第 {n} 个动作",
+                "other": "第 {n} 个动作"
+            }
+        },
+        "FIELDS": {
+            "attributes": {
+                "actions": {
+                    "label": "动作",
+                    "max": {
+                        "hint": "满员船员执行动作"
+                    },
+                    "spent": {
+                        "label": "已使用动作"
+                    },
+                    "thresholds": {
+                        "full": {
+                            "label": "满员数"
+                        },
+                        "label": "阈值"
+                    }
+                },
+                "capacity": {
+                    "cargo": {
+                        "value": {
+                            "label": "货物"
+                        }
+                    },
+                    "label": "容量"
+                }
+            },
+            "passengers": {
+                "max": {
+                    "label": "乘客"
+                }
+            },
+            "crew": {
+                "max": {
+                    "label": "船员"
+                }
+            }
+        },
+        "Activation": {
+            "Crew": {
+                "label": "船员动作"
             }
         }
     },
@@ -5530,5 +5687,66 @@
             "Normal": "中速",
             "Slow": "慢速"
         }
+    },
+    "DND5E.SpellAttackBonus": "法术攻击加值",
+    "DND5E.TRAVEL": {
+        "Type": {
+            "Air": "航空",
+            "Land": "陆行",
+            "Water": "水路"
+        },
+        "Speed": "旅行速度",
+        "FIELDS": {
+            "pace": {
+                "label": "步调"
+            },
+            "time": {
+                "hint": "每日旅行小时数用于将旅行速度转换为步调。",
+                "label": "每日小时数"
+            }
+        },
+        "Label": "旅行步调",
+        "Pace": {
+            "Fast": "快速",
+            "Normal": "中速",
+            "Slow": "慢速"
+        },
+        "Per": {
+            "Day": "每日",
+            "Hour": "每小时"
+        },
+        "Slowed": {
+            "Group": "该小队步调因一位成员的速度降低至正常速度的一半以下，那么整个小队必须以慢速步调前进。",
+            "Member": "这位小队成员拖慢了小队。"
+        }
+    },
+    "DND5E.Quality": "质量",
+    "DND5E.MOVEMENT": {
+        "FIELDS": {
+            "units": {
+                "label": "单位"
+            },
+            "ignoredDifficultTerrain": {
+                "label": "无视困难地形"
+            },
+            "special": {
+                "label": "特殊移动"
+            },
+            "speeds": {
+                "label": "移动速度"
+            }
+        },
+        "Hover": "悬浮",
+        "Type": {
+            "Burrow": "掘穴",
+            "Climb": "攀爬",
+            "Fly": "飞行",
+            "Swim": "游泳",
+            "Walk": "步行"
+        },
+        "Action": {
+            "Configure": "配置移动速度"
+        },
+        "Speed": "战斗速度"
     }
 }
