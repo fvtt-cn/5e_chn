@@ -2412,7 +2412,12 @@
                 }
             },
             "effects": {
-                "label": "应用效应"
+                "label": "应用效应",
+                "element": {
+                    "level": {
+                        "label": "环阶限制"
+                    }
+                }
             },
             "img": {
                 "label": "图标"
@@ -2420,7 +2425,8 @@
         },
         "Action": {
             "Create": "创建行动",
-            "Delete": "删除行动"
+            "Delete": "删除行动",
+            "Edit": "编辑行动"
         },
         "Title": {
             "one": "行动",
@@ -4349,7 +4355,7 @@
         "Sizes": {
             "roomy": "宽敞",
             "vast": "庞大",
-            "cramped": "狭小"
+            "cramped": "狭窄"
         },
         "Squares": "{squares} 方格",
         "Progress": "发展",
