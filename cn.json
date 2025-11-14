@@ -317,7 +317,7 @@
     "DND5E.Roll": "掷骰",
     "DND5E.RollExample": "例：+1d4",
     "DND5E.RollMode": "掷骰模式",
-    "DND5E.RollSituationalBonus": "环境加值？",
+    "DND5E.RollSituationalBonus": "情景加值？",
     "DND5E.SaveDC": "DC {dc} {ability}",
     "DND5E.SavePromptTitle": "{ability} 豁免",
     "DND5E.SavingThrow": "豁免检定",
