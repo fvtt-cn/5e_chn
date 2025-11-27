@@ -146,7 +146,7 @@
     "DND5E.DamageRoll": "伤害掷骰",
     "DND5E.DamageSlashing": "挥砍",
     "DND5E.DamageThunder": "雷鸣",
-    "DND5E.Day": "天",
+    "DND5E.Day": "日",
     "DND5E.DeathSave": "死亡豁免",
     "DND5E.DeathSaveCriticalSuccess": "{name} 死亡豁免大成功，恢复了1HP！",
     "DND5E.DeathSaveFailure": "{name} 死亡豁免累计失败 3 次，当场死亡！",
@@ -377,7 +377,7 @@
     "DND5E.SpellCantrip": "戏法",
     "DND5E.SpellCastConsume": "是否耗用法术位？",
     "DND5E.SpellCastNoSlots": "你没有可用的法术位来施放法术",
-    "DND5E.SpellCastUpcast": "以此环阶施放",
+    "DND5E.SpellCastUpcast": "以此等级施展",
     "DND5E.SpellCastingHeader": "施法",
     "DND5E.SpellComponents": "法术成分",
     "DND5E.SpellCreate": "创建法术",
@@ -1072,7 +1072,8 @@
             "xp": "分配经验值和资金"
         },
         "Warning": {
-            "PhysicalItemOnly": "仅支持实体物品。"
+            "PhysicalItemOnly": "仅支持实体物品。",
+            "PlaceMembers": "场景中无法正确放置指示物。"
         }
     },
     "DND5E.HitPointsTempMaxShort": "临时最大生命值",
@@ -1385,8 +1386,11 @@
         },
         "AUTOMATION": {
             "Movement": {
-                "Name": "禁用移动自动化",
-                "Hint": "不应用困难地形移动惩罚，且不依据规则版本限制生物彼此穿越的移动行为。"
+                "Name": "移动自动化",
+                "Hint": "配置系统使用的移动自动化程度：完全自动化，包括指示物阻挡；仅困难地形的部分自动化；或完全关闭。",
+                "NoBlocking": "部分",
+                "None": "无",
+                "Full": "完全"
             }
         }
     },
@@ -1469,7 +1473,8 @@
             "Metamagic": "超魔法选项",
             "HuntersPrey": "猎杀技艺",
             "ElementalDiscipline": "四象法门",
-            "ArtificerInfusion": "奇械师注法"
+            "ArtificerInfusion": "奇械师注法",
+            "ArtificerPlan": "奇械师计划"
         },
         "SupernaturalGift": {
             "Charm": "护咒",
@@ -1521,7 +1526,10 @@
         "Warning": {
             "Depth": "起始装备仅允许三级深度。",
             "ItemTypeInvalid": "{type} 物品不能被添加为起始装备。"
-        }
+        },
+        "ChooseList": "<em>选择 {prefixes}：</em> {choices}",
+        "Currency": "货币",
+        "Prefixes": "abcdefghijklmnopqrstuvwxyz"
     },
     "DND5E.ItemConsumableProperties": "消耗品属性",
     "DND5E.ReactionAbbr": "R",
@@ -1650,9 +1658,9 @@
     "DND5E.ItemToolDetails": "工具详情",
     "DND5E.ItemToolUsage": "工具使用",
     "DND5E.LevelLimit": {
-        "Label": "环阶限制",
-        "Max": "最大环阶",
-        "Min": "最低环阶"
+        "Label": "等级限制",
+        "Max": "最大等级",
+        "Min": "最低等级"
     },
     "DND5E.Prerequisites": {
         "Header": "特性先决条件",
@@ -1974,7 +1982,11 @@
             },
             "Mythic": {
                 "Header": "神话动作",
-                "Label": "神话动作"
+                "Label": "神话动作",
+                "Counted": {
+                    "one": "{number} 神话动作",
+                    "other": "{number} 神话动作"
+                }
             },
             "Hour": {
                 "Header": "小时",
@@ -2415,12 +2427,48 @@
                 "label": "应用效应",
                 "element": {
                     "level": {
-                        "label": "环阶限制"
+                        "label": "等级限制",
+                        "min": {
+                            "label": "最低等级"
+                        },
+                        "max": {
+                            "label": "最大等级"
+                        },
+                        "hint": "应用此效应所需的等级范围。"
                     }
                 }
             },
             "img": {
                 "label": "图标"
+            },
+            "visibility": {
+                "identifier": {
+                    "hint": "该类别的等级限制所适用的类别的标识符。若未填写，则将使用角色的等级。",
+                    "label": "职业识别符"
+                },
+                "label": "可见性",
+                "level": {
+                    "hint": "使用此行动所需的等级范围。",
+                    "label": "等级限制",
+                    "max": {
+                        "label": "最大等级"
+                    },
+                    "min": {
+                        "label": "最低等级"
+                    }
+                },
+                "requireIdentification": {
+                    "label": "需鉴定",
+                    "hint": "如果物品未被识别，行动将无法使用。"
+                },
+                "requireMagic": {
+                    "hint": "如果没有魔法，行动将无法使用。",
+                    "label": "需魔法"
+                },
+                "requireAttunement": {
+                    "hint": "如果物品需要同调但未同调，则无法使用该行动。",
+                    "label": "需同调"
+                }
             }
         },
         "Action": {
@@ -2543,7 +2591,8 @@
         "Formatted": {
             "2014": "{type}{classification}攻击",
             "2024": "{type}攻击检定"
-        }
+        },
+        "Hint": "进行一次攻击检定并掷骰伤害。"
     },
     "DND5E.CONSUMABLE": {
         "Type": {
@@ -2682,7 +2731,8 @@
                 "PromptDecrease": "耗用材料？",
                 "PromptIncrease": "恢复材料？",
                 "PromptHintDecrease": "将 {item} 的数量减少 <strong>{cost}</strong> （剩余{quantity} ）。",
-                "Warning": "{name} 的"
+                "Warning": "{name} 的",
+                "NonEmbeddedHint": "物品标识符或合集包中物品的 UUID，该标识符将自动与表单中匹配的物品进行关联。"
             },
             "Attribute": {
                 "Label": "属性",
@@ -2690,7 +2740,8 @@
                 "PromptIncrease": "恢复属性？",
                 "PromptHintDecrease": "将 <code>{attribute}</code> 减少 <strong>{cost}</strong>（当前为 {current}）。",
                 "PromptHintIncrease": "将 <code>{attribute}</code> 增加 <strong>{cost}</strong> （当前为 {current}）。",
-                "Warning": "{attribute} 数量"
+                "Warning": "{attribute} 数量",
+                "NonEmbeddedHint": "用于消耗属性的路径（例：attributes.exhaustion、spells.pact.value）。"
             },
             "HitDice": {
                 "Label": "生命骰",
@@ -2710,7 +2761,8 @@
                 "PromptIncrease": "恢复物品使用次数？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 的 {item} （{available} {availableUse} 可用）。",
                 "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {item} 的 {use} 。",
-                "Warning": "在 {name} 上使用"
+                "Warning": "在 {name} 上使用",
+                "NonEmbeddedHint": "物品标识符或合集包中物品的 UUID，该标识符将自动与表单中匹配的物品进行关联。"
             },
             "SpellSlot": {
                 "one": "{level} 环位",
@@ -2779,7 +2831,8 @@
             }
         },
         "Title": "检定",
-        "ThisTool": "此工具"
+        "ThisTool": "此工具",
+        "Hint": "请求一次可由技能或工具辅助的属性检定。"
     },
     "DND5E.CLASS": {
         "FIELDS": {
@@ -2901,7 +2954,8 @@
             "Half": "每隔一级",
             "WholeCantrip": "戏法递增",
             "HalfCantrip": "半戏法递增"
-        }
+        },
+        "Hint": "对一个生物造成伤害，且无需攻击或进行豁免。"
     },
     "DND5E.HEAL": {
         "FIELDS": {
@@ -2951,7 +3005,8 @@
                 }
             }
         },
-        "Title": "治疗"
+        "Title": "治疗",
+        "Hint": "治疗一个生物"
     },
     "DND5E.SUMMON": {
         "FIELDS": {
@@ -3053,13 +3108,13 @@
                         "hint": "被召唤生物的最大挑战等级。"
                     },
                     "level": {
-                        "label": "环阶限制",
-                        "hint": "使用此配置所需的环阶范围。",
+                        "label": "等级限制",
+                        "hint": "使用此配置所需的等级范围。",
                         "max": {
-                            "label": "最大环阶"
+                            "label": "最大等级"
                         },
                         "min": {
-                            "label": "最低环阶"
+                            "label": "最低等级"
                         }
                     },
                     "name": {
@@ -3108,6 +3163,10 @@
                 "ability": {
                     "label": "匹配属性",
                     "hint": "用于匹配攻击和豁免 DC 的特定属性。"
+                },
+                "disposition": {
+                    "label": "对抗结果",
+                    "hint": "将被召唤的生物的特性调整为与召唤者相匹配。"
                 }
             },
             "creatureTypes": {
@@ -3156,7 +3215,8 @@
             "NoActor": "找不到UUID为“{UUID}”的角色来召唤。",
             "NoOwnership": "你必须拥有‘{actor}’的所有权才能召唤它。",
             "NoProfile": "无法在“{item}”上找到召唤配置{profileId}。"
-        }
+        },
+        "Hint": "召唤一个新生物至场景。"
     },
     "DND5E.DURATION": {
         "FIELDS": {
@@ -3238,7 +3298,8 @@
             "one": "豁免",
             "other": "豁免"
         },
-        "OnSave": "在豁免时"
+        "OnSave": "在豁免时",
+        "Hint": "要求进行豁免检定，并可以选择进行伤害掷骰。"
     },
     "DND5E.USAGE": {
         "SECTION": {
@@ -3393,13 +3454,13 @@
                     }
                 },
                 "level": {
-                    "label": "环阶限制",
+                    "label": "等级限制",
                     "max": {
-                        "label": "最大环阶"
+                        "label": "最大等级"
                     },
                     "hint": "使用此附魔所需的等级范围。",
                     "min": {
-                        "label": "最低环阶"
+                        "label": "最低等级"
                     }
                 }
             }
@@ -3417,8 +3478,10 @@
             "MissingProperty": "物品必须具有以下属性之一才能被附魔： {validProperties}。",
             "NoMagicalItems": "已经具有魔法词条的物品无法被施加附魔。",
             "NoSubtype": "只有 {allowedType} 类型的物品才能被施加附魔，但此物品没有此子类型。",
-            "WrongType": "此附魔无法对 {incorrectType} 类型的物品生效，仅允许对 {allowedType} 类型的物品进行附魔。"
-        }
+            "WrongType": "此附魔无法对 {incorrectType} 类型的物品生效，仅允许对 {allowedType} 类型的物品进行附魔。",
+            "NoTargetActor": "从合集包中选择需要附魔的角色或指示物。"
+        },
+        "Hint": "对一件物品施加附魔效应，以改变其属性或功能。"
     },
     "DND5E.ENCHANTMENT": {
         "Category": {
@@ -3470,7 +3533,11 @@
             "Dissociate": "分离效应"
         },
         "Empty": "没有相关效应。请使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个已有的效应。",
-        "Label": "可用效应"
+        "Label": "可用效应",
+        "RIDER": {
+            "Activity": "附魔骑手行动",
+            "Effect": "附魔骑手效应"
+        }
     },
     "DND5E.FLAGS": {
         "EnhancedDualWielding": {
@@ -3923,7 +3990,8 @@
                     "hint": "在聊天中对所有玩家显示掷骰按钮。"
                 }
             }
-        }
+        },
+        "Hint": "进行任意一次骰掷，或声明执行其他行动类型未涵盖的某些动作。"
     },
     "DND5E.Value": "数值",
     "DND5E.ABILITY": {
@@ -4057,7 +4125,8 @@
         },
         "Enchantment": {
             "Name": "法术改动"
-        }
+        },
+        "Hint": "通过一件物品施展一个法术。"
     },
     "DND5E.CONTAINER": {
         "FIELDS": {
@@ -4097,7 +4166,9 @@
             "NoCombatant": "战斗单位已不存在！"
         },
         "Deltas": {
-            "Recovery": "恢复"
+            "Recovery": "恢复",
+            "Deleted": "删除物品",
+            "Created": "创建物品"
         },
         "Activities": "行动组合",
         "REQUEST": {
@@ -4370,7 +4441,8 @@
                 "label": "触发行动"
             }
         },
-        "Title": "转进"
+        "Title": "转进",
+        "Hint": "在此物品上触发另一个具有不同消耗和比例详情的行动。"
     },
     "DND5E.ItemFacilityDetails": "设施详情",
     "DND5E.ItemSpeciesDetailsLegacy": "种族详情",
@@ -4446,7 +4518,8 @@
         "Remaining": "剩余传奇抗性",
         "Resisted": "使用传奇抗性",
         "LabelPl": "传奇抗性",
-        "Spent": "已使用传奇抗性"
+        "Spent": "已使用传奇抗性",
+        "LairUses": "{normal}/天，或{lair}/天在巢穴"
     },
     "DND5E.NPC": {
         "SECTIONS": {
@@ -4454,7 +4527,8 @@
             "Actions": "动作",
             "BonusActions": "附赠动作",
             "LegendaryActions": "传奇动作",
-            "Traits": "特质"
+            "Traits": "特质",
+            "MythicActions": "神话动作"
         },
         "Label": "NPC",
         "FIELDS": {
@@ -4476,6 +4550,9 @@
                     }
                 }
             }
+        },
+        "ActionCostCounted": {
+            "other": "消耗 {number} 动作"
         }
     },
     "DND5E.CreatureTag": "{size} {type}，{alignment}",
@@ -4986,16 +5063,26 @@
                 "actions": {
                     "label": "动作",
                     "max": {
-                        "hint": "满员船员执行动作"
+                        "hint": "船员满员执行动作",
+                        "label": "最大动作"
                     },
                     "spent": {
                         "label": "已使用动作"
                     },
                     "thresholds": {
                         "full": {
-                            "label": "满员数"
+                            "label": "满员船员"
                         },
-                        "label": "阈值"
+                        "label": "阈值",
+                        "mid": {
+                            "label": "部分船员"
+                        },
+                        "min": {
+                            "label": "最少船员"
+                        }
+                    },
+                    "stations": {
+                        "label": "战斗岗位"
                     }
                 },
                 "capacity": {
@@ -5016,12 +5103,31 @@
                 "max": {
                     "label": "船员"
                 }
+            },
+            "traits": {
+                "keel": {
+                    "value": {
+                        "label": "龙骨"
+                    }
+                },
+                "beam": {
+                    "value": {
+                        "label": "横梁"
+                    }
+                }
             }
         },
         "Activation": {
             "Crew": {
                 "label": "船员动作"
             }
+        },
+        "Mishap": {
+            "Threshold": {
+                "label": "遇难阈值",
+                "abbr": "MT"
+            },
+            "label": "遇难"
         }
     },
     "DND5E.DeathSaveBonus": "死亡豁免加值",
@@ -5223,6 +5329,9 @@
                 },
                 "Languages": {
                     "Label": "语言"
+                },
+                "TempHP": {
+                    "Label": "临时生命值"
                 }
             },
             "Merge": {
@@ -5349,13 +5458,13 @@
                         "hint": "来源生物的最大挑战等级。"
                     },
                     "level": {
-                        "label": "环阶限制",
-                        "hint": "使用此配置所需的环阶范围。",
+                        "label": "等级限制",
+                        "hint": "使用此配置所需的等级范围。",
                         "max": {
-                            "label": "最大环阶"
+                            "label": "最大等级"
                         },
                         "min": {
-                            "label": "最低环阶"
+                            "label": "最低等级"
                         }
                     },
                     "movement": {
@@ -5417,7 +5526,8 @@
             "Settings": "设置",
             "Transformation": "变形"
         },
-        "Title": "变形"
+        "Title": "变形",
+        "Hint": "将角色替换为使用其他角色的数据。"
     },
     "SOURCE.BOOK.FreeRules": "免费规则",
     "SOURCE.BOOK.SRD51": "系统参考文档 5.1",
@@ -5495,7 +5605,10 @@
                 "Slope": "陡坡",
                 "Snow": "深层积雪",
                 "Liquid": "浅层液体",
-                "All": "所有类型"
+                "All": "所有类型",
+                "Webs": "蛛网",
+                "Mud": "泥泞",
+                "Sand": "流沙"
             },
             "FIELDS": {
                 "ignoredDispositions": {
@@ -5636,7 +5749,8 @@
             "spell6": "6 环",
             "spell7": "7 环",
             "spell8": "8 环"
-        }
+        },
+        "Unlabeled": "无标注施法"
     },
     "DND5E.Method": "方法",
     "DND5E.SpellLevelSpell": "{level} （{n} 位）",
@@ -5674,7 +5788,8 @@
             "moderate": "中等难度"
         },
         "Action": {
-            "Award": "奖励经验值与资金"
+            "Award": "奖励经验值与资金",
+            "AddCreature": "添加生物"
         },
         "DropCreature": "拖放生物",
         "Tab": {
@@ -5740,6 +5855,9 @@
             },
             "speeds": {
                 "label": "移动速度"
+            },
+            "bonus": {
+                "label": "速度加值"
             }
         },
         "Hover": "悬浮",
@@ -5748,11 +5866,235 @@
             "Climb": "攀爬",
             "Fly": "飞行",
             "Swim": "游泳",
-            "Walk": "步行"
+            "Walk": "步行",
+            "Speed": "速度"
         },
         "Action": {
             "Configure": "配置移动速度"
         },
         "Speed": "战斗速度"
-    }
+    },
+    "DND5E.CALENDAR": {
+        "Action": {
+            "SetDate": "设置日期",
+            "OpenPartySheet": "打开队伍卡",
+            "OpenCharacterSheet": "打开角色卡",
+            "AdvanceTime": "推进至 {amount}",
+            "ReverseTime": "倒转至 {amount}"
+        },
+        "Component": {
+            "Day": "天",
+            "Month": "月",
+            "Year": "年"
+        },
+        "Formatters": {
+            "ApproximateTime": {
+                "Evening": "晚上",
+                "Label": "大致时间",
+                "Midnight": "午夜",
+                "Morning": "早晨",
+                "Night": "夜晚",
+                "Noon": "正午",
+                "Sunrise": "日出",
+                "Sunset": "日落",
+                "Afternoon": "下午",
+                "Dawn": "黎明",
+                "Dusk": "黄昏"
+            },
+            "Date": "日期格式化",
+            "HoursMinutes": {
+                "Label": "小时和分钟",
+                "Format": "{H}:{M}"
+            },
+            "MonthDay": {
+                "Format": "{B} {D}",
+                "Label": "月和日"
+            },
+            "HoursMinutesSeconds": {
+                "Format": "{H}:{M}:{S}",
+                "Label": "小时、分钟和秒"
+            },
+            "MonthDayYear": {
+                "Format": "{B} {D}, {y}",
+                "Label": "年、月、日"
+            },
+            "Time": "时间格式化",
+            "ApproximateDate": {
+                "Label": "归档日期",
+                "LateSeason": "{season}末",
+                "EarlySeason": "{season}初",
+                "MidSeason": "{season}中"
+            }
+        },
+        "Gregorian": "格里高利历",
+        "Greyhawk": {
+            "Day": {
+                "Starday": "星之日",
+                "Sunday": "太阳日",
+                "Moonday": "月之日",
+                "Godsday": "众神日",
+                "Waterday": "水之日",
+                "Earthday": "土之日",
+                "Freeday": "自由日"
+            },
+            "Festival": {
+                "Needfest": "需飨节",
+                "Growfest": "新生节",
+                "Richfest": "丰饶节",
+                "Brewfest": "酒酿节"
+            },
+            "Formatters": {
+                "MonthDay": "{B} {d}",
+                "MonthDayYear": "{B} {d}, {y}"
+            },
+            "Month": {
+                "Fireseek": "寻火之月",
+                "Readying": "生息之月",
+                "Coldeven": "消寒之月",
+                "Planting": "种植之月",
+                "Flocktime": "聚时之月",
+                "Wealsun": "福日之月",
+                "Reaping": "收割之月",
+                "Godmonth": "进益之月",
+                "Harvester": "收获之月",
+                "Patchwall": "修缮之月",
+                "Readyreat": "储猎之月",
+                "Sunsebb": "日沉之月"
+            },
+            "Name": "灰鹰历法",
+            "Season": {
+                "Spring": "春",
+                "Summer": "夏",
+                "Fall": "秋",
+                "Winter": "冬"
+            }
+        },
+        "Harptos": {
+            "Day": {
+                "One": "一日",
+                "Two": "二日",
+                "Three": "三日",
+                "Four": "四日",
+                "Five": "五日",
+                "Six": "六日",
+                "Seven": "七日",
+                "Eight": "八日",
+                "Nine": "九日",
+                "Ten": "十日"
+            },
+            "Festival": {
+                "Midwinter": "仲冬节",
+                "Greengrass": "绿草节",
+                "Midsummer": "仲夏节",
+                "Shieldmeet": "盾会节",
+                "Highharvesttide": "丰收节",
+                "FeastOfTheMoon": "月之盛宴"
+            },
+            "Formatters": {
+                "DayMonth": "{d} {B}",
+                "DayMonthYear": "{d} {B}, {y} DR",
+                "FestivalDayYear": "{day}, {Y} DR"
+            },
+            "Month": {
+                "Hammer": "哈莫",
+                "HammerCommon": "深冬之月",
+                "Alturiak": "鲁里",
+                "AlturiakCommon": "冬爪之月",
+                "Ches": "彻斯",
+                "ChesCommon": "暮爪之月",
+                "Tarsakh": "塔司",
+                "Mirtul": "莫多",
+                "MirtulCommon": "融雪之月",
+                "Kythorn": "凯索",
+                "KythornCommon": "花期之月",
+                "Flamerule": "菲路",
+                "FlameruleCommon": "夏潮之月",
+                "Eleasias": "莉西",
+                "EleasiasCommon": "烈日之月",
+                "Eleint": "伊莱",
+                "EleintCommon": "枯萎之月",
+                "Marpenoth": "玛诺",
+                "MarpenothCommon": "落叶之月",
+                "Uktar": "乌塔",
+                "Nightal": "奈托",
+                "NightalCommon": "岁末之月",
+                "UktarCommon": "腐朽之月",
+                "TarsakhCommon": "风爪之月"
+            },
+            "Name": "哈普托斯历法（被遗忘的国度）",
+            "Season": {
+                "Spring": "春",
+                "Summer": "夏",
+                "Fall": "秋",
+                "Winter": "东"
+            }
+        },
+        "Khorvaire": {
+            "Day": {
+                "Sul": "苏",
+                "Mol": "莫",
+                "Zol": "佐",
+                "Wir": "维",
+                "Zor": "泽",
+                "Far": "法",
+                "Sar": "萨"
+            },
+            "Formatters": {
+                "DayMonth": "{d} {B}",
+                "DayMonthYear": "{d} {B} {y} YK"
+            },
+            "Month": {
+                "Zarantyr": "扎兰提尔",
+                "Eyre": "埃尔",
+                "Dravago": "卓瓦歌",
+                "Nymm": "尼姆",
+                "Lharvion": "拉维翁",
+                "Barrakas": "巴拉卡斯",
+                "Rhaan": "拉安",
+                "Sypheros": "西菲洛斯",
+                "Aryth": "艾瑞斯",
+                "Vult": "沃特",
+                "Olarune": "欧拉卢恩",
+                "Therendor": "瑟仁多"
+            },
+            "Name": "科瓦雷历法（艾伯伦）",
+            "Season": {
+                "Spring": "春",
+                "Summer": "夏",
+                "Autumn": "秋",
+                "Winter": "冬"
+            }
+        },
+        "Configuration": {
+            "Label": "配置日历",
+            "Name": "日历",
+            "DisabledMessage": "DM 必须先启用日历界面，玩家才能使用。",
+            "Hint": "控制日历 HUD 是否显示以及其功能。",
+            "Preferences": "日历预设",
+            "UnavailableMessage": "默认的日历界面不可用，因为其已被某一模块禁用。"
+        },
+        "FIELDS": {
+            "enabled": {
+                "label": "启用",
+                "hint": "允许所有用户查看和自定义日历用户界面。"
+            },
+            "formatters": {
+                "date": {
+                    "label": "日期格式"
+                },
+                "time": {
+                    "label": "时间格式"
+                }
+            },
+            "visible": {
+                "label": "显示日历 HUD"
+            },
+            "calendar": {
+                "hint": "此日历将用于跟进游戏内的时间。",
+                "label": "日历"
+            }
+        }
+    },
+    "DND5E.SkillTitle": "{ability}（{skill}）",
+    "DND5E.Loot.Trade": "贸易货物"
 }
