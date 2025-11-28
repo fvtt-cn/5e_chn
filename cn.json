@@ -5014,9 +5014,9 @@
                 "Increase": "增加"
             },
             "Drop": {
-                "Animal": "放弃牲畜",
-                "Crew": "放弃船员",
-                "Passengers": "放弃乘客"
+                "Animal": "放置役畜",
+                "Crew": "放置船员",
+                "Passengers": "放置乘客"
             },
             "Uncrew": "无人驾驶"
         },
@@ -5027,17 +5027,17 @@
         },
         "Type": {
             "Air": {
-                "label": "航空载具"
+                "label": "空中载具"
             },
             "label": "载具类型",
             "Land": {
-                "label": "陆行载具"
+                "label": "陆运载具"
             },
             "Space": {
-                "label": "航天载具"
+                "label": "太空载具"
             },
             "Water": {
-                "label": "水路载具"
+                "label": "水上载具"
             }
         },
         "Tabs": {
@@ -5901,7 +5901,7 @@
                 "Dawn": "黎明",
                 "Dusk": "黄昏"
             },
-            "Date": "日期格式化",
+            "Date": "日期格式",
             "HoursMinutes": {
                 "Label": "小时和分钟",
                 "Format": "{H}:{M}"
