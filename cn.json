@@ -358,7 +358,7 @@
     "DND5E.SkillIns": "洞悉",
     "DND5E.SkillInv": "调查",
     "DND5E.SkillItm": "威吓",
-    "DND5E.SkillMed": "医疗",
+    "DND5E.SkillMed": "医药",
     "DND5E.SkillNat": "自然",
     "DND5E.SkillPer": "游说",
     "DND5E.SkillPrc": "察觉",
@@ -366,7 +366,7 @@
     "DND5E.SkillRel": "宗教",
     "DND5E.SkillSlt": "巧手",
     "DND5E.SkillSte": "隐匿",
-    "DND5E.SkillSur": "求生",
+    "DND5E.SkillSur": "生存",
     "DND5E.SkillPromptTitle": "{ability} ({skill}) 检定",
     "DND5E.Special": "特殊",
     "DND5E.SpecialTraits": "特殊特质",
@@ -5534,9 +5534,9 @@
     "SOURCE.BOOK.SRD52": "系统参考文档 5.2",
     "DND5E.JOURNALENTRY": {
         "Navigation": {
-            "Next": "下一步",
-            "Previous": "上一步",
-            "Up": "升起"
+            "Next": "下一节",
+            "Previous": "上一节",
+            "Up": "上一章"
         }
     },
     "DND5E.ITEM": {
