@@ -5988,12 +5988,13 @@
                 "Midsummer": "仲夏节",
                 "Shieldmeet": "盾会节",
                 "Highharvesttide": "丰收节",
-                "FeastOfTheMoon": "月之盛宴"
+                "FeastOfTheMoon": "月之盛宴",
+                "Highharvestide": "丰收节"
             },
             "Formatters": {
                 "DayMonth": "{d} {B}",
                 "DayMonthYear": "{d} {B}, {y} DR",
-                "FestivalDayYear": "{day}, {Y} DR"
+                "FestivalDayYear": "{day}, {y} DR"
             },
             "Month": {
                 "Hammer": "哈莫",
@@ -6019,7 +6020,9 @@
                 "Nightal": "奈托",
                 "NightalCommon": "岁末之月",
                 "UktarCommon": "腐朽之月",
-                "TarsakhCommon": "风爪之月"
+                "TarsakhCommon": "风爪之月",
+                "Eleasis": "莉西",
+                "EleasisCommon": "烈日之月"
             },
             "Name": "哈普托斯历法（被遗忘的国度）",
             "Season": {
