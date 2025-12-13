@@ -163,7 +163,7 @@
     "DND5E.DistFt": "尺",
     "DND5E.DistMi": "英里",
     "DND5E.DistSelf": "自身",
-    "DND5E.DistTouch": "触碰",
+    "DND5E.DistTouch": "触及",
     "DND5E.Duration": "持续时间",
     "DND5E.Effects": "效应",
     "DND5E.EffectCreate": "创建效应",
@@ -2407,7 +2407,7 @@
         "Defaults": {
             "BackgroundFeature": "背景特性",
             "BackgroundFeat": "背景专长",
-            "BackgroundProficiencies": "背景熟练项",
+            "BackgroundProficiencies": "背景熟练",
             "ChooseLanguages": "选择语言"
         }
     },
