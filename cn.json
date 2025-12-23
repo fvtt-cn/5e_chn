@@ -5754,7 +5754,7 @@
     },
     "DND5E.Method": "方法",
     "DND5E.SpellLevelSpell": "{level} （{n} 位）",
-    "DND5E.Preparation": "转杯",
+    "DND5E.Preparation": "准备",
     "DND5E.SheetClass": {
         "JournalEntryLegacy": "旧版 5e 日志条目卡",
         "ClassSummary": "默认 5e 职业概要卡",
