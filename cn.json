@@ -148,7 +148,7 @@
     "DND5E.DamageThunder": "雷鸣",
     "DND5E.Day": "日",
     "DND5E.DeathSave": "死亡豁免",
-    "DND5E.DeathSaveCriticalSuccess": "{name} 死亡豁免大成功，恢复了1HP！",
+    "DND5E.DeathSaveCriticalSuccess": "{name} 死亡豁免大成功，恢复了 1 HP！",
     "DND5E.DeathSaveFailure": "{name} 死亡豁免累计失败 3 次，当场死亡！",
     "DND5E.DeathSaveSuccess": "{name} 死亡豁免累计成功 3 次，伤势稳定！",
     "DND5E.DeathSaveUnnecessary": "你无需进行死亡豁免，因为你的生命值大于0或者已经集齐三次成功或失败。",
@@ -765,13 +765,13 @@
     "DND5E.ItemFeatureDetails": "特性详情",
     "DND5E.ItemFeatureSubtype": "{category} 类型",
     "DND5E.ItemFeatureType": "特性类型",
-    "DND5E.ItemRecoveryRoll": "{name} 恢复 {count} 发充能",
+    "DND5E.ItemRecoveryRoll": "{name} 重获 {count} 发充能",
     "DND5E.ItemLossRoll": "{name} 失去 {count} 发充能",
-    "DND5E.ItemRecoveryRollMax": "{name} 恢复所有充能",
-    "DND5E.ItemRecoveryFormulaWarning": "无法恢复 {name} 的充能。 无效的恢复公式 '{formula}' ({uuid})。",
+    "DND5E.ItemRecoveryRollMax": "{name} 重获所有充能",
+    "DND5E.ItemRecoveryFormulaWarning": "无法重获 {name} 的充能。 无效的重获公式 '{formula}' ({uuid})。",
     "DND5E.LimitedUsesAvailable": "剩余使用次数",
     "DND5E.LimitedUsesMax": "使用次数上限",
-    "DND5E.LimitedUsesPer": "使用次数恢复模式",
+    "DND5E.LimitedUsesPer": "使用次数重获模式",
     "DND5E.Long": "最大",
     "DND5E.ModuleArtConfigH": "配置使用哪个模组提供的美术风格。",
     "DND5E.ModuleArtConfigL": "配置美术风格",
@@ -2721,8 +2721,8 @@
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 进行此行动（{available} {availableUse} 可用）。",
                 "Label": "行动使用次数",
                 "PromptDecrease": "耗用行动使用次数？",
-                "PromptIncrease": "恢复行动使用次数？",
-                "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {use} 在此行动中。",
+                "PromptIncrease": "重获行动使用次数？",
+                "PromptHintIncrease": "重获 <strong>{cost}</strong> 次 {use} 在此行动中。",
                 "Warning": "在 {item} 的行动 {activity} 中使用"
             },
             "Material": {
@@ -2746,9 +2746,9 @@
             "HitDice": {
                 "Label": "生命骰",
                 "PromptDecrease": "耗用生命骰？",
-                "PromptIncrease": "恢复生命骰？",
+                "PromptIncrease": "重获生命骰？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> （还剩{denomination} {die} ({available} ）。",
-                "PromptHintIncrease": "恢复 <strong>{cost}</strong> {denomination} {die}。",
+                "PromptHintIncrease": "重获 <strong>{cost}</strong> {denomination} {die}。",
                 "Warning": "{denomination} 生命骰"
             },
             "HitDie": {
@@ -2758,9 +2758,9 @@
             "ItemUses": {
                 "Label": "物品使用次数",
                 "PromptDecrease": "耗用物品使用次数？",
-                "PromptIncrease": "恢复物品使用次数？",
+                "PromptIncrease": "重获物品使用次数？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {use} 的 {item} （{available} {availableUse} 可用）。",
-                "PromptHintIncrease": "恢复 <strong>{cost}</strong> 次 {item} 的 {use} 。",
+                "PromptHintIncrease": "重获 <strong>{cost}</strong> 次 {item} 的 {use} 。",
                 "Warning": "在 {name} 上使用",
                 "NonEmbeddedHint": "物品标识符或合集包中物品的 UUID，该标识符将自动与表单中匹配的物品进行关联。"
             },
@@ -2771,9 +2771,9 @@
             "SpellSlots": {
                 "Label": "法术位",
                 "PromptDecrease": "耗用法术位？",
-                "PromptIncrease": "恢复法术位？",
+                "PromptIncrease": "重获法术位？",
                 "PromptHintDecrease": "消耗 <strong>{cost}</strong> {slot} （剩余 {available} ）。",
-                "PromptHintIncrease": "恢复 <strong>{cost}</strong> {slot} 。",
+                "PromptHintIncrease": "重获 <strong>{cost}</strong> {slot} 。",
                 "Warning": "{level} 环位"
             },
             "Use": {
@@ -3881,20 +3881,20 @@
                 "recovery": {
                     "FIELDS": {
                         "formula": {
-                            "hint": "用于确定恢复多少使用次数的公式。",
-                            "label": "恢复公式"
+                            "hint": "用于确定重获多少使用次数的公式。",
+                            "label": "重获公式"
                         },
                         "period": {
                             "hint": "此恢复发生的时间。",
-                            "label": "恢复周期"
+                            "label": "重获周期"
                         },
                         "type": {
-                            "hint": "如何恢复使用次数。",
-                            "label": "恢复类型"
+                            "hint": "如何重获使用次数。",
+                            "label": "重获类型"
                         }
                     },
-                    "label": "恢复使用次数",
-                    "hint": "此行动使用次数的恢复配置。"
+                    "label": "重获使用次数",
+                    "hint": "此行动使用次数的重获配置。"
                 },
                 "spent": {
                     "label": "消耗使用次数",
@@ -3909,8 +3909,8 @@
         },
         "Recovery": {
             "Action": {
-                "Create": "创建恢复配置",
-                "Delete": "删除恢复配置"
+                "Create": "创建重获配置",
+                "Delete": "删除重获配置"
             },
             "Recharge": {
                 "Label": "充能",
@@ -3919,7 +3919,7 @@
             "Type": {
                 "Formula": "自定义公式",
                 "LoseAll": "失去所有使用次数",
-                "RecoverAll": "恢复所有使用次数"
+                "RecoverAll": "重获所有使用次数"
             },
             "Period": {
                 "Day": {
@@ -4497,8 +4497,8 @@
         "Label": "传奇动作",
         "Max": "最大传奇动作",
         "Remaining": "剩余传奇动作",
-        "Description": "传奇动作使用次数：{uses}。在其他生物回合结束后，{name} 可以立即消耗一次使用次数，以执行以下任一行动。{name} 在其每个回合开始时恢复所有已消耗的使用次数。",
-        "DescriptionLegacy": "{name}可以使用{usesNamed}次传奇动作，从以下选项中选择。每次只能使用一项传奇动作，并且只能在其他生物回合结束时使用。{name}在自己的回合开始时恢复已使用的传奇动作。",
+        "Description": "传奇动作使用次数：{uses}。在其他生物回合结束后，{name} 可以立即消耗一次使用次数，以执行以下任一行动。{name} 在其每个回合开始时重获所有已消耗的使用次数。",
+        "DescriptionLegacy": "{name}可以使用{usesNamed}次传奇动作，从以下选项中选择。每次只能使用一项传奇动作，并且只能在其他生物回合结束时使用。{name}在自己的回合开始时重获已使用的传奇动作。",
         "LairUses": "{normal} （{lair} 处于巢穴中）",
         "LabelPl": "传奇动作",
         "Spent": "已使用传奇动作"
@@ -4648,8 +4648,8 @@
     "DND5E.REST": {
         "Short": {
             "Hint": {
-                "Group": "在短休期间，团队成员可以消耗生命骰，并恢复物品的使用次数。",
-                "Normal": "在短休期间，你可以消耗生命骰，并恢复物品的使用次数。"
+                "Group": "在短休期间，团队成员可以消耗生命骰，并重获物品的使用次数。",
+                "Normal": "在短休期间，你可以消耗生命骰，并重获物品的使用次数。"
             },
             "Abbreviation": "SR",
             "Label": "短休",
@@ -4662,18 +4662,18 @@
         },
         "Long": {
             "Hint": {
-                "Group": "在一次长休中，团队成员们会恢复生命值、生命骰、职业资源、有限使用物品的充能次数以及法术位。",
-                "Normal": "在一次长休中，你会恢复生命值、生命骰、职业资源、有限使用物品的充能次数以及法术位。",
-                "NormalLegacy": "在一次长休中，你会恢复生命值、最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。",
-                "GroupLegacy": "在一次长休中，团队成员们会恢复生命值、最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。"
+                "Group": "在一次长休中，团队成员们会恢复生命值，重获生命骰、职业资源、有限使用物品的充能次数以及法术位。",
+                "Normal": "在一次长休中，你会恢复生命值，重获生命骰、职业资源、有限使用物品的充能次数以及法术位。",
+                "NormalLegacy": "在一次长休中，你会恢复生命值，重获最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。",
+                "GroupLegacy": "在一次长休中，团队成员们会恢复生命值，重获最大生命骰数的一半、职业资源、有限使用物品的充能次数以及法术位。"
             },
             "Abbreviation": "LR",
             "Label": "长休",
             "LabelShort": "长休",
-            "Recovery": "长休后恢复",
+            "Recovery": "长休后重获",
             "Result": {
-                "Full": "{name} 进行了一次长休，恢复了 {health} 点生命值和 {dice} 个生命骰。",
-                "HitDice": "{name} 进行了一次长休恢复了 {dice} 个生命骰。",
+                "Full": "{name} 进行了一次长休，恢复了 {health} 点生命值和重获 {dice} 个生命骰。",
+                "HitDice": "{name} 进行了一次长休重获了 {dice} 个生命骰。",
                 "Short": "{name} 进行了一次长休。",
                 "HitPoints": "{name} 进行了一次长休，并且恢复了 {health} 点生命值。"
             }
@@ -4689,7 +4689,7 @@
         },
         "Label": "休息",
         "NewDay": {
-            "Hint": "恢复有限使用的能力，这些能力会在黄昏、黎明或新的一天时恢复。",
+            "Hint": "重获有限使用的能力，这些能力会在黄昏、黎明或新的一天时重获。",
             "Label": "新的一天"
         },
         "RecoverTempHP": {
