@@ -1685,7 +1685,7 @@
             "InvalidLevel": "必须至少达到 {level} 级",
             "Message": "{actor}需满足{requirements}方可进行该{type}操作。",
             "MissingItem": "必须已完成{items}",
-            "NotRepeatable": "必须未完成此项"
+            "NotRepeatable": "必须未拥有此项"
         }
     },
     "DND5E.Scroll": {
