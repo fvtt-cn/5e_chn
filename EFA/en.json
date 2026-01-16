@@ -1,0 +1,29 @@
+{
+  "DND5E.ADVANCEMENT.PotentDragonmark": {
+    "Title": "Potent Dragonmark",
+    "Hint": "Set spells from your Spells of the Mark list to Always Prepared and allow them to be cast using an extra spell slot.",
+    "Warning": {
+      "NoDragonmark": "No Dragonmark feat found! The Potent Dragonmark feat cannot be taken unless character has an existing dragonmark."
+    }
+  },
+  "DND5E.Feature.Feat.Dragonmark": "Dragonmark Feat",
+  "DND5E.SpellLevelDragonmarked": "Dragonmarked [Level {level}] ({n} Slots)",
+  "DND5E.SpellSlotsDragonmarked": "Dragonmarked",
+  "DND5E.SPELLCASTING.METHODS.Dragonmarked.label": "Dragonmarked",
+  "EFA": {
+    "ArtificerPlan": {
+      "Create": "Create Artificer Plan",
+      "Hint": "Select a {description} that this plan will create.",
+      "Warning": {
+        "Cursed": "Artificer plans cannot be created from cursed magic items.",
+        "Permissions": "Must have an assigned character or permission to create items in the sidebar to create Artificer plans.",
+        "Physical": "Artificer plans can only be created for physical items.",
+        "PotionScroll": "Artificer plans cannot be created from common potions or scrolls.",
+        "Rarity": "Artificer plans can only be created from magic items of common, uncommon, or rare rarity.",
+        "Wondrous": "Artificer plans from uncommon or rare rarity can only be created from Wondrous items."
+      },
+      "Success": "\"{item}\" Artificer plan added to \"{actor}\""
+    }
+  },
+  "SOURCE.BOOK.EFA": "Eberron: Forge of the Artificer"
+}

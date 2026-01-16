@@ -1,0 +1,19 @@
+{
+  "AiF": {
+    "IMPORT": {
+      "ActivateScene": "Activate Initial Scene",
+      "ConvertMonsters2024": "Convert to 2024 Monsters",
+      "ConvertSpells2024": "Convert to 2024 Spells",
+      "CustomizeJoin": "Customize World Details",
+      "DisplayJournal": "Display Getting Started Journal",
+      "Options": "Options"
+    },
+    "JOURNAL": {
+      "Previous": "Previous",
+      "Up": "Up",
+      "Next": "Next",
+      "Label": "Adventures in Faerûn Journal"
+    }
+  },
+  "SOURCE.BOOK.AiF": "Adventures in Faerûn"
+}

@@ -1,0 +1,12 @@
+{
+  "DND5E.LegendaryAction.Description": "Legendary Action Uses: {uses}. Immediately after another creature’s turn, the {name} can expend a use to take one of the following actions. The {name} regains all expended uses at the start of each of its turns.",
+  "MM": {
+    "Title": "Monster manual",
+    "JOURNAL": {
+      "Previous": "Previous",
+      "Up": "Up",
+      "Next": "Next"
+    }
+  },
+  "SOURCE.BOOK.MM2024": "Monster Manual (2024)"
+}

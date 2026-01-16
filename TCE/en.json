@@ -1,0 +1,68 @@
+{
+  "TCOE": {
+    "Journal": {
+      "Label": "Tasha's Cauldron Journal"
+    },
+    "Advancement": {
+      "ChooseOne": "Choose One"
+    },
+    "Tattoo": {
+      "Action": "Tattoo Action",
+      "Details": "Tattoo Details",
+      "Properties": "Tattoo Properties",
+      "SheetClass": "Default Tattoo Sheet",
+      "Usage": "Tattoo Usage",
+      "Spellwrought": "Spellwrought",
+      "SpellwroughtName": "Spellwrought {name}",
+      "Type": "Tattoo Type",
+      "CreateTitle": "Create Spellwrought Tattoo",
+      "CreateButton": "Create Tattoo",
+      "InscribedSpell": "Inscribed Spell",
+      "BoundedLevel": "Inscribed spell level is higher than Spellwrought tattoos support and has been coerced."
+    },
+    "TATTOO": {
+      "FIELDS": {
+        "properties": {
+          "label": "Tattoo Properties"
+        },
+        "proficient": {
+          "label": "Proficiency Level"
+        },
+        "type": {
+          "label": "Tattoo Type"
+        },
+        "uses": {
+          "autoDestroy": {
+            "label": "Destroy on Empty",
+            "hint": "Reduce the item's quantity by 1 whenever all of its limited uses are expended."
+          }
+        },
+        "level": {
+          "label": "Spell Level"
+        }
+      }
+    },
+    "Title": "Tasha's Cauldron of Everything",
+    "Subtype": {
+      "Constellation": "Constellation"
+    },
+    "Upgraded": "Upgraded",
+    "Floored": "Minimum Roll",
+    "OptionalGrantTitle": "Tasha's Optional Features",
+    "ReplacementGrantTitle": "Tasha's Replacement Features",
+    "Setting": {
+      "OptionalName": "Enable Optional Class Features",
+      "OptionalHint": "Allows players to choose from the optional class features provided by Tasha's Cauldron of Everything when leveling their characters."
+    }
+  },
+  "TYPES": {
+    "Item.dnd-tashas-cauldron.tattoo": "Tattoo",
+    "Item.dnd-tashas-cauldron.tattooPl": "Tattoos"
+  },
+  "SETTING": {
+    "VERSION": {
+      "name": "Last Version",
+      "hint": "The last version checked against to determine whether to show the changelog."
+    }
+  }
+}

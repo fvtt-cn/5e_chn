@@ -1,0 +1,50 @@
+{
+  "HoF": {
+    "IMPORT": {
+      "ActivateScene": "Activate Initial Scene",
+      "ConvertMonsters2024": "Convert to 2024 Monsters",
+      "ConvertSpells2024": "Convert to 2024 Spells",
+      "CustomizeJoin": "Customize World Details",
+      "DisplayJournal": "Display Getting Started Journal",
+      "Options": "Options"
+    },
+    "JOURNAL": {
+      "Previous": "Previous",
+      "Up": "Up",
+      "Next": "Next",
+      "Label": "Heroes of Faerûn Journal"
+    },
+    "Bladework": "Bladework",
+    "Language": {
+      "Aglarondan": "Aglarondan",
+      "Alzhedo": "Alzhedo",
+      "Bothii": "Bothii",
+      "Chessentan": "Chessentan",
+      "Chondathan": "Chondathan",
+      "Damaran": "Damaran",
+      "Faerun": "Faerûn Regional Languages",
+      "Illuskan": "Illuskan",
+      "Lantanese": "Lantanese",
+      "Midani": "Midani",
+      "Mulhorandi": "Mulhorandi",
+      "Netherese": "Netherese",
+      "Rashemi": "Rashemi",
+      "Reghedjic": "Reghedjic",
+      "Sespech": "Sespech",
+      "Thayan": "Thayan",
+      "Turmic": "Turmic",
+      "Untheric": "Untheric"
+    },
+    "Tattoo": {
+      "Create": "Create Thayan Tattoo",
+      "Details": "Tattoo Details",
+      "Name": "Tattoo: {spell}",
+      "Type": "Thayan Tattoo",
+      "Values": "Spell Values",
+      "Warning": {
+        "Level": "Thayan spell tattoos can only be created from level 1 to 3 spells."
+      }
+    }
+  },
+  "SOURCE.BOOK.HoF": "Heroes of Faerûn"
+}
