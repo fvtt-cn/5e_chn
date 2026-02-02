@@ -161,7 +161,7 @@
     "DND5E.Disadvantage": "劣势",
     "DND5E.DistAny": "任意",
     "DND5E.DistFt": "尺",
-    "DND5E.DistMi": "英里",
+    "DND5E.DistMi": "里",
     "DND5E.DistSelf": "自身",
     "DND5E.DistTouch": "触及",
     "DND5E.Duration": "持续时间",
@@ -839,7 +839,7 @@
     "JOURNALENTRYPAGE.DND5E.Class.SpellSlots": "法术位",
     "JOURNALENTRYPAGE.DND5E.Class.SpellSlotLevel": "环阶",
     "JOURNALENTRYPAGE.DND5E.Class.SpellSlotsPerSpellLevel": "—每一法术环阶的法术位—",
-    "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesDescription": "以下部分包含选项 {class} 特性。这些功能不会自动添加，你可以根据 DM 的判断选择其中的一项、部分或全部。",
+    "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesDescription": "以下部分包含可选的 {class} 特性。这些功能不会自动添加，你可以根据 DM 的判断选择其中的一项、部分或全部。",
     "JOURNALENTRYPAGE.DND5E.EditDescription": "编辑",
     "JOURNALENTRYPAGE.DND5E.Class.TableOptionalCaption": "可选 {class} 特性",
     "JOURNALENTRYPAGE.DND5E.Class.TableCaption": "{class}",
@@ -2500,6 +2500,17 @@
             "Thickness": "厚度",
             "Length": "长度",
             "Width": "宽度"
+        },
+        "Description": {
+            "Full": "{sizes} {type}",
+            "FullCounted": "{count} {sizes} {type}",
+            "Height": "高度",
+            "Length": "长度",
+            "Radius": "半径",
+            "SizeSimple": "{number}-{unit}",
+            "SizeType": "{number}-{unit}-{type}",
+            "Thickness": "厚度",
+            "Width": "宽度"
         }
     },
     "DND5E.ArmorClassUnarmoredBard": "无甲防御（吟游诗人）",
@@ -3176,6 +3187,10 @@
             "creatureSizes": {
                 "hint": "召唤生物和其指示物将变为该体型。如果选择了不止一种体型，那么玩家在召唤时可以从这些体型中进行选择。",
                 "label": "生物体型"
+            },
+            "tempHP": {
+                "label": "临时生命值",
+                "hint": "赋予召唤出的生物临时生命值，取代其原本已有的临时生命值。"
             }
         },
         "Title": "召唤",
@@ -3728,21 +3743,26 @@
                     "other": "{number} 自愿生物",
                     "any": "任意自愿生物",
                     "every": "所有自愿生物",
-                    "one": "{number} 自愿生物"
+                    "one": "{number} 自愿生物",
+                    "each": "每名自愿生物"
                 },
                 "Label": "自愿生物"
             },
             "Cone": {
                 "Counted": {
                     "one": "{number} 锥状",
-                    "other": "{number} 锥状"
+                    "other": "{number} 锥状",
+                    "oneSized": "{sizes} 锥状",
+                    "otherSized": "{number} {sizes} 锥状"
                 },
                 "Label": "锥状"
             },
             "Sphere": {
                 "Counted": {
                     "other": "{number} 球状",
-                    "one": "{number} 球状"
+                    "one": "{number} 球状",
+                    "oneSized": "{sizes} 球状",
+                    "otherSized": "{number} {sizes} 球状"
                 },
                 "Label": "球状"
             },
@@ -3751,7 +3771,8 @@
                     "other": "{number} 生物或物件",
                     "any": "任意生物或物件",
                     "every": "所有生物或物件",
-                    "one": "{number} 生物或物件"
+                    "one": "{number} 生物或物件",
+                    "each": "每名生物或每个物件"
                 },
                 "Label": "生物或物件"
             },
@@ -3761,13 +3782,16 @@
                     "other": "{number} 敌人",
                     "any": "任意敌人",
                     "every": "所有敌人",
-                    "one": "{number} 敌人"
+                    "one": "{number} 敌人",
+                    "each": "每名敌人"
                 }
             },
             "Wall": {
                 "Counted": {
                     "one": "{number} 墙形",
-                    "other": "{number} 墙形"
+                    "other": "{number} 墙形",
+                    "oneSized": "{sizes} 墙形",
+                    "otherSized": "{number} {sizes} 墙形"
                 },
                 "Label": "墙形"
             },
@@ -3777,14 +3801,17 @@
                     "any": "任意盟友",
                     "every": "所有盟友",
                     "one": "{number} 盟友",
-                    "other": "{number} 盟友"
+                    "other": "{number} 盟友",
+                    "each": "每名盟友"
                 }
             },
             "Circle": {
                 "Label": "圆形",
                 "Counted": {
                     "one": "{number} 圆形",
-                    "other": "{number} 圆形"
+                    "other": "{number} 圆形",
+                    "otherSized": "{number} {sizes} 圆形",
+                    "oneSized": "{sizes} 圆形"
                 }
             },
             "Creature": {
@@ -3793,35 +3820,44 @@
                     "any": "任意生物",
                     "every": "所有生物",
                     "one": "{number} 生物",
-                    "other": "{number} 生物"
+                    "other": "{number} 生物",
+                    "each": "每名生物"
                 }
             },
             "Cube": {
                 "Label": "立方",
                 "Counted": {
                     "one": "{number} 立方",
-                    "other": "{number} 立方"
+                    "other": "{number} 立方",
+                    "otherSized": "{number} {sizes} 立方",
+                    "oneSized": "{sizes} 立方"
                 }
             },
             "Cylinder": {
                 "Label": "柱状",
                 "Counted": {
                     "one": "{number} 柱状",
-                    "other": "{number} 柱状"
+                    "other": "{number} 柱状",
+                    "oneSized": "{sizes} 柱状",
+                    "otherSized": "{number} {sizes} 柱状"
                 }
             },
             "Emanation": {
                 "Label": "光环",
                 "Counted": {
                     "one": "{number} 光环",
-                    "other": "{number} 光环"
+                    "other": "{number} 光环",
+                    "oneSized": "{sizes} 光环",
+                    "otherSized": "{number} {sizes} 光环"
                 }
             },
             "Line": {
                 "Label": "线状",
                 "Counted": {
                     "one": "{number} 线状",
-                    "other": "{number} 线状"
+                    "other": "{number} 线状",
+                    "oneSized": "{sizes} 线状",
+                    "otherSized": "{number} {sizes} 线状"
                 }
             },
             "Object": {
@@ -3830,14 +3866,17 @@
                     "any": "任意物件",
                     "every": "所有物件",
                     "one": "{number} 物件",
-                    "other": "{number} 物件"
+                    "other": "{number} 物件",
+                    "each": "每个物件"
                 }
             },
             "Radius": {
                 "Label": "半径",
                 "Counted": {
                     "one": "{number} 半径",
-                    "other": "{number} 半径"
+                    "other": "{number} 半径",
+                    "oneSized": "{sizes} 半径",
+                    "otherSized": "{number} {sizes} 半径"
                 }
             },
             "Self": {
@@ -3849,14 +3888,17 @@
                     "any": "任意空间",
                     "every": "所有空间",
                     "one": "{number} 空间",
-                    "other": "{number} 空间"
+                    "other": "{number} 空间",
+                    "each": "每个空间"
                 }
             },
             "Square": {
                 "Label": "方形",
                 "Counted": {
                     "one": "{number} 方形",
-                    "other": "{number} 方形"
+                    "other": "{number} 方形",
+                    "otherSized": "{number} {sizes} 方形",
+                    "oneSized": "{sizes} 方形"
                 }
             },
             "Target": {
@@ -3865,7 +3907,18 @@
                     "any": "任意目标",
                     "every": "所有目标",
                     "one": "{number} 目标",
-                    "other": "{number} 目标"
+                    "other": "{number} 目标",
+                    "each": "每名目标"
+                }
+            },
+            "Special": {
+                "Label": "{special}",
+                "Counted": {
+                    "any": "任意 {special}",
+                    "each": "每个 {special}",
+                    "every": "所有 {special}",
+                    "one": "{number} {special}",
+                    "other": "{number} {special}"
                 }
             }
         },
@@ -4728,19 +4781,23 @@
             "Label": "距离单位",
             "Foot": {
                 "Label": "尺",
-                "Abbreviation": "尺"
+                "Abbreviation": "尺",
+                "Template": "尺"
             },
             "Kilometer": {
                 "Abbreviation": "km",
-                "Label": "千米"
+                "Label": "千米",
+                "Template": "千米"
             },
             "Meter": {
                 "Label": "米",
-                "Abbreviation": "m"
+                "Abbreviation": "m",
+                "Template": "米"
             },
             "Mile": {
-                "Label": "英里",
-                "Abbreviation": "里"
+                "Label": "里",
+                "Abbreviation": "里",
+                "Template": "里"
             }
         },
         "VOLUME": {
@@ -4865,7 +4922,7 @@
             "Mile": {
                 "AbbreviationDay": "mi/d",
                 "AbbreviationHour": "mph",
-                "Label": "英里"
+                "Label": "里"
             }
         }
     },
@@ -5536,7 +5593,11 @@
         "Navigation": {
             "Next": "下一节",
             "Previous": "上一节",
-            "Up": "回到章节首页"
+            "Up": "回到章节首页",
+            "Title": "导航"
+        },
+        "Action": {
+            "ConfigureNavigation": "配置导航"
         }
     },
     "DND5E.ITEM": {
@@ -5756,22 +5817,23 @@
     "DND5E.SpellLevelSpell": "{level} （{n} 位）",
     "DND5E.Preparation": "准备",
     "DND5E.SheetClass": {
-        "JournalEntryLegacy": "旧版 5e 日志条目卡",
-        "ClassSummary": "默认 5e 职业概要卡",
-        "Container": "默认 5e 容器卡",
-        "DifficultTerrain": "默认 5e 困难地形卡",
-        "Group": "默认 5e 小队卡",
-        "SpellList": "默认 5e 法术列表卡",
-        "Item": "默认 5e 物品卡",
-        "JournalEntry": "默认 5e 日志条目卡",
-        "MapLocation": "默认 5e 地图地点卡",
-        "NPC": "默认 5e 非玩家角色卡",
-        "RotateArea": "默认 5e 旋转区域卡",
-        "Character": "默认 5e 角色卡",
-        "Vehicle": "默认 5e 载具卡",
-        "Encounter": "默认 5e 遭遇卡",
-        "Rule": "默认 5e 规则卡",
-        "Token": "默认 5e 指示物卡"
+        "JournalEntryLegacy": "旧版 D&D 5e 日志条目卡",
+        "ClassSummary": "D&D 5e 职业概要卡",
+        "Container": "D&D 5e 容器卡",
+        "DifficultTerrain": "D&D 5e 困难地形卡",
+        "Group": "D&D 5e 小队卡",
+        "SpellList": "D&D 5e 法术列表卡",
+        "Item": "D&D 5e 物品卡",
+        "JournalEntry": "D&D 5e 日志条目卡",
+        "MapLocation": "D&D 5e 地图地点卡",
+        "NPC": "D&D 5e 非玩家角色卡",
+        "RotateArea": "D&D 5e 旋转区域卡",
+        "Character": "D&D 5e 角色卡",
+        "Vehicle": "D&D 5e 载具卡",
+        "Encounter": "D&D 5e 遭遇卡",
+        "Rule": "D&D 5e 规则卡",
+        "Token": "D&D 5e 指示物卡",
+        "RollTable": "D&D 5e 掷骰表卡"
     },
     "DND5E.MovementIgnoredDifficultTerrain": "无视困难地形",
     "DND5E.Challenge": "挑战",
@@ -6099,5 +6161,19 @@
         }
     },
     "DND5E.SkillTitle": "{ability}（{skill}）",
-    "DND5E.Loot.Trade": "贸易货物"
+    "DND5E.Loot.Trade": "贸易货物",
+    "DND5E.SPELL": {
+        "Embed": {
+            "Tag": {
+                "Cantrip": "{school} 戏法",
+                "CantripLegacy": "{school} 戏法",
+                "Classes": "{levelSchool}（{classes}）",
+                "Leveled": "{level} 环 {school}",
+                "LeveledLegacy": "{levelOrdinal}-环 {school}",
+                "Ritual": "{levelSchool} (ritual)"
+            },
+            "CastingTimeTrigger": "{castingTime}，你受到 {trigger}"
+        }
+    },
+    "DND5E.SpellComponentsMaterial": "{components}（{materials}）"
 }
