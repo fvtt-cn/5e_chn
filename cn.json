@@ -2462,7 +2462,7 @@
                     "hint": "如果物品未被鉴定，行动将无法使用。"
                 },
                 "requireMagic": {
-                    "hint": "如果没有魔法，行动将无法使用。",
+                    "hint": "如果魔法不可用，行动将无法使用。",
                     "label": "需魔法"
                 },
                 "requireAttunement": {
