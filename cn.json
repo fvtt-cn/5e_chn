@@ -25,7 +25,7 @@
     "DND5E.AbilityPromptText": "什么类型的 {ability} 检定？",
     "DND5E.AbilityPromptTitle": "{ability} 属性检定",
     "DND5E.AbilityUseCast": "施法",
-    "DND5E.AbilityUseChargesLabel": "{value} 发充能",
+    "DND5E.AbilityUseChargesLabel": "{value} 充能",
     "DND5E.AbilityUseConsumableLabel": "{max} 发/每 {per}",
     "DND5E.AbilityUseUse": "使用能力",
     "DND5E.Attunement": "同调",
@@ -765,8 +765,8 @@
     "DND5E.ItemFeatureDetails": "特性详情",
     "DND5E.ItemFeatureSubtype": "{category} 类型",
     "DND5E.ItemFeatureType": "特性类型",
-    "DND5E.ItemRecoveryRoll": "{name} 重获 {count} 发充能",
-    "DND5E.ItemLossRoll": "{name} 失去 {count} 发充能",
+    "DND5E.ItemRecoveryRoll": "{name} 重获 {count} 充能",
+    "DND5E.ItemLossRoll": "{name} 失去 {count} 充能",
     "DND5E.ItemRecoveryRollMax": "{name} 重获所有充能",
     "DND5E.ItemRecoveryFormulaWarning": "无法重获 {name} 的充能。 无效的重获公式 '{formula}' ({uuid})。",
     "DND5E.LimitedUsesAvailable": "剩余使用次数",
@@ -2462,7 +2462,7 @@
                     "hint": "如果物品未被鉴定，行动将无法使用。"
                 },
                 "requireMagic": {
-                    "hint": "如果魔法不可用，行动将无法使用。",
+                    "hint": "如果物品不具有魔法，行动将无法使用。",
                     "label": "需魔法"
                 },
                 "requireAttunement": {
@@ -4725,7 +4725,7 @@
             "LabelShort": "长休",
             "Recovery": "长休后重获",
             "Result": {
-                "Full": "{name} 进行了一次长休，恢复了 {health} 点生命值和重获 {dice} 个生命骰。",
+                "Full": "{name} 进行了一次长休，恢复了 {health} 点生命值和重获了 {dice} 个生命骰。",
                 "HitDice": "{name} 进行了一次长休重获了 {dice} 个生命骰。",
                 "Short": "{name} 进行了一次长休。",
                 "HitPoints": "{name} 进行了一次长休，并且恢复了 {health} 点生命值。"
