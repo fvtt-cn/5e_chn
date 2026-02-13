@@ -24,7 +24,8 @@
 "TYPES.ChatMessage": {
   "request": "Request Message",
   "rest": "Rest Message",
-  "turn": "Combat Turn Message"
+  "turn": "Combat Turn Message",
+  "usage": "Usage Message"
 },
 
 "TYPES.Item.background": "Background",
@@ -519,6 +520,7 @@
       }
     },
     "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
+    "Options": "Options",
     "Replacement": {
       "None": "No Replacement",
       "Title": "replace"
