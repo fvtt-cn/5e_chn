@@ -4068,7 +4068,8 @@
     "TYPES.ChatMessage": {
         "turn": "战斗回合信息",
         "rest": "休息信息",
-        "request": "请求信息"
+        "request": "请求信息",
+        "usage": "使用说明"
     },
     "TYPES.Item.facility": "设施",
     "TYPES.Item.facilityPl": "设施",
