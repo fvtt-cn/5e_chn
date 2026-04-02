@@ -2124,14 +2124,25 @@
             },
             "Hint": "跟进该角色在每个等级中的生命值。",
             "Action": {
-                "Roll": "掷 {die}"
+                "Roll": "掷 {die}",
+                "RollClass": "{class}生命值掷骰",
+                "RollDie": "掷 {die}"
             },
             "Average": "取期望",
             "MaxAtFirstLevel": "1 级时的最大值： <strong>{max}</strong>",
             "Roll": "掷骰 {class} 生命值",
             "Starting": "1 级时的生命值",
             "TakeAverage": "取期望值",
-            "Title": "生命值"
+            "Title": "生命值",
+            "Breakdown": {
+                "Average": "期望",
+                "Bonus": "加值",
+                "Final": "最终",
+                "Max": "最大",
+                "Previous": "上一个",
+                "Roll": "掷骰"
+            },
+            "Options": "选项"
         },
         "Config": {
             "Details": "升级详情",
@@ -2251,7 +2262,8 @@
             "Action": {
                 "SelectGeneric": "选择物品",
                 "SelectSpecific": "选择 {type}"
-            }
+            },
+            "Options": "选项"
         },
         "ScaleValue": {
             "Hint": "随着职业等级的提升而改变的单个值，可以在掷骰公式中使用（例如武僧的武艺骰）。",
@@ -2330,7 +2342,10 @@
                 }
             },
             "Hint": "设置角色的体型。",
-            "Title": "体型"
+            "Title": "体型",
+            "Action": {
+                "SelectSize": "选择体型"
+            }
         },
         "Trait": {
             "Hint": "授予角色某些特质，或者给他们一个选择特质的选项（如熟练、技能、语言）。",
@@ -2385,7 +2400,9 @@
             },
             "Action": {
                 "AddChoice": "添加选项",
-                "RemoveChoice": "移除选项"
+                "RemoveChoice": "移除选项",
+                "RemoveTrait": "移除特质",
+                "SelectTrait": "选择特质"
             },
             "ChoicesRemaining": "再选择 {count} 个 {type}",
             "Details": "特质详情"
@@ -2415,7 +2432,13 @@
             "Delete": {
                 "Title": "确认删除",
                 "Message": "删除此项将同时删除为其选择的所有升级项。只要下方的复选框处于选中状态，这些改动就会从你的角色中删除。"
-            }
+            },
+            "LevelDown": {
+                "Message": "降低该职业等级将同时删除为其选择的所有升级项。只要下方的复选框处于选中状态，这些改动就会从你的角色中删除。",
+                "Title": "降低等级"
+            },
+            "Label": "移除改动",
+            "Options": "选项"
         }
     },
     "DND5E.ACTIVITY": {
@@ -2973,7 +2996,8 @@
             "WholeCantrip": "戏法递增",
             "HalfCantrip": "半戏法递增"
         },
-        "Hint": "对一个生物造成伤害，且无需攻击或进行豁免。"
+        "Hint": "对一个生物造成伤害，且无需攻击或进行豁免。",
+        "All": "所有伤害"
     },
     "DND5E.HEAL": {
         "FIELDS": {
