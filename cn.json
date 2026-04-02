@@ -953,7 +953,7 @@
     "EDITOR.DND5E.Inline.CheckShort": "{check}",
     "EDITOR.DND5E.Inline.CheckLong": "{check} 选",
     "EDITOR.DND5E.Inline.DamageShort": "{formula} {type}",
-    "EDITOR.DND5E.Inline.DamageLong": "{average} ({formula}) {type}",
+    "EDITOR.DND5E.Inline.DamageLong": "{average} <span class=\"formula-group\">({formula})</span> {type}",
     "EDITOR.DND5E.Inline.DC": "DC {dc} {check}",
     "EDITOR.DND5E.Inline.DCPassiveShort": "DC {dc} 被动 {check}",
     "EDITOR.DND5E.Inline.DCPassiveLong": "被动 {check} 结果 {dc} 或更高",
@@ -3069,7 +3069,17 @@
             }
         },
         "Title": "治疗",
-        "Hint": "治疗一个生物"
+        "Hint": "治疗一个生物",
+        "HealingRoll": "治疗掷骰",
+        "Type": {
+            "Healing": "生命值",
+            "Temporary": "临时生命值",
+            "TemporaryShort": "临时HP",
+            "HealingShort": "治疗",
+            "MaximumShort": "最大HP",
+            "Maximum": "最大生命值"
+        },
+        "HealingButton": "治疗"
     },
     "DND5E.SUMMON": {
         "FIELDS": {
@@ -3772,6 +3782,10 @@
                     "units": {
                         "label": "区域单位",
                         "hint": "用于衡量效应区域尺寸的单位。"
+                    },
+                    "stationary": {
+                        "hint": "光环一旦放置就无法移动。",
+                        "label": "静止"
                     }
                 },
                 "prompt": {
@@ -5057,7 +5071,13 @@
         }
     },
     "DND5E.Loyalty": "忠诚度",
-    "DND5E.Gear": "装备",
+    "DND5E.Gear": {
+        "Action": {
+            "Add": "添加至装备",
+            "Remove": "从装备移除"
+        },
+        "Label": "装备"
+    },
     "DND5E.ExperiencePoints": {
         "Abbreviation": "XP",
         "Boons": {
@@ -5684,7 +5704,8 @@
             "Finesse": "灵巧",
             "Loading": "装填",
             "Material": "材料",
-            "Sidekick": "伙伴"
+            "Sidekick": "伙伴",
+            "Gear": "装备"
         },
         "SECTIONS": {
             "Activities": "行动组合",
@@ -5982,12 +6003,14 @@
             "Fly": "飞行",
             "Swim": "游泳",
             "Walk": "步行",
-            "Speed": "速度"
+            "Speed": "速度",
+            "Jump": "跳跃"
         },
         "Action": {
             "Configure": "配置移动速度"
         },
-        "Speed": "战斗速度"
+        "Speed": "战斗速度",
+        "HoverSpeed": "{speed} (hover)"
     },
     "DND5E.CALENDAR": {
         "Action": {
@@ -6234,5 +6257,9 @@
             "dnd5e.difficultTerrain": "将某一区域标记为困难地形，并设定其类型及影响对象。",
             "dnd5e.rotateArea": "围绕中心旋转点旋转指示物、图块、墙体及其他物体。"
         }
+    },
+    "DND5E.SourceItem": {
+        "Label": "来源物品",
+        "LockedHint": "此物品的来源由授予物品自动确定，无法更改。"
     }
 }
