@@ -2997,7 +2997,28 @@
             "HalfCantrip": "半戏法递增"
         },
         "Hint": "对一个生物造成伤害，且无需攻击或进行豁免。",
-        "All": "所有伤害"
+        "All": "所有伤害",
+        "PhysicalBypass": {
+            "DescriptionShort": "被{type}来源所忽略",
+            "Hint": "这些武器属性将无视物理伤害抗性。",
+            "Description": "非{bypassTypes}类型攻击所造成的{damageTypes}",
+            "Label": "无视物理"
+        },
+        "Type": {
+            "Acid": "强酸",
+            "Bludgeoning": "钝击",
+            "Cold": "寒冷",
+            "Fire": "火焰",
+            "Force": "力场",
+            "Lightning": "闪电",
+            "Necrotic": "暗蚀",
+            "Piercing": "穿刺",
+            "Poison": "毒素",
+            "Psychic": "心灵",
+            "Radiant": "光耀",
+            "Slashing": "挥砍",
+            "Thunder": "雷鸣"
+        }
     },
     "DND5E.HEAL": {
         "FIELDS": {
