@@ -2072,7 +2072,8 @@
             "Action": {
                 "Select": "选择专长"
             },
-            "TitleEpic": "传奇恩惠"
+            "TitleEpic": "传奇恩惠",
+            "EffectTargetHint": "此数值正受到一个主动效应的影响。其最终值将为 {value}。"
         },
         "SPELLCONFIG": {
             "FreeCasting": "免费施法",
@@ -6176,5 +6177,11 @@
             "CastingTimeTrigger": "{castingTime}，你受到 {trigger}"
         }
     },
-    "DND5E.SpellComponentsMaterial": "{components}（{materials}）"
+    "DND5E.SpellComponentsMaterial": "{components}（{materials}）",
+    "TYPES.HINTS": {
+        "RegionBehavior": {
+            "dnd5e.difficultTerrain": "将某一区域标记为困难地形，并设定其类型及影响对象。",
+            "dnd5e.rotateArea": "围绕中心旋转点旋转指示物、图块、墙体及其他物体。"
+        }
+    }
 }
