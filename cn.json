@@ -2410,6 +2410,12 @@
             "BackgroundFeat": "背景专长",
             "BackgroundProficiencies": "背景熟练",
             "ChooseLanguages": "选择语言"
+        },
+        "Deletion": {
+            "Delete": {
+                "Title": "确认删除",
+                "Message": "删除此项将同时删除为其选择的所有升级项。只要下方的复选框处于选中状态，这些改动就会从你的角色中删除。"
+            }
         }
     },
     "DND5E.ACTIVITY": {
