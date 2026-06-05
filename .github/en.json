@@ -1504,6 +1504,10 @@
         "label": "Associated Skills or Tools",
         "hint": "Present ability checks using proficiency and bonuses with these skills or tools."
       },
+      "bonus": {
+        "label": "Check Bonus",
+        "hint": "Bonus added to all checks made using this activity."
+      },
       "dc": {
         "label": "Difficulty Class",
         "calculation": {
@@ -1514,6 +1518,10 @@
           "label": "DC Formula",
           "hint": "Custom formula or flat value for defining the check DC."
         }
+      },
+      "visible": {
+        "label": "Visible to All",
+        "hint": "Display the rolling button in chat for all players."
       }
     }
   },
@@ -3869,6 +3877,10 @@
         "label": "Challenge Abilities",
         "hint": "Abilities that may be rolled to attempt to save."
       },
+      "bonus": {
+        "label": "Save Bonus",
+        "hint": "Bonus added to all saving throws made using this activity."
+      },
       "dc": {
         "label": "Difficulty Class",
         "calculation": {
@@ -3881,6 +3893,10 @@
         },
         "CustomFormula": "Custom Formula",
         "DefaultFormula": "8 + @mod + @prof"
+      },
+      "visible": {
+        "label": "Visible to All",
+        "hint": "Display the rolling button in chat for all players."
       }
     }
   },
