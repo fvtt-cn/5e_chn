@@ -349,6 +349,10 @@
   },
   "Expired": "Expired",
   "Expiry": {
+    "Abbreviation": {
+      "End": "End",
+      "Start": "Start"
+    },
     "GROUPS": {
       "General": "General",
       "Specific": "Specific"
@@ -1774,8 +1778,13 @@
   "Row": {
     "Actions": "Item actions",
     "Properties": "Item properties",
+    "Roll": "Die roll",
     "rollCheck": "Ability checks",
-    "rollSave": "Saving throws"
+    "rollSave": "Saving throws",
+    "Targets": "Targets"
+  },
+  "Targets": {
+    "Count": "{number}× {name}"
   },
   "TURN": {
     "NoCombatant": "Combatant no longer exists!"
@@ -2631,6 +2640,7 @@
 "DND5E.EFFECT": {
   "Action": {
     "AddChange": "Add Change",
+    "Apply": "Apply",
     "CreateEffect": "Create Effect",
     "DeleteEffect": "Delete Effect",
     "DeleteChange": "Delete Change",
@@ -2652,7 +2662,6 @@
     },
     "Header": "Effects",
     "Warning": {
-      "Concentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
       "Ownership": "Effects cannot be applied to tokens you are not the owner of."
     }
   },
@@ -2673,6 +2682,10 @@
           },
           "priority": {
             "label": "Priority"
+          },
+          "replacement": {
+            "label": "Replacement",
+            "hint": "Configure whether roll data properties in the Value are replaced prior to application, and using whose data."
           },
           "type": {
             "label": "Type"
@@ -2703,6 +2716,10 @@
     "Label": "Change",
     "Title": "{effect} Change #{number}"
   },
+  "DisabledTooltip": {
+    "Disabled": "This effect is currently selected in one or more of its Item's Activities, and therefore cannot be suspended.",
+    "Transfer": "This effect is currently selected in one or more of its Item's Activities, and therefore cannot passively apply to the Item's Actor."
+  },
   "DropHint": "Drop an Active Effect here",
   "Empty": "No associated effects. Use the <i class=\"fas fa-plus\"></i> button above to create one, or select an existing effect from the drop-down.",
   "Expiry": {
@@ -2711,6 +2728,11 @@
   },
   "Label": "Available Effects",
   "New": "New Effect",
+  "Replacement": {
+    "NoChange": "No Change",
+    "Origin": "Origin",
+    "Target": "Target"
+  },
   "RIDER": {
     "Activity": "Enchantment Rider Activity",
     "Effect": "Enchantment Rider Effect",
@@ -5571,6 +5593,7 @@
 "DND5E.Tokens": {
   "NoneSelected": "No Tokens Selected",
   "NoneTargeted": "No Tokens Targeted",
+  "NoTargets": "No Targets",
   "Selected": "Selected",
   "Targeted": "Targeted"
 },
@@ -6904,6 +6927,10 @@
     "Name": "Piety Score"
   },
   "PERMISSIONS": {
+    "AllowEffects": {
+      "Hint": "Allow players to use the effect application tray when an actor they own is the target of an effect.",
+      "Name": "Allow Player Effect Application"
+    },
     "AllowRests": {
       "Hint": "Allow players to rest directly from their characters' sheets. When disabled, players will only be able to rest when the GM makes a request from the party.",
       "Name": "Allow Individual Rests"
