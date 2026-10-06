@@ -44,7 +44,7 @@
     "DND5E.ActionSave": "豁免检定",
     "DND5E.ActionUtil": "效用",
     "DND5E.ActionWarningNoItem": "角色 {name} 不再拥有请求的物品 {item}",
-    "DND5E.ActionWarningNoToken": "你必须拥有一个以上的可控制的指示物以使用这个选项。",
+    "DND5E.ActionWarningNoToken": "你必须控制至少一个指示物才能使用此选项。",
     "DND5E.Add": "添加",
     "DND5E.Advantage": "优势",
     "DND5E.Alignment": "阵营",
@@ -212,7 +212,7 @@
     "DND5E.FlagsReliableTalent": "可靠才能（盗贼）",
     "DND5E.FlagsReliableTalentHint": "每当你进行的属性检定可以使用熟练加值时，你可以将d20骰中9或以下的结果都视为10。",
     "DND5E.FlagsRemarkableAthlete": "运动健将",
-    "DND5E.FlagsRemarkableAthleteHint": "将1/2熟练加值（向上取整）加在你不包含熟练加值的任何力量、敏捷（先攻）或体质检定上。",
+    "DND5E.FlagsRemarkableAthleteHint": "先攻掷骰和运动检定具有优势。",
     "DND5E.FlagsDiamondSoul": "金刚魂",
     "DND5E.FlagsDiamondSoulHint": "获得所有豁免掷骰的熟练。",
     "DND5E.FlagsWeaponCritThreshold": "武器重击阈值",
@@ -376,7 +376,7 @@
     "DND5E.SpellAdd": "添加法术",
     "DND5E.SpellCantrip": "戏法",
     "DND5E.SpellCastConsume": "是否耗用法术位？",
-    "DND5E.SpellCastNoSlots": "你没有可用的法术位来施放法术",
+    "DND5E.SpellCastNoSlots": "你没有可用的{level}环法术位来施放{name}。",
     "DND5E.SpellCastUpcast": "以此等级施展",
     "DND5E.SpellCastingHeader": "施法",
     "DND5E.SpellComponents": "法术成分",
@@ -395,7 +395,7 @@
     "DND5E.SpellLevel7": "7 环",
     "DND5E.SpellLevel8": "8 环",
     "DND5E.SpellLevel9": "9 环",
-    "DND5E.SpellLevelPact": "契约法术位",
+    "DND5E.SpellLevelPact": "契约法术位［{level}环］（{n}个法术位）",
     "DND5E.SpellLevelSlot": "{level} ({n} 法术位)",
     "DND5E.SpellMaterials": "施法材料",
     "DND5E.SpellName": "法术名",
@@ -953,7 +953,7 @@
     "EDITOR.DND5E.Inline.CheckShort": "{check}",
     "EDITOR.DND5E.Inline.CheckLong": "{check} 选",
     "EDITOR.DND5E.Inline.DamageShort": "{formula} {type}",
-    "EDITOR.DND5E.Inline.DamageLong": "{average} <span class=\"formula-group\">({formula})</span> {type}",
+    "EDITOR.DND5E.Inline.DamageLong": "{damage}伤害",
     "EDITOR.DND5E.Inline.DC": "DC {dc} {check}",
     "EDITOR.DND5E.Inline.DCPassiveShort": "DC {dc} 被动 {check}",
     "EDITOR.DND5E.Inline.DCPassiveLong": "被动 {check} 结果 {dc} 或更高",
@@ -1063,7 +1063,7 @@
             "Art": {
                 "Label": "角色艺术",
                 "portraits": "立绘",
-                "tokens": "Tokens"
+                "tokens": "指示物"
             },
             "Legend": "小队卡选项"
         },
@@ -1170,7 +1170,8 @@
         "AttackLong": "{formula} 命中",
         "AttackShort": "{formula}",
         "CheckUsing": "使用{tool}进行{check}",
-        "ItemActivity": "{item} ({activity})"
+        "ItemActivity": "{item} ({activity})",
+        "DamageAverage": "{average} <span class=\"formula-group\">({formula})</span> {type}"
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -1291,6 +1292,22 @@
             "DexTiebreaker": {
                 "Name": "敏捷决先",
                 "Hint": "在先攻掷骰结果相平时，以敏捷属性值作为决先依据。"
+            },
+            "AutoApplyDowned": {
+                "Name": "自动应用倒下状态",
+                "Hint": "在战斗中，当生物的生命值降至0时，自动将其标记为死亡或昏迷。非重要NPC会被标记为死亡；重要NPC和玩家角色会先被标记为昏迷，死亡豁免失败3次后再标记为死亡。",
+                "None": "从不",
+                "DeadOnly": "用于NPC（仅死亡）",
+                "NPCs": "用于NPC（死亡与昏迷）",
+                "All": "始终"
+            },
+            "InitiativeGroupCombatants": {
+                "Name": "分组显示参战者",
+                "Hint": "在遭遇追踪器中，将先攻值相同的参战者分组显示。"
+            },
+            "InitiativeGroupRoll": {
+                "Name": "同类生物仅掷一次先攻",
+                "Hint": "相同生物使用同一次先攻掷骰结果。"
             }
         },
         "CRITICAL": {
@@ -1382,6 +1399,14 @@
             "AllowRests": {
                 "Name": "允许个人休息",
                 "Hint": "允许玩家直接从角色卡中进行休息。若禁用此功能，玩家仅能在GM向队伍发起请求时休息。"
+            },
+            "AllowDamage": {
+                "Hint": "允许玩家为自己拥有的指示物应用伤害。",
+                "Name": "允许玩家应用伤害"
+            },
+            "AllowEffects": {
+                "Hint": "当玩家拥有的角色成为效应目标时，允许该玩家使用效应应用面板。",
+                "Name": "允许玩家应用效应"
             }
         },
         "AUTOMATION": {
@@ -1391,7 +1416,51 @@
                 "NoBlocking": "部分",
                 "None": "无",
                 "Full": "完全"
+            },
+            "Autosize": {
+                "Hint": "根据体型类别自动调整指示物的尺寸和缩放比例。",
+                "Name": "同步指示物尺寸"
+            },
+            "Falling": {
+                "Name": "禁用坠落自动处理",
+                "Hint": "不追踪指示物的坠落状态。"
+            },
+            "SenseVision": {
+                "Name": "将感官同步至指示物视觉",
+                "Hint": "根据角色的感官自动配置指示物的视野范围、视觉模式和侦测模式。",
+                "Notice": "视觉和侦测设置已根据此角色的{senses}同步。",
+                "Senses": "感官"
             }
+        },
+        "CHATLOG": {
+            "Hint": "指定聊天日志的主题。默认沿用应用程序主题。",
+            "Name": "聊天日志主题",
+            "Options": {
+                "blank": "默认",
+                "dark": "深色",
+                "light": "浅色"
+            }
+        },
+        "CONDITIONS": {
+            "Name": "状态"
+        },
+        "ENCOUNTERS": {
+            "Name": "遭遇",
+            "EncounterPlacementBehavior": {
+                "Name": "放置选项",
+                "Hint": "配置将遭遇成员放置到场景时，是否将其加入战斗。",
+                "CreateCombatants": "加入战斗",
+                "None": "不执行操作",
+                "RollInitiative": "加入战斗并掷先攻"
+            }
+        },
+        "PIETY": {
+            "Hint": "为玩家角色启用可选的虔信值追踪功能。",
+            "Name": "虔信值"
+        },
+        "SUMMARIZECHAT": {
+            "Hint": "将某些结果以摘要形式追加，替代完整的聊天卡片。",
+            "Name": "聊天卡片摘要"
         }
     },
     "SHEETS.DND5E": {
@@ -1438,7 +1507,8 @@
     "DND5E.DamageModification": {
         "Label": "伤害调整",
         "Hint": "该角色受到的类型伤害的公式。负值将减少受到的伤害。",
-        "BypassHint": "这些武器属性将忽略对于物理伤害的伤害调整。"
+        "BypassHint": "这些武器属性将忽略对于物理伤害的伤害调整。",
+        "Formatter": "{name}伤害修正"
     },
     "DND5E.AdvantageMode": "优势模式",
     "DND5E.ContainerDeleteMessage": "此容器将被永久删除，无法恢复，其中的 {count} 个物品将被移出。",
@@ -1493,7 +1563,8 @@
         "SpeciesLegacy": "种族特性",
         "Vehicle": {
             "Label": "载具特性"
-        }
+        },
+        "PietyTrait": "虔信值特质"
     },
     "DND5E.DeathSaveSuccessLabelN.few": "第三次死亡豁免成功",
     "DND5E.SizeGargantuanAbbr": "超巨",
@@ -1614,7 +1685,8 @@
         "NoneSelected": "没有选中指示物",
         "NoneTargeted": "没有标选指示物作为目标",
         "Selected": "已选中",
-        "Targeted": "已标选"
+        "Targeted": "已标选",
+        "NoTargets": "无目标"
     },
     "DND5E.ConcentrationBonus": "专注加值",
     "DND5E.ConcentrationLimit": "专注限制",
@@ -1628,7 +1700,19 @@
             "Threshold": "伤害阈值"
         },
         "Downgrading": "降级 {source} 为抗性",
-        "Ignoring": "忽略 {source}"
+        "Ignoring": "忽略 {source}",
+        "Back": "返回上一面板",
+        "Multiplier": "伤害倍率",
+        "Section": {
+            "Changes": "已应用于此目标",
+            "Multiplier": "倍率",
+            "Targets": "此组中的目标"
+        },
+        "State": {
+            "active": "已应用",
+            "downgrade": "已降级",
+            "ignore": "已忽略"
+        }
     },
     "DND5E.ConcentrationBreakWarning": "打破对其他生物具有激活效应的专注需要有 GM 在线。",
     "DND5E.EffectApplyWarningConcentration": "应用其他角色正在专注的效应需要 GM 权限。",
@@ -1668,16 +1752,20 @@
             "prerequisites": {
                 "level": {
                     "label": "所需等级",
-                    "hint": "升级时选择此特性所需的角色等级或职业等级。"
+                    "hint": "升级时选择此特性所需的角色等级或职业等级。",
+                    "display": "{level}级及以上",
+                    "displayLegacy": "{levelOrdinal}级"
                 },
                 "label": "先决条件",
                 "repeatable": {
                     "hint": "此特性可被多次选择。",
-                    "label": "复选"
+                    "label": "复选",
+                    "display": "尚未选取"
                 },
                 "items": {
                     "hint": "选择此项前角色必须拥有的物品标识符。",
-                    "label": "需求物品"
+                    "label": "需求物品",
+                    "display": "{items}"
                 }
             }
         },
@@ -1685,7 +1773,12 @@
             "InvalidLevel": "必须至少达到 {level} 级",
             "Message": "{actor}需满足{requirements}方可进行该{type}操作。",
             "MissingItem": "必须已完成{items}",
-            "NotRepeatable": "必须未拥有此项"
+            "NotRepeatable": "此前不得已选取{name}"
+        },
+        "Status": {
+            "Invalid": "先决条件验证失败",
+            "Unknown": "先决条件验证未完成",
+            "Valid": "先决条件验证成功"
         }
     },
     "DND5E.Scroll": {
@@ -2146,7 +2239,12 @@
         },
         "Config": {
             "Details": "升级详情",
-            "AnyLevel": "任意"
+            "AnyLevel": "任意",
+            "Status": {
+                "Complete": "已完成配置",
+                "Incomplete": "未配置"
+            },
+            "Title": "配置{item}的升级项"
         },
         "ItemGrant": {
             "Details": "授予详情",
@@ -2158,6 +2256,9 @@
                 "optional": {
                     "label": "选项",
                     "hint": "如果所有升级选项被标记为可选，玩家可以选择不获取以下任何一项，否则所有非可选项目都会被授予。"
+                },
+                "sorting": {
+                    "label": "排序方式"
                 }
             },
             "Hint": "当角色达到特定等级时，授予其物品（例如装备、特性或法术）等。",
@@ -2165,7 +2266,8 @@
             "Warning": {
                 "Container": "容器内的物品不会与容器一起添加。",
                 "Duplicate": "该物品已存在于此升级中。",
-                "Recursive": "你不能在某项升级中授予该项本身。"
+                "Recursive": "你不能在某项升级中授予该项本身。",
+                "Type": "此升级项类型无法添加{type}物品。"
             }
         },
         "Manager": {
@@ -2222,9 +2324,10 @@
                 },
                 "restriction": {
                     "level": {
-                        "Available": "任意可用等级",
+                        "Available": "任意可用环阶（含戏法）",
                         "hint": "仅允许从该等级的法术中进行选择。",
-                        "label": "法术环阶"
+                        "label": "法术环阶",
+                        "AvailableNoCantrips": "任意可用环阶（不含戏法）"
                     },
                     "subtype": {
                         "label": "子类"
@@ -2235,12 +2338,19 @@
                     "list": {
                         "hint": "仅允许使用这些列表中的法术。",
                         "label": "法术列表"
+                    },
+                    "school": {
+                        "hint": "仅允许选择这些学派的法术。",
+                        "label": "法术学派"
                     }
                 },
                 "type": {
                     "Any": "任一物品",
                     "hint": "限制可选择的物品类型。",
                     "label": "物品类型"
+                },
+                "sorting": {
+                    "label": "排序方式"
                 }
             },
             "Replacement": {
@@ -2257,7 +2367,8 @@
                 "PreviouslyChosen": "该物品已在先前的升级中被选中。",
                 "SpellLevelSpecific": "只有 {level} 的法术可在此次升级中被选择。",
                 "MaxSelected": "无法选择更多物品，请先取消勾选已选物品后再进行选择。",
-                "SpellList": "只有在 {lists} 法术列表中出现的法术才能被选作此次升级的法术。"
+                "SpellList": "只有在 {lists} 法术列表中出现的法术才能被选作此次升级的法术。",
+                "SpellSchool": "此升级项只能选择{schools}学派的法术。"
             },
             "Action": {
                 "SelectGeneric": "选择物品",
@@ -2325,10 +2436,25 @@
                     "Hint": "如果您不确定比例值的类型，或者类型无关紧要，请使用此选项。",
                     "Identifier": "当前等级的比例值将在使用以下公式时可用：<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
                     "Label": "所有"
+                },
+                "Usage": {
+                    "FIELDS": {
+                        "period": {
+                            "label": "周期"
+                        },
+                        "value": {
+                            "label": "使用次数"
+                        }
+                    },
+                    "Hint": "用于表示物品在指定周期内的使用次数。",
+                    "Label": "使用次数"
                 }
             },
             "Action": {
                 "CopyFormula": "复制公式"
+            },
+            "Warning": {
+                "DuplicateIdentifier": "多个等级数值共用了标识符{identifier}。"
             }
         },
         "Size": {
@@ -2384,6 +2510,14 @@
                         "pool": {
                             "label": "特质"
                         }
+                    },
+                    "element": {
+                        "count": {
+                            "label": "数量"
+                        },
+                        "pool": {
+                            "label": "特质"
+                        }
                     }
                 },
                 "grants": {
@@ -2412,7 +2546,8 @@
             "View": "查看升级",
             "Delete": "删除升级",
             "Duplicate": "重复升级",
-            "Edit": "编辑升级"
+            "Edit": "编辑升级",
+            "ModifyChoices": "修改选择"
         },
         "Migration": {
             "Action": {
@@ -2439,6 +2574,59 @@
             },
             "Label": "移除改动",
             "Options": "选项"
+        },
+        "FIELDS": {
+            "classRestriction": {
+                "label": "职业限制",
+                "none": "所有职业",
+                "primary": "仅初始职业",
+                "secondary": "仅兼职职业"
+            },
+            "hint": {
+                "label": "提示"
+            },
+            "img": {
+                "label": "自定义图标"
+            },
+            "level": {
+                "label": "等级"
+            },
+            "name": {
+                "label": "自定义标题"
+            }
+        },
+        "Label": "升级项",
+        "Level": {
+            "Any": "任意等级",
+            "None": "无等级",
+            "Specific": "第{level}级"
+        },
+        "ModifyItem": {
+            "Action": {
+                "AddChange": "添加变更",
+                "DeleteChange": "删除变更"
+            },
+            "DropHint": "将附魔拖放至此",
+            "Empty": {
+                "WithDropdown": "没有变更。使用上方的<i class=\"fa-solid fa-plus\"></i>按钮创建变更，或从下拉菜单中选择现有效应。",
+                "WithoutDropdown": "没有变更。使用上方的<i class=\"fa-solid fa-plus\"></i>按钮创建变更。"
+            },
+            "FIELDS": {
+                "changes": {
+                    "element": {
+                        "enchantment": {
+                            "label": "应用的附魔"
+                        },
+                        "identifiers": {
+                            "hint": "此附魔将修改的物品标识符。标识符可添加物品类型前缀（例如“spell:mage-hand”）。",
+                            "label": "修改的物品"
+                        }
+                    },
+                    "label": "物品变更"
+                }
+            },
+            "Hint": "使用附魔修改现有物品。",
+            "Title": "修改物品"
         }
     },
     "DND5E.ACTIVITY": {
@@ -2499,6 +2687,24 @@
                     "hint": "如果物品需要同调但未同调，则无法使用该行动。",
                     "label": "需同调"
                 }
+            },
+            "behaviors": {
+                "element": {
+                    "level": {
+                        "label": "等级限制",
+                        "hint": "应用此行为所需的等级范围。",
+                        "max": {
+                            "label": "最高等级"
+                        },
+                        "min": {
+                            "label": "最低等级"
+                        }
+                    },
+                    "name": {
+                        "label": "名称"
+                    }
+                },
+                "label": "效应区域行为"
             }
         },
         "Action": {
@@ -2580,6 +2786,9 @@
                         "label": "重击阈值",
                         "hint": "D20中重击所需的最小值。"
                     }
+                },
+                "abilities": {
+                    "label": "可用属性"
                 }
             },
             "damage": {
@@ -2681,7 +2890,43 @@
                     "hint": "用此伤害代替基础武器的伤害，而不是增加它。",
                     "label": "替换武器伤害"
                 },
-                "label": "弹药伤害"
+                "label": "弹药伤害",
+                "base": {
+                    "bonus": {
+                        "label": "基础伤害加值"
+                    },
+                    "custom": {
+                        "enabled": {
+                            "label": "使用自定义基础伤害公式"
+                        },
+                        "formula": {
+                            "label": "自定义基础伤害公式"
+                        }
+                    },
+                    "denomination": {
+                        "label": "基础伤害骰面数"
+                    },
+                    "number": {
+                        "label": "基础伤害骰数量"
+                    },
+                    "scaling": {
+                        "formula": {
+                            "label": "基础伤害成长公式"
+                        },
+                        "mode": {
+                            "label": "基础伤害成长方式"
+                        },
+                        "number": {
+                            "label": "基础伤害成长值"
+                        }
+                    },
+                    "types": {
+                        "label": "基础伤害类型"
+                    }
+                },
+                "bonus": {
+                    "label": "伤害加值"
+                }
             },
             "uses": {
                 "autoDestroy": {
@@ -2843,8 +3088,9 @@
             "MissingItem": "无法找到由行动 {activity} 配置在物品 {item} 上的耗用项。",
             "MissingSpellSlot": "没有可用的 {level} 法术位。",
             "None": "没有可用的 {type} 可以消耗，需要 {cost} 。",
-            "WillDestroy": "将耗尽 {物品} 使用次数，并将其摧毁。"
-        }
+            "WillDestroy": "消耗{item}将用尽其最后一次使用次数，并将其摧毁。"
+        },
+        "Empty": "没有关联消耗。使用上方的<i class=\"fas fa-plus\"></i>按钮添加消耗目标。"
     },
     "DND5E.CHECK": {
         "FIELDS": {
@@ -2868,6 +3114,14 @@
                 "associated": {
                     "label": "相关技能或工具",
                     "hint": "使用这些技能或工具进行当前的属性检定时，加上熟练和加值。"
+                },
+                "bonus": {
+                    "label": "检定加值",
+                    "hint": "此行动的所有检定获得的加值。"
+                },
+                "visible": {
+                    "label": "所有人可见",
+                    "hint": "在聊天中向所有玩家显示掷骰按钮。"
                 }
             }
         },
@@ -2978,6 +3232,10 @@
                         "types": {
                             "label": "伤害类型",
                             "hint": "造成伤害的类型，或者用户可以选择的多种类型。"
+                        },
+                        "modifiers": {
+                            "label": "修饰符",
+                            "hint": "添加到基础骰上的掷骰修饰符。"
                         }
                     }
                 }
@@ -3018,7 +3276,9 @@
             "Radiant": "光耀",
             "Slashing": "挥砍",
             "Thunder": "雷鸣"
-        }
+        },
+        "Empty": "尚未配置伤害。使用上方的<i class=\"fas fa-plus\"></i>按钮添加伤害项。",
+        "EmptyExceptBase": "使用上方的<i class=\"fas fa-plus\"></i>按钮添加额外伤害项。"
     },
     "DND5E.HEAL": {
         "FIELDS": {
@@ -3253,6 +3513,14 @@
             "tempHP": {
                 "label": "临时生命值",
                 "hint": "赋予召唤出的生物临时生命值，取代其原本已有的临时生命值。"
+            },
+            "flat": {
+                "attack": {
+                    "label": "固定攻击命中值"
+                },
+                "save": {
+                    "label": "固定豁免DC"
+                }
             }
         },
         "Title": "召唤",
@@ -3291,7 +3559,8 @@
             "CRV11": "基于生物挑战等级的召唤只适用于FVTT V12或更高版本。",
             "NoActor": "找不到UUID为“{UUID}”的角色来召唤。",
             "NoOwnership": "你必须拥有‘{actor}’的所有权才能召唤它。",
-            "NoProfile": "无法在“{item}”上找到召唤配置{profileId}。"
+            "NoProfile": "无法在“{item}”上找到召唤配置{profileId}。",
+            "PlaceTokens": "在场景中放置召唤物时出错。"
         },
         "Hint": "召唤一个新生物至场景。"
     },
@@ -3318,6 +3587,10 @@
                 "value": {
                     "label": "持续时长",
                     "hint": "如果适用，指定单位中的持续时间数值。"
+                },
+                "expiry": {
+                    "label": "结束事件",
+                    "hint": "触发本次使用结束的事件。"
                 }
             }
         }
@@ -3367,7 +3640,18 @@
                         "hint": "用于定义豁免难度等级的自定义公式或固定值。"
                     },
                     "CustomFormula": "自定义公式",
-                    "DefaultFormula": "8 + @mod + @prof"
+                    "DefaultFormula": "8 + @mod + @prof",
+                    "bonus": {
+                        "label": "DC加值"
+                    }
+                },
+                "bonus": {
+                    "label": "豁免加值",
+                    "hint": "此行动的所有豁免检定获得的加值。"
+                },
+                "visible": {
+                    "label": "所有人可见",
+                    "hint": "在聊天中向所有玩家显示掷骰按钮。"
                 }
             }
         },
@@ -3388,7 +3672,43 @@
     "DND5E.WEAPON": {
         "FIELDS": {
             "damage": {
-                "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害作用会自动提供。"
+                "hint": "武器的固有伤害骰。在攻击时，属性调整值和额外的伤害作用会自动提供。",
+                "base": {
+                    "bonus": {
+                        "label": "基础伤害加值"
+                    },
+                    "custom": {
+                        "enabled": {
+                            "label": "使用自定义基础伤害公式"
+                        },
+                        "formula": {
+                            "label": "自定义基础伤害公式"
+                        }
+                    },
+                    "denomination": {
+                        "label": "基础伤害骰面数"
+                    },
+                    "number": {
+                        "label": "基础伤害骰数量"
+                    },
+                    "scaling": {
+                        "formula": {
+                            "label": "基础伤害成长公式"
+                        },
+                        "mode": {
+                            "label": "基础伤害成长方式"
+                        },
+                        "number": {
+                            "label": "基础伤害成长值"
+                        }
+                    },
+                    "types": {
+                        "label": "基础伤害类型"
+                    }
+                },
+                "bonus": {
+                    "label": "伤害加值"
+                }
             },
             "ammunition": {
                 "type": {
@@ -3422,7 +3742,8 @@
         "Enchantment": {
             "Action": {
                 "Create": "创建附魔",
-                "Delete": "删除附魔"
+                "Delete": "删除附魔",
+                "Dissociate": "解除附魔关联"
             },
             "Empty": "没有相关附魔。使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个现有的附魔。",
             "Active": "{name}（激活）"
@@ -3516,7 +3837,7 @@
             },
             "effects.element": {
                 "riders": {
-                    "label": "吸附",
+                    "label": "附加内容",
                     "activity": {
                         "label": "额外行动",
                         "hint": "当施加此附魔时，这些额外行动将被添加到被附魔物品中，当移除附魔时则会被移除。"
@@ -3579,6 +3900,10 @@
                     }
                 },
                 "label": "附魔配置"
+            },
+            "magical": {
+                "hint": "此附魔具有魔法性质，在魔法不可用时应禁用。",
+                "label": "魔法附魔"
             }
         },
         "Action": {
@@ -3601,25 +3926,197 @@
             "LongRest": "长休",
             "Never": "从不",
             "ShortRest": "短休"
+        },
+        "Transfer": {
+            "DisabledTooltip": "此附魔目前已被其所属物品的一个或多个附魔行动选用，因此无法直接应用于该物品。",
+            "Hint": "勾选后，此附魔将直接应用于其所属物品。",
+            "Label": "将附魔应用于物品"
         }
     },
     "DND5E.EFFECT": {
         "Action": {
             "Create": "创建效应",
             "Delete": "删除效应",
-            "Dissociate": "分离效应"
+            "Dissociate": "分离效应",
+            "AddChange": "添加变更",
+            "Apply": "应用",
+            "CreateEffect": "创建效应",
+            "DeleteEffect": "删除效应",
+            "DeleteChange": "删除变更",
+            "DisableEffect": "禁用效应",
+            "DissociateEffect": "解除效应关联",
+            "EditChange": "编辑变更",
+            "EditEffect": "编辑效应",
+            "EnableEffect": "启用效应",
+            "PanToToken": "将视图移至指示物",
+            "RemoveStatus": {
+                "all": "所有来源",
+                "label": "来源"
+            },
+            "Search": "搜索效应"
         },
         "Empty": "没有相关效应。请使用上方的 <i class=\"fas fa-plus\"></i> 按钮创建一个，或者从下拉菜单中选择一个已有的效应。",
         "Label": "可用效应",
         "RIDER": {
-            "Activity": "附魔骑手行动",
-            "Effect": "附魔骑手效应"
+            "Activity": "附魔附加行动",
+            "Effect": "附魔附加效应",
+            "FIELDS": {
+                "rider": {
+                    "statuses": {
+                        "hint": "应用此激活效应时，将单独应用这些额外状态。",
+                        "label": "单独应用的状态"
+                    }
+                }
+            }
+        },
+        "AdditionalChanges": "额外变更",
+        "Application": {
+            "Action": {
+                "ApplyTokens": "应用于选定的指示物"
+            },
+            "Header": "效应",
+            "Warning": {
+                "Ownership": "无法为不属于你的指示物应用效应。"
+            }
+        },
+        "AttributeKeyTooltip": "常用键及其可用值列表见<a href=\"{url}\">维基</a>。",
+        "BASE": {
+            "FIELDS": {
+                "changes": {
+                    "element": {
+                        "conditions": {
+                            "hint": "应用此变更必须满足的条件。",
+                            "label": "变更条件"
+                        },
+                        "key": {
+                            "label": "属性键"
+                        },
+                        "phase": {
+                            "hint": "应用变更的数据准备阶段或其他事件。",
+                            "label": "阶段"
+                        },
+                        "priority": {
+                            "label": "优先级"
+                        },
+                        "replacement": {
+                            "label": "替换",
+                            "hint": "配置是否在应用前替换“值”中的掷骰数据属性，以及使用谁的数据。"
+                        },
+                        "type": {
+                            "label": "类型"
+                        },
+                        "value": {
+                            "label": "值"
+                        }
+                    }
+                },
+                "conditions": {
+                    "hint": "控制何时应用此效应的条件。",
+                    "label": "效应条件"
+                },
+                "magical": {
+                    "hint": "此效应来自魔法来源，在魔法不可用时应禁用。",
+                    "label": "魔法效应"
+                }
+            }
+        },
+        "Category": {
+            "Temporary": "临时效应",
+            "Passive": "被动效应",
+            "Inactive": "未激活效应",
+            "Unavailable": "不可用效应"
+        },
+        "Change": {
+            "Configuration": "变更配置",
+            "Group": {
+                "Custom": "自定义",
+                "Rules": "规则",
+                "Standard": "标准"
+            },
+            "Label": "变更",
+            "Title": "{effect}变更第{number}项",
+            "Type": {
+                "Advantage": {
+                    "Label": "优势模式"
+                },
+                "Bonus": {
+                    "Label": "加值"
+                },
+                "Maximum": {
+                    "Label": "掷骰最大值"
+                },
+                "Minimum": {
+                    "Label": "掷骰最小值"
+                }
+            }
+        },
+        "DisabledTooltip": {
+            "Disabled": "此效应目前已被其所属物品的一个或多个行动选用，因此无法暂停。",
+            "Transfer": "此效应目前已被其所属物品的一个或多个行动选用，因此无法被动应用于该物品的角色。"
+        },
+        "DropHint": "将激活效应拖放至此",
+        "Expired": "已到期",
+        "Expiry": {
+            "Abbreviation": {
+                "End": "结束",
+                "Start": "开始"
+            },
+            "Group": {
+                "General": "通用",
+                "Specific": "特定"
+            },
+            "Type": {
+                "LongRest": "长休结束",
+                "ShortRest": "短休结束",
+                "SourceEnd": "来源的下个回合结束",
+                "SourceStart": "来源的下个回合开始",
+                "TargetEnd": "目标的下个回合结束",
+                "TargetStart": "目标的下个回合开始",
+                "YourEnd": "你的下个回合结束",
+                "YourStart": "你的下个回合开始"
+            }
+        },
+        "FIELDS": {
+            "statuses": {
+                "label": "状态",
+                "hint": "受到此激活效应影响时，目标将被视为具有这些额外状态。"
+            }
+        },
+        "New": "新效应",
+        "Replacement": {
+            "NoChange": "不替换",
+            "Origin": "来源",
+            "Target": "目标"
+        },
+        "Status": {
+            "ChangeActive": "变更已激活",
+            "ChangeInactive": "变更未激活",
+            "DeleteDialog": {
+                "hint": "你正受到来自多个来源的此状态影响。请选择要结束的效应。",
+                "title": "移除效应"
+            },
+            "Inactive": "未激活",
+            "Passive": "被动",
+            "Temporary": "临时",
+            "Unavailable": "不可用"
+        },
+        "Suppressed": {
+            "Hint": "必须装备来源物品或与其同调才能激活这些效应"
+        },
+        "Tab": "效应",
+        "Warning": {
+            "RollCondition": "效应条件无法引用“roll.”属性。请将此条件移至各个变更中，以便应用效应。",
+            "StatusCondition": "赋予状态的效应不能同时以状态作为条件。请将此条件移至各个变更中，以便应用效应。"
         }
     },
     "DND5E.FLAGS": {
         "EnhancedDualWielding": {
             "Name": "强化双持",
             "Hint": "允许使用任何无双手词条的近战武器进行附赠动作的额外攻击。"
+        },
+        "IgnoreArmorSpeedReduction": {
+            "Name": "忽略护甲减速",
+            "Hint": "忽略因穿戴护甲但未满足力量要求而受到的速度减值。"
         }
     },
     "DND5E.ItemBackgroundDetails": "背景详情",
@@ -3806,18 +4303,18 @@
             },
             "WillingCreature": {
                 "Counted": {
-                    "other": "{number} 自愿生物",
+                    "other": "自愿生物",
                     "any": "任意自愿生物",
                     "every": "所有自愿生物",
-                    "one": "{number} 自愿生物",
+                    "one": "自愿生物",
                     "each": "每名自愿生物"
                 },
                 "Label": "自愿生物"
             },
             "Cone": {
                 "Counted": {
-                    "one": "{number} 锥状",
-                    "other": "{number} 锥状",
+                    "one": "锥状",
+                    "other": "锥状",
                     "oneSized": "{sizes} 锥状",
                     "otherSized": "{number} {sizes} 锥状"
                 },
@@ -3825,8 +4322,8 @@
             },
             "Sphere": {
                 "Counted": {
-                    "other": "{number} 球状",
-                    "one": "{number} 球状",
+                    "other": "球状",
+                    "one": "球状",
                     "oneSized": "{sizes} 球状",
                     "otherSized": "{number} {sizes} 球状"
                 },
@@ -3834,10 +4331,10 @@
             },
             "CreatureOrObject": {
                 "Counted": {
-                    "other": "{number} 生物或物件",
+                    "other": "生物或物件",
                     "any": "任意生物或物件",
                     "every": "所有生物或物件",
-                    "one": "{number} 生物或物件",
+                    "one": "生物或物件",
                     "each": "每名生物或每个物件"
                 },
                 "Label": "生物或物件"
@@ -3845,17 +4342,17 @@
             "Enemy": {
                 "Label": "敌人",
                 "Counted": {
-                    "other": "{number} 敌人",
+                    "other": "敌人",
                     "any": "任意敌人",
                     "every": "所有敌人",
-                    "one": "{number} 敌人",
+                    "one": "敌人",
                     "each": "每名敌人"
                 }
             },
             "Wall": {
                 "Counted": {
-                    "one": "{number} 墙形",
-                    "other": "{number} 墙形",
+                    "one": "墙形",
+                    "other": "墙形",
                     "oneSized": "{sizes} 墙形",
                     "otherSized": "{number} {sizes} 墙形"
                 },
@@ -3866,16 +4363,16 @@
                 "Counted": {
                     "any": "任意盟友",
                     "every": "所有盟友",
-                    "one": "{number} 盟友",
-                    "other": "{number} 盟友",
+                    "one": "盟友",
+                    "other": "盟友",
                     "each": "每名盟友"
                 }
             },
             "Circle": {
                 "Label": "圆形",
                 "Counted": {
-                    "one": "{number} 圆形",
-                    "other": "{number} 圆形",
+                    "one": "圆形",
+                    "other": "圆形",
                     "otherSized": "{number} {sizes} 圆形",
                     "oneSized": "{sizes} 圆形"
                 }
@@ -3885,16 +4382,16 @@
                 "Counted": {
                     "any": "任意生物",
                     "every": "所有生物",
-                    "one": "{number} 生物",
-                    "other": "{number} 生物",
+                    "one": "生物",
+                    "other": "生物",
                     "each": "每名生物"
                 }
             },
             "Cube": {
                 "Label": "立方",
                 "Counted": {
-                    "one": "{number} 立方",
-                    "other": "{number} 立方",
+                    "one": "立方",
+                    "other": "立方",
                     "otherSized": "{number} {sizes} 立方",
                     "oneSized": "{sizes} 立方"
                 }
@@ -3902,8 +4399,8 @@
             "Cylinder": {
                 "Label": "柱状",
                 "Counted": {
-                    "one": "{number} 柱状",
-                    "other": "{number} 柱状",
+                    "one": "柱状",
+                    "other": "柱状",
                     "oneSized": "{sizes} 柱状",
                     "otherSized": "{number} {sizes} 柱状"
                 }
@@ -3911,8 +4408,8 @@
             "Emanation": {
                 "Label": "光环",
                 "Counted": {
-                    "one": "{number} 光环",
-                    "other": "{number} 光环",
+                    "one": "光环",
+                    "other": "光环",
                     "oneSized": "{sizes} 光环",
                     "otherSized": "{number} {sizes} 光环"
                 }
@@ -3920,8 +4417,8 @@
             "Line": {
                 "Label": "线状",
                 "Counted": {
-                    "one": "{number} 线状",
-                    "other": "{number} 线状",
+                    "one": "线状",
+                    "other": "线状",
                     "oneSized": "{sizes} 线状",
                     "otherSized": "{number} {sizes} 线状"
                 }
@@ -3931,16 +4428,16 @@
                 "Counted": {
                     "any": "任意物件",
                     "every": "所有物件",
-                    "one": "{number} 物件",
-                    "other": "{number} 物件",
+                    "one": "物件",
+                    "other": "物件",
                     "each": "每个物件"
                 }
             },
             "Radius": {
                 "Label": "半径",
                 "Counted": {
-                    "one": "{number} 半径",
-                    "other": "{number} 半径",
+                    "one": "半径",
+                    "other": "半径",
                     "oneSized": "{sizes} 半径",
                     "otherSized": "{number} {sizes} 半径"
                 }
@@ -3953,16 +4450,16 @@
                 "Counted": {
                     "any": "任意空间",
                     "every": "所有空间",
-                    "one": "{number} 空间",
-                    "other": "{number} 空间",
+                    "one": "空间",
+                    "other": "空间",
                     "each": "每个空间"
                 }
             },
             "Square": {
                 "Label": "方形",
                 "Counted": {
-                    "one": "{number} 方形",
-                    "other": "{number} 方形",
+                    "one": "方形",
+                    "other": "方形",
                     "otherSized": "{number} {sizes} 方形",
                     "oneSized": "{sizes} 方形"
                 }
@@ -3972,8 +4469,8 @@
                 "Counted": {
                     "any": "任意目标",
                     "every": "所有目标",
-                    "one": "{number} 目标",
-                    "other": "{number} 目标",
+                    "one": "目标",
+                    "other": "目标",
                     "each": "每名目标"
                 }
             },
@@ -3983,8 +4480,17 @@
                     "any": "任意 {special}",
                     "each": "每个 {special}",
                     "every": "所有 {special}",
-                    "one": "{number} {special}",
-                    "other": "{number} {special}"
+                    "one": "{special}",
+                    "other": "{special}"
+                }
+            },
+            "Ring": {
+                "Label": "环形",
+                "Counted": {
+                    "one": "环形",
+                    "other": "环形",
+                    "oneSized": "{sizes}环形",
+                    "otherSized": "{number}个{sizes}环形"
                 }
             }
         },
@@ -4076,7 +4582,8 @@
             "Combat": "战斗",
             "Never": "从不",
             "Special": "特殊",
-            "Time": "时间"
+            "Time": "时间",
+            "Empty": "尚未指定恢复方式。使用上方的<i class=\"fas fa-plus\"></i>按钮添加恢复周期。"
         }
     },
     "DND5E.TraitAll": "所有 {category}",
@@ -4128,14 +4635,95 @@
         "Configure": {
             "Title": "配置 {ability}",
             "SaveLabel": "{ability} 豁免",
-            "CheckLabel": "{ability} 检定"
+            "CheckLabel": "{ability} 检定",
+            "AttackLabel": "{ability}攻击"
+        },
+        "FIELDS": {
+            "abilities": {
+                "element": {
+                    "attack": {
+                        "roll": {
+                            "bonus": {
+                                "label": "攻击加值"
+                            },
+                            "max": {
+                                "label": "攻击掷骰最大值"
+                            },
+                            "min": {
+                                "label": "攻击掷骰最小值"
+                            },
+                            "mode": {
+                                "label": "攻击优势模式"
+                            }
+                        }
+                    },
+                    "check": {
+                        "roll": {
+                            "bonus": {
+                                "label": "检定加值"
+                            },
+                            "max": {
+                                "label": "检定掷骰最大值"
+                            },
+                            "min": {
+                                "label": "检定掷骰最小值"
+                            },
+                            "mode": {
+                                "label": "检定优势模式"
+                            }
+                        }
+                    },
+                    "save": {
+                        "roll": {
+                            "bonus": {
+                                "label": "豁免加值"
+                            },
+                            "max": {
+                                "label": "豁免掷骰最大值"
+                            },
+                            "min": {
+                                "label": "豁免掷骰最小值"
+                            },
+                            "mode": {
+                                "label": "豁免优势模式"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Formatter": {
+            "Attack": {
+                "AdvantageMode": "{name}攻击优势模式",
+                "Bonus": "{name}攻击加值",
+                "Maximum": "{name}攻击掷骰最大值",
+                "Minimum": "{name}攻击掷骰最小值"
+            },
+            "Check": {
+                "AdvantageMode": "{name}检定优势模式",
+                "Bonus": "{name}检定加值",
+                "Maximum": "{name}检定掷骰最大值",
+                "Minimum": "{name}检定掷骰最小值"
+            },
+            "Maximum": "{name}最大值",
+            "Save": {
+                "AdvantageMode": "{name}豁免优势模式",
+                "Bonus": "{name}豁免加值",
+                "Maximum": "{name}豁免掷骰最大值",
+                "Minimum": "{name}豁免掷骰最小值",
+                "Proficiency": "{name}豁免熟练"
+            },
+            "Score": "{name}值"
         }
     },
     "TYPES.ChatMessage": {
         "turn": "战斗回合信息",
         "rest": "休息信息",
         "request": "请求信息",
-        "usage": "使用说明"
+        "usage": "使用说明",
+        "item": "物品消息",
+        "prompt": "提示消息",
+        "timePassed": "时间流逝消息"
     },
     "TYPES.Item.facility": "设施",
     "TYPES.Item.facilityPl": "设施",
@@ -4169,13 +4757,14 @@
             "Label": "启用据点功能"
         },
         "Action": {
-            "BastionTurn": "推进据点回合"
+            "BastionTurn": "推进据点回合",
+            "Advance": "推进据点回合",
+            "Maintain": "维护据点"
         },
         "Button": {
             "Label": "显示据点推进按钮",
             "Hint": "在游戏主界面上显示一个用于推进据点回合的按钮。"
         },
-        "Confirm": "推进一个据点回合？",
         "Duration": {
             "Label": "据点回合持续时间（天）"
         },
@@ -4194,6 +4783,32 @@
             "Invalid": "取消待处理交易将使你的交易请求失败。",
             "Pending": "待处理交易",
             "Cancel": "取消待处理交易"
+        },
+        "Confirm": {
+            "Advance": "这将推进所有据点设施的指令进度{duration}，向所有空闲设施下达维护指令，并修复所有停用的设施。是否继续？",
+            "Maintain": "这将向所有空闲据点设施下达维护指令，并修复所有停用的设施。是否继续？"
+        },
+        "FIELDS": {
+            "button": {
+                "hint": "在主游戏界面显示推进据点回合的按钮。",
+                "label": "显示据点回合按钮"
+            },
+            "duration": {
+                "label": "据点回合时长（天）"
+            },
+            "enabled": {
+                "hint": "启用后，玩家角色达到5级时，角色卡将新增据点页签，可以建造设施并向其下达指令。",
+                "label": "启用据点功能"
+            },
+            "reminder": {
+                "hint": "根据时间推进，在下一个据点回合到来时显示聊天提醒。",
+                "label": "自动回合提醒"
+            }
+        },
+        "Reminder": {
+            "Elapsed": "距上个据点回合已过去{time}。",
+            "Triggered": "一个据点回合已到来。",
+            "Unknown": "距上个据点回合已过去一段时间。"
         }
     },
     "DND5E.CAST": {
@@ -4228,7 +4843,7 @@
                 },
                 "spellbook": {
                     "label": "在法术书中显示",
-                    "hint": "在角色卡的“法术”标签页中显示法术。"
+                    "hint": "在角色卡的“法术”页签中显示法术。物品必须具有魔法属性；若需要同调，则必须已同调。"
                 },
                 "uuid": {
                     "label": "要施展的法术"
@@ -4241,7 +4856,8 @@
             "Spellbook": "额外法术"
         },
         "Action": {
-            "RemoveSpell": "移除法术"
+            "RemoveSpell": "移除法术",
+            "DropSpell": "将法术拖放至此"
         },
         "Enchantment": {
             "Name": "法术改动"
@@ -4278,7 +4894,11 @@
                 }
             }
         },
-        "Details": "容器详情"
+        "Details": "容器详情",
+        "UnidentifiedContentsWarning": {
+            "Title": "未鉴定的容器",
+            "Message": "此容器尚未鉴定。放入其中的所有物品将被隐藏，直至容器被鉴定。是否继续？"
+        }
     },
     "DND5E.ArmorValue": "护甲值",
     "DND5E.CHATMESSAGE": {
@@ -4293,10 +4913,37 @@
         "Activities": "行动组合",
         "REQUEST": {
             "Action": {
-                "Handle": "处理请求"
+                "Handle": "处理请求",
+                "Post": "发布请求"
             },
             "Complete": "请求已处理",
-            "PartyMembers": "队伍成员"
+            "PartyMembers": "队伍成员",
+            "AnyOwner": "任意拥有者",
+            "Title": "请求"
+        },
+        "Action": {
+            "SelectAll": "选择所有结果",
+            "SelectFailure": "选择失败结果",
+            "SelectSuccess": "选择成功结果"
+        },
+        "Button": {
+            "rollAttack": "攻击",
+            "rollCheck": "属性检定",
+            "rollDamage": "伤害",
+            "rollFormula": "掷骰",
+            "rollSave": "豁免检定"
+        },
+        "Row": {
+            "Actions": "物品动作",
+            "Items": "物品",
+            "Properties": "物品属性",
+            "Roll": "掷骰",
+            "rollCheck": "属性检定",
+            "rollSave": "豁免检定",
+            "Targets": "目标"
+        },
+        "Targets": {
+            "Count": "{number}× {name}"
         }
     },
     "DND5E.FACILITY": {
@@ -4442,7 +5089,8 @@
                 "Hint": "如果勾选，基础物品将以全价购买，而不是手工制作。",
                 "Label": "购买基础物品"
             },
-            "Hint": "该设施目前正在制作或收获的物品（如果有的话）。"
+            "Hint": "该设施目前正在制作或收获的物品（如果有的话）。",
+            "DropHint": "将物品拖放至此"
         },
         "Trade": {
             "Creatures": {
@@ -4465,7 +5113,8 @@
             },
             "Stocked": {
                 "Label": "库存充足",
-                "Hint": "请在下方输入为该设施备齐库存所需的费用。"
+                "Hint": "请在下方输入为该设施备齐库存所需的费用。",
+                "Supplement": "库存已满"
             }
         },
         "AvailableFacility": {
@@ -4715,6 +5364,19 @@
             "cover": {
                 "label": "掩护",
                 "hint": "因该载具的特性，为船员提供掩护。"
+            },
+            "enchant": {
+                "label": "附魔配置",
+                "items": {
+                    "max": {
+                        "label": "物品上限",
+                        "hint": "此类型附魔可同时生效的最大数量公式。"
+                    },
+                    "period": {
+                        "label": "替换周期",
+                        "hint": "此类型附魔可重新绑定至其他物品的频率。"
+                    }
+                }
             }
         }
     },
@@ -4731,6 +5393,9 @@
         },
         "Other": {
             "label": "其他选项"
+        },
+        "Bloodied": {
+            "label": "浴血阈值"
         }
     },
     "DND5E.HitPointsOverrideHint": "覆盖自动计算的生命值，忽略来自职业、加值和属性调整的生命值。",
@@ -4828,6 +5493,11 @@
         },
         "Warning": {
             "OnlyByRequest": "仅在GM要求时进行休息。"
+        },
+        "Duration": {
+            "Hint": "休息期间经过的时间。",
+            "Label": "时长",
+            "UntilSunrise": "休息至日出"
         }
     },
     "DND5E.SKILL": {
@@ -4841,6 +5511,31 @@
                 "Label": "全局加值",
                 "Hint": "这些加值适用于使用任何技能进行的检定。"
             }
+        },
+        "FIELDS": {
+            "skills": {
+                "element": {
+                    "roll": {
+                        "bonus": {
+                            "label": "技能检定加值"
+                        },
+                        "max": {
+                            "label": "技能检定掷骰最大值"
+                        },
+                        "min": {
+                            "label": "技能检定掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "技能检定优势模式"
+                        }
+                    }
+                }
+            }
+        },
+        "Formatter": {
+            "CheckBonus": "{name}检定加值",
+            "PassiveBonus": "被动{name}加值",
+            "Proficiency": "{name}熟练"
         }
     },
     "DND5E.UNITS": {
@@ -4871,8 +5566,8 @@
             "CubicFoot": {
                 "Counted": {
                     "short": {
-                        "one": "{number} cu ft",
-                        "other": "{number} cu ft"
+                        "one": "{number}立方尺",
+                        "other": "{number}立方尺"
                     },
                     "narrow": {
                         "one": "{number} 立方尺",
@@ -4965,12 +5660,12 @@
                 "Abbreviation": "tn",
                 "Counted": {
                     "narrow": {
-                        "one": "{number}tn",
-                        "other": "{number}tn"
+                        "one": "{number}吨",
+                        "other": "{number}吨"
                     },
                     "short": {
-                        "other": "{number} tn",
-                        "one": "{number} tn"
+                        "other": "{number}吨",
+                        "one": "{number}吨"
                     },
                     "long": {
                         "one": "{number} 吨",
@@ -5000,7 +5695,220 @@
             "Minimum": "最小结果"
         },
         "Status": "状态",
-        "Section": "{label} 掷骰"
+        "Section": "{label} 掷骰",
+        "Bonus": "掷骰加值",
+        "Description": {
+            "ability": "掷骰属性",
+            "attack": {
+                "classification": "攻击分类",
+                "mode": "攻击模式",
+                "type": "攻击类型"
+            },
+            "damage": {
+                "type": "伤害类型"
+            },
+            "proficient": "熟练",
+            "skill": "检定技能",
+            "tool": "检定工具",
+            "type": "掷骰类型"
+        },
+        "FIELDS": {
+            "rolls": {
+                "ability": {
+                    "check": {
+                        "bonus": {
+                            "label": "全局属性检定加值"
+                        },
+                        "max": {
+                            "label": "全局属性检定掷骰最大值"
+                        },
+                        "min": {
+                            "label": "全局属性检定掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "全局属性检定优势模式"
+                        },
+                        "proficiency": {
+                            "label": "全局属性检定熟练"
+                        }
+                    },
+                    "label": "属性掷骰修正",
+                    "save": {
+                        "bonus": {
+                            "label": "全局属性豁免加值"
+                        },
+                        "max": {
+                            "label": "全局属性豁免掷骰最大值"
+                        },
+                        "min": {
+                            "label": "全局属性豁免掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "全局属性豁免优势模式"
+                        },
+                        "proficiency": {
+                            "label": "全局属性豁免熟练"
+                        }
+                    },
+                    "skill": {
+                        "bonus": {
+                            "label": "全局技能检定加值"
+                        },
+                        "max": {
+                            "label": "全局技能检定掷骰最大值"
+                        },
+                        "min": {
+                            "label": "全局技能检定掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "全局技能检定优势模式"
+                        },
+                        "proficiency": {
+                            "label": "全局技能检定熟练"
+                        }
+                    },
+                    "tool": {
+                        "bonus": {
+                            "label": "全局工具检定加值"
+                        },
+                        "max": {
+                            "label": "全局工具检定掷骰最大值"
+                        },
+                        "min": {
+                            "label": "全局工具检定掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "全局工具检定优势模式"
+                        },
+                        "proficiency": {
+                            "label": "全局工具检定熟练"
+                        }
+                    }
+                },
+                "attack": {
+                    "bonus": {
+                        "label": "全局攻击加值"
+                    },
+                    "label": "攻击掷骰修正",
+                    "max": {
+                        "label": "全局攻击掷骰最大值"
+                    },
+                    "min": {
+                        "label": "全局攻击掷骰最小值"
+                    },
+                    "mode": {
+                        "label": "全局攻击优势模式"
+                    },
+                    "msak": {
+                        "bonus": {
+                            "label": "近战法术攻击加值"
+                        },
+                        "max": {
+                            "label": "近战法术攻击掷骰最大值"
+                        },
+                        "min": {
+                            "label": "近战法术攻击掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "近战法术攻击优势模式"
+                        }
+                    },
+                    "mwak": {
+                        "bonus": {
+                            "label": "近战武器攻击加值"
+                        },
+                        "max": {
+                            "label": "近战武器攻击掷骰最大值"
+                        },
+                        "min": {
+                            "label": "近战武器攻击掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "近战武器攻击优势模式"
+                        }
+                    },
+                    "rsak": {
+                        "bonus": {
+                            "label": "远程法术攻击加值"
+                        },
+                        "max": {
+                            "label": "远程法术攻击掷骰最大值"
+                        },
+                        "min": {
+                            "label": "远程法术攻击掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "远程法术攻击优势模式"
+                        }
+                    },
+                    "rwak": {
+                        "bonus": {
+                            "label": "远程武器攻击加值"
+                        },
+                        "max": {
+                            "label": "远程武器攻击掷骰最大值"
+                        },
+                        "min": {
+                            "label": "远程武器攻击掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "远程武器攻击优势模式"
+                        }
+                    }
+                },
+                "damage": {
+                    "label": "伤害掷骰修正",
+                    "msak": {
+                        "bonus": {
+                            "label": "近战法术攻击伤害加值"
+                        }
+                    },
+                    "mwak": {
+                        "bonus": {
+                            "label": "近战武器攻击伤害加值"
+                        }
+                    },
+                    "rsak": {
+                        "bonus": {
+                            "label": "远程法术攻击伤害加值"
+                        }
+                    },
+                    "rwak": {
+                        "bonus": {
+                            "label": "远程武器攻击伤害加值"
+                        }
+                    }
+                }
+            }
+        },
+        "Formatter": {
+            "AdvantageMode": "{name}优势模式",
+            "Bonus": "{name}掷骰加值",
+            "Maximum": "{name}掷骰最大值",
+            "Minimum": "{name}掷骰最小值",
+            "ModifierAbility": "{name}调整值属性"
+        },
+        "Generic": {
+            "D20": {
+                "bonus": {
+                    "label": "掷骰加值"
+                },
+                "max": {
+                    "label": "掷骰最大值"
+                },
+                "min": {
+                    "label": "掷骰最小值"
+                },
+                "mode": {
+                    "label": "优势模式"
+                }
+            },
+            "Damage": {
+                "bonus": {
+                    "label": "伤害加值"
+                }
+            }
+        }
     },
     "DND5E.SavingThrowShort": "豁免",
     "DND5E.SpellSlotTemporary": "临时法术位",
@@ -5015,6 +5923,30 @@
                 "Label": "全局加值",
                 "Hint": "这些加值适用于使用任意工具进行的检定。"
             }
+        },
+        "FIELDS": {
+            "tools": {
+                "element": {
+                    "roll": {
+                        "bonus": {
+                            "label": "工具检定加值"
+                        },
+                        "max": {
+                            "label": "工具检定掷骰最大值"
+                        },
+                        "min": {
+                            "label": "工具检定掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "工具检定优势模式"
+                        }
+                    }
+                }
+            }
+        },
+        "Formatter": {
+            "CheckBonus": "{name}检定加值",
+            "Proficiency": "{name}熟练"
         }
     },
     "DND5E.TraitDMPlural.one": "伤害调整",
@@ -5634,10 +6566,15 @@
                     "Appearance": "仅外观",
                     "Default": "合集包浏览器",
                     "Direct": "直接链接",
-                    "CR": "以挑战等级"
+                    "CR": "以挑战等级",
+                    "Form": "选择形态"
                 },
                 "preset": {
                     "label": "预设"
+                },
+                "formless": {
+                    "hint": "允许生物移除所有形态并返回默认状态。",
+                    "label": "无形态"
                 }
             }
         },
@@ -5657,7 +6594,8 @@
             "Transformation": "变形"
         },
         "Title": "变形",
-        "Hint": "将角色替换为使用其他角色的数据。"
+        "Hint": "将角色替换为使用其他角色的数据。",
+        "NoForm": "无形态"
     },
     "SOURCE.BOOK.FreeRules": "免费规则",
     "SOURCE.BOOK.SRD51": "系统参考文档 5.1",
@@ -5705,7 +6643,8 @@
             "Loading": "装填",
             "Material": "材料",
             "Sidekick": "伙伴",
-            "Gear": "装备"
+            "Gear": "装备",
+            "UnidentifiedContents": "隐藏未鉴定的内容物"
         },
         "SECTIONS": {
             "Activities": "行动组合",
@@ -5714,12 +6653,25 @@
             "Description": "描述",
             "Details": "详情",
             "Effects": "效应"
+        },
+        "Rarity": {
+            "Artifact": "神器",
+            "Common": "普通",
+            "Legendary": "传说",
+            "Mundane": "非魔法",
+            "Rare": "珍稀",
+            "Uncommon": "非普通",
+            "Varies": "多种稀有度",
+            "VeryRare": "极珍稀"
         }
     },
     "DND5E.Remaining": "剩余",
     "TYPES.RegionBehavior": {
         "dnd5e.difficultTerrain": "困难地形",
-        "dnd5e.rotateArea": "旋转区域"
+        "dnd5e.rotateArea": "旋转区域",
+        "dnd5e": {
+            "applyActiveEffect": "应用激活效应（5e）"
+        }
     },
     "DND5E.ACTOR": {
         "Warning": {
@@ -5832,6 +6784,26 @@
             "Warning": {
                 "RecursiveRegion": "无法旋转包含该行为的相同区域。"
             }
+        },
+        "APPLYACTIVEEFFECT": {
+            "FIELDS": {
+                "dispositions": {
+                    "hint": "设置后，仅为具有这些立场的指示物应用效应。",
+                    "label": "立场"
+                },
+                "effects": {
+                    "hint": "应用于区域内指示物的效应。",
+                    "label": "效应"
+                },
+                "sizes": {
+                    "hint": "设置后，仅为具有这些体型的指示物应用效应。",
+                    "label": "体型"
+                },
+                "types": {
+                    "hint": "设置后，仅为属于这些生物类型的指示物应用效应。",
+                    "label": "类型"
+                }
+            }
         }
     },
     "DND5E.SPELLCASTING": {
@@ -5907,7 +6879,9 @@
         "Encounter": "D&D 5e 遭遇卡",
         "Rule": "D&D 5e 规则卡",
         "Token": "D&D 5e 指示物卡",
-        "RollTable": "D&D 5e 掷骰表卡"
+        "RollTable": "D&D 5e 掷骰表卡",
+        "ActiveEffect": "D&D 5e激活效应卡",
+        "AdventureImporter": "D&D 5e冒险导入器"
     },
     "DND5E.MovementIgnoredDifficultTerrain": "无视困难地形",
     "DND5E.Challenge": "挑战",
@@ -5994,6 +6968,9 @@
             },
             "bonus": {
                 "label": "速度加值"
+            },
+            "multiplier": {
+                "label": "移动倍率"
             }
         },
         "Hover": "悬浮",
@@ -6010,7 +6987,7 @@
             "Configure": "配置移动速度"
         },
         "Speed": "战斗速度",
-        "HoverSpeed": "{speed} (hover)"
+        "HoverSpeed": "{speed}（悬浮）"
     },
     "DND5E.CALENDAR": {
         "Action": {
@@ -6233,7 +7210,25 @@
             "calendar": {
                 "hint": "此日历将用于跟进游戏内的时间。",
                 "label": "日历"
+            },
+            "dailyRecovery": {
+                "calendar": "日历恢复（通过时间流逝）",
+                "default": "默认（取决于是否启用日历）",
+                "hint": "控制按天、黎明或黄昏恢复的有限使用次数，是根据世界日历恢复，还是通过休息对话框恢复。",
+                "label": "每日恢复方式",
+                "manual": "手动恢复（通过休息对话框）"
             }
+        },
+        "TimePassage": {
+            "Midnight": "新的一天开始了。",
+            "Sunrise": "太阳已升起。",
+            "Sunset": "太阳已落下。",
+            "SunsetSunrise": "太阳已落下，新一天的黎明已到来。",
+            "TimePassed": {
+                "one": "已过去{number}。",
+                "other": "已过去{number}。"
+            },
+            "Title": "时间流逝"
         }
     },
     "DND5E.SkillTitle": "{ability}（{skill}）",
@@ -6246,7 +7241,7 @@
                 "Classes": "{levelSchool}（{classes}）",
                 "Leveled": "{level} 环 {school}",
                 "LeveledLegacy": "{levelOrdinal}-环 {school}",
-                "Ritual": "{levelSchool} (ritual)"
+                "Ritual": "{levelSchool}（仪式）"
             },
             "CastingTimeTrigger": "{castingTime}，你受到 {trigger}"
         }
@@ -6255,11 +7250,574 @@
     "TYPES.HINTS": {
         "RegionBehavior": {
             "dnd5e.difficultTerrain": "将某一区域标记为困难地形，并设定其类型及影响对象。",
-            "dnd5e.rotateArea": "围绕中心旋转点旋转指示物、图块、墙体及其他物体。"
+            "dnd5e.rotateArea": "围绕中心旋转点旋转指示物、图块、墙体及其他物体。",
+            "dnd5e": {
+                "applyActiveEffect": "当指示物位于区域内且满足指定条件时，为其应用激活效应。"
+            }
         }
     },
     "DND5E.SourceItem": {
         "Label": "来源物品",
         "LockedHint": "此物品的来源由授予物品自动确定，无法更改。"
-    }
+    },
+    "DOCUMENT.Activity": "行动",
+    "DOCUMENT.Advancement": "升级项",
+    "DND5E.ADVENTURE": {
+        "Finished": {
+            "one": "已完成{adventure}的准备。",
+            "other": "已完成{number}个冒险的准备。"
+        },
+        "ImportAction": {
+            "ActivateScene": "激活初始场景",
+            "CustomizeWorld": "自定义世界详情",
+            "DisplayJournal": "显示入门日志"
+        },
+        "Options": "冒险选项",
+        "Warning": {
+            "JournalMissing": "找不到日志条目`{id}`，无法为{adventure}显示该条目。",
+            "SceneMissing": "找不到场景`{id}`，无法为{adventure}激活该场景。"
+        }
+    },
+    "DND5E.AttributeScores": "属性值",
+    "DND5E.ARMORCLASS": {
+        "Action": {
+            "Configure": "配置护甲",
+            "CreateFormula": "创建自定义公式",
+            "DeleteFormula": "删除自定义公式"
+        },
+        "Calculation": {
+            "Armored": "已装备护甲",
+            "Custom": "自定义",
+            "Draconic": "龙族体魄",
+            "Label": "计算方式",
+            "Mage": "法师护甲",
+            "Natural": "天生护甲",
+            "Unarmored": "无甲",
+            "UnarmoredBarbarian": "无甲防御（野蛮人）",
+            "UnarmoredBard": "无甲防御（吟游诗人）",
+            "UnarmoredMonk": "无甲防御（武僧）"
+        },
+        "Condition": {
+            "Positive": "必须拥有{type}",
+            "Negative": "不得拥有{type}"
+        },
+        "Configuration": "配置",
+        "CurrentFormula": "当前公式",
+        "CustomFormulas": {
+            "Empty": "没有自定义公式。使用上方的<i class=\"fas fa-plus\"></i>按钮创建公式。"
+        },
+        "FIELDS": {
+            "attributes": {
+                "ac": {
+                    "armor": {
+                        "label": "已装备护甲值"
+                    },
+                    "base": {
+                        "label": "基础护甲等级"
+                    },
+                    "bonus": {
+                        "label": "AC加值"
+                    },
+                    "calc": {
+                        "label": "AC计算方式"
+                    },
+                    "calcs": {
+                        "hint": "计算护甲等级时将使用这些公式。",
+                        "label": "选定的公式"
+                    },
+                    "cover": {
+                        "label": "掩护提供的AC"
+                    },
+                    "flat": {
+                        "hint": "可在护甲等级公式中通过 @attributes.ac.flat 引用的数值。",
+                        "label": "固定值"
+                    },
+                    "formula": {
+                        "label": "额外AC公式"
+                    },
+                    "formulas": {
+                        "element": {
+                            "armored": {
+                                "excluded": "未着甲",
+                                "label": "着甲",
+                                "required": "需要护甲"
+                            },
+                            "formula": {
+                                "label": "公式"
+                            },
+                            "label": {
+                                "label": "标签"
+                            },
+                            "shielded": {
+                                "excluded": "无盾牌",
+                                "label": "持盾",
+                                "required": "需要盾牌"
+                            }
+                        },
+                        "label": "AC公式"
+                    },
+                    "label": "护甲等级",
+                    "min": {
+                        "label": "最低护甲等级"
+                    },
+                    "override": {
+                        "hint": "用于替代计算所得护甲等级的数值，忽略掩护、盾牌和其他所有加值。",
+                        "label": "覆盖值"
+                    },
+                    "shield": {
+                        "label": "已装备盾牌值"
+                    }
+                }
+            }
+        },
+        "Flat": "固定值",
+        "Formula": "公式"
+    },
+    "DND5E.BaseItem": "基础物品",
+    "DND5E.BASE": {
+        "Image": "图像",
+        "Name": "名称"
+    },
+    "DND5E.BEHAVIOR": {
+        "Action": {
+            "Create": "创建行为",
+            "Delete": "删除行为"
+        },
+        "Empty": "没有关联行为。使用上方的<i class=\"fas fa-plus\"></i>按钮创建行为。",
+        "Hint": "这些行为将应用于此行动放置的所有效应区域。",
+        "Label": "行为"
+    },
+    "DND5E.BiographyPublicEdit": "编辑公开传记",
+    "DND5E.CHARACTER": {
+        "FIELDS": {
+            "traits": {
+                "weaponProf": {
+                    "mastery": {
+                        "bonus": {
+                            "label": "额外武器精通数量"
+                        },
+                        "value": {
+                            "label": "武器精通"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.CONCENTRATION": {
+        "Abbreviation": "专注",
+        "Action": {
+            "Break": "打断专注",
+            "End": "结束专注"
+        },
+        "Description": "你正为“{name}”{type}的效应维持专注。",
+        "Duration": {
+            "Scalar": "专注，至多{duration}",
+            "Special": "专注，{durationLc}"
+        },
+        "EndChoice": "你正在对多个来源的效应维持专注。请选择要结束的效应。",
+        "FIELDS": {
+            "attributes": {
+                "concentration": {
+                    "label": "专注",
+                    "limit": {
+                        "label": "专注上限"
+                    },
+                    "roll": {
+                        "ability": {
+                            "label": "专注属性"
+                        },
+                        "bonus": {
+                            "label": "专注加值"
+                        },
+                        "max": {
+                            "label": "专注掷骰最大值"
+                        },
+                        "min": {
+                            "label": "专注掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "专注优势模式"
+                        }
+                    }
+                }
+            }
+        },
+        "Limit": {
+            "Hard": "你无法为更多效应维持专注！",
+            "Optional": "你可以结束一个正在维持专注的效应，以使用此物品。",
+            "Reached": "你无法开始为额外的效应维持专注。",
+            "Zero": "你无法为任何效应维持专注！"
+        },
+        "Lost": "失去专注",
+        "NoSource": "无来源的专注",
+        "Warning": {
+            "BreakWithoutGM": "打断正在影响其他生物的效应的专注，需要有在线GM。",
+            "MissingItem": "找不到正在维持专注且将被替换的效应。"
+        }
+    },
+    "DND5E.DEATH": {
+        "FIELDS": {
+            "attributes": {
+                "death": {
+                    "roll": {
+                        "bonus": {
+                            "label": "死亡豁免加值"
+                        },
+                        "max": {
+                            "label": "死亡豁免掷骰最大值"
+                        },
+                        "min": {
+                            "label": "死亡豁免掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "死亡豁免优势模式"
+                        }
+                    }
+                }
+            }
+        },
+        "Outcome": {
+            "death": "{name}的死亡豁免失败3次，已经死亡！",
+            "revive": "{name}的死亡豁免大成功，恢复了1点生命值！",
+            "stable": "{name}的死亡豁免成功3次，已经稳定！"
+        }
+    },
+    "DND5E.ENCUMBRANCE": {
+        "FIELDS": {
+            "attributes": {
+                "encumbrance": {
+                    "bonuses": {
+                        "encumbered": {
+                            "label": "负重阈值加值"
+                        },
+                        "heavilyEncumbered": {
+                            "label": "重度负重阈值加值"
+                        },
+                        "maximum": {
+                            "label": "最大携带能力加值"
+                        },
+                        "overall": {
+                            "label": "所有负重阈值加值"
+                        }
+                    },
+                    "multipliers": {
+                        "encumbered": {
+                            "label": "负重阈值倍率"
+                        },
+                        "heavilyEncumbered": {
+                            "label": "重度负重阈值倍率"
+                        },
+                        "maximum": {
+                            "label": "最大携带能力倍率"
+                        },
+                        "overall": {
+                            "label": "所有负重阈值倍率"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.FALLING": {
+        "DamageFlavor": "坠落了{distance}",
+        "MovementAction": "坠落",
+        "Warning": {
+            "NoLandingSurface": "无法让{name}坠落，其下方没有可落脚的表面。"
+        }
+    },
+    "DND5E.FILTER": {
+        "Action": {
+            "Edit": "编辑筛选条件"
+        },
+        "Empty": "无筛选条件",
+        "Invalid": "无效筛选条件",
+        "Operator": {
+            "And": "且",
+            "Not": "非",
+            "Or": "或"
+        }
+    },
+    "DND5E.FlagsRemarkableAthleteHintLegacy": "体能属性检定和先攻获得一半熟练加值（向上取整）。",
+    "DND5E.IdentifierCustom": "自定义标识符",
+    "DND5E.INITIATIVE": {
+        "FIELDS": {
+            "attributes": {
+                "init": {
+                    "roll": {
+                        "bonus": {
+                            "label": "先攻加值"
+                        },
+                        "max": {
+                            "label": "先攻掷骰最大值"
+                        },
+                        "min": {
+                            "label": "先攻掷骰最小值"
+                        },
+                        "mode": {
+                            "label": "先攻优势模式"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.PIETY": {
+        "Configure": "配置虔信值",
+        "Label": "虔信值",
+        "FIELDS": {
+            "value": {
+                "label": "虔信值",
+                "hint": "此角色当前的虔信值。"
+            }
+        }
+    },
+    "DND5E.RollModifiers": "修饰符",
+    "DND5E.SplitStack": {
+        "Action": "拆分",
+        "Title": "拆分堆叠"
+    },
+    "DND5E.SubclassOf": "{class}子职",
+    "DND5E.TABLEOFCONTENTS": {
+        "Action": {
+            "Configure": "配置目录"
+        },
+        "FIELDS": {
+            "order": {
+                "label": "顺序"
+            },
+            "position": {
+                "label": "位置"
+            },
+            "showPages": {
+                "label": "显示页面"
+            },
+            "title": {
+                "label": "覆盖标题"
+            },
+            "type": {
+                "label": "类型"
+            }
+        },
+        "HiddenPages": "隐藏页面",
+        "HideAllPages": "隐藏所有页面",
+        "JournalEntry": "日志条目",
+        "NoFolder": "无文件夹",
+        "Special": {
+            "After": "在{chapter}之后",
+            "End": "目录末尾"
+        },
+        "Title": "目录",
+        "Type": {
+            "Appendix": "附录",
+            "Chapter": "章节",
+            "Header": "页眉",
+            "Special": "特殊"
+        },
+        "Warning": {
+            "DuplicateHeader": "只能将一个条目设置为页眉类型。",
+            "DuplicatePosition": "每个章节和附录的位置值必须唯一。"
+        }
+    },
+    "DND5E.TELEPORT": {
+        "Action": {
+            "Teleport": "传送"
+        },
+        "FIELDS": {
+            "teleport": {
+                "label": "距离",
+                "hint": "设置最大传送距离。",
+                "override": {
+                    "label": "覆盖",
+                    "hint": "覆盖行动的正常射程，手动设置最大传送距离。"
+                },
+                "units": {
+                    "label": "距离单位"
+                },
+                "value": {
+                    "label": "最大距离"
+                }
+            }
+        },
+        "Hint": "将指示物传送至选定位置。",
+        "SECTIONS": {
+            "Teleport": "传送"
+        },
+        "Title": "传送",
+        "Warning": {
+            "InvalidDistance": "无法在使用不受支持的移动单位的场景中使用传送。"
+        }
+    },
+    "DND5E.TOKEN": {
+        "Attribute": {
+            "Label": "指示物：{attribute}",
+            "LightBrightRadius": "明亮光照半径",
+            "LightDimRadius": "微光光照半径"
+        },
+        "LockScale": {
+            "Hint": "当角色体型为小型时，防止调整指示物的缩放比例。",
+            "Label": "锁定缩放"
+        },
+        "LockSize": {
+            "Hint": "解锁后可手动输入此指示物的尺寸，防止系统根据生物体型自动调整。",
+            "Label": "锁定尺寸"
+        }
+    },
+    "DND5E.TRAIT": {
+        "Action": {
+            "Configure": "配置{trait}"
+        },
+        "All": "所有{category}",
+        "Armor": {
+            "one": "护甲训练",
+            "other": "护甲训练",
+            "title": "护甲训练"
+        },
+        "ArmorLegacy": {
+            "one": "护甲熟练",
+            "other": "护甲熟练",
+            "title": "护甲熟练"
+        },
+        "Condition": {
+            "Immunity": {
+                "one": "状态免疫",
+                "other": "状态免疫",
+                "title": "状态免疫"
+            }
+        },
+        "Choose": {
+            "AnyCounted": "任意{count}个{type}",
+            "AnyUncounted": "任意{type}",
+            "List": "从{list}中选择{count}个",
+            "Other": "另外{count}个{type}",
+            "Wrapper": "选择{choices}"
+        },
+        "Chosen": "已选特质",
+        "Damage": {
+            "Immunity": {
+                "one": "伤害免疫",
+                "other": "伤害免疫",
+                "title": "伤害免疫"
+            },
+            "Modification": {
+                "one": "伤害修正",
+                "other": "伤害修正",
+                "title": "伤害修正"
+            },
+            "Resistance": {
+                "one": "伤害抗性",
+                "other": "伤害抗性",
+                "title": "伤害抗性"
+            },
+            "Vulnerability": {
+                "one": "伤害易伤",
+                "other": "伤害易伤",
+                "title": "伤害易伤"
+            }
+        },
+        "Generic": {
+            "one": "特质",
+            "other": "特质",
+            "title": "特质"
+        },
+        "Language": {
+            "one": "语言",
+            "other": "语言",
+            "title": "语言"
+        },
+        "Save": {
+            "one": "豁免熟练",
+            "other": "豁免熟练",
+            "title": "豁免熟练"
+        },
+        "Skill": {
+            "one": "技能熟练",
+            "other": "技能熟练",
+            "title": "技能熟练"
+        },
+        "Tool": {
+            "one": "工具熟练",
+            "other": "工具熟练",
+            "title": "工具熟练"
+        },
+        "Weapon": {
+            "one": "武器熟练",
+            "other": "武器熟练",
+            "title": "武器熟练"
+        }
+    },
+    "DND5E.WELCOME": {
+        "Button": "欢迎界面",
+        "Message": {
+            "Bugs": "<p>遇到了问题？可在<a href=\"{discord}\">官方Discord</a>寻求社区帮助，或在系统的<a href=\"{issues}\">问题跟踪器</a>提交报告。</p>",
+            "Changes": "<p>查看最新版本的<a href=\"{changes}\">更新内容</a>。</p>",
+            "Content": "<p>前往<strong>官方内容</strong>页签，查看可用的D&D 5e书籍，并在此世界中启用它们。</p>",
+            "Documentation": "<p>浏览<a href=\"{wiki}\">文档维基</a>，了解系统的详细使用方法。</p>",
+            "Introduction": "<p>欢迎使用<strong>龙与地下城第五版</strong>官方游戏系统。</p>",
+            "MoreContent": "<p>前往官方<a href=\"{marketplace}\">Foundry VTT市场</a>，寻找更多龙与地下城第五版内容。</p>"
+        },
+        "Module": {
+            "Enabled": "已启用",
+            "NotInstalled": "未安装"
+        },
+        "Section": {
+            "adventures": "冒险",
+            "core": "核心规则书",
+            "expanded": "扩展规则书",
+            "more": "更多内容"
+        },
+        "Settings": {
+            "Label": "设置",
+            "Metric": {
+                "Hint": "将距离、重量和体积的默认单位改为公制。",
+                "Label": "使用公制"
+            }
+        },
+        "Tab": {
+            "main": "欢迎",
+            "modules": "官方内容"
+        },
+        "Title": "欢迎使用D&D 5e"
+    },
+    "EDITOR.DND5E.Inserts": {
+        "Advice": "通用建议",
+        "Attack": "攻击检定",
+        "Award": "奖励",
+        "Check": "属性检定",
+        "Damage": "伤害",
+        "EnrichersGroup": "D&D富文本扩展",
+        "FloatLeft": "左浮动",
+        "FloatRight": "右浮动",
+        "Group": "D&D内容块",
+        "HabitatTreasure": "栖息地与宝藏",
+        "Healing": "治疗",
+        "Item": "物品",
+        "Lookup": "数据查询",
+        "Narrative": "叙事",
+        "Notable": "重要信息",
+        "Quest": "任务",
+        "Quote": "摘引",
+        "Reference": "引用",
+        "Save": "豁免检定",
+        "Skill": "技能检定",
+        "VTTAdvice": "VTT建议"
+    },
+    "KEYBINDINGS.DND5E.OpenCompendiumBrowser": "打开合集包浏览器",
+    "KEYBINDINGS.DND5E.ToggleSheetMode": "切换角色卡模式",
+    "MIGRATION.DND5E": {
+        "Compendium": {
+            "Failed": "合集包{compendium}迁移失败。",
+            "Migrate": "正在将合集包{compendium}迁移至版本{version}。",
+            "Refresh": "正在刷新合集包{compendium}。"
+        },
+        "World": {
+            "Begin": "正在进行D&D 5e系统版本{version}的数据迁移。请耐心等待，不要关闭游戏或服务器。",
+            "Complete": "D&D 5e系统已完成向版本{version}的数据迁移！"
+        },
+        "Warning": {
+            "VersionTooOld": "你的D&D 5e系统数据来自过旧的Foundry版本，无法可靠地迁移至最新版本。系统将尝试迁移，但可能发生错误。"
+        }
+    },
+    "SETTINGS.5eNoExhaustionN": "禁用力竭自动处理",
+    "SETTINGS.5eNoExhaustionL": "禁用系统对力竭效应的自动处理。"
 }
