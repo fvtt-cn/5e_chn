@@ -734,12 +734,9 @@
     "DND5E.DurationValue": "持续时长",
     "DND5E.Effect": "效应",
     "DND5E.Environment": "环境",
-    "DND5E.Feature.Background": "背景特性",
-    "DND5E.Feature.Monster": "怪物特性",
     "DND5E.GroupInventory": "所持物",
     "DND5E.GroupHP": "总体生命值",
     "DND5E.GroupSummary": "一小队 {members}",
-    "JOURNALENTRYPAGE.DND5E.TableTOC": "表格：{caption}",
     "DND5E.ActiveEffectOverrideWarning": "该值被一个激活效应所修改，无法被编辑。禁用该效应以修改。",
     "DND5E.AttunementMax": "最大同调物品",
     "DND5E.Contents": "内容",
@@ -832,18 +829,6 @@
     "DND5E.VehiclePassengerName": "乘客姓名或类型",
     "DND5E.VehiclePassengerQuantity": "乘客数量",
     "DND5E.VehicleType": "载具类型",
-    "JOURNALENTRYPAGE.DND5E.Class.EquipmentHeader": "装备",
-    "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesCaption": "可选职业特性",
-    "JOURNALENTRYPAGE.DND5E.Class.ItemHint": "将职业拖至此处",
-    "JOURNALENTRYPAGE.DND5E.Class.NoValidClass": "未选择有效职业，使用编辑按钮来添加一个职业。",
-    "JOURNALENTRYPAGE.DND5E.Class.SpellSlots": "法术位",
-    "JOURNALENTRYPAGE.DND5E.Class.SpellSlotLevel": "环阶",
-    "JOURNALENTRYPAGE.DND5E.Class.SpellSlotsPerSpellLevel": "—每一法术环阶的法术位—",
-    "JOURNALENTRYPAGE.DND5E.Class.OptionalFeaturesDescription": "以下部分包含可选的 {class} 特性。这些功能不会自动添加，你可以根据 DM 的判断选择其中的一项、部分或全部。",
-    "JOURNALENTRYPAGE.DND5E.EditDescription": "编辑",
-    "JOURNALENTRYPAGE.DND5E.Class.TableOptionalCaption": "可选 {class} 特性",
-    "JOURNALENTRYPAGE.DND5E.Class.TableCaption": "{class}",
-    "JOURNALENTRYPAGE.DND5E.Class.SubclassHint": "拖放子职至此处",
     "DND5E.HitPointsMin": "HP 下限",
     "DND5E.ScalingMode": "递增模式",
     "DND5E.TraitWeaponPlural.other": "武器熟练",
@@ -914,7 +899,6 @@
     "DND5E.ItemAmmoProperties": "弹药属性",
     "DND5E.ItemToolStatus": "工具状态",
     "DND5E.ConsumeScalingTooltip": "勾选后，耗用额外的资源将提高所施放法术的环阶。",
-    "DND5E.Focus.Druidic": "德鲁伊法器",
     "DND5E.GroupSummaryEmpty": "空小队",
     "DND5E.Dusk": "黄昏",
     "DND5E.FlagsTavernBrawler": "酒馆斗殴者专长",
@@ -923,8 +907,6 @@
     "DND5E.ConsumeScaling": "资源递增",
     "DND5E.ConsumeScalingLabel": "使用资源",
     "DND5E.Dawn": "黎明",
-    "DND5E.Focus.Arcane": "奥术法器",
-    "DND5E.Focus.Holy": "神圣法器",
     "DND5E.Loot.Art": "艺术品",
     "DND5E.Loot.Gear": "冒险装备",
     "DND5E.Loot.Gem": "宝石",
@@ -950,17 +932,6 @@
     "DND5E.TraitConfigChooseWrapper": "选择 {choices}",
     "DND5E.TraitGenericPlural.one": "特质",
     "DND5E.TraitGenericPlural.other": "特质",
-    "EDITOR.DND5E.Inline.CheckShort": "{check}",
-    "EDITOR.DND5E.Inline.CheckLong": "{check} 选",
-    "EDITOR.DND5E.Inline.DamageShort": "{formula} {type}",
-    "EDITOR.DND5E.Inline.DamageLong": "{damage}伤害",
-    "EDITOR.DND5E.Inline.DC": "DC {dc} {check}",
-    "EDITOR.DND5E.Inline.DCPassiveShort": "DC {dc} 被动 {check}",
-    "EDITOR.DND5E.Inline.DCPassiveLong": "被动 {check} 结果 {dc} 或更高",
-    "EDITOR.DND5E.Inline.NoActorWarning": "找不到选定或指定的角色来执行此掷骰。",
-    "EDITOR.DND5E.Inline.SaveShort": "{save}",
-    "EDITOR.DND5E.Inline.SaveLong": "{save} 豁免检定",
-    "EDITOR.DND5E.Inline.SpecificCheck": "{ability} ({type})",
     "SETTINGS.5eGridAlignedSquareTemplatesL": "在施法或使用物品时创建的方形测量板将被锁定在网格排列上，无法旋转。",
     "SETTINGS.5eGridAlignedSquareTemplatesN": "网格对齐的方形测量板",
     "SOURCE.BOOK.SRD": "SRD 5.1",
@@ -1073,7 +1044,8 @@
         },
         "Warning": {
             "PhysicalItemOnly": "仅支持实体物品。",
-            "PlaceMembers": "场景中无法正确放置指示物。"
+            "PlaceMembers": "场景中无法正确放置指示物。",
+            "SupportedItemOnly": "仅支持实体物品和声望物品。"
         }
     },
     "DND5E.HitPointsTempMaxShort": "临时最大生命值",
@@ -1171,7 +1143,18 @@
         "AttackShort": "{formula}",
         "CheckUsing": "使用{tool}进行{check}",
         "ItemActivity": "{item} ({activity})",
-        "DamageAverage": "{average} <span class=\"formula-group\">({formula})</span> {type}"
+        "DamageAverage": "{average} <span class=\"formula-group\">({formula})</span> {type}",
+        "CheckShort": "{check}",
+        "CheckLong": "{check} 选",
+        "DamageLong": "{damage}伤害",
+        "DamageShort": "{formula} {type}",
+        "DC": "DC {dc} {check}",
+        "DCPassiveShort": "DC {dc} 被动 {check}",
+        "DCPassiveLong": "被动 {check} 结果 {dc} 或更高",
+        "NoActorWarning": "找不到选定或指定的角色来执行此掷骰。",
+        "SaveShort": "{save}",
+        "SaveLong": "{save} 豁免检定",
+        "SpecificCheck": "{ability} ({type})"
     },
     "EFFECT.DND5E": {
         "StatusEthereal": "以太",
@@ -1201,7 +1184,8 @@
         "StatusMalnutrition": "饥饿",
         "StatusSuffocation": "窒息",
         "StatusThreeQuartersCover": "四分之三掩护",
-        "StatusTotalCover": "全身掩护"
+        "StatusTotalCover": "全身掩护",
+        "StatusAntimagic": "反魔法"
     },
     "SETTINGS.DND5E": {
         "THEME": {
@@ -1461,6 +1445,10 @@
         "SUMMARIZECHAT": {
             "Hint": "将某些结果以摘要形式追加，替代完整的聊天卡片。",
             "Name": "聊天卡片摘要"
+        },
+        "RENOWN": {
+            "Hint": "启用角色和小队的可选声望追踪功能。",
+            "Name": "声望值"
         }
     },
     "SHEETS.DND5E": {
@@ -1559,12 +1547,18 @@
             "General": "通用专长",
             "Origin": "起源专长"
         },
-        "Species": "种族特性",
+        "Species": {
+            "Label": "种族特性",
+            "LabelLegacy": "种族特性",
+            "Lineage": "血统"
+        },
         "SpeciesLegacy": "种族特性",
         "Vehicle": {
             "Label": "载具特性"
         },
-        "PietyTrait": "虔信值特质"
+        "PietyTrait": "虔信值特质",
+        "Background": "背景特性",
+        "Monster": "怪物特性"
     },
     "DND5E.DeathSaveSuccessLabelN.few": "第三次死亡豁免成功",
     "DND5E.SizeGargantuanAbbr": "超巨",
@@ -1722,7 +1716,10 @@
     "SETTINGS.5eNoConcentrationN": "禁用专注跟进",
     "SETTINGS.5eNoConcentrationL": "禁用系统对专注的自动跟进。",
     "DND5E.Focus": {
-        "Label": "施法法器"
+        "Label": "施法法器",
+        "Arcane": "奥术法器",
+        "Druidic": "德鲁伊法器",
+        "Holy": "神圣法器"
     },
     "DND5E.ActionEnch": "附魔",
     "DND5E.AdditionalSettings": "额外设置",
@@ -1871,7 +1868,18 @@
                 "Inferred": "参考来源",
                 "Legacy": "旧版",
                 "Modern": "新版"
-            }
+            },
+            "EquipmentHeader": "装备",
+            "ItemHint": "将职业拖至此处",
+            "NoValidClass": "未选择有效职业，使用编辑按钮来添加一个职业。",
+            "OptionalFeaturesCaption": "可选职业特性",
+            "OptionalFeaturesDescription": "以下部分包含可选的 {class} 特性。这些功能不会自动添加，你可以根据 DM 的判断选择其中的一项、部分或全部。",
+            "SpellSlotLevel": "环阶",
+            "SpellSlots": "法术位",
+            "SpellSlotsPerSpellLevel": "—每一法术环阶的法术位—",
+            "SubclassHint": "拖放子职至此处",
+            "TableCaption": "{class}",
+            "TableOptionalCaption": "可选 {class} 特性"
         },
         "SpellList": {
             "DropHint": "请将法术或法术文件夹拖拽到列表中",
@@ -1913,7 +1921,9 @@
                     }
                 }
             }
-        }
+        },
+        "EditDescription": "编辑",
+        "TableTOC": "表格：{caption}"
     },
     "SIDEBAR.SortModePriority": "按优先级排序",
     "DND5E.CompendiumBrowser": {
@@ -2268,6 +2278,10 @@
                 "Duplicate": "该物品已存在于此升级中。",
                 "Recursive": "你不能在某项升级中授予该项本身。",
                 "Type": "此升级项类型无法添加{type}物品。"
+            },
+            "DefaultTitle": {
+                "ClassFeatures": "职业特性",
+                "SubclassFeatures": "子职业特性"
             }
         },
         "Manager": {
@@ -3072,10 +3086,16 @@
             }
         },
         "Action": {
-            "ConsumeResource": "耗用资源",
+            "ConsumeResource": {
+                "Full": "耗用资源",
+                "Short": "耗用"
+            },
             "Create": "创建消耗目标",
             "Delete": "删除消耗目标",
-            "RefundResource": "退还资源"
+            "RefundResource": {
+                "Full": "退还资源",
+                "Short": "退还"
+            }
         },
         "Target": {
             "ThisItem": "该物品",
@@ -3278,7 +3298,11 @@
             "Thunder": "雷鸣"
         },
         "Empty": "尚未配置伤害。使用上方的<i class=\"fas fa-plus\"></i>按钮添加伤害项。",
-        "EmptyExceptBase": "使用上方的<i class=\"fas fa-plus\"></i>按钮添加额外伤害项。"
+        "EmptyExceptBase": "使用上方的<i class=\"fas fa-plus\"></i>按钮添加额外伤害项。",
+        "Resistance": {
+            "Falling": "坠落",
+            "UniqueCategory": "特殊类型"
+        }
     },
     "DND5E.HEAL": {
         "FIELDS": {
@@ -3339,7 +3363,10 @@
             "MaximumShort": "最大HP",
             "Maximum": "最大生命值"
         },
-        "HealingButton": "治疗"
+        "HealingButton": {
+            "Full": "治疗",
+            "Short": "治疗"
+        }
     },
     "DND5E.SUMMON": {
         "FIELDS": {
@@ -3562,7 +3589,10 @@
             "NoProfile": "无法在“{item}”上找到召唤配置{profileId}。",
             "PlaceTokens": "在场景中放置召唤物时出错。"
         },
-        "Hint": "召唤一个新生物至场景。"
+        "Hint": "召唤一个新生物至场景。",
+        "DamageChanges": {
+            "Label": "伤害变更"
+        }
     },
     "DND5E.DURATION": {
         "FIELDS": {
@@ -3904,6 +3934,21 @@
             "magical": {
                 "hint": "此附魔具有魔法性质，在魔法不可用时应禁用。",
                 "label": "魔法附魔"
+            },
+            "rider": {
+                "activities": {
+                    "hint": "施加此附魔时，这些额外行动会添加到被附魔的物品上。移除附魔时，这些行动也会一并移除。",
+                    "label": "额外行动"
+                },
+                "effects": {
+                    "hint": "施加此附魔时，这些额外效应会添加到被附魔的物品上。移除附魔时，这些效应也会一并移除。",
+                    "label": "额外效应"
+                },
+                "items": {
+                    "hint": "生物的一件物品被附魔时，这些额外物品会添加到该生物身上。移除附魔时，这些物品也会一并移除。",
+                    "label": "额外物品"
+                },
+                "label": "附加内容"
             }
         },
         "Action": {
@@ -3931,6 +3976,9 @@
             "DisabledTooltip": "此附魔目前已被其所属物品的一个或多个附魔行动选用，因此无法直接应用于该物品。",
             "Hint": "勾选后，此附魔将直接应用于其所属物品。",
             "Label": "将附魔应用于物品"
+        },
+        "Rider": {
+            "Activity": "附魔附加行动"
         }
     },
     "DND5E.EFFECT": {
@@ -4031,7 +4079,8 @@
             "Group": {
                 "Custom": "自定义",
                 "Rules": "规则",
-                "Standard": "标准"
+                "Standard": "标准",
+                "DamageApplicationOptions": "伤害结算选项"
             },
             "Label": "变更",
             "Title": "{effect}变更第{number}项",
@@ -4047,7 +4096,27 @@
                 },
                 "Minimum": {
                     "Label": "掷骰最小值"
+                },
+                "DowngradeImmunityResistance": {
+                    "Label": "降级免疫与抗性"
+                },
+                "IgnoreImmunity": {
+                    "Label": "忽略免疫"
+                },
+                "IgnoreResistance": {
+                    "Label": "忽略抗性"
+                },
+                "IgnoreVulnerability": {
+                    "Label": "忽略易伤"
                 }
+            },
+            "Key": {
+                "Attack": "攻击检定",
+                "Check": "属性检定",
+                "D20": "D20 检定",
+                "Damage": "伤害掷骰",
+                "Healing": "治疗掷骰",
+                "Save": "豁免检定"
             }
         },
         "DisabledTooltip": {
@@ -4106,7 +4175,8 @@
         "Tab": "效应",
         "Warning": {
             "RollCondition": "效应条件无法引用“roll.”属性。请将此条件移至各个变更中，以便应用效应。",
-            "StatusCondition": "赋予状态的效应不能同时以状态作为条件。请将此条件移至各个变更中，以便应用效应。"
+            "StatusCondition": "赋予状态的效应不能同时以状态作为条件。请将此条件移至各个变更中，以便应用效应。",
+            "DependentsWithoutGM": "移除{name}也会移除关联的物品、行动或效应。此操作需要有在线 GM。"
         }
     },
     "DND5E.FLAGS": {
@@ -4292,7 +4362,10 @@
             }
         },
         "Action": {
-            "PlaceTemplate": "放置测量模板"
+            "PlaceTemplate": {
+                "Full": "放置测量模板",
+                "Short": "区域"
+            }
         },
         "Warning": {
             "PlaceTemplate": "放置测量模板失败。"
@@ -4927,11 +5000,26 @@
             "SelectSuccess": "选择成功结果"
         },
         "Button": {
-            "rollAttack": "攻击",
-            "rollCheck": "属性检定",
-            "rollDamage": "伤害",
-            "rollFormula": "掷骰",
-            "rollSave": "豁免检定"
+            "rollAttack": {
+                "Full": "攻击",
+                "Short": "攻击"
+            },
+            "rollCheck": {
+                "Full": "属性检定",
+                "Short": "检定"
+            },
+            "rollDamage": {
+                "Full": "伤害",
+                "Short": "伤害"
+            },
+            "rollFormula": {
+                "Full": "掷骰",
+                "Short": "掷骰"
+            },
+            "rollSave": {
+                "Full": "豁免检定",
+                "Short": "豁免"
+            }
         },
         "Row": {
             "Actions": "物品动作",
@@ -4940,7 +5028,8 @@
             "Roll": "掷骰",
             "rollCheck": "属性检定",
             "rollSave": "豁免检定",
-            "Targets": "目标"
+            "Targets": "目标",
+            "Additional": "额外操作"
         },
         "Targets": {
             "Count": "{number}× {name}"
@@ -5253,7 +5342,11 @@
         },
         "Communication": {
             "Telepathy": "心灵感应",
-            "Label": "远程通信"
+            "Label": "远程交流",
+            "Formatter": {
+                "Units": "{name}单位",
+                "Value": "{name}距离"
+            }
         }
     },
     "DND5E.LegendaryAction": {
@@ -5280,7 +5373,10 @@
             "other": "第 {n} 个传奇抗性"
         },
         "Action": {
-            "Resist": "传奇抗性"
+            "Resist": {
+                "Full": "传奇抗性",
+                "Short": "抵抗"
+            }
         },
         "Label": "传奇抗性",
         "Max": "最大传奇抗性",
@@ -6644,7 +6740,9 @@
             "Material": "材料",
             "Sidekick": "伙伴",
             "Gear": "装备",
-            "UnidentifiedContents": "隐藏未鉴定的内容物"
+            "UnidentifiedContents": "隐藏未鉴定的内容物",
+            "Hydrating": "补水",
+            "Nutritious": "补充营养"
         },
         "SECTIONS": {
             "Activities": "行动组合",
@@ -6667,10 +6765,11 @@
     },
     "DND5E.Remaining": "剩余",
     "TYPES.RegionBehavior": {
-        "dnd5e.difficultTerrain": "困难地形",
-        "dnd5e.rotateArea": "旋转区域",
         "dnd5e": {
-            "applyActiveEffect": "应用激活效应（5e）"
+            "applyActiveEffect": "应用激活效应（5e）",
+            "antimagic": "反魔法",
+            "difficultTerrain": "困难地形",
+            "rotateArea": "旋转区域"
         }
     },
     "DND5E.ACTOR": {
@@ -6881,7 +6980,8 @@
         "Token": "D&D 5e 指示物卡",
         "RollTable": "D&D 5e 掷骰表卡",
         "ActiveEffect": "D&D 5e激活效应卡",
-        "AdventureImporter": "D&D 5e冒险导入器"
+        "AdventureImporter": "D&D 5e冒险导入器",
+        "Faction": "D&D 5e 派系卡"
     },
     "DND5E.MovementIgnoredDifficultTerrain": "无视困难地形",
     "DND5E.Challenge": "挑战",
@@ -7249,10 +7349,11 @@
     "DND5E.SpellComponentsMaterial": "{components}（{materials}）",
     "TYPES.HINTS": {
         "RegionBehavior": {
-            "dnd5e.difficultTerrain": "将某一区域标记为困难地形，并设定其类型及影响对象。",
-            "dnd5e.rotateArea": "围绕中心旋转点旋转指示物、图块、墙体及其他物体。",
             "dnd5e": {
-                "applyActiveEffect": "当指示物位于区域内且满足指定条件时，为其应用激活效应。"
+                "applyActiveEffect": "当指示物位于区域内且满足指定条件时，为其应用激活效应。",
+                "antimagic": "阻止在此区域内使用任何魔法能力或魔法物品。",
+                "difficultTerrain": "将某一区域标记为困难地形，并设定其类型及影响对象。",
+                "rotateArea": "围绕中心旋转点旋转指示物、图块、墙体及其他物体。"
             }
         }
     },
@@ -7407,7 +7508,10 @@
     "DND5E.CONCENTRATION": {
         "Abbreviation": "专注",
         "Action": {
-            "Break": "打断专注",
+            "Break": {
+                "Full": "打断专注",
+                "Short": "打断"
+            },
             "End": "结束专注"
         },
         "Description": "你正为“{name}”{type}的效应维持专注。",
@@ -7819,5 +7923,38 @@
         }
     },
     "SETTINGS.5eNoExhaustionN": "禁用力竭自动处理",
-    "SETTINGS.5eNoExhaustionL": "禁用系统对力竭效应的自动处理。"
+    "SETTINGS.5eNoExhaustionL": "禁用系统对力竭效应的自动处理。",
+    "DND5E.FACTION": {
+        "Action": {
+            "AddMember": "添加成员"
+        }
+    },
+    "DND5E.RENOWN": {
+        "Action": {
+            "AddModifier": "添加声望调整值",
+            "DeleteModifier": "删除声望调整值"
+        },
+        "Empty": "尚无声望调整值。使用上方的<i class=\"fas fa-plus\"></i>按钮添加。",
+        "FIELDS": {
+            "modifiers": {
+                "element": {
+                    "faction": {
+                        "label": "派系"
+                    },
+                    "value": {
+                        "label": "数值",
+                        "placeholder": "0"
+                    }
+                },
+                "label": "调整值"
+            }
+        },
+        "Search": "搜索声望",
+        "Unknown": "未知"
+    },
+    "DND5E.FilterGroupFaction": "按派系分组",
+    "TYPES.Actor.faction": "派系",
+    "TYPES.Actor.factionPl": "派系",
+    "TYPES.Item.renown": "声望",
+    "TYPES.Item.renownPl": "声望"
 }
